@@ -1,0 +1,50 @@
+site_name: Collaborative Analytics Environment (CAE) \ Environnement d’analyse collaboratif (EAC)  
+site_url: https://statcan.github.io/cae-eac/en/
+site_description: User guide for the DAaaS Covid-19 Collaborative Analytics Environment (CAE - Path 2 Azaure Platform)
+copyright: Copyright &copy; 2020 Statistics Canada
+
+docs_dir: docs/en
+site_dir: site/en
+
+repo_name: statcan/cae-eac
+repo_url: https://github.com/statcan/cae-eac
+edit_uri: edit/master/docs/en
+
+theme:
+  name: material
+  language: en
+  #features:
+  #  - tabs
+  palette:
+    primary: indigo
+    accent: teal
+  show_sidebar: false
+  #logo: images/statcan.png
+
+markdown_extensions:
+  - toc:
+      baselevel: 2
+  - attr_list
+  - admonition
+  - codehilite
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/statcan/cae-eac
+    - icon: fontawesome/brands/slack
+      link: https://cae-eac.slack.com
+
+# Page tree
+nav:
+  - Getting Started: index.md
+  - Request Access: RequestAccess.md
+  - Getting Started: Login.md
+  - Dashboards: Dashboards.md
+  - Databricks: DataBricks.md
+  - Storage Explorer: StorageExplorer.md
+  - Data Factory: DataFactory.md
+  - Virtual Machines (VMs): VirtualMachines.md
+  - FAQ: FAQ.md
+  - Help/Contact: Help.md
