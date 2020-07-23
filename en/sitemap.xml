@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://statcan.github.io/cae-eac/en/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/RequestAccess/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/Login/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/Dashboards/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/DataBricks/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/DataFactory/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/StorageExplorer/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/VirtualMachines/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/FAQ/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://statcan.github.io/cae-eac/en/help/</loc>
-     <lastmod>2020-07-21</lastmod>
+     <lastmod>2020-07-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
