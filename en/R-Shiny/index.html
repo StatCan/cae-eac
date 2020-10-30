@@ -9,7 +9,7 @@
         <meta name="description" content="User guide - Collaborative Analytics Environment (CAE)">
       
       
-        <link rel="canonical" href="https://statcan.github.io/cae-eac/en/SwitchLanguage/">
+        <link rel="canonical" href="https://statcan.github.io/cae-eac/en/R-Shiny/">
       
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Switch Language - Collaborative Analytics Environment (CAE)</title>
+        <title>R-Shiny from RStudio - Collaborative Analytics Environment (CAE)</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#switch-language" class="md-skip">
+        <a href="#r-shiny-from-rstudio" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Switch Language
+              R-Shiny from RStudio
             
           </span>
         </div>
@@ -342,57 +342,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#switch-language" class="md-nav__link">
-    Switch Language
+  <a href="#r-shiny-from-rstudio" class="md-nav__link">
+    R-Shiny from RStudio
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#azure-portal" class="md-nav__link">
-    Azure Portal
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Portal">
+    <nav class="md-nav" aria-label="R-Shiny from RStudio">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#linux-bm-ubunutu-xx" class="md-nav__link">
-    Linux BM (Ubunutu XX)
+  <a href="#getting-starting" class="md-nav__link">
+    Getting Starting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-access" class="md-nav__link">
+    How to Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rshiny-app-example" class="md-nav__link">
+    RShiny app example
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#machine-learning" class="md-nav__link">
-    Machine Learning
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-factory" class="md-nav__link">
-    Data Factory
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#databrick" class="md-nav__link">
-    Databrick
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#browser" class="md-nav__link">
-    Browser
-  </a>
   
 </li>
       
@@ -408,32 +387,60 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/en/SwitchLanguage.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/en/R-Shiny.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Switch Language</h1>
+                  <h1>R-Shiny from RStudio</h1>
                 
-                <h2 id="switch-language">Switch Language</h2>
-<p>How to swtich langiages using the folliwng tools...</p>
-<h2 id="azure-portal">Azure Portal</h2>
-<p>instrctions...
-<img alt="StorageExplorerSearch" src="images/SwitchLanguages.png" /> 
- # DevTest Labs
- ## Windows VM</p>
-<p>Steps on how to change language inside the VM</p>
-<h3 id="linux-bm-ubunutu-xx">Linux BM (Ubunutu XX)</h3>
-<p>Steps to change to French or english</p>
-<h2 id="machine-learning">Machine Learning</h2>
-<p>Please see </p>
-<h2 id="data-factory">Data Factory</h2>
-<h2 id="databrick">Databrick</h2>
-<h2 id="browser">Browser</h2>
-<p>For details on how to change your specifice to a different language. Plese see these sotesà
-Chrome 
-Firefox
-IE</p>
+                <h2 id="r-shiny-from-rstudio">R-Shiny from RStudio</h2>
+<p>The document describes how to access to R-Shiny package from RStudio.</p>
+<h3 id="getting-starting">Getting Starting</h3>
+<p>Please send a <a href="https://cae-eac.slack.com">slack</a> message to the CEA team to enable RStudio on your databricks cluster to be able to use R-Shiny.</p>
+<p><strong>Warning</strong>: </p>
+<p>R-Shiny clusters are shut down everyday at 7pm. To save cost, please stop your R-Shiny clusters when you are not using them.</p>
+<h3 id="how-to-access">How to Access</h3>
+<ol>
+<li>From the Azure portal, Launch the Databricks workspace that was created for you.</li>
+<li>
+<p>Click on <strong>Clusters</strong>.</p>
+</li>
+<li>
+<p>From the available list of clusters, select the cluster with RStudio enabled.</p>
+</li>
+</ol>
+<p><strong>Note:</strong> You must have the cluster running before you can access to RStudio. See the <a href="../DataBricks/DataBricks.md">Databricks section</a> for information on how to start a cluster.</p>
+<ol>
+<li>
+<p>Select the <strong>Apps</strong> tab.</p>
+</li>
+<li>
+<p>Click on <strong>Set up RStudio</strong>.</p>
+</li>
+</ol>
+<p><strong>Note</strong>: A <strong>one-time password</strong> is generated for you, click on the <strong>show link</strong> to display and copy it. You must log in using the Username and Password provided.</p>
+<ol>
+<li>
+<p>Click on <strong>Open RStudio</strong>.</p>
+</li>
+<li>
+<p>A new tab opens, enter the username and password provided in the login form and sign in to RStudio.</p>
+</li>
+<li>
+<p>From the RStudio UI, use <strong>library(shiny)</strong> command in the console to import the Shiny package.</p>
+</li>
+</ol>
+<h3 id="rshiny-app-example">RShiny app example</h3>
+<p>We use the <strong>Hello Shiny</strong> example to explore the structure of a Shiny app.</p>
+<ol>
+<li>Launch the app from your R session by running :</li>
+</ol>
+<p>library(shiny)
+runExample("01_hello")</p>
+<ol>
+<li>Your app should match the image below. </li>
+</ol>
                 
               
               
