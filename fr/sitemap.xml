@@ -39,5 +39,9 @@
      <loc>https://statcan.github.io/cae-eac/fr/Aide/</loc>
      <lastmod>2020-10-29</lastmod>
      <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://statcan.github.io/cae-eac/fr/Langue/</loc>
+     <lastmod>2020-10-29</lastmod>
+     <changefreq>daily</changefreq>
     </url>
 </urlset>
