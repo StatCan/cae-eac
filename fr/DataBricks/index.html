@@ -1,0 +1,825 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guide de l'utilisateu - Environnement d’analyse collaboratif (EAC)">
+      
+      
+        <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/DataBricks/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+    
+    
+      
+        <title>Databricks - Environnement d’analyse collaboratif (EAC)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="teal">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#azure-databricks" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://statcan.github.io/cae-eac/fr/" title="Environnement d’analyse collaboratif (EAC)" class="md-header-nav__button md-logo" aria-label="Environnement d’analyse collaboratif (EAC)">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Environnement d’analyse collaboratif (EAC)
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Databricks
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    statcan/cae-eac
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://statcan.github.io/cae-eac/fr/" title="Environnement d’analyse collaboratif (EAC)" class="md-nav__button md-logo" aria-label="Environnement d’analyse collaboratif (EAC)">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Environnement d’analyse collaboratif (EAC)
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    statcan/cae-eac
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      En avant!
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Access/" class="md-nav__link">
+      Demande d'accès
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Login/" class="md-nav__link">
+      Se connecter
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Dashboards/" class="md-nav__link">
+      Dashboards
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Databricks
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Databricks
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#azure-databricks" class="md-nav__link">
+    Azure Databricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Databricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-databricks" class="md-nav__link">
+    Accès à Databricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Accès à Databricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableau-de-bord" class="md-nav__link">
+    Tableau de bord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adresse-url-de-databricks" class="md-nav__link">
+    Adresse URL de Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portail-azure" class="md-nav__link">
+    Portail Azure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-cluster" class="md-nav__link">
+    Création d'un cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-carnet" class="md-nav__link">
+    Création d'un carnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partage-de-carnets-dans-databricks" class="md-nav__link">
+    Partage de carnets dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ingestion-de-donnees-dans-databricks" class="md-nav__link">
+    Ingestion de données dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajout-de-donnees-dans-databricks" class="md-nav__link">
+    Ajout de données dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lecture-de-fichiers-montes" class="md-nav__link">
+    Lecture de fichiers montés
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modification-du-langage-par-defaut-dans-un-carnet" class="md-nav__link">
+    Modification du langage par défaut dans un carnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-de-plusieurs-langages-dans-un-carnet" class="md-nav__link">
+    Utilisation de plusieurs langages dans un carnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demarrage-de-clusters-dans-databricks" class="md-nav__link">
+    Démarrage de clusters dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-microsoft" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DataFactory/" class="md-nav__link">
+      Data Factory
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../StorageExplorer/" class="md-nav__link">
+      Storage Explorer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../VirtualMachines/" class="md-nav__link">
+      Machines Virtuelle
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Aide/" class="md-nav__link">
+      Aide/Contact
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#azure-databricks" class="md-nav__link">
+    Azure Databricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Databricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-databricks" class="md-nav__link">
+    Accès à Databricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Accès à Databricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableau-de-bord" class="md-nav__link">
+    Tableau de bord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adresse-url-de-databricks" class="md-nav__link">
+    Adresse URL de Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portail-azure" class="md-nav__link">
+    Portail Azure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-cluster" class="md-nav__link">
+    Création d'un cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-dun-carnet" class="md-nav__link">
+    Création d'un carnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partage-de-carnets-dans-databricks" class="md-nav__link">
+    Partage de carnets dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ingestion-de-donnees-dans-databricks" class="md-nav__link">
+    Ingestion de données dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajout-de-donnees-dans-databricks" class="md-nav__link">
+    Ajout de données dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lecture-de-fichiers-montes" class="md-nav__link">
+    Lecture de fichiers montés
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modification-du-langage-par-defaut-dans-un-carnet" class="md-nav__link">
+    Modification du langage par défaut dans un carnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-de-plusieurs-langages-dans-un-carnet" class="md-nav__link">
+    Utilisation de plusieurs langages dans un carnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demarrage-de-clusters-dans-databricks" class="md-nav__link">
+    Démarrage de clusters dans Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-microsoft" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/fr/DataBricks.md" title="Editer cette page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Databricks</h1>
+                
+                <h2 id="azure-databricks">Azure Databricks</h2>
+<h3 id="acces-a-databricks">Accès à Databricks</h3>
+<h4 id="tableau-de-bord">Tableau de bord</h4>
+<p>Consultez la <a href="../Dashboard/Dashboards.md">section Tableau de bord</a>
+de cette documentation pour obtenir de plus amples renseignements.</p>
+<ol>
+<li>Cliquez sur le menu Tableau de bord dans le portail Azure.
+<img alt="Dashboard" src="../images/DashboardBrowseAll.png" /></li>
+</ol>
+<h4 id="adresse-url-de-databricks">Adresse URL de Databricks</h4>
+<ol>
+<li>Rendez-vous au site https://canadacentral.azuredatabricks.net/, ouvrez une session en utilisant vos justificatifs d'identité de compte en nuage et sélectionnez l'espace       de travail Databricks qui a été créé pour vous.</li>
+</ol>
+<p><img alt="Databricks URL" src="../images/DatabricksSelect.png" /></p>
+<h4 id="portail-azure">Portail Azure</h4>
+<ol>
+<li>Dans la boîte de recherche du portail Azure, recherchez <strong>Databricks</strong>.</li>
+</ol>
+<p><img alt="Azure Portal Search" src="../images/DatabricksPortalSearch.png" /></p>
+<ol>
+<li>Vous devriez alors voir une liste des espaces de travail Databricks auxquels vous pouvez accéder.</li>
+</ol>
+<p><img alt="DataFactory List" src="../images/DatabricksPortalList.png" /></p>
+<p>## Commencer
+Une fois dans Databricks, vous pourrez créer un carnet ou ouvrir un carnet existant. Pour plus d'information, veuillez consulter le processus à suivre pour <a href="https://docs.microsoft.com/fr-ca/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal?tabs=azure-portal#run-a-spark-sqljob">accéder à  Databricks pour la première fois</a>.</p>
+<h3 id="creation-dun-cluster">Création d'un cluster</h3>
+<p>Si aucun cluster n'a été créé pour vous ou si vous avez besoin d'apporter des changements à votre cluster, vous devrez envoyer un message sur Slack (https://cae-eac.slack.com), puisque vous n'avez pas la permission de créer un cluster.</p>
+<p><strong>Note :</strong> Vous devez avoir un cluster actif avant de pouvoir exécuter le code dans votre carnet. Pour obtenir des renseignements sur la façon de créer un cluster, consultez la section ci-dessous ou la <a href="../FAQ/">FAQ</a>.</p>
+<h3 id="creation-dun-carnet">Création d'un carnet</h3>
+<ul>
+<li>Une façon de créer un carnet consiste à cliquer sur l'option <strong>Nouveau carnet</strong> depuis la page principale de Databricks. Vous pouvez ensuite nommer votre carnet et           choisir le langage par défaut.</li>
+<li>Dans le champ « Grappe », sélectionnez parmi la liste proposée le cluster auquel vous souhaitez attacher votre carnet. 
+   <img alt="Start a notebook" src="../images/DataBrickCreateNotebook.png" /></li>
+<li>Pour commencer un cluster ou le modifier à partir d'un carnet, ouvrez le carnet et, dans le coin supérieur droit, cliquez sur le menu déroulant pour cluster. Vous pourrez     alors démarrer le cluster ou le détacher et en attacher une autre.</li>
+</ul>
+<h3 id="partage-de-carnets-dans-databricks">Partage de carnets dans Databricks</h3>
+<p>Pour partager un carnet ou inviter d'autres collaborateurs : depuis le menu Espace de travail, faites un clic droit sur le fichier ou le dossier du carnet souhaité et sélectionnez l'option <strong>Autorisations</strong>.Vous pouvez également le faire à partir d'un carnet, en cliquant sur le bouton <strong>Autorisations</strong>. Une fois que le carnet aura été partagé,plusieurs auteurs pourront le consulter et le modifier simultanément.</p>
+<p><strong>Note :</strong> Pour ajouter un utilisateur à l'espace de travail Databricks,
+veuillez envoyer un message Slack sur https://cae-eac.slack.com.</p>
+<p><img alt="How to share a Databricks notebook" src="../images/DataBricksShareNotebook.png" /></p>
+<h3 id="ingestion-de-donnees-dans-databricks">Ingestion de données dans Databricks</h3>
+<p>Les données peuvent être montées ou téléversées dans le Système de fichiers Databricks (DBFS), qui est un espace de stockage propre à l'espace de travail Databricks. Vous pouvez lire des données d'une source de données ou même téléverser un fichier de données (p. ex. CSV) directement dans le DBFS.</p>
+<p><strong>Note :</strong> Le conteneur interne de lac de données pour votre environnement a déjà été monté pour vous, et vous pouvez travailler directement avec le conteneur. Si vous ne connaissez pas le nom de votre conteneur de lac de données, veuillez envoyer un message Slack sur https://cae-eac.slack.com.</p>
+<h3 id="ajout-de-donnees-dans-databricks">Ajout de données dans Databricks</h3>
+<p><img alt="Où importer les données" src="../images/DataBricksimportData.png" /></p>
+<h3 id="lecture-de-fichiers-montes">Lecture de fichiers montés</h3>
+<p><img alt="Accédez aux fichiers dans votre conteneur de la même façon que vous accédez aux fichiers locaux" src="../images/Accessmountedfile.png" /></p>
+<p>Exemple :</p>
+<div class="codehilite"><pre><span></span><code><span class="nf">%python</span>
+<span class="n">testData</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">format</span><span class="p">(</span><span class="err">&#39;</span><span class="n">csv</span><span class="err">&#39;</span><span class="p">).</span><span class="n">options</span><span class="p">(</span><span class="n">header</span><span class="o">=</span><span class="err">&#39;</span><span class="nb">true</span><span class="err">&#39;</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="err">&#39;</span><span class="nb">true</span><span class="err">&#39;</span><span class="p">).</span><span class="n">load</span><span class="p">(</span><span class="err">&#39;</span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">mad</span><span class="o">-</span><span class="n">du</span><span class="o">/</span><span class="n">incoming</span><span class="o">/</span><span class="n">age</span><span class="o">-</span><span class="n">single</span><span class="o">-</span><span class="n">years</span><span class="mi">-2018</span><span class="o">-</span><span class="n">census</span><span class="o">-</span><span class="n">csv</span><span class="p">.</span><span class="n">csv</span><span class="err">&#39;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">testData</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="modification-du-langage-par-defaut-dans-un-carnet">Modification du langage par défaut dans un carnet</h3>
+<p><img alt="Changer le langage du carnet " src="../images/changelanguage.png" />
+<img alt="apres" src="../images/changelanguage2.png" /></p>
+<h3 id="utilisation-de-plusieurs-langages-dans-un-carnet">Utilisation de plusieurs langages dans un carnet</h3>
+<p>Vous pouvez contourner les paramètres de langage par défaut en entrant la commande Magic Language % au début d'une cellule. Les commandes Magic
+prises en charge sont les suivantes : %python, %r, %scala et %sql.</p>
+<p><em>Note :</em>
+Lorsque vous utilisez une commande Magic Language, celle-ci est distribuée à la valeur REPL dans le contexte d'exécution du carnet. Lesvariables définies dans un langage (et par conséquent dans la REPL pour ce langage) ne sont pas offertes dans la valeur REPL d'un autre langage. Les valeurs REPL permettent de partager l'état uniquement par
+l'intermédiaire de ressources externes, telles que des fichiers dans le DBFS ou des objets stockés.
+Les carnets prennent également en charge quelques commandes Magic auxiliaires :</p>
+<ul>
+<li>
+<p>Vous permet d'exécuter du code Shell dans votre carnet. Pour faire échouer la cellule si la commande Shell a un état de sortie différent de zéro, ajoutez l'-e option. Cette commande s'exécute uniquement sur le pilote Apache Spark, et non sur les processus de travail. Pour exécuter une commande Shell sur tous les nœuds, utilisez un script d'initialisation (script init).</p>
+</li>
+<li>
+<p>Vous permet d'utiliser des commandes de type système de fichiers (dbutils).</p>
+</li>
+<li>
+<p>Vous permet d'inclure différents types de documentation, notamment du texte, des images ainsi que des formules et des équations mathématiques.</p>
+</li>
+</ul>
+<h3 id="demarrage-de-clusters-dans-databricks">Démarrage de clusters dans Databricks</h3>
+<ol>
+<li>
+<p>Cliquez sur la liste déroulante de clusters.</p>
+</li>
+<li>
+<p>Sélectionnez un cluster à partir de cette liste.</p>
+</li>
+<li>
+<p>Cliquez sur le bouton <strong>Début</strong> pour démarrer le cluster.</p>
+</li>
+<li>
+<p><img alt="Where to start a Databricks cluster" src="../images/DataBricksStartCluter.png" /></p>
+</li>
+</ol>
+<h3 id="documentation-microsoft">Documentation Microsoft</h3>
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/fr-ca/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal">Accéder à Databricks pour la première fois</a></p>
+</li>
+<li>
+<p><a href="https://azure.microsoft.com/fr-ca/resources/videos/connect-2017-introduction-to-azure-databricks/">En savoir plus sur Databricks</a>
+    (en anglais seulement)</p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/fr-ca/azure/databricks/notebooks/notebooks-python-libraries">Installer des bibliothèques dans la session active d'un carnet</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/frca/azure/databricks/libraries">Gestion des bibliothèques pour les administrateurs</a></p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Dashboards/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Précédent
+                </span>
+                Dashboards
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../DataFactory/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Suivant
+                </span>
+                Data Factory
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 Statistique Canada
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/statcan/cae-eac" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://cae-eac.slack.com" target="_blank" rel="noopener" title="cae-eac.slack.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

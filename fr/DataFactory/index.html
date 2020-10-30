@@ -1,0 +1,857 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guide de l'utilisateu - Environnement d’analyse collaboratif (EAC)">
+      
+      
+        <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/DataFactory/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+    
+    
+      
+        <title>Data Factory - Environnement d’analyse collaboratif (EAC)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="teal">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#azure-data-factory-adf" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://statcan.github.io/cae-eac/fr/" title="Environnement d’analyse collaboratif (EAC)" class="md-header-nav__button md-logo" aria-label="Environnement d’analyse collaboratif (EAC)">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Environnement d’analyse collaboratif (EAC)
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Data Factory
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    statcan/cae-eac
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://statcan.github.io/cae-eac/fr/" title="Environnement d’analyse collaboratif (EAC)" class="md-nav__button md-logo" aria-label="Environnement d’analyse collaboratif (EAC)">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Environnement d’analyse collaboratif (EAC)
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    statcan/cae-eac
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      En avant!
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Access/" class="md-nav__link">
+      Demande d'accès
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Login/" class="md-nav__link">
+      Se connecter
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Dashboards/" class="md-nav__link">
+      Dashboards
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DataBricks/" class="md-nav__link">
+      Databricks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Factory
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Data Factory
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#azure-data-factory-adf" class="md-nav__link">
+    Azure Data Factory (ADF)
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Data Factory (ADF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-data-factory" class="md-nav__link">
+    Accès à Data Factory
+  </a>
+  
+    <nav class="md-nav" aria-label="Accès à Data Factory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableau-de-bord" class="md-nav__link">
+    Tableau de bord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adresse-url-dadf" class="md-nav__link">
+    ADRESSE URL D'ADF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portail-azure" class="md-nav__link">
+    Portail Azure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auteur" class="md-nav__link">
+    Auteur
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-data-lake-a-partir-dadf" class="md-nav__link">
+    Accès à Data Lake à partir d'ADF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-la-base-de-donnees-sql-azure" class="md-nav__link">
+    Accès à la Base de données SQL Azure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enregistrement-ou-publication-de-vos-ressources-dans-data-factory" class="md-nav__link">
+    Enregistrement ou publication de vos ressources dans Data Factory
+  </a>
+  
+    <nav class="md-nav" aria-label="Enregistrement ou publication de vos ressources dans Data Factory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-lorsquaccessible" class="md-nav__link">
+    Git (lorsqu'accessible)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-data-factory" class="md-nav__link">
+    Service Data Factory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ingestion-et-transformation-des-donnees-avec-adf" class="md-nav__link">
+    Ingestion et transformation des données avec ADF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-comment-se-connecter-aux-donnees-de-john-hopkins" class="md-nav__link">
+    Exemple : Comment se connecter aux données de John Hopkins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-microsoft" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../StorageExplorer/" class="md-nav__link">
+      Storage Explorer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../VirtualMachines/" class="md-nav__link">
+      Machines Virtuelle
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Aide/" class="md-nav__link">
+      Aide/Contact
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#azure-data-factory-adf" class="md-nav__link">
+    Azure Data Factory (ADF)
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Data Factory (ADF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-data-factory" class="md-nav__link">
+    Accès à Data Factory
+  </a>
+  
+    <nav class="md-nav" aria-label="Accès à Data Factory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableau-de-bord" class="md-nav__link">
+    Tableau de bord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adresse-url-dadf" class="md-nav__link">
+    ADRESSE URL D'ADF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#portail-azure" class="md-nav__link">
+    Portail Azure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auteur" class="md-nav__link">
+    Auteur
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-data-lake-a-partir-dadf" class="md-nav__link">
+    Accès à Data Lake à partir d'ADF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acces-a-la-base-de-donnees-sql-azure" class="md-nav__link">
+    Accès à la Base de données SQL Azure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enregistrement-ou-publication-de-vos-ressources-dans-data-factory" class="md-nav__link">
+    Enregistrement ou publication de vos ressources dans Data Factory
+  </a>
+  
+    <nav class="md-nav" aria-label="Enregistrement ou publication de vos ressources dans Data Factory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-lorsquaccessible" class="md-nav__link">
+    Git (lorsqu'accessible)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-data-factory" class="md-nav__link">
+    Service Data Factory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ingestion-et-transformation-des-donnees-avec-adf" class="md-nav__link">
+    Ingestion et transformation des données avec ADF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-comment-se-connecter-aux-donnees-de-john-hopkins" class="md-nav__link">
+    Exemple : Comment se connecter aux données de John Hopkins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-microsoft" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/fr/DataFactory.md" title="Editer cette page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Data Factory</h1>
+                
+                <h2 id="azure-data-factory-adf">Azure Data Factory (ADF)</h2>
+<h3 id="acces-a-data-factory">Accès à Data Factory</h3>
+<h4 id="tableau-de-bord">Tableau de bord</h4>
+<p>Consultez la <a href="../Dashboards/">section Tableau de bord</a>
+de cette documentation pour obtenir de plus amples renseignements.</p>
+<ol>
+<li>Cliquez sur le menu Tableau de bord dans le portail Azure.</li>
+</ol>
+<p><img alt="Tableau de bord" src="../images/DataFatoryDashboard.png" /></p>
+<h4 id="adresse-url-dadf">ADRESSE URL D'ADF</h4>
+<ol>
+<li>Rendez-vous à https://adf.azure.com et sélectionnez l'instance Data Factory qui a été créée pour vous.</li>
+</ol>
+<p><img alt="Data Factory URL" src="../images/DataFactorySelect.png" /></p>
+<h4 id="portail-azure">Portail Azure</h4>
+<ol>
+<li>
+<p>Dans la boîte de recherche du portail Azure, recherchez <strong>Data factories</strong>.
+<img alt="Azure Portal Search" src="../images/DataFactoryPortalSearch.png" /></p>
+</li>
+<li>
+<p>Vous devriez alors voir une liste des Data Factories auxquelles vous avez obtenu la permission d'accéder.
+<img alt="DataFactory List" src="../images/DataFactoryPortalList.png" /></p>
+</li>
+</ol>
+<h4 id="auteur">Auteur</h4>
+<p>Cliquez sur <strong>Author &amp; Monitor</strong>.</p>
+<p><img alt="Author Monitor" src="../images/DataFactoryAuthorMonitor.png" />
+Dans Data Factory, vous avez la capacité de créer et de déployer des ressources.
+<img alt="Author" src="../images/DataFactoryAuthor.png" /> </p>
+<p>Voir le document <a href="https://docs.microsoft.com/fr-ca/azure/data-factory/author-visually">Création visuelle dans Azure Data Factory</a> pour obtenir de plus amples renseignements.
+Vous pouvez également utiliser certains des divers assistants fournis sur la page d'<strong>aperçu (Overview) de Data Factory</strong>.
+<strong>NOTE :</strong> La configuration de SSIS Integration n'est <strong>PAS</strong> recommandée. Si vous avez des questions, communiquez avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com.
+<img alt="Data Factory Wizards" src="../images/DataFactoryWizards.png" /> 
+<a href="https://docs.microsoft.com/fr-ca/azure/data-factory/introduction">les tutoriels de la documentation Azure</a> pour obtenir plus de détails.</p>
+<h3 id="acces-a-data-lake-a-partir-dadf">Accès à Data Lake à partir d'ADF</h3>
+<p>Une connexion au compte de stockage Data Lake a été préconfigurée pour votre environnement.</p>
+<ol>
+<li>
+<p>Cliquez sur l'<strong>icône de la mallette</strong>.</p>
+</li>
+<li>
+<p>Cliquez sur <strong>Services liés</strong>.</p>
+</li>
+<li>
+<p>Le service lié au type <strong>Stockage Azure Data Lake Gen2</strong> est votre compte de stockage <em>Data Lake</em>.</p>
+</li>
+</ol>
+<p><img alt="DataLake" src="../images/DataFactoryConnectDataLake.png" /></p>
+<p><strong>Note :</strong> On vous a accordé l'accès à des contenants particuliers créés dans le compte de stockage Data Lake pour votre environnement.</p>
+<h3 id="acces-a-la-base-de-donnees-sql-azure">Accès à la Base de données SQL Azure</h3>
+<p>Certains projets ont une instance de Base de données SQL Azure.</p>
+<ol>
+<li>
+<p>Cliquez sur l'<strong>icône de la mallette</strong>.</p>
+</li>
+<li>
+<p>Cliquez sur <strong>Services liés</strong>.</p>
+</li>
+<li>
+<p>Les services liés au type <strong>Base de données SQL Azure</strong> sont vos <em>bases de données</em>.</p>
+</li>
+</ol>
+<p><img alt="SQL Database" src="../images/DataFactorySQLDatabase2.png" /></p>
+<h3 id="enregistrement-ou-publication-de-vos-ressources-dans-data-factory">Enregistrement ou publication de vos ressources dans Data Factory</h3>
+<p>Azure Data Factory peut être configuré pour enregistrer votre travail dans les emplacements suivants :
+ 1. Dépôt Git 
+ 2. Publier directement dans Data Factory</p>
+<h4 id="git-lorsquaccessible">Git (lorsqu'accessible)</h4>
+<p>Lorsque Git est activé, vous pouvez voir votre configuration et enregistrer votre travail dans une branche particulière.
+1.  Cliquez sur l'<strong>icône de la mallette</strong>.
+2.  Cliquez sur <strong>Configuration de Git</strong>.
+3.  Vérifiez la configuration de Git qui a été mise en place pour vous.
+   <img alt="Git Config" src="../images/DataFactoryAzureGit.png" />
+4.  Lorsque vous créez un flux de travail, vous pouvez l'enregistrer dans votre branche. Cliquez sur <strong>+ Nouvelle branche</strong> dans le menu déroulant des branches pour créer une     branche de fonctionnalités. 
+    <img alt="Sauvegarder votre branche" src="../images/DataFactorySaveBranch.png" /> <strong>Enregistrement du flux dans votre branche.</strong>
+5.  Lorsque vous serez prêt à fusionner les changements de votre branche de fonctionnalités dans votre branche de collaboration (master), cliquez sur le menu déroulant des       branches et sélectionnez <strong>Créer la demande de tirage (pull request)</strong>. Cette action vous dirigera vers Azure DevOps Git, où vous pourrez créer des demandes de tirage,       procéder à des revues du code et fusionner les modifications dans votre branche de collaboration (master) dès que la demande aura été approuvée.
+6.  Après avoir fusionné les modifications dans la branche de collaboration (master), cliquez sur <strong>Publier</strong> pour publier les changements de votre code de la branche dans       Azure Data Factory. Si vous obtenez un message d'erreur au moment de la publication, communiquez avec l'équipe de soutien par l'intermédiaire du canal https://cae- 
+    eac.slack.com.</p>
+<h4 id="service-data-factory">Service Data Factory</h4>
+<p>Lorsque Data Factory n'est pas intégré au contrôle source, vos flux de travail sont stockés directement dans le service Data Factory. Vous ne pouvez pas enregistrer les changements partiels, vous pouvez seulement utiliser l'option <strong>Tout publier</strong>, ce qui écrase l'état actuel de Data Factory avec vos changements qui deviennent alors visibles à tous.</p>
+<p><img alt="Data Factory Workspace" src="../images/DataFactorySaveNoGit.png" /></p>
+<h3 id="ingestion-et-transformation-des-donnees-avec-adf">Ingestion et transformation des données avec ADF</h3>
+<ul>
+<li><a href="https://docs.microsoft.com/fr-ca/azure/data-factory/quickstart-create-data-factory-copy-data-tool#start-the-copy-data-tool">Assistant de copie de données</a></li>
+<li><a href="https://docs.microsoft.com/fr-ca/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity">Mappage de flux de données -- Processus ETC axé sur l'interface utilisateur graphique</a></li>
+</ul>
+<h3 id="exemple-comment-se-connecter-aux-donnees-de-john-hopkins">Exemple : Comment se connecter aux données de John Hopkins</h3>
+<ol>
+<li>Il y a un exemple de flux de travail qui montre la façon d'ingérer des données à partir de GitHub à l'aide d'un pipeline de Data Factory.</li>
+</ol>
+<p><img alt="John Hopkins Pipeline" src="../images/DataFactoryJohnhopkinspipeline.png" /></p>
+<ol>
+<li>Les données peuvent être filtrées depuis Data Factory.</li>
+</ol>
+<p><img alt="Transform Ingested Data" src="../images/transformData.png" /></p>
+<ol>
+<li>Il est aussi possible d'extraire des données de GitHub au moyen d'un code dans un notebook de Databricks.</li>
+</ol>
+<p><img alt="git pull" src="../images/DataFactoryGitPull.png" /></p>
+<h3 id="documentation-microsoft">Documentation Microsoft</h3>
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/fr-fr/azure/data-factory/introduction">Présentation d'Azure Data Factory --  Azure Data Factory</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/fr-fr/azure/data-factory/quickstart-create-data-factory-portal">Créer une fabrique de données Azure à l'aide de l'interface utilisateur d'Azure Data Factory --  Azure Data Factory</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/fr-ca/azure/data-factory/quickstart-create-data-factory-copy-data-tool">Copier des données avec l'outil d'Azure Copier des données --  Azure Data Factory</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/fr-fr/azure/data-factory/data-flow-create">Créer un flux de données de mappage --  Azure Data Factory</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/fr-fr/azure/data-factory/data-flow-expression-functions">Fonctions d'expression dans le flux de données de mappage --Azure Data Factory</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/fr-fr/azure/data-factory/concepts-data-flow-debug-mode">Mode de débogage du mappage de flux de données -- Azure Data Factory</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/fr-fr/azure/data-factory/concepts-data-flow-monitoring">Supervision visuelle du flux de données de mappage -- Azure Data Factory</a>
+Vidéo YouTube (en anglais seulement)</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=CZQOxPY7UuA">Ingest, prepare &amp; transform using Azure Databricks &amp; Data Factory Azure Friday</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=uS8xyqHql5I&amp;t=4s">Azure Friday Visually build pipelines for Azure Data Factory V2</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=LKenBZYZaLA">How to prepare data using wrangling data flows in Azure Data Factory Azure Friday</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=9tg5Rsoi5ic">How to develop and debug with Azure Data Factory Azure Friday</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=kcsRrWT0hjU">Building Data Flows in  Azure Data Factory</a></p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../DataBricks/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Précédent
+                </span>
+                Databricks
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../StorageExplorer/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Suivant
+                </span>
+                Storage Explorer
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 Statistique Canada
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/statcan/cae-eac" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://cae-eac.slack.com" target="_blank" rel="noopener" title="cae-eac.slack.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
