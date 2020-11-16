@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://statcan.github.io/cae-eac/en/VirtualMachines/">
+        <link rel="canonical" href="https://statcan.github.io/cae-eac/en/R-Shiny/">
       
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Virtual Machines (VMs) - Statistics Canada - Collaborative Analytics Environment (CAE)</title>
+        <title>R-Shiny from RStudio - Statistics Canada - Collaborative Analytics Environment (CAE)</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#virtual-machines" class="md-skip">
+        <a href="#r-shiny-from-rstudio" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Virtual Machines (VMs)
+              R-Shiny from RStudio
             
           </span>
         </div>
@@ -277,93 +277,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Virtual Machines (VMs)
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../VirtualMachines/" class="md-nav__link">
       Virtual Machines (VMs)
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#virtual-machines" class="md-nav__link">
-    Virtual Machines
-  </a>
-  
-    <nav class="md-nav" aria-label="Virtual Machines">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#find-your-devtest-lab" class="md-nav__link">
-    Find Your DevTest Lab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-your-virtual-machine" class="md-nav__link">
-    Create Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#find-your-virtual-machine" class="md-nav__link">
-    Find Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-your-virtual-machine" class="md-nav__link">
-    Start Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connect-to-your-virtual-machine" class="md-nav__link">
-    Connect To Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-your-virtual-machine" class="md-nav__link">
-    Stop Your Virtual Machine
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -425,51 +343,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#virtual-machines" class="md-nav__link">
-    Virtual Machines
+  <a href="#r-shiny-from-rstudio" class="md-nav__link">
+    R-Shiny from RStudio
   </a>
   
-    <nav class="md-nav" aria-label="Virtual Machines">
+    <nav class="md-nav" aria-label="R-Shiny from RStudio">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#find-your-devtest-lab" class="md-nav__link">
-    Find Your DevTest Lab
+  <a href="#getting-starting" class="md-nav__link">
+    Getting Starting
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-your-virtual-machine" class="md-nav__link">
-    Create Your Virtual Machine
+  <a href="#how-to-access" class="md-nav__link">
+    How to Access
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#find-your-virtual-machine" class="md-nav__link">
-    Find Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-your-virtual-machine" class="md-nav__link">
-    Start Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connect-to-your-virtual-machine" class="md-nav__link">
-    Connect To Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-your-virtual-machine" class="md-nav__link">
-    Stop Your Virtual Machine
+  <a href="#rshiny-app-example" class="md-nav__link">
+    RShiny app example
   </a>
   
 </li>
@@ -491,51 +388,69 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/en/VirtualMachines.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/en/R-Shiny.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Virtual Machines (VMs)</h1>
+                  <h1>R-Shiny from RStudio</h1>
                 
-                <h2 id="virtual-machines">Virtual Machines</h2>
-<h3 id="find-your-devtest-lab">Find Your DevTest Lab</h3>
+                <h2 id="r-shiny-from-rstudio">R-Shiny from RStudio</h2>
+<p>The document describes how to access to R-Shiny package from RStudio.</p>
+<h3 id="getting-starting">Getting Starting</h3>
+<p>Please send a <a href="https://cae-eac.slack.com">slack</a> message to the CEA team to enable RStudio on your databricks cluster to be able to use R-Shiny.</p>
+<p><strong>Warning</strong> :
+R-Shiny clusters are shut down <strong>everyday at 7pm</strong>. To save cost, please stop your R-Shiny clusters when you are not using them.</p>
+<h3 id="how-to-access">How to Access</h3>
 <ol>
-<li>In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.  <br />
-<img alt="Access DevTest Lab" src="../images/AccessDTL.png" />  </li>
-</ol>
-<h3 id="create-your-virtual-machine">Create Your Virtual Machine</h3>
-<p><strong>Note:</strong> In some instances a Virtual Machine will be pre-created for you and you will not have permission to create a virtual machine. See the <a href="../FAQ/">FAQ</a> if you need to make changes to your virtual machine.  </p>
-<ol>
-<li>From the DevTest Lab <strong>Overview</strong> page, click on the <strong>+ Add</strong> button.  </li>
-<li>Choose an appropriate base for your VM (e.g., Data Science Virtual Machine - Windows Server 2019). For more details on the software included with the Data Science Virtual Machines, please <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/tools-included">click here</a>.  </li>
-<li>Enter a name for your VM and a User name and password that you will use to login to the VM. Be sure to deselect the <em>Use a saved secret</em> and <em>Save as default password</em> checkboxes. Leave the rest as defaults and click on the <strong>Create</strong> button.  <br />
-<img alt="Enter New VM Details" src="../images/EnterNewVMDetails.png" />  </li>
-</ol>
-<h3 id="find-your-virtual-machine">Find Your Virtual Machine</h3>
-<ol>
-<li>From the DevTest Lab <strong>Overview</strong> page, scroll down until you see your VM under <strong>My virtual machines</strong>. Click on your VM to access its <strong>Overview</strong> page.  </li>
-</ol>
-<h3 id="start-your-virtual-machine">Start Your Virtual Machine</h3>
-<ol>
-<li>From the <strong>Overview</strong> page for your VM, click on the <strong>Start</strong> button.<br />
-<img alt="VM Start Button" src="../images/VMStartButton.png" />  </li>
-<li>It takes a few minutes for your VM to start up. Monitor its startup progress by selecting the Notifications icon at the top right of the window. <br />
-<img alt="VM Start Notification" src="../images/VMRestartNotification.png" />  </li>
-</ol>
-<h3 id="connect-to-your-virtual-machine">Connect To Your Virtual Machine</h3>
-<ol>
-<li>From the <strong>Overview</strong> page for your VM, click on the <strong>Browser connect</strong> button (if you do not see a <strong>Browser connect</strong> button you might have to click on the <strong>Connect</strong> button and then choose <strong>Bastion</strong> from the dropdown menu).<br />
-<img alt="VM Browser Connect Button" src="../images/VMBrowserConnect.png" />    </li>
+<li>From the Azure portal, Launch the Databricks workspace that was created for you.</li>
 <li>
-<p>Ensure the <em>Open in new window</em> checkbox is selected, enter the Username and Password that you used when you created your VM, and click on the <strong>Connect</strong> button. Your VM should open in a new browser tab.</p>
-<p><strong>Note</strong> : By default, the <strong>Ubuntu</strong> virtual machine opens in Terminal mode. You can access the GUI of your Ubuntu machine from a Windows machine using <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#x2go">X2Go</a>.</p>
+<p>From the Databricks workspace, click on <strong>Clusters</strong>.
+    <img alt="RShiny" src="../images/RShiny_En.png" />  </p>
+</li>
+<li>
+<p>From the available list of clusters, select the cluster with RStudio installed.
+    <img alt="RShiny02" src="../images/RShiny02_En.png" />  </p>
+<p><strong>Note:</strong> You must have the cluster running before you can access to RStudio. See the <a href="../DataBricks/DataBricks.md">Databricks section</a> for information on how to start a cluster.</p>
+</li>
+<li>
+<p>Select the <strong>Apps</strong> tab.
+    <img alt="RShiny03" src="../images/RShiny03_En.png" /></p>
+</li>
+<li>
+<p>Click on <strong>Set up RStudio</strong>.
+    <img alt="RShiny04" src="../images/RShiny04_En.png" /></p>
+</li>
+<li>
+<p>A <strong>one-time password</strong> is generated for you, click on the <strong>show</strong> to display and copy it.
+    <img alt="RShiny05" src="../images/RShiny05_En.png" /></p>
+</li>
+<li>
+<p>Click on <strong>Open RStudio</strong>.
+    <img alt="RShiny06" src="../images/RShiny06_En.png" /></p>
+</li>
+<li>
+<p>A new tab opens, enter the username and password provided (step 6) in the login form and sign in to RStudio.
+    <img alt="RShiny07" src="../images/RShiny07_En.png" /></p>
+</li>
+<li>
+<p>From the RStudio UI, enter the <strong>library(shiny)</strong> command in the console to import the Shiny package.
+    <img alt="RShiny08" src="../images/RShiny08_En.png" /></p>
 </li>
 </ol>
-<h3 id="stop-your-virtual-machine">Stop Your Virtual Machine</h3>
-<p>Virtual machines only incur costs while they are running. You should shut down your virtual machine when not in use to prevent unneccessary charges.
-1. From the <strong>Overview</strong> page for your VM, click on the <strong>Stop</strong> button.<br />
-<img alt="VM Start Button" src="../images/VMStopButton.png" />  </p>
+<h3 id="rshiny-app-example">RShiny app example</h3>
+<p>We will use the <strong>Hello Shiny</strong> example to explore the structure of a Shiny app.</p>
+<ol>
+<li>
+<p>Launch the app from your R session by running:</p>
+<p>library(shiny)</p>
+<p>runExample("01_hello")</p>
+</li>
+<li>
+<p>Your app should match the image below. 
+    <img alt="RShiny09" src="../images/RShiny09_En.PNG" /></p>
+</li>
+</ol>
                 
               
               
@@ -550,41 +465,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../StorageExplorer/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Storage Explorer
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../FAQ/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                FAQ
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

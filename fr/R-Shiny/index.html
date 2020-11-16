@@ -1,16 +1,16 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="fr" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="User guide - Collaborative Analytics Environment (CAE)">
+        <meta name="description" content="Guide de l'utilisateur - Environnement d’analyse collaboratif (EAC)">
       
       
       
-        <link rel="canonical" href="https://statcan.github.io/cae-eac/en/VirtualMachines/">
+        <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/R-Shiny/">
       
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Virtual Machines (VMs) - Statistics Canada - Collaborative Analytics Environment (CAE)</title>
+        <title>R-Shiny à partir de RStudio - Statistique Canada - Environnement d’analyse collaboratif (EAC)</title>
       
     
     
@@ -65,8 +65,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#virtual-machines" class="md-skip">
-          Skip to content
+        <a href="#r-shiny-a-partir-de-rstudio" class="md-skip">
+          Aller au contenu
         </a>
       
     </div>
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://statcan.github.io/cae-eac/en/" title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-header-nav__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)">
+    <a href="https://statcan.github.io/cae-eac/fr/" title="Statistique Canada - Environnement d’analyse collaboratif (EAC)" class="md-header-nav__button md-logo" aria-label="Statistique Canada - Environnement d’analyse collaboratif (EAC)">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -91,11 +91,11 @@
       
         <div class="md-header-nav__ellipsis">
           <span class="md-header-nav__topic md-ellipsis">
-            Statistics Canada - Collaborative Analytics Environment (CAE)
+            Statistique Canada - Environnement d’analyse collaboratif (EAC)
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Virtual Machines (VMs)
+              R-Shiny à partir de RStudio
             
           </span>
         </div>
@@ -110,7 +110,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -135,7 +135,7 @@
     
       <div class="md-header-nav__source">
         
-<a href="https://github.com/statcan/cae-eac/" title="Go to repository" class="md-source">
+<a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
@@ -165,18 +165,18 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://statcan.github.io/cae-eac/en/" title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-nav__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)">
+    <a href="https://statcan.github.io/cae-eac/fr/" title="Statistique Canada - Environnement d’analyse collaboratif (EAC)" class="md-nav__button md-logo" aria-label="Statistique Canada - Environnement d’analyse collaboratif (EAC)">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    Statistics Canada - Collaborative Analytics Environment (CAE)
+    Statistique Canada - Environnement d’analyse collaboratif (EAC)
   </label>
   
     <div class="md-nav__source">
       
-<a href="https://github.com/statcan/cae-eac/" title="Go to repository" class="md-source">
+<a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
@@ -196,7 +196,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      Getting Started
+      En avant!
     </a>
   </li>
 
@@ -207,8 +207,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../RequestAccess/" class="md-nav__link">
-      Request Access
+    <a href="../Access/" class="md-nav__link">
+      Demande d'accès
     </a>
   </li>
 
@@ -220,7 +220,7 @@
 
   <li class="md-nav__item">
     <a href="../Login/" class="md-nav__link">
-      Login
+      Se connecter
     </a>
   </li>
 
@@ -277,93 +277,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Virtual Machines (VMs)
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Virtual Machines (VMs)
+  <li class="md-nav__item">
+    <a href="../VirtualMachines/" class="md-nav__link">
+      Machines Virtuelle
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#virtual-machines" class="md-nav__link">
-    Virtual Machines
-  </a>
-  
-    <nav class="md-nav" aria-label="Virtual Machines">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#find-your-devtest-lab" class="md-nav__link">
-    Find Your DevTest Lab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-your-virtual-machine" class="md-nav__link">
-    Create Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#find-your-virtual-machine" class="md-nav__link">
-    Find Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-your-virtual-machine" class="md-nav__link">
-    Start Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connect-to-your-virtual-machine" class="md-nav__link">
-    Connect To Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-your-virtual-machine" class="md-nav__link">
-    Stop Your Virtual Machine
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -385,8 +303,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../help/" class="md-nav__link">
-      Help/Contact
+    <a href="../Aide/" class="md-nav__link">
+      Aide/Contact
     </a>
   </li>
 
@@ -397,8 +315,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Language/" class="md-nav__link">
-      Language
+    <a href="../Langue/" class="md-nav__link">
+      Langue
     </a>
   </li>
 
@@ -414,62 +332,41 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Table des matières
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#virtual-machines" class="md-nav__link">
-    Virtual Machines
+  <a href="#r-shiny-a-partir-de-rstudio" class="md-nav__link">
+    R-Shiny à partir de RStudio
   </a>
   
-    <nav class="md-nav" aria-label="Virtual Machines">
+    <nav class="md-nav" aria-label="R-Shiny à partir de RStudio">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#find-your-devtest-lab" class="md-nav__link">
-    Find Your DevTest Lab
+  <a href="#commencer" class="md-nav__link">
+    Commencer
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-your-virtual-machine" class="md-nav__link">
-    Create Your Virtual Machine
+  <a href="#acces-a-r-shiny" class="md-nav__link">
+    Accès à R-Shiny
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#find-your-virtual-machine" class="md-nav__link">
-    Find Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-your-virtual-machine" class="md-nav__link">
-    Start Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connect-to-your-virtual-machine" class="md-nav__link">
-    Connect To Your Virtual Machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-your-virtual-machine" class="md-nav__link">
-    Stop Your Virtual Machine
+  <a href="#exemple-dune-application-r-shiny" class="md-nav__link">
+    Exemple d'une application R-Shiny
   </a>
   
 </li>
@@ -491,51 +388,69 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/en/VirtualMachines.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/fr/R-Shiny.md" title="Editer cette page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Virtual Machines (VMs)</h1>
+                  <h1>R-Shiny à partir de RStudio</h1>
                 
-                <h2 id="virtual-machines">Virtual Machines</h2>
-<h3 id="find-your-devtest-lab">Find Your DevTest Lab</h3>
+                <h2 id="r-shiny-a-partir-de-rstudio">R-Shiny à partir de RStudio</h2>
+<p>Le document décrit comment accéder à R-Shiny à partir de l'application Rstudio.</p>
+<h3 id="commencer">Commencer</h3>
+<p>Veuillez s'il vous plaît envoyer un message <a href="https://cae-eac.slack.com">Slack</a> à l'équipe CAE pour activer RStudio dans le cluster de databricks afin d'utiliser R-Shiny.</p>
+<p><strong>Avertissement</strong> : 
+Les clusters R-Shiny s'eteignent <strong>tous les jours à 19h</strong>. Pour faire des économies, veuillez s'il vous plaît arrêter vos clusters R-Shiny lorsque vous ne les utilisez pas.</p>
+<h3 id="acces-a-r-shiny">Accès à R-Shiny</h3>
 <ol>
-<li>In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.  <br />
-<img alt="Access DevTest Lab" src="../images/AccessDTL.png" />  </li>
-</ol>
-<h3 id="create-your-virtual-machine">Create Your Virtual Machine</h3>
-<p><strong>Note:</strong> In some instances a Virtual Machine will be pre-created for you and you will not have permission to create a virtual machine. See the <a href="../FAQ/">FAQ</a> if you need to make changes to your virtual machine.  </p>
-<ol>
-<li>From the DevTest Lab <strong>Overview</strong> page, click on the <strong>+ Add</strong> button.  </li>
-<li>Choose an appropriate base for your VM (e.g., Data Science Virtual Machine - Windows Server 2019). For more details on the software included with the Data Science Virtual Machines, please <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/tools-included">click here</a>.  </li>
-<li>Enter a name for your VM and a User name and password that you will use to login to the VM. Be sure to deselect the <em>Use a saved secret</em> and <em>Save as default password</em> checkboxes. Leave the rest as defaults and click on the <strong>Create</strong> button.  <br />
-<img alt="Enter New VM Details" src="../images/EnterNewVMDetails.png" />  </li>
-</ol>
-<h3 id="find-your-virtual-machine">Find Your Virtual Machine</h3>
-<ol>
-<li>From the DevTest Lab <strong>Overview</strong> page, scroll down until you see your VM under <strong>My virtual machines</strong>. Click on your VM to access its <strong>Overview</strong> page.  </li>
-</ol>
-<h3 id="start-your-virtual-machine">Start Your Virtual Machine</h3>
-<ol>
-<li>From the <strong>Overview</strong> page for your VM, click on the <strong>Start</strong> button.<br />
-<img alt="VM Start Button" src="../images/VMStartButton.png" />  </li>
-<li>It takes a few minutes for your VM to start up. Monitor its startup progress by selecting the Notifications icon at the top right of the window. <br />
-<img alt="VM Start Notification" src="../images/VMRestartNotification.png" />  </li>
-</ol>
-<h3 id="connect-to-your-virtual-machine">Connect To Your Virtual Machine</h3>
-<ol>
-<li>From the <strong>Overview</strong> page for your VM, click on the <strong>Browser connect</strong> button (if you do not see a <strong>Browser connect</strong> button you might have to click on the <strong>Connect</strong> button and then choose <strong>Bastion</strong> from the dropdown menu).<br />
-<img alt="VM Browser Connect Button" src="../images/VMBrowserConnect.png" />    </li>
+<li>À partir du portail Azure, lancer l'espace de travail Databricks créé pour vous.</li>
 <li>
-<p>Ensure the <em>Open in new window</em> checkbox is selected, enter the Username and Password that you used when you created your VM, and click on the <strong>Connect</strong> button. Your VM should open in a new browser tab.</p>
-<p><strong>Note</strong> : By default, the <strong>Ubuntu</strong> virtual machine opens in Terminal mode. You can access the GUI of your Ubuntu machine from a Windows machine using <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#x2go">X2Go</a>.</p>
+<p>A partir de l'espace de travail Databricks, cliquez sur <strong>Clusters</strong>.
+    <img alt="RShiny" src="../images/RShiny_En.png" /> </p>
+</li>
+<li>
+<p>À partir de la liste de clusters disponibles, selectionnez le cluster sur lequel RStudio a été installé.
+    <img alt="RShiny02" src="../images/RShiny02_En.png" /> </p>
+<p><strong>Note:</strong> Le cluster doit être actif pour pouvoir accéder à l'application RStudio. Consulter la <a href="../DataBricks/DataBricks.md">section Databricks</a> pour plus de détails sur comment démarrer un cluster.</p>
+</li>
+<li>
+<p>Selectionnez l'onglet <strong>Apps</strong>.
+    <img alt="RShiny03" src="../images/RShiny03_En.png" /> </p>
+</li>
+<li>
+<p>Cliquez sur <strong>Set up RStudio</strong>.
+    <img alt="RShiny04" src="../images/RShiny04_En.png" />  </p>
+</li>
+<li>
+<p>Un <strong>mot de passe à usage unique</strong> est généré pour vous, cliquez sur <strong>show</strong> pour l'afficher et le copier.
+    <img alt="RShiny05" src="../images/RShiny05_En.png" /> </p>
+</li>
+<li>
+<p>Cliquez sur <strong>Open RStudio</strong>.
+    <img alt="RShiny06" src="../images/RShiny06_En.png" /> </p>
+</li>
+<li>
+<p>Une nouvelle fenêtre s'ouvre, entrez le nom d'utilisateur et le mot de passe fournis (Étape 6) dans le formulaire de connexion afin de démarrer RStudio.</p>
+<p><img alt="RShiny07" src="../images/RShiny07_En.png" /> </p>
+</li>
+<li>
+<p>À partir de l'interface RStudio, entrez la commande <strong>library(shiny)</strong> dans la console afin d'importer la librarie Shiny.
+    <img alt="RShiny08" src="../images/RShiny08_En.png" /> </p>
 </li>
 </ol>
-<h3 id="stop-your-virtual-machine">Stop Your Virtual Machine</h3>
-<p>Virtual machines only incur costs while they are running. You should shut down your virtual machine when not in use to prevent unneccessary charges.
-1. From the <strong>Overview</strong> page for your VM, click on the <strong>Stop</strong> button.<br />
-<img alt="VM Start Button" src="../images/VMStopButton.png" />  </p>
+<h3 id="exemple-dune-application-r-shiny">Exemple d'une application R-Shiny</h3>
+<p>Nous utiliserons l'exemple <strong>Hello Shiny</strong> pour explorer la structure d'une application Shiny.</p>
+<ol>
+<li>
+<p>Lancer l'application à partir de votre session RStudio en entrant les commandes:</p>
+<p>library(shiny)</p>
+<p>runExample("01_hello")</p>
+</li>
+<li>
+<p>Votre application devrait correspondre à l'image ci-dessous. 
+    <img alt="RShiny09" src="../images/RShiny09_En.PNG" /> </p>
+</li>
+</ol>
                 
               
               
@@ -551,47 +466,12 @@
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../StorageExplorer/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Storage Explorer
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../FAQ/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                FAQ
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2020 Statistics Canada
+            Copyright &copy; 2020 Statistique Canada
           </div>
         
         Made with
@@ -629,7 +509,7 @@
     </div>
     
       <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
