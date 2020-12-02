@@ -16,7 +16,7 @@ workspace = Workspace(subscription_id, resource_group, workspace_name)
 
 databricks_compute = DatabricksCompute(workspace=workspace, name='<name of Databricks compute you gave>')
 
-# The python_script_name and source_directory should be updated accorded to your settings
+# The python_script_name and source_directory should be updated according to your settings
 python_script_name = "test.py"  
 source_directory = "./Example"  
 
