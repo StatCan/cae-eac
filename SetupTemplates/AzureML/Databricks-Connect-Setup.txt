@@ -1,0 +1,16 @@
+apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+sudo apt-get update
+sudo apt install python3.7
+
+sudo apt-get install python3-pip
+
+python3.7 -m pip install ipykernel
+python3.7 -m ipykernel install --user
+
+python3.7 -m pip uninstall pyspark
+python3.7 -m pip install -U databricks-connect==7.1.*
+
+databricks-connect configure
