@@ -17,7 +17,7 @@ workspace = Workspace(subscription_id, resource_group, workspace_name)
 databricks_compute = DatabricksCompute(workspace=workspace, name='<name of Databricks compute you gave>')
 
 # The python_script_name and source_directory should be updated according to your settings
-python_script_name = "test.py"  
+python_script_name = "Test.py"  
 source_directory = "./Example"  
 
 dbPythonInLocalMachineStep = DatabricksStep(
@@ -32,5 +32,5 @@ dbPythonInLocalMachineStep = DatabricksStep(
 
 steps = [dbPythonInLocalMachineStep]
 pipeline = Pipeline(workspace=workspace, steps=steps)
-pipeline_run = Experiment(workspace, 'DB_Python_Local_demoFriday2').submit(pipeline)
+pipeline_run = Experiment(workspace, 'DB_Python_Local_demo').submit(pipeline)
 pipeline_run.wait_for_completion()
