@@ -1,4 +1,8 @@
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
-df = spark.sql('select * from test')
+
+testData = spark.read.format('csv').options(header='true', inferSchema='true').load('/mnt/public-data/incoming/1test.txt')
+testData.createOrReplaceTempView("1TestTable")
+
+df = spark.sql('select * from 1TestTable')
 df.show(5)
