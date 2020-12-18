@@ -8,17 +8,22 @@ from azureml.pipeline.steps import DatabricksStep
 # Check core SDK version number
 print("SDK version:", azureml.core.VERSION)
 
+# This information is available in the properties for the attached compute
 subscription_id = '<sub>'
 resource_group = '<rg>'
 workspace_name = '<ws>'
 
 workspace = Workspace(subscription_id, resource_group, workspace_name)
 
-databricks_compute = DatabricksCompute(workspace=workspace, name='<name of Databricks compute you gave>')
+# The attached compute name can be found under Compute > Attached compute
+databricks_compute = DatabricksCompute(workspace=workspace, name='<Databricks attached compute name>')
 
 # The python_script_name and source_directory should be updated according to your settings
 python_script_name = "Test.py"  
 source_directory = "./Example"  
+
+# The Databricks cluster ID is found under Cluster > Advanced Options > Tags in your Databricks workspace.
+# Please contact the support team via https://cae-eac.slack.com if you don't have access to a Databricks workspace.
 
 dbPythonInLocalMachineStep = DatabricksStep(
     name="DBPythonInLocalMachine",
