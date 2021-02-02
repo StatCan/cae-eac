@@ -1,3 +1,33 @@
+<#
+.SYNOPSIS
+    This script is used to mount a fileshare in the CEA environment.
+
+.DESCRIPTION
+    The Azure file share must be pre-configured by the admin team with instructions located here: https://gcdocs.gc.ca/statcan/llisapi.dll/link/10803193
+
+.PARAMETER saname
+    The parameter DemoParam1 is storage account where the file share is found
+
+.PARAMETER fsname
+    The parameter DemoParam2 is the file share.
+
+.EXAMPLE
+    The example below does works for the PPE File Share that was previously created.
+    PS C:\> ConnectFileShare  statppeintfi ppe 
+
+.EXAMPLE
+    Another example
+
+.NOTES
+    Author: Michelle K
+    Last Edit: 2021-01
+    Version 1.0 - initial release of script to mount file share in CAE environment
+
+
+#>
+
+
+
 [CmdletBinding()]
 param
 (
@@ -18,13 +48,15 @@ $module = Get-Module $ModuleName -ListAvailable -ErrorAction SilentlyContinue
 $module
 if (!$module) {
     Write-Host "Installing module $ModuleName ..."
-    #Install-Module -Name $ModuleName -Force -Scope CurrentUser
+    Install-Module -Name $ModuleName -Force -Scope CurrentUser
     Write-Host "Module installed"
 }
 
 #connect to Azure
 if ($null -eq $login) {
+    Write-Host "Connect to Azure ($login) ..."
     $login = Connect-AzAccount
+    Write-Host "Connect to Azure Done ($login) ..."
 }
 
 Select-AzSubscription vdl
