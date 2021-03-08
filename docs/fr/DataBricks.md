@@ -107,7 +107,14 @@ Les carnets prennent également en charge quelques commandes spéciales auxilia
 
 4.  ![Where to start a Databricks cluster](images/DataBricksStartCluter.png)
 
-
+## Installation de bibliothèques
+### Sur le cluster Databricks
+Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance installe ces bibliothèques pour vous.
+### Carnet
+```python
+dbutils.library.installPyPI ("pypipackage", version = "version", repo = "repo", extras = "extras")
+dbutils.library.restartPython () # Supprime l'état Python, mais certaines bibliothèques peuvent ne pas fonctionner sans appeler cette fonction
+```
 ## Documentation Microsoft
 
 -   [Accéder à Databricks pour la première fois](https://docs.microsoft.com/fr-ca/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal)

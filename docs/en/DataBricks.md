@@ -130,6 +130,15 @@ The following are the steps for installing and testing databricks connect on you
 5. The last setup step requires changing an enviroment variable `SPARK_HOME` to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark` then restart your VM (If you do not know how to change environment variables please ask for help).
 6. To test if your configuration setup works enter databricks-connect test in command prompt. If the cluster you are using is not running when you start your test you will receive warning messages until it has started. This can take time.
 
+## Installing Libaries 
+### On Databricks Cluster
+Please contact the [slack](https://cae-eac.slack.com) channel to have the support team install these libraries for you.
+### Notebook 
+```python
+dbutils.library.installPyPI("pypipackage", version="version", repo="repo", extras="extras")
+dbutils.library.restartPython() # Removes Python state, but some libraries might not work without calling this function
+```
+
 ## Microsoft Documentation  
 - [Databricks-Connects](https://docs.databricks.com/dev-tools/databricks-connect.html) 
 - [First Access to Databricks](https://docs.microsoft.com/en-us/azure/azure-databricks/quickstart-create-databricks-workspace-portal#run-a-spark-sql-job)  
