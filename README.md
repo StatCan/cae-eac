@@ -14,4 +14,3 @@ mkdocs-en.yml  |  English
 mkdocs-fr.yml  |  Frncch 
 docs  |  Documents
 
-
