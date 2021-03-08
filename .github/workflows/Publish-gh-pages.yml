@@ -3,7 +3,7 @@
 name: BuildGhPagesFromPublish
 on:
   push:
-    branches: [ gh-pages-publish ]
+    branches: [gh-pages-publish]
 jobs:
   build:
     runs-on: ubuntu-latest
