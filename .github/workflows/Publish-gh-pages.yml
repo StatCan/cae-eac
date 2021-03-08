@@ -1,6 +1,6 @@
 # This is a workflow copied from AAW that created ghpages
 
-name: BuildDraft
+name: BuildGhPagesFromPublish
 on:
   push:
     branches: [ gh-pages-publish ]
@@ -30,4 +30,3 @@ jobs:
         publish_dir: ./site
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-          echo test, and deploy your project.
