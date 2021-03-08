@@ -47,7 +47,7 @@ Pour configurer la langue d'affichage dans une machine virtuelle Windows, voici 
 <!-- Pour configurer la langue d'affichage d'une machine virtuelle Ubuntu, voir [Paramètres de langue](https://help.ubuntu.com/stable/ubuntu-help/prefs-language-install.html.fr). -->
 Si vous utilisez l'application **X2GO** pour accéder à l'interface graphique de votre machine Ubuntu, notez que par défaut la session est disponible en anglais uniquement. Il sera donc necessaire d'installer des modules supplementaires de langue manuellement. 
 
-## Apprentissage automatique
+## Azure Apprentissage automatique
 Pour modifier les paramètres de langue dans l’espace de travail d'apprentissage automatique Microsoft Azure, voici les étapes à suivre:
 
 1. Cliquez sur le menu **Paramètres** dans l'en-tête de la page principale.
@@ -58,6 +58,17 @@ Pour modifier les paramètres de langue dans l’espace de travail d'apprentissa
 
 ![Machine Learning](images/LanguageSettings/MachineLearning_Fr.png)
 
+###  Azure Apprentissage automatique - Jupyter Lab
+1. Exécutez dans le terminal d'instance de calcul Azure ML: 
+```sh
+pip install jupyterlab==3
+```
+2. Redémarrez l'instance de calcul
+3. Exécutez dans le terminal d'instance de calcul Azure ML: 
+```sh
+pip install git+https://github.com/StatCan/jupyterlab-language-pack-fr_FR
+```
+4. Dans JupyterLab, sélectionnez Paramètres - Langue - Français
 
 ## Slack
 

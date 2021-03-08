@@ -53,7 +53,7 @@ To configure the display language for a Windows virtual machine:
 If you are using **X2GO** to access the GUI of your Ubuntu machine, you might need to manually install additional language packages because the default session is available only in English.
 
 
-## Machine Learning
+## Azure Machine Learning
 To change the language settings in the Microsoft Azure Machine Learning workspace:
 
 1. Click the **Settings** menu in the global page header.
@@ -63,6 +63,19 @@ To change the language settings in the Microsoft Azure Machine Learning workspac
 3. Click **Apply** to update your language and regional format settings.
 
 ![Machine Learning](images/LanguageSettings/MachineLearning_En.png) 
+
+###  Azure Machine Learning - Jupyter Lab
+1. Run in Azure ML compute instance terminal: 
+```sh
+pip install jupyterlab==3
+```
+2. Restart compute instance
+3. Run in Azure ML compute instance terminal: 
+```sh
+pip install git+https://github.com/StatCan/jupyterlab-language-pack-fr_FR
+```
+4. In JupyterLab, switch Settings - Language - French
+
 
 
 ## Slack
