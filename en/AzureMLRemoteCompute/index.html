@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://statcan.github.io/cae-eac/en/AzureML/">
+        <link rel="canonical" href="https://statcan.github.io/cae-eac/en/AzureMLRemoteCompute/">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
     
     
       
-        <title>Azure Machine Learning - Statistics Canada - Collaborative Analytics Environment (CAE)</title>
+        <title>AzureMLRemoteCompute - Statistics Canada - Collaborative Analytics Environment (CAE)</title>
       
     
     
@@ -65,11 +65,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#azure-machine-learning" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Azure Machine Learning
+              AzureMLRemoteCompute
             
           </span>
         </div>
@@ -340,153 +335,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Azure Machine Learning
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../AzureML/" class="md-nav__link">
         Azure Machine Learning
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#azure-machine-learning" class="md-nav__link">
-    Azure Machine Learning
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Machine Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#accessing-azure-machine-learning" class="md-nav__link">
-    Accessing Azure Machine Learning
-  </a>
-  
-    <nav class="md-nav" aria-label="Accessing Azure Machine Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dashboard" class="md-nav__link">
-    Dashboard
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#azure-portal" class="md-nav__link">
-    Azure Portal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-learning-url" class="md-nav__link">
-    Machine Learning URL
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-azure-ml-notebook-standalone" class="md-nav__link">
-    Using Azure ML Notebook standalone
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Azure ML Notebook standalone">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#steps" class="md-nav__link">
-    Steps
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-databricks-connect-as-remote-compute" class="md-nav__link">
-    Using Databricks Connect as Remote Compute
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Databricks Connect as Remote Compute">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requirements_1" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#steps_1" class="md-nav__link">
-    Steps
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-display-language" class="md-nav__link">
-    Change Display Language
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -543,251 +396,55 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#azure-machine-learning" class="md-nav__link">
-    Azure Machine Learning
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Machine Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#accessing-azure-machine-learning" class="md-nav__link">
-    Accessing Azure Machine Learning
-  </a>
-  
-    <nav class="md-nav" aria-label="Accessing Azure Machine Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dashboard" class="md-nav__link">
-    Dashboard
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#azure-portal" class="md-nav__link">
-    Azure Portal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-learning-url" class="md-nav__link">
-    Machine Learning URL
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-azure-ml-notebook-standalone" class="md-nav__link">
-    Using Azure ML Notebook standalone
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Azure ML Notebook standalone">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#steps" class="md-nav__link">
-    Steps
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-databricks-connect-as-remote-compute" class="md-nav__link">
-    Using Databricks Connect as Remote Compute
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Databricks Connect as Remote Compute">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requirements_1" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#steps_1" class="md-nav__link">
-    Steps
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-display-language" class="md-nav__link">
-    Change Display Language
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/en/AzureML.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/statcan/cae-eac/edit/master/docs/en/AzureMLRemoteCompute.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Azure Machine Learning</h1>
+                  <h1>AzureMLRemoteCompute</h1>
                 
-                <!-- _pour le français [cliquez ici](../fr/AzureML.md)_   -->
-<!-- test  -->
-<h2 id="azure-machine-learning">Azure Machine Learning</h2>
-<h3 id="accessing-azure-machine-learning">Accessing Azure Machine Learning</h3>
-<h4 id="dashboard">Dashboard</h4>
-<p>See the <a href="../Dashboards/">Dashboard section</a> of this documentation from more information.<br />
-1. Click on the <strong>Dashboard</strong> menu from the Azure Portal. Your default view might already be set to dashboard.  </p>
-<p><img alt="Access Dashboards" src="../images/AccessDashboard.png" /></p>
-<ol>
-<li>Under <strong>Machine Learning</strong> , select the Machine Learning workspace that was created for you. If the workspace you want to open isn't listed, click on <strong>See more</strong> to access the complete list.</li>
-</ol>
-<p><img alt="AzureMl Dashboard" src="../images/AzureMLDashboard.png" /></p>
-<h4 id="azure-portal">Azure Portal</h4>
-<ol>
-<li>In the Azure Portal Search box, search for <strong>Machine Learning</strong>. </li>
-</ol>
-<p><img alt="AzureML_01" src="../images/AzureML_01.png" />  </p>
-<ol>
-<li>You should see the list of the Machine Learning workspaces you were given permission to access. Select the <strong>Machine Learning workspace</strong> you want to access.</li>
-</ol>
-<p><img alt="AzureML_02" src="../images/AzureML_02.png" /> </p>
-<h4 id="machine-learning-url">Machine Learning URL</h4>
-<ol>
-<li>Navigate to https://ml.azure.com/, sign in with your cloud account credentials, and select <strong>vdl</strong> subscription and the <strong>Machine Learning workspace</strong> that was created for you.  </li>
-</ol>
-<p><img alt="AzureML URL" src="../images/AzureMlURL.PNG" /> </p>
-<h4 id="getting-started">Getting Started</h4>
-<ol>
-<li>On the machine learning <strong>Overview</strong> page, click <strong>Launch studio</strong>.</li>
-</ol>
-<p><img alt="AzureML_03" src="../images/AzureML_03.png" />  </p>
-<ol>
-<li>Use the drop-down to select <strong>vdl</strong> subscription and the <strong>Machine Learning workspace</strong> you want to access, then click <strong>Get started</strong>.</li>
-</ol>
-<p><img alt="AzureML_04" src="../images/AzureML_04.png" /> </p>
-<ol>
-<li>Once inside your Machine Learning workspace, you can train, deploy and manage machine learning models, use AutoML, and run pipelines. See <a href="https://docs.microsoft.com/en-us/azure/machine-learning/">Getting started quickly</a> for more information.</li>
-</ol>
-<p><img alt="AzureML_05" src="../images/AzureML_05.png" />  </p>
-<h3 id="using-azure-ml-notebook-standalone">Using Azure ML Notebook standalone</h3>
-<h4 id="requirements">Requirements</h4>
-<p>•   A compute instance in Azure ML. You should see it under <strong>Compute --&gt; Compute instances</strong>. 
-</br> <strong>Note</strong>: If a compute instance has not been created for you, please contact the support team via <a href="https://cae-eac.slack.com">Slack</a>.</p>
-<h4 id="steps">Steps</h4>
-<ol>
-<li>Under <strong>Notebooks</strong>, create a new notebook in your user directory. You can then enter the code to execute.</li>
-</ol>
-<p><img alt="AzureML_007" src="../images/CreateFile.png" />  </p>
-<ol>
-<li>Select the <strong>Compute instance</strong> assigned to you.</li>
-</ol>
-<p><img alt="AzureML_009" src="../images/SelectInstanceCompute.png" /> </p>
-<ol>
-<li>Click the <strong>run all cells button</strong> to execute your code. </li>
-</ol>
-<p><img alt="AzureML_1007" src="../images/RunCells.png" /></p>
-<h3 id="using-databricks-connect-as-remote-compute">Using Databricks Connect as Remote Compute</h3>
-<p><strong>Disclaimer:</strong> Please note that the Databricks connect configuration shown below is under revision and will likely change in the near future.</p>
-<h4 id="requirements_1">Requirements</h4>
-<p>•   A compute instance in Azure ML. You should see it under <strong>Compute --&gt; Compute instances</strong>. 
-</br> <strong>Note</strong>: If a compute instance has not been created for you, please contact the support team via <a href="https://cae-eac.slack.com">Slack</a>.</p>
-<h4 id="steps_1">Steps</h4>
-<ol>
-<li>Under <strong>Notebooks</strong>, open <strong>Terminal</strong>.</li>
-</ol>
-<p><img alt="AzureML_11" src="../images/AzureML_11.png" />  </p>
-<ol>
-<li>
-<p>Select your <strong>Compute instance</strong> from the drop-down next to <strong>Compute</strong>. </p>
-</li>
-<li>
-<p>Execute the code from <a href="https://github.com/StatCan/cae-eac/blob/master/Examples/AzureML/Databricks-Connect-Setup.txt">Databricks Connect Setup</a> in the terminal, while following the prompts to continue as needed. This code installs Python 3.7 and sets up a new kernel for Azure ML notebooks.</p>
-<p>When prompted, enter the following values to configure Databricks connect:</p>
-<p><strong>Host:</strong> the <strong>URL</strong> from the <strong>Overview</strong> page for your Databricks workspace.
-    <img alt="DatabrickConnectURL" src="../images/DatabrickConnectURL.PNG" /> </p>
-<p><strong>Token:</strong> the <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token">personal access token</a> generated in your Databricks Workspace User Settings.</p>
-<p><strong>Cluster ID:</strong> the value found under <strong>Cluster --&gt; Advanced Options --&gt; Tags</strong> in your Databricks workspace.
- <img alt="DatabrickConnectClusterID" src="../images/DatabrickConnectClusterID.PNG" /> </p>
-<p><strong>Org ID:</strong> the part of the Databricks URL found after <strong>.net/?o=</strong> 
-  <img alt="DatabrickConnectOrgID" src="../images/DatabrickConnectOrgID.PNG" /> </p>
-<p><strong>Port:</strong> keep the existing value</p>
-</li>
-<li>
-<p>Execute the following code in terminal to test the connectivity to Azure Databricks.
-  <code>databricks-connect test</code></p>
-</li>
-<li>
-<p>Create a new notebook with Azure ML and select the <strong>Python 3 kernel</strong>. It should now display Python 3.7.9</p>
-</li>
-</ol>
-<p><img alt="AzureML_13" src="../images/AzureML_13.png" />  </p>
-<ol>
-<li>Databricks connect should be setup now! Try the <a href="https://github.com/StatCan/cae-eac/blob/master/Examples/AzureML/Databricks-Connect-Example.txt">Databricks connect example code</a> in a notebook, replacing <strong>public-data/incoming/1test.txt</strong> with the path to a file in your data lake container.</li>
-</ol>
-<h2 id="change-display-language">Change Display Language</h2>
-<p>See <a href="images/Language.png">Language</a>  page to find out how to change the display language.</p>
+                <p>&lt;!--## Using Attach Databricks as Remote Compute</p>
+<p>&lt;!--### Requirements</p>
+<p>&lt;!--•   An attached compute in Azure ML. You should see it under <strong>Compute &gt; Attached compute</strong>.</p>
+<p>&lt;!--•   A compute instance in Azure ML. You should see it under <strong>Compute &gt; Compute instances</strong>. </p>
+<p>&lt;!--<strong>Note</strong>: If a compute instance or/and attached compute have not been created for you, please contact the support team via <a href="https://cae-eac.slack.com">Slack</a>.</p>
+<p>&lt;!--### Steps</p>
+<p>&lt;!--1.  Under <strong>Notebooks</strong>, create a new folder in your user directory.</p>
+<p>&lt;!--<img alt="AzureML_06" src="../images/AzureML_06.png" />  </p>
+<p>&lt;!--2.  Create a sample <strong>.py</strong> file in the newly created folder, and select <strong>Text</strong> as the <strong>File type</strong>. </p>
+<p>&lt;!--<img alt="AzureML_07" src="../images/AzureML_07.png" />  </p>
+<p>&lt;!--This file should contain your Python code to execute with Databricks. 
+&lt;!--<img alt="AzureML_08" src="../images/AzureML_08.png" />  </p>
+<p>&lt;!--3.  In your user root directory, create a new <strong>notebook</strong>.</p>
+<p>&lt;!--<img alt="AzureML_09" src="../images/AzureML_09.png" />  </p>
+<p>&lt;!--4.  Copy and paste the <a href="https://github.com/StatCan/cae-eac/blob/master/Examples/AzureML/Attach-Databricks-Notebook.txt">Attach-Databricks-Notebook</a> code in the new notebook. Update the code with the missing values. It should run as validated with Azure ML SDK version 1.18.0.</p>
+<p>&lt;!--<img alt="AttachNotebook" src="../images/AttachNotebook.png" />  </p>
+<p>&lt;!--5.  You can see the results with the following steps:</p>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;!--</span><span class="n">a</span><span class="p">.</span>  <span class="n">Click</span> <span class="n">on</span> <span class="n">the</span> <span class="o">**</span><span class="n">PipelineRun</span> <span class="n">link</span><span class="o">**</span><span class="p">.</span>
+
+<span class="o">!</span><span class="p">[</span><span class="n">PipelinRun</span> <span class="n">Link</span><span class="p">](</span><span class="n">images</span><span class="o">/</span><span class="n">AttachDatabricks</span><span class="p">.</span><span class="n">png</span><span class="p">)</span>
+
+<span class="n">b</span><span class="p">.</span>  <span class="n">Click</span> <span class="n">on</span> <span class="n">the</span> <span class="o">**</span><span class="n">Databricks</span> <span class="n">run</span> <span class="n">page</span> <span class="n">link</span><span class="o">**</span> <span class="n">under</span> <span class="o">**</span><span class="n">Outputs</span> <span class="o">+</span> <span class="n">logs</span><span class="o">**</span><span class="p">.</span>
+
+<span class="o">!</span><span class="p">[</span><span class="n">AttachDatabricks</span> <span class="n">Result</span><span class="p">](</span><span class="n">images</span><span class="o">/</span><span class="n">AttachDatabricksResult0</span><span class="p">.</span><span class="n">PNG</span><span class="p">)</span>
+
+<span class="n">c</span><span class="p">.</span>  <span class="n">You</span> <span class="n">should</span> <span class="n">be</span> <span class="n">redirected</span> <span class="n">to</span> <span class="n">the</span> <span class="n">Databricks</span> <span class="n">run</span> <span class="n">page</span><span class="p">.</span>
+
+<span class="o">!</span><span class="p">[</span><span class="n">AttachDatabricksResult</span><span class="p">](</span><span class="n">images</span><span class="o">/</span><span class="n">AttachDatabricksResult</span><span class="p">.</span><span class="n">PNG</span><span class="p">)</span>
+
+<span class="n">d</span><span class="p">.</span> <span class="n">Under</span> <span class="o">**</span><span class="n">Driver</span> <span class="n">Logs</span><span class="o">**</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">result</span> <span class="k">in</span> <span class="n">the</span> <span class="o">**</span><span class="n">Standart</span> <span class="n">output</span><span class="o">**</span> <span class="n">tab</span><span class="p">.</span>
+
+<span class="o">!</span><span class="p">[</span><span class="n">AttachDatabricksResult2</span><span class="p">](</span><span class="n">images</span><span class="o">/</span><span class="n">AttachDatabricksResult2</span><span class="p">.</span><span class="n">PNG</span><span class="p">)</span>
+</code></pre></div>
+
+<p>&lt;!--<strong>References</strong>: </p>
+<p>&lt;!--•   <a href="https://github.com/hudua/azureml-databricks/blob/main/guides/azure-ml-databricks-connect.md">Using Databricks Connect</a></p>
+<p>&lt;!--•   <a href="https://github.com/hudua/azureml-databricks/blob/main/guides/azure-ml-attach-databricks.md">Using attach Databricks as remote compute</a></p>
                 
               
               
@@ -802,39 +459,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        <a href="../AzureSQL/" class="md-footer__link md-footer__link--prev" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Azure SQL Database
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../FAQ/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              FAQ
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
