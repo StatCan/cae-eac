@@ -1,0 +1,54 @@
+site_name: Statistique Canada - Environnement d’Analyse Collaborative (EAC)  
+site_url: https://statcan.github.io/cae-eac/fr/
+site_description: Guide de l'utilisateur - Environnement d’Analyse Collaborative (EAC) 
+copyright: Copyright &copy; 2020 Statistique Canada
+
+docs_dir: docs/fr
+site_dir: site/fr
+
+repo_name: statcan/cae-eac
+repo_url: https://github.com/statcan/cae-eac
+edit_uri: edit/master/docs/fr
+
+theme:
+  name: material
+  language: fr
+  #features:
+  #  - tabs
+  palette:
+    primary: indigo
+    accent: teal
+  show_sidebar: false
+  #logo: images/statcan.png
+
+markdown_extensions:
+  - toc:
+      baselevel: 2
+  - attr_list
+  - admonition
+  - codehilite
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/statcan/cae-eac
+    - icon: fontawesome/brands/slack
+      link: https://cae-eac.slack.com
+
+# Page tree
+nav:
+  - En avant!: index.md
+  - Demande d'accès: Access.md
+  - Se connecter: Login.md
+  - Tableaux de bord: Dashboards.md
+  - Databricks: DataBricks.md
+  - Data Factory: DataFactory.md
+  - Stockage Azure: AzureStorage.md
+  - Machines Virtuelle: VirtualMachines.md
+  - Base de données Azure SQL: AzureSQL.md
+  - Azure Machine Learning: AzureML.md
+  - FAQ: FAQ.md
+  - Aide/Contact: Aide.md
+  - Langue: Langue.md
+

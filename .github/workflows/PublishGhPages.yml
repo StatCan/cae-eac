@@ -1,7 +1,9 @@
-name: BuildDraft
+# This is a workflow copied from AAW that created ghpages
+
+name: BuildGhPagesFromPublish
 on:
   push:
-    branches: [ Main ]
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +20,8 @@ jobs:
 #        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Build
       run: |
-        mkdocs build -c -f mkdocs.yml
+        mkdocs build -c -f mkdocs-en.yml
+        mkdocs build -c -f mkdocs-fr.yml
         cp docs/index.html site/
     - name: Publish
       uses: peaceiris/actions-gh-pages@v3

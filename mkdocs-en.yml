@@ -1,6 +1,6 @@
-site_name: Collaborative Analytics Environment (CAE) \ Environnement d’analyse collaboratif (EAC)  
+site_name: Statistics Canada - Collaborative Analytics Environment (CAE)
 site_url: https://statcan.github.io/cae-eac/en/
-site_description: User guide for the DAaaS Covid-19 Collaborative Analytics Environment (CAE - Path 2 Azaure Platform)
+site_description: User guide - Collaborative Analytics Environment (CAE)
 copyright: Copyright &copy; 2020 Statistics Canada
 
 docs_dir: docs/en
@@ -40,11 +40,15 @@ extra:
 nav:
   - Getting Started: index.md
   - Request Access: RequestAccess.md
-  - Getting Started: Login.md
+  - Login: Login.md
   - Dashboards: Dashboards.md
   - Databricks: DataBricks.md
-  - Storage Explorer: StorageExplorer.md
   - Data Factory: DataFactory.md
+  - Azure Storage: AzureStorage.md
   - Virtual Machines (VMs): VirtualMachines.md
+  - Azure SQL Database: AzureSQL.md
+  - Azure Machine Learning: AzureML.md
   - FAQ: FAQ.md
-  - Help/Contact: Help.md
+  - Help/Contact: help.md
+  - Language: Language.md
+
