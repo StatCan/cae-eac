@@ -48,6 +48,7 @@ nav:
   - Machines Virtuelle: VirtualMachines.md
   - Base de données Azure SQL: AzureSQL.md
   - Azure Machine Learning: AzureML.md
+     - R-Shiny: R-Shiny.md
   - FAQ: FAQ.md
   - Aide/Contact: Aide.md
   - Langue: Langue.md
