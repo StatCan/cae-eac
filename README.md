@@ -14,3 +14,7 @@ mkdocs-en.yml  |  English
 mkdocs-fr.yml  |  Frncch 
 docs  |  Documents
 
+
+# Other
+* https://daaas-dev.covid.cloud.statcan.ca/cae
+* https://statcan.github.io/daaas/en/
