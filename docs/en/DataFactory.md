@@ -73,6 +73,25 @@ When Data Factory is not integrated with source control your workflows are store
 - [Copy Data Wizard](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-copy-data-tool#start-the-copy-data-tool) 
 - [Mapping Data Flows – GUI-driven ETL](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity )
 
+## Integration Runtimes
+### canadaCentralIR-4nodesDataFlow 
+This is shared by all users and runs all the time.
+#### Can Access:
+* Internal Data Lake 
+* External Storage Account
+* External Data Sources (Internet)
+#### Can Not Access:
+* SQL Server
+### selfHostedCovidIaaSVnet 
+Has access to Internal VNet. 
+*Server Name:* _dfHostedIR01_
+#### Can Access:
+* Internal Data Lake
+* SQL Server
+#### Can Not Access:
+* External Storage Account
+* External Data Sources (Internet)
+
 ## Example: How to connect John Hopkins Data
 1. There is an example workflow that shows how to ingest data from GitHub using a Data Factory Pipeline.  
 ![John Hopkins Pipeline](images/DataFactoryJohnhopkinspipeline.png)  

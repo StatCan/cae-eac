@@ -102,6 +102,25 @@ Lorsque Data Factory n'est pas intégré au contrôle source, vos flux de trava
 
 -   [Mappage de flux de données -- Processus ETC axé sur l'interface utilisateur graphique](https://docs.microsoft.com/fr-ca/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity)
 
+## Runtimes d'intégration
+### canadaCentralIR-4nodesDataFlow
+Ceci est partagé par tous les utilisateurs et fonctionne tout le temps.
+#### Peut accéder:
+* Lac de données interne
+* Compte de stockage externe
+* Sources de données externes (Internet)
+#### Ne peut pas accéder:
+* Serveur SQL
+### selfHostedCovidIaaSVnet
+A accès au réseau virtuel interne.
+*Nom du serveur:* _dfHostedIR01_
+#### Peut accéder:
+* Lac de données interne
+* Serveur SQL
+#### Ne peut pas accéder:
+* Compte de stockage externe
+* Sources de données externes (Internet)
+
 ## Exemple : Comment se connecter aux données de John Hopkins
 
 1.  Il y a un exemple de flux de travail qui montre la façon d'ingérer des données à partir de GitHub à l'aide d'un pipeline de Data Factory.
