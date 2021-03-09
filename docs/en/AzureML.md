@@ -104,9 +104,9 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
       **Port:** keep the existing value
  
 4.	Execute the following code in terminal to test the connectivity to Azure Databricks.
-  ```
+```
 databricks-connect test
-  ```
+```
 
 5.	Create a new notebook with Azure ML and select the **Python 3 kernel**. It should now display Python 3.7.9
 
@@ -114,8 +114,11 @@ databricks-connect test
  
 6.	Databricks connect should be setup now! Try the [Databricks connect example code](https://github.com/StatCan/cae-eac/blob/master/Examples/AzureML/Databricks-Connect-Example.txt) in a notebook, replacing **public-data/incoming/1test.txt** with the path to a file in your data lake container.
 
-# Change Display Language
+# Request compute
+Please use the [slack](https://cae-eac.slack.com)  to request a remote compute. You will recieve the following error when creating it yourself:
+![Create Compute Error](images/AzureMLCreateComputeError.png) 
 
+# Change Display Language
 See [Language](Language.md) page to find out how to change the display language.
 
 
