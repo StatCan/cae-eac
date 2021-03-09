@@ -75,6 +75,16 @@ Steps:
 2. Launch Power BI Desktop.  
 3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL. 
 
+### How to I tranfer files (including large ones) to the data lake?
+#### External Storage Account
+We have setup a process to automailly copy files from the external storage account created for you project to the internal data lake. Using the [Storage Explorer](AzureStorage.md) you can copy files to the _inbox_ or _ _to-vers-int_ container.  Files dropped here will be automatically moved to the datalake.
+![Upload External](images/UploadExternal.png)
+
+*Note:* The External Storage accounts have the naming convention  *stats*_project-acronym_*external*
+
+#### Electronic File Transfer Service (EFT)
+Statistics Canada employees can use [EFT](https://www75.statcan.gc.ca/eft-tef) to transfer files to/from our Internal Data Centre (Net A or B) to/from the azure cloud environment. Please contact the [slack](https://cae-eac.slack.com) channel for informaton about this process.
+
 ### How do I add a FAQ?
 Please send your suggestion through the https://cae-eac.slack.com channel.
 

@@ -102,6 +102,15 @@ Prérequis :
 2.  Lancez Power BI Desktop.
 3.  Suivez les étapes dans [Analysez des données dans Azure Data Lake Storage Gen2 avec Power BI - Créer un rapport dans Power BI Desktop (document anglais)](https://docs.microsoft.com/fr-ca/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). S.v.p. envoyez un message slack à https://cae-eac.slack.com si vous ne connaissez pas l'URL du Azure Data Lake Storage Gen2. 
 
+### Comment transférer des fichiers (y compris les plus volumineux) vers le lac de données?
+#### Compte de stockage externe
+Nous avons mis en place un processus pour copier automatiquement les fichiers du compte de stockage externe créé pour votre projet vers le lac de données interne. À l'aide de l '[Explorateur de stockage] (AzureStorage.md), vous pouvez copier des fichiers dans le conteneur _inbox_ ou _ _to-vers-int_. Les fichiers déposés ici seront automatiquement déplacés vers la base de données.
+![Télécharger externe](images/UploadExternal.png)
+
+*Remarque:* Les comptes de stockage externe ont la convention de dénomination *stats*_project-acronym_*external*
+
+#### Service de transfert électronique de fichiers (TEF)
+Les employés de Statistique Canada soulement peuvent utiliser [TEF](https://www75.statcan.gc.ca/eft-tef) pour transférer des fichiers de / vers notre centre de données interne (Net A ou B) vers / depuis l'environnement cloud azure. Veuillez contacter le canal [slack](https://cae-eac.slack.com) pour plus d'informations sur ce processus.
 
 ### Comment puis-je ajouter une question à la FAQ?
 
