@@ -56,6 +56,13 @@ You must first start a Databricks cluster that was previously created for you:
 2. Navigate to your cluster and click on the **Start** (arrow) button.  
 ![Start Cluster](images/DataBricksStartCluster2.png)
 
+## Dashboard
+### How so I change my subscription so that I can see my resources?
+1. In the Azure Portal click the _Directory + subscription_ icon.
+2. Select the _vdl_ subscription.
+![subscription](images/Subscription.png)
+
+
 ## Other
 
 ### How do I connect to the internal data lake with Power BI Desktop?

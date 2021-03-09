@@ -82,8 +82,13 @@ Vous devez d'abord démarrer un cluster dans Databricks qui a déjà été cré�
 
 ![Start Cluster](images/DataBricksStartCluster2.png)
 
-## Autre
+## Tableau de bord
+### Comment modifier mon abonnement pour voir mes ressources?
+1. Dans le portail Azure, cliquez sur l'icône _Répertoire + abonnement_.
+2. Sélectionnez l'abonnemen _vdl_.
+![subscription](images/Subscription.png)
 
+## Autre
 ### Comment puis-je me connecter au compte de stockage interne Data Lake avec Power BI Desktop?
 
 Prérequis :
