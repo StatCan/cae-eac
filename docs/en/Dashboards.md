@@ -18,7 +18,8 @@ The Azure portal provides a default dashboard as a starting point. You can edit 
 
     c. Ensure the list of selected subsciptions includes the **vdl** subscription. You can also enter text to filter dashboards by name.  
 
-    d. Select a dashboard from the list of shared dashboards.
+    d. Select _Collaborative Analytics Environment_ dashboard from the list of shared dashboards.
+    ![Collaborative Analytics Environments Dashboard](images/DashboardCAE.png)
 
 **Note:** Please send a [Slack](https://cae-eac.slack.com) message if you don't know the name of the dashboard that was created for your environment.
 

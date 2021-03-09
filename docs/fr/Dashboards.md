@@ -27,7 +27,8 @@ tableaux de bord supplémentaires, ainsi qu'en publier et en partager avec d'aut
 
     c.  Assurez-vous que « **vdl** » se trouve parmi les abonnements sélectionnés. Vous pouvez aussi saisir du texte pour filtrer les tableaux de bord par leur nom.
 
-    d.  Sélectionnez un tableau de bord dans la liste des tableaux de bord partagés.
+    d.  Sélectionnez un tableau de bord _Environnement d’analyse collaboratif_ dans la liste des tableaux de bord partagés.
+    ![Tableau de bord - Environnement d’analyse collaboratif](images/DashboardEAC.png)
 
 **Note :** Veuillez envoyer un message [Slack](https://cae-eac.slack.com) si vous ne connaissez pas le nom du tableau de  bord qui a été créé pour votre environnement.
 
