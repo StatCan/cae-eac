@@ -1,4 +1,4 @@
-# FAQ 
+# FAQ
 
 ## Storage Explorer
 
@@ -46,7 +46,7 @@ To disable Auto-shutdown:
 ![Auto Shutoff](images/VirtualMachineAutoShutoff.png)  
 
 ### How do I request changes to my virtual machine?
-If the virtual machine you are currently using does not meet your requirements, please contact the support team through the https://cae-eac.slack.com channel. 
+If the virtual machine you are currently using does not meet your requirements, please contact the support team through the https://cae-eac.slack.com channel.
 
 ## Databricks
 
@@ -59,8 +59,8 @@ You must first start a Databricks cluster that was previously created for you:
 ## Dashboard
 ### How so I change my subscription so that I can see my resources?
 1. In the Azure Portal click the _Directory + subscription_ icon.
-2. Select the _vdl_ subscription.
 ![subscription](images/Subscription.png)
+2. Select the _vdl_ subscription.
 
 
 ## Other
@@ -73,7 +73,7 @@ Prerequisites:
 Steps:
 1. Login to your CAE VM.  
 2. Launch Power BI Desktop.  
-3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL. 
+3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
 
 ### How to I tranfer files (including large ones) to the data lake?
 #### External Storage Account
@@ -91,4 +91,3 @@ Please send your suggestion through the https://cae-eac.slack.com channel.
 # Change Display Language
 
 See [Language](Language.md) page to find out how to change the display language.
-

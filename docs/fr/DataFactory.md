@@ -32,13 +32,13 @@ Cliquez sur **Author & Monitor**.
 ![Author Monitor](images/DataFactoryAuthorMonitor.png)
 
 Dans Data Factory, vous avez la capacité de créer et de déployer des ressources.
-![Author](images/DataFactoryAuthor.png) 
+![Author](images/DataFactoryAuthor.png)
 
 Voir le document [Création visuelle dans Azure Data Factory](https://docs.microsoft.com/fr-ca/azure/data-factory/author-visually) pour obtenir de plus amples renseignements.
 Vous pouvez également utiliser certains des divers assistants fournis sur la page d'**aperçu (Overview) de Data Factory**.
 
 **NOTE :** La configuration de SSIS Integration n'est **PAS** recommandée. Si vous avez des questions, communiquez avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
-![Data Factory Wizards](images/DataFactoryWizards.png) 
+![Data Factory Wizards](images/DataFactoryWizards.png)
 [les tutoriels de la documentation Azure](https://docs.microsoft.com/fr-ca/azure/data-factory/introduction) pour obtenir plus de détails.
 
 ## Accès à Data Lake à partir d'ADF
@@ -83,8 +83,8 @@ Lorsque Git est activé, vous pouvez voir votre configuration et enregistrer vot
 3.  Vérifiez la configuration de Git qui a été mise en place pour vous.
 ![Git Config](images/DataFactoryAzureGit.png)
 
-4.  Lorsque vous créez un flux de travail, vous pouvez l'enregistrer dans votre branche. Cliquez sur **+ Nouvelle branche** dans le menu déroulant des branches pour créer une     branche de fonctionnalités. 
-![Sauvegarder votre branche](images/DataFactorySaveBranch.png) 
+4.  Lorsque vous créez un flux de travail, vous pouvez l'enregistrer dans votre branche. Cliquez sur **+ Nouvelle branche** dans le menu déroulant des branches pour créer une     branche de fonctionnalités.
+![Sauvegarder votre branche](images/DataFactorySaveBranch.png)
 
 5.  Lorsque vous serez prêt à fusionner les changements de votre branche de fonctionnalités dans votre branche de collaboration (master), cliquez sur le menu déroulant des branches et sélectionnez **Créer la demande de tirage (pull request)**. Cette action vous dirigera vers Azure DevOps Git, où vous pourrez créer des demandes de tirage, procéder à des revues du code et fusionner les modifications dans votre branche de collaboration (master) dès que la demande aura été approuvée.
 

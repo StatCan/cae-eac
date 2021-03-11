@@ -40,7 +40,7 @@ Si aucun cluster n'a été créé pour vous ou si vous avez besoin d'apporter de
 
 -   Une façon de créer un carnet consiste à cliquer sur l'option **Nouveau carnet** depuis la page principale de Databricks. Vous pouvez ensuite nommer votre carnet et choisir le langage par défaut.
 
--   Dans le champ « Grappe », sélectionnez parmis la liste proposée le cluster auquel vous souhaitez attacher votre carnet. 
+-   Dans le champ « Grappe », sélectionnez parmis la liste proposée le cluster auquel vous souhaitez attacher votre carnet.
    ![Start a notebook](images/DataBrickCreateNotebook.png)
 
 -   Pour démarrer un cluster ou le modifier à partir d'un carnet, ouvrez le carnet et, dans le coin supérieur droit, cliquez sur le menu déroulant pour cluster. Vous pourrez alors démarrer le cluster ou le détacher et en attacher un autre.
@@ -108,8 +108,8 @@ Les carnets prennent également en charge quelques commandes spéciales auxilia
 4.  ![Where to start a Databricks cluster](images/DataBricksStartCluter.png)
 
 ## Installation de bibliothèques
-### Sur le cluster Databricks
-Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance installe ces bibliothèques pour vous.
+### Sur la grappe Databricks
+Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les bibliothèques pour vous.
 ### Carnet
 ```python
 dbutils.library.installPyPI ("pypipackage", version = "version", repo = "repo", extras = "extras")

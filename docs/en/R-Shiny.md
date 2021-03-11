@@ -24,13 +24,13 @@ R-Shiny clusters are shut down **everyday at 7pm**. To save cost, please stop yo
 
 5.	Click on **Set up RStudio**.
     ![RShiny04](images/RShiny04_En.png)
- 
+
 6.  A **one-time password** is generated for you, click on the **show** to display and copy it.
     ![RShiny05](images/RShiny05_En.png)
 
 7.	Click on **Open RStudio**.
     ![RShiny06](images/RShiny06_En.png)
- 
+
 8.	A new tab opens, enter the username and password provided (step 6) in the login form and sign in to RStudio.
     ![RShiny07](images/RShiny07_En.png)
 
@@ -38,7 +38,7 @@ R-Shiny clusters are shut down **everyday at 7pm**. To save cost, please stop yo
     ![RShiny08](images/RShiny08_En.png)
 
 
-## RShiny app example 
+## RShiny app example
 
 We will use the **Hello Shiny** example to explore the structure of a Shiny app.
 
@@ -48,7 +48,7 @@ We will use the **Hello Shiny** example to explore the structure of a Shiny app.
 
     runExample("01_hello")
 
-2.	Your app should match the image below. 
+2.	Your app should match the image below.
     ![RShiny09](images/RShiny09_En.PNG)
 
 
@@ -62,7 +62,7 @@ By default, the working directory in RStudio will be on the driver node, to pers
 ![RShiny10](images/Rshiny10_En.png)
 
 
-2. The datalake will be available and you will be able to acces and store your files. When your cluster is terminated at the end of your session, the work will be there for you when you return.
+2. The datalake will be available and you will be able to access and store your files. When your cluster is terminated at the end of your session, the work will be there for you when you return.
 
 **NOTE:** Here are sample codes to access your files from the datalake.
 ```
@@ -81,6 +81,3 @@ str(testData)
 # Change Display Language
 
 See [Language](Language.md) page to find out how to change the display language.
-
-
-

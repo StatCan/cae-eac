@@ -16,7 +16,7 @@
 
 ![Storage Explorer Proxy Error](images/StorageExplorerError.png)
 
-2. Dans l'Explorateur de stockage Azure, allez à **Modifier** 
+2. Dans l'Explorateur de stockage Azure, allez à **Modifier**
 3. **Paramètres du proxy**. Entrez les paramètres du proxy nécessaires et cliquez sur **OK**.
 
 ![Storage Explorer Proxy Settings](images/StorageExplorerProxy.png)
@@ -61,7 +61,7 @@ Les machines sont arrêtées tous les jours à 19 h (HNE), afin de réduire l
 
 Pour désactiver l'arrêt automatique :
 
-1. Accédez à votre machine virtuelle dans le portail Azure. 
+1. Accédez à votre machine virtuelle dans le portail Azure.
 2. Désactivez l'arrêt automatique.
 
 ![Auto Shutoff](images/VirtualMachineAutoShutOff.png)
@@ -83,10 +83,10 @@ Vous devez d'abord démarrer un cluster dans Databricks qui a déjà été cré�
 ![Start Cluster](images/DataBricksStartCluster2.png)
 
 ## Tableau de bord
-### Comment modifier mon abonnement pour voir mes ressources?
+### Comment changer mon abonnement pour voir mes ressources?
 1. Dans le portail Azure, cliquez sur l'icône _Répertoire + abonnement_.
-2. Sélectionnez l'abonnemen _vdl_.
 ![subscription](images/Subscription.png)
+2. Sélectionnez l'abonnement _vdl_.
 
 ## Autre
 ### Comment puis-je me connecter au compte de stockage interne Data Lake avec Power BI Desktop?
@@ -100,7 +100,7 @@ Prérequis :
 
 1.  Connectez-vous à votre machine virtuelle dans l'EAC.
 2.  Lancez Power BI Desktop.
-3.  Suivez les étapes dans [Analysez des données dans Azure Data Lake Storage Gen2 avec Power BI - Créer un rapport dans Power BI Desktop (document anglais)](https://docs.microsoft.com/fr-ca/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). S.v.p. envoyez un message slack à https://cae-eac.slack.com si vous ne connaissez pas l'URL du Azure Data Lake Storage Gen2. 
+3.  Suivez les étapes dans [Analysez des données dans Azure Data Lake Storage Gen2 avec Power BI - Créer un rapport dans Power BI Desktop (document anglais)](https://docs.microsoft.com/fr-ca/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). S.v.p. envoyez un message slack à https://cae-eac.slack.com si vous ne connaissez pas l'URL du Azure Data Lake Storage Gen2.
 
 ### Comment transférer des fichiers (y compris les plus volumineux) vers le lac de données?
 #### Compte de stockage externe
@@ -118,5 +118,3 @@ Veuillez faire parvenir votre suggestion de question par l'intermédiaire du can
 
 # Changer la langue d'affichage
 Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.
-
-

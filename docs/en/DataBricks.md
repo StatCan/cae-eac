@@ -10,7 +10,7 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
 ### Databricks URL
 
 1. Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
-![Databricks URL](images/DatabricksSelect.png) 
+![Databricks URL](images/DatabricksSelect.png)
 
 ### Azure Portal
 
@@ -30,7 +30,7 @@ Since you do not have permission to create a cluster, please send a [slack](http
 
 **Note:** You must have a cluster running before you can run code inside your notebook. See below or the [FAQ](FAQ.md) for information on how to start a cluster.
 
-## Creating a Notebook 
+## Creating a Notebook
 
  - One way to create a notebook is to click on the **New Notebook** link from the main Databricks page. You can then provide a name for your notebook and select the default notebook language.
 
@@ -111,36 +111,36 @@ The following are the steps for installing and testing databricks connect on you
     conda activate dbconnect
     type pip install -U databricks-connect==X.Y.*
 ```
-(X and Y are to be replaced with the version number of the spark cluster. To see this open databricks from the azure portal and click clusters on the left of the page. You are looking for the runtime) 
+(X and Y are to be replaced with the version number of the spark cluster. To see this open databricks from the azure portal and click clusters on the left of the page. You are looking for the runtime)
 3. Once the installation has finished, you will need to collect 3 peices of information (copy the text somewhere)
 * The **databricks Org ID** (check URL from databricks page, look for ?o= the number that follows is the org ID)
 * A **personal access token** (Look at the top right of the databricks window for the button "Databricks-XXX", click user settings, then Generate New Token)
-* **Cluster ID** (go back to the clusters page, click on the cluster you wish to use, check the URL for `clusters/XXXX-XXXXXX-XXXXXXXXX/configuration` the Xs are the value) 
+* **Cluster ID** (go back to the clusters page, click on the cluster you wish to use, check the URL for `clusters/XXXX-XXXXXX-XXXXXXXXX/configuration` the Xs are the value)
 4. In command prompt type databricks-connect configure, then enter these values.
-   
+
    **Databricks Host:** `https//:canadacentral.azuredatabricks.net`
-    
+
     **Databricks Token:** `the personal access token from step 3`
-    
+
     **Cluster ID:** `the cluster ID from step 3`
-    
+
     **Org ID:** `Once again from part 3`
-    
+
     **Port:** leave as 15001
 5. The last setup step requires changing an enviroment variable `SPARK_HOME` to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark` then restart your VM (If you do not know how to change environment variables please ask for help).
 6. To test if your configuration setup works enter databricks-connect test in command prompt. If the cluster you are using is not running when you start your test you will receive warning messages until it has started. This can take time.
 
-## Installing Libaries 
+## Installing Libraries 
 ### On Databricks Cluster
 Please contact the [slack](https://cae-eac.slack.com) channel to have the support team install these libraries for you.
-### Notebook 
+### Notebook
 ```python
 dbutils.library.installPyPI("pypipackage", version="version", repo="repo", extras="extras")
 dbutils.library.restartPython() # Removes Python state, but some libraries might not work without calling this function
 ```
 
 ## Microsoft Documentation  
-- [Databricks-Connects](https://docs.databricks.com/dev-tools/databricks-connect.html) 
+- [Databricks-Connects](https://docs.databricks.com/dev-tools/databricks-connect.html)
 - [First Access to Databricks](https://docs.microsoft.com/en-us/azure/azure-databricks/quickstart-create-databricks-workspace-portal#run-a-spark-sql-job)  
 - [For more information on Databricks](https://azure.microsoft.com/en-us/resources/videos/connect-2017-introduction-to-azure-databricks)  
 - [Install Libraries in Current Notebook Session](https://docs.microsoft.com/en-us/azure/databricks/notebooks/notebooks-python-libraries)  
@@ -149,4 +149,3 @@ dbutils.library.restartPython() # Removes Python state, but some libraries might
 # Change Display Language
 
 See [Language](Language.md) page to find out how to change the display language.
-
