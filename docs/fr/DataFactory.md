@@ -103,6 +103,10 @@ Lorsque Data Factory n'est pas intégré au contrôle source, vos flux de trava
 -   [Mappage de flux de données -- Processus ETC axé sur l'interface utilisateur graphique](https://docs.microsoft.com/fr-ca/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity)
 
 ## Runtimes d'intégration
+### AutoResolveIntegrationRuntime
+**Ne pas utiliser.** Veuillez utiliser les runtimes d'intégration **canadaCentralIR-4nodesDataFlow** ou **selfHostedCovidIaaSVnet** au lieu.
+
+Le runtime d'intégration de résolution automatique ("auto resolve") est créé par défaut avec le Data Factory, et va sélectionner le centre de données Azure le plus près des données, ce qui pourrait contrevenir aux politiques de résidence des données.
 ### canadaCentralIR-4nodesDataFlow
 Ceci est partagé par tous les utilisateurs et fonctionne tout le temps.
 #### Peut accéder:
@@ -110,13 +114,12 @@ Ceci est partagé par tous les utilisateurs et fonctionne tout le temps.
 * Compte de stockage externe
 * Sources de données externes (Internet)
 #### Ne peut pas accéder:
-* Serveur SQL
+* Base de données Azure SQL
 ### selfHostedCovidIaaSVnet
-A accès au réseau virtuel interne.
-*Nom du serveur:* _dfHostedIR01_
+Situé à l'intérieur du réseau virtuel interne.
 #### Peut accéder:
 * Lac de données interne
-* Serveur SQL
+* Base de données Azure SQL
 #### Ne peut pas accéder:
 * Compte de stockage externe
 * Sources de données externes (Internet)
