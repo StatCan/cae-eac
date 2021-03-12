@@ -74,21 +74,24 @@ When Data Factory is not integrated with source control your workflows are store
 - [Mapping Data Flows – GUI-driven ETL](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity )
 
 ## Integration Runtimes
+### AutoResolveIntegrationRuntime
+**Do not use.** Please use the **canadaCentralIR-4nodesDataFlow** or **selfHostedCovidIaaSVnet** runtimes instead.
+
+The auto resolve runtime is created by default with the data factory instance, and will auto resolve to the Azure Data Centre closest to the data, which may violate data residency policies.
 ### canadaCentralIR-4nodesDataFlow 
 This is shared by all users and runs all the time.
 #### Can Access:
 * Internal Data Lake 
 * External Storage Account
 * External Data Sources (Internet)
-#### Can Not Access:
-* SQL Server
+#### Cannot Access:
+* Azure SQL Database
 ### selfHostedCovidIaaSVnet 
-Has access to Internal VNet. 
-*Server Name:* _dfHostedIR01_
+Located inside CAE virtual network (VNet). 
 #### Can Access:
 * Internal Data Lake
 * SQL Server
-#### Can Not Access:
+#### Cannot Access:
 * External Storage Account
 * External Data Sources (Internet)
 
