@@ -99,21 +99,21 @@ Notebooks also support a few auxiliary magic commands:
 ![Where to start a Databricks cluster](images/DataBricksStartCluster.png)  
 
 ## Databricks Connect VM Setup
-Databricks connect is a method for accessing a databricks environment without having to connect through the Azure Portal. Its main use is to allow you to use other IDEs to work on databricks code.
+Databricks connect is a method for accessing a Databricks environment without having to connect through the Azure Portal. Its main use is to allow you to use other IDEs to work on Databricks code.
 
-The following are the steps for installing and testing databricks connect on your VM environment.
+The following are the steps for installing and testing Catabricks Connect on your virtual machine (VM).
 
-1. Databricks Connect has conflictions with the Pyspark instalation that is on our DataScience VMs by default. The default path of this is `C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7`. This folder must be either deleted or moved in order to install Databricks connect.
+1. Databricks Connect conflicts with the Pyspark installation that found on the Data Science Virtual Machine images. The default path for this Pyspark installation is `C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7`. This folder must be either deleted or moved in order to install Databricks connect.
 
-2. Before installing databricks connect a conda environment should be created. To do this open command prompt and do the following.
+2. Before installing Databricks Connect, create a conda environment. To do this, open a command prompt and do the following.
 ```
     conda create --name dbconnect python=3.7
     conda activate dbconnect
     type pip install -U databricks-connect==X.Y.*
 ```
-(X and Y are to be replaced with the version number of the spark cluster. To see this open databricks from the azure portal and click clusters on the left of the page. You are looking for the runtime)
-3. Once the installation has finished, you will need to collect 3 peices of information (copy the text somewhere)
-* The **databricks Org ID** (check URL from databricks page, look for ?o= the number that follows is the org ID)
+(X and Y are to be replaced with the version number of the Databricks cluster. To find this value, open Databricks from the Azure portal, and click on Clusters on the left of the page. You are looking for the runtime.)
+3. Once the installation has finished, collect the following three pieces of information, and copy the text somewhere for later use.
+* The **Databricks Org ID** (Check the URL from Databricks page, look for ?o= the number that follows is the org ID)
 * A **personal access token** (Look at the top right of the databricks window for the button "Databricks-XXX", click user settings, then Generate New Token)
 * **Cluster ID** (go back to the clusters page, click on the cluster you wish to use, check the URL for `clusters/XXXX-XXXXXX-XXXXXXXXX/configuration` the Xs are the value)
 4. In command prompt type databricks-connect configure, then enter these values.
