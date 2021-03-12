@@ -9,7 +9,7 @@ Files may be uploaded to the **inbox** or **to-vers-int** container of an extern
 
 ![Upload External](images/UploadExternal.png)
 
-*Note:* The external storage accounts have the naming convention **stats'project-acronym'external**.
+*Note:* The external storage accounts have the naming convention **stats*project-acronym*external**.
 
 #### Electronic File Transfer Service (EFT)
 Statistics Canada employees can use [EFT](https://www75.statcan.gc.ca/eft-tef) to transfer files to/from on-premises (Net A or B) to/from the Azure cloud environment. Please  contact the support team through the https://cae-eac.slack.com channel for informaton about this process.
