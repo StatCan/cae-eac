@@ -87,7 +87,7 @@ databricks-connect test (databricks - test de connexion)
 6.	Databricks Connect devrait maintenant être configuré! Essayez le code échantillon Databricks Connect dans le bloc-notes, en remplaçant public-data/incoming/1test.txt par le chemin d’accès à un fichier dans votre conteneur de lac de données.
 
 # Demander un calcul
-Veuillez utiliser [slack](https://cae-eac.slack.com) pour demander un calcul à distance. Vous recevrez l'erreur suivante si vous procédez a la création par vous-même:
+Veuillez utiliser [slack](https://cae-eac.slack.com) pour demander un calcul à distance. Vous recevrez l'erreur suivante si vous procédez à la création par vous-même:
 ![Erreur Creation Calcul](images/AzureMLErreurCreationCalcul.png)
 
 # Changer la langue d'affichage
