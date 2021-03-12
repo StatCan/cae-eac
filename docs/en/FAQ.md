@@ -1,10 +1,23 @@
 # FAQ
 
-## Storage Explorer
+## Data Ingestion ##
 
-### How do I ingest data into the platform?
-1. Files may be uploaded into an external storage account, as documented in [Azure Storage Explorer](AzureStorage.md). These files will then automatically be moved into an internal storage account (Data Lake), and made accessible from authorized services.
-2. Platform tools such as Databricks or Data Factory may be used to ingest data from public data sources.
+### How do I ingest data (including large files) into the platform?
+
+#### External Storage Account
+Files may be uploaded to the **inbox** or **to-vers-int** container of an external storage account, as documented in [Azure Storage Explorer](AzureStorage.md). These files will then automatically be moved into an internal storage account (Data Lake), and made accessible from authorized services.
+
+![Upload External](images/UploadExternal.png)
+
+*Note:* The external storage accounts have the naming convention **stats'project-acronym'external**.
+
+#### Electronic File Transfer Service (EFT)
+Statistics Canada employees can use [EFT](https://www75.statcan.gc.ca/eft-tef) to transfer files to/from on-premises (Net A or B) to/from the Azure cloud environment. Please  contact the support team through the https://cae-eac.slack.com channel for informaton about this process.
+
+#### Platform Tools
+Platform tools such as Databricks or Data Factory may be used to ingest data from public data sources.
+
+## Storage Explorer
 
 ### How do I configure Azure Storage Explorer proxy settings on a network B VDI?
 _For Statistics Canada Employees only_
@@ -34,7 +47,7 @@ The internal Data Lake is only accessible from within a VM in the Collaborative 
 ## Virtual Machines
 
 ### What do I do if I have forgotten the password for my virtual machine?
-If you forget the password of your virtual machine you can delete then recreate your virtual machine. Unfortunately, you will lose any data and software on your old machine.
+If you forget the password of your virtual machine, please contact the support team through the https://cae-eac.slack.com channel to have it reset. You can also delete and recreate your virtual machine. Unfortunately, recreating your virtual machine means you will lose any data and software on your old machine.
 
 ### What do I do if I need to run a long running job on my virtual machine?
 Machines are shut down every day at 7pm EST in order to reduce costs. If you have a long-running job, it is recommended that you use Databricks or Data Factory.
@@ -57,10 +70,10 @@ You must first start a Databricks cluster that was previously created for you:
 ![Start Cluster](images/DataBricksStartCluster2.png)
 
 ## Dashboard
-### How so I change my subscription so that I can see my resources?
-1. In the Azure Portal click the _Directory + subscription_ icon.
+### How do I change my subscription so that I can see my resources?
+1. In the Azure Portal click the **Directory + subscription** icon.
 ![subscription](images/Subscription.png)
-2. Select the _vdl_ subscription.
+2. Select the **vdl** subscription.
 
 
 ## Other
@@ -74,16 +87,6 @@ Steps:
 1. Login to your CAE VM.  
 2. Launch Power BI Desktop.  
 3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
-
-### How to I tranfer files (including large ones) to the data lake?
-#### External Storage Account
-We have setup a process to automailly copy files from the external storage account created for you project to the internal data lake. Using the [Storage Explorer](AzureStorage.md) you can copy files to the _inbox_ or _ _to-vers-int_ container.  Files dropped here will be automatically moved to the datalake.
-![Upload External](images/UploadExternal.png)
-
-*Note:* The External Storage accounts have the naming convention  *stats*_project-acronym_*external*
-
-#### Electronic File Transfer Service (EFT)
-Statistics Canada employees can use [EFT](https://www75.statcan.gc.ca/eft-tef) to transfer files to/from our Internal Data Centre (Net A or B) to/from the azure cloud environment. Please contact the [slack](https://cae-eac.slack.com) channel for informaton about this process.
 
 ### How do I add a FAQ?
 Please send your suggestion through the https://cae-eac.slack.com channel.
