@@ -1,23 +1,23 @@
 # R-Shiny from RStudio
-The document describes how to access to R-Shiny package from RStudio.
+The document describes how to access the R-Shiny package from RStudio.
 
-## Getting Starting
+## Getting Started
 
-Please send a [slack](https://cae-eac.slack.com) message to the CEA team to enable RStudio on your databricks cluster to be able to use R-Shiny.
+To use R-Shiny, please send a [slack](https://cae-eac.slack.com) message to the CEA team to enable RStudio on your Databricks cluster.
 
 **Warning** :
-R-Shiny clusters are shut down **everyday at 7pm**. To save cost, please stop your R-Shiny clusters when you are not using them.
+R-Shiny clusters are shut down **every day at 7pm**. To save on costs, please stop your R-Shiny clusters when you are not using them.
 
-## How to Access
+## Accessing R-Shiny from Databricks
 
-1.	From the Azure portal, Launch the Databricks workspace that was created for you.
+1.	From the Azure portal, launch the Databricks workspace that was created for you.
 2.	From the Databricks workspace, click on **Clusters**.
     ![RShiny](images/RShiny_En.png)  
 
-3. From the available list of clusters, select the cluster with RStudio installed.
+3. From the list of available clusters, select the cluster with RStudio installed.
     ![RShiny02](images/RShiny02_En.png)  
 
-    **Note:** You must have the cluster running before you can access to RStudio. See the [Databricks section](DataBricks.md) for information on how to start a cluster.
+    **Note:** You must have the cluster running before you can access RStudio. See the [Databricks section](DataBricks.md) for information on how to start a cluster.
 
 4.	Select the **Apps** tab.
     ![RShiny03](images/RShiny03_En.png)
@@ -25,7 +25,7 @@ R-Shiny clusters are shut down **everyday at 7pm**. To save cost, please stop yo
 5.	Click on **Set up RStudio**.
     ![RShiny04](images/RShiny04_En.png)
 
-6.  A **one-time password** is generated for you, click on the **show** to display and copy it.
+6.  A **one-time password** is generated for you, click on **show** to display and copy it.
     ![RShiny05](images/RShiny05_En.png)
 
 7.	Click on **Open RStudio**.
@@ -38,9 +38,9 @@ R-Shiny clusters are shut down **everyday at 7pm**. To save cost, please stop yo
     ![RShiny08](images/RShiny08_En.png)
 
 
-## RShiny app example
+## RShiny App Example
 
-We will use the **Hello Shiny** example to explore the structure of a Shiny app.
+You can use use the **Hello Shiny** example to explore the structure of a Shiny app.
 
 1. Launch the app from your R session by running:
 
@@ -54,17 +54,15 @@ We will use the **Hello Shiny** example to explore the structure of a Shiny app.
 
 ## Accessing files from the datalake
 
+By default, the working directory in RStudio will be on the driver node of the Databricks cluster. To persist your work, you'll need to use DBFS.
 
-By default, the working directory in RStudio will be on the driver node, to persist your work you'll need to use DBFS.
-
-1. To have access DBFS in the File Explorer, click on the **...** to the right and enter **/dbfs/mnt/** at the prompt.
+1. To access DBFS in the File Explorer, click on the **...** to the right and enter **/dbfs/mnt/** at the prompt.
 
 ![RShiny10](images/Rshiny10_En.png)
 
+2. The data lake will be available and you will be able to access and store your files. When your cluster is terminated at the end of your session, your work will be there for you when you return.
 
-2. The datalake will be available and you will be able to access and store your files. When your cluster is terminated at the end of your session, the work will be there for you when you return.
-
-**NOTE:** Here are sample codes to access your files from the datalake.
+**NOTE:** Here are some code samples to access your files from the datalake.
 ```
 library(SparkR)
 sparkR.session()
