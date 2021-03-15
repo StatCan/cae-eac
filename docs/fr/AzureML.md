@@ -1,4 +1,4 @@
-_[English](../en/AzureML)_
+_[English](../../en/AzureML)_
 # Azure Machine Learning
 ## Accès à Azure Machine Learning
 ### Tableau de bord

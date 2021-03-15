@@ -1,4 +1,4 @@
-_[Français](../fr/AzureML)_
+_[Français](../../fr/AzureML)_
 # Azure Machine Learning
 ## Accessing Azure Machine Learning
 ### Dashboard
