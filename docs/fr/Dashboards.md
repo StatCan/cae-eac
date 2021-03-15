@@ -7,7 +7,7 @@ créer des tableaux de bord personnalisés en fonction des projets, des tâches 
 Le portail Azure fournit un tableau de bord par défaut comme point de départ. Vous pouvez modifier ce dernier, créer et personnaliser des
 tableaux de bord supplémentaires, ainsi qu'en publier et en partager avec d'autres utilisateurs.
 
-## Accéder au tableau de bord de votre environnement
+## Accéder au tableau de bord de l'Environnement d'analyse collaborative
 
 1.  Dans le menu du portail Azure, sélectionnez **Tableau de bord**. Votre affichage par défaut pourrait déjà être réglé au tableau de bord.
 
@@ -15,7 +15,7 @@ tableaux de bord supplémentaires, ainsi qu'en publier et en partager avec d'aut
 
 2.  Sélectionnez la flèche à côté du nom du tableau de bord.
 
-3.  Sélectionnez votre tableau de bord dans la liste affichée. Si le tableau de bord que vous voulez ouvrir n'est pas dans la liste :
+3.  Sélectionnez le tableau de bord **Environnement d'analyse collaborative** dans la liste affichée. Si ce tableau de bord n'est pas dans la liste :
 
     a.  Sélectionnez **Parcourir tous les tableaux de bord**.
 
@@ -27,9 +27,9 @@ tableaux de bord supplémentaires, ainsi qu'en publier et en partager avec d'aut
 
     c.  Assurez-vous que « **vdl** » se trouve parmi les abonnements sélectionnés. Vous pouvez aussi saisir du texte pour filtrer les tableaux de bord par leur nom.
 
-    d.  Sélectionnez un tableau de bord dans la liste des tableaux de bord partagés.
+    d.  Sélectionnez le tableau de bord **Environnement d'analyse collaborative** dans la liste des tableaux de bord partagés.
+    ![Tableau de bord - Environnement d’analyse collaboratif](images/DashboardEAC.png)
 
-**Note :** Veuillez envoyer un message [Slack](https://cae-eac.slack.com) si vous ne connaissez pas le nom du tableau de  bord qui a été créé pour votre environnement.
 
 ## Documentation Microsoft
 https://docs.microsoft.com/fr-ca/azure/azure-portal/azure-portal-dashboards

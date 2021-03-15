@@ -73,6 +73,28 @@ When Data Factory is not integrated with source control your workflows are store
 - [Copy Data Wizard](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-copy-data-tool#start-the-copy-data-tool) 
 - [Mapping Data Flows – GUI-driven ETL](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity )
 
+## Integration Runtimes
+### AutoResolveIntegrationRuntime
+**Do not use.** Please use the **canadaCentralIR-4nodesDataFlow** or **selfHostedCovidIaaSVnet** runtimes instead.
+
+The auto resolve runtime is created by default with the data factory instance, and will auto resolve to the Azure Data Centre closest to the data, which may violate data residency policies.
+### canadaCentralIR-4nodesDataFlow 
+This is shared by all users and runs all the time.
+#### Can Access:
+* Internal Data Lake 
+* External Storage Account
+* External Data Sources (Internet)
+#### Cannot Access:
+* Azure SQL Database
+### selfHostedCovidIaaSVnet 
+Located inside CAE virtual network (VNet). 
+#### Can Access:
+* Internal Data Lake
+* SQL Server
+#### Cannot Access:
+* External Storage Account
+* External Data Sources (Internet)
+
 ## Example: How to connect John Hopkins Data
 1. There is an example workflow that shows how to ingest data from GitHub using a Data Factory Pipeline.  
 ![John Hopkins Pipeline](images/DataFactoryJohnhopkinspipeline.png)  
