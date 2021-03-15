@@ -173,10 +173,6 @@ To switch the menu language and model language in Power BI Desktop:
 * [Firefox](https://support.mozilla.org/en-US/kb/use-firefox-another-language)
 * [Opera](https://help.opera.com/en/latest/customization/#changeLanguage)
 
-# Change Display Language
-
-See [Language](Language.md) page to find out how to change the display language.
-
 
 
 
