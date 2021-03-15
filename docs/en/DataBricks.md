@@ -99,48 +99,49 @@ Notebooks also support a few auxiliary magic commands:
 ![Where to start a Databricks cluster](images/DataBricksStartCluster.png)  
 
 ## Databricks Connect VM Setup
-Databricks connect is a method for accessing a Databricks environment without having to connect through the Azure Portal. Its main use is to allow you to use other IDEs to work on Databricks code.
+Databricks connect is a method for accessing a Databricks environment without having to connect through the Azure Portal or the Databricks UI. It allows you to use other IDEs to work on Databricks code.
 
-The following are the steps for installing and testing Catabricks Connect on your virtual machine (VM).
+The following are the steps for installing and testing Databricks Connect on your virtual machine (VM).
 
-1. Databricks Connect conflicts with the Pyspark installation that found on the Data Science Virtual Machine images. The default path for this Pyspark installation is `C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7`. This folder must be either deleted or moved in order to install Databricks connect.
+1. Databricks Connect conflicts with the Pyspark installation that found on the Data Science Virtual Machine images. The default path for this Pyspark installation is `C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7`. Either delete or move this folder in order to install Databricks Connect.
 
-2. Before installing Databricks Connect, create a conda environment. To do this, open a command prompt and do the following.
+2. Before installing Databricks Connect, create a conda environment. To do this, open a command prompt and run the following commands:
 ```
     conda create --name dbconnect python=3.7
     conda activate dbconnect
     type pip install -U databricks-connect==X.Y.*
 ```
-(X and Y are to be replaced with the version number of the Databricks cluster. To find this value, open Databricks from the Azure portal, and click on Clusters on the left of the page. You are looking for the runtime.)
-3. Once the installation has finished, collect the following three pieces of information, and copy the text somewhere for later use.
-* The **Databricks Org ID** (Check the URL from Databricks page, look for ?o= the number that follows is the org ID)
-* A **personal access token** (Look at the top right of the databricks window for the button "Databricks-XXX", click user settings, then Generate New Token)
-* **Cluster ID** (go back to the clusters page, click on the cluster you wish to use, check the URL for `clusters/XXXX-XXXXXX-XXXXXXXXX/configuration` the Xs are the value)
-4. In command prompt type databricks-connect configure, then enter these values.
+**NOTE:** Replace **X** and **Y** with the version number of the Databricks cluster. To find this value, open the Databricks workspace from the Azure portal, click on **Clusters** on the left of the page, and note the **Runtime** version for your cluster.
 
-   **Databricks Host:** `https//:canadacentral.azuredatabricks.net`
+3. In a command prompt, type **databricks-connect configure**, then enter the following values when prompted:
 
-    **Databricks Token:** `the personal access token from step 3`
+* **Databricks Host:** `https//:canadacentral.azuredatabricks.net`
 
-    **Cluster ID:** `the cluster ID from step 3`
+* **Databricks Token:** a [personal access token](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token) generated in your Databricks Workspace User Settings
 
-    **Org ID:** `Once again from part 3`
+* **Cluster ID:** the value found under **Cluster --> Advanced Options --> Tags** in your Databricks workspace.
+![DatabrickConnectClusterID](images/DatabrickConnectClusterID.PNG)
 
-    **Port:** leave as 15001
-5. The last setup step requires changing an enviroment variable `SPARK_HOME` to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark` then restart your VM (If you do not know how to change environment variables please ask for help).
-6. To test if your configuration setup works enter databricks-connect test in command prompt. If the cluster you are using is not running when you start your test you will receive warning messages until it has started. This can take time.
+* **Org ID:** the part of the Databricks URL found after **.net/?o=**
+![DatabrickConnectOrgID](images/DatabrickConnectOrgID.PNG)
+
+* **Port:** keep the existing value
+
+4. Change the `SPARK_HOME` enviroment variable to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, and restart your VM. (Please ask for help via a a [Slack](https://cae-eac.slack.com) message if you do not know how to change environment variables.)
+5. Test the connectivity to Azure Databricks by running **databricks-connect test** in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.
 
 ## Installing Libraries 
-### On Databricks Cluster
+### Databricks Cluster
 Please contact the [slack](https://cae-eac.slack.com) channel to have the support team install these libraries for you.
 ### Notebook
+Use the following commands to install a library in a notebook session:
 ```python
 dbutils.library.installPyPI("pypipackage", version="version", repo="repo", extras="extras")
 dbutils.library.restartPython() # Removes Python state, but some libraries might not work without calling this function
 ```
 
 ## Microsoft Documentation  
-- [Databricks-Connects](https://docs.databricks.com/dev-tools/databricks-connect.html)
+- [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html)
 - [First Access to Databricks](https://docs.microsoft.com/en-us/azure/azure-databricks/quickstart-create-databricks-workspace-portal#run-a-spark-sql-job)  
 - [For more information on Databricks](https://azure.microsoft.com/en-us/resources/videos/connect-2017-introduction-to-azure-databricks)  
 - [Install Libraries in Current Notebook Session](https://docs.microsoft.com/en-us/azure/databricks/notebooks/notebooks-python-libraries)  
