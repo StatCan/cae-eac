@@ -1,3 +1,4 @@
+_[Français](../fr/DataFactory.md)_
 # Azure Data Factory (ADF)
 
 ## Access Data Factory

@@ -1,3 +1,4 @@
+_[English](../en/SwitchLanguage.md)_
 # Langue
 Le document décrit la façon de changer la langue dans les différents services offerts.
 

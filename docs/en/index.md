@@ -1,3 +1,5 @@
+_[Français](../fr/index.md)_
+
 ## Collaborative Analytics Environment (CAE)
 The Collaborative Analytics Environment (CAE) provides cloud services for data ingestion, transformation and preparation, as well as data exploration and computation. It includes tools for collaborative analytics, machine learning environments, and data visualization capabilities. Notebook environments and virtual machines provide analytical capabilties using a variety of statistical software such as R, Python, SAS, etc. The CAE leverages Microsoft Azure Platform as a Service (PaaS) and Software as a Service (SaaS) offerings. 
 

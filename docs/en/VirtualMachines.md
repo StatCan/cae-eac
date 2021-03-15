@@ -1,3 +1,4 @@
+_[Français](../fr/VirtualMachine.md)_
 # Virtual Machines
 
 ## Find Your DevTest Lab

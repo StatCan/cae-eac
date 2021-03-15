@@ -1,3 +1,4 @@
+_[Français](../fr/Aide.md)_
 # Help
 
 ## FAQ

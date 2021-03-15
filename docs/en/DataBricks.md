@@ -1,3 +1,4 @@
+_[Français](../fr/Databricks.md)_
 # Azure Databricks
 
 ## Accessing Databricks

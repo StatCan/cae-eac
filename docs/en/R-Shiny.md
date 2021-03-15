@@ -1,3 +1,4 @@
+_[Français](../fr/R-Shiny.md)_
 # R-Shiny from RStudio
 The document describes how to access the R-Shiny package from RStudio.
 

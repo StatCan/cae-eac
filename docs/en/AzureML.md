@@ -1,5 +1,4 @@
-<!-- _pour le français [cliquez ici](../fr/AzureML.md)_   -->
- <!-- test  -->
+_[Français](../fr/AzureML.md)_
 # Azure Machine Learning
 ## Accessing Azure Machine Learning
 ### Dashboard

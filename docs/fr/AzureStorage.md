@@ -1,3 +1,4 @@
+_[English](../en/AzureStorage.md)_
 # Stockage Azure
 
 

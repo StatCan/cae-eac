@@ -1,3 +1,4 @@
+_[English](../en/AzureSQL.md)_
 # Base de données Azure SQL
 Une base de données Azure SQL peut être créée à l'avance si vous en avez besoin pour votre projet.
 
