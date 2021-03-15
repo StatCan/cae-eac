@@ -1,4 +1,4 @@
-_[English](../en)_
+_[English](../../en)_
 # Environnement d'analyse collaborative (EAC)
 
 L'Environnement d'Analyse Collaborative (EAC) fournit des services infonuagiques pour l'ingestion, la transformation, la préparation, l'exploration et le traitement des données. Il comprend des outils d'analyse collaborative, des environnements d'apprentissage machine et des fonctions de visualisation des données. Les environnements de bloc-notes et les machines virtuelles offrent des capacités d'analyse par l'entremise de divers logiciels statistiques comme R, Python et SAS. L'EAC exploite la plateforme Microsoft Azure comme service (PaaS) et les offres de logiciel-service (SaaS).

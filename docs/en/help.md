@@ -1,4 +1,4 @@
-_[Français](../fr/Aide)_
+_[Français](../../fr/Aide)_
 # Help
 
 ## FAQ

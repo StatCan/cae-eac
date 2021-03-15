@@ -1,4 +1,4 @@
-_[English](../en/Login.md)_
+_[English](../../en/Login.md)_
 # Comment accéder à l'environnement
 ## Prérequis
 - Un compte de l'infonuagique StatCan ou un compte d'utilisateur invité. L'accès avec un compte du réseau de StatCan est présentement seulement disponible pour le service Power BI, mais pourrait être une option future pour les autres services de l'Environnement d'Analyse Collaborative (EAC).

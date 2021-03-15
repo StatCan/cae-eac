@@ -1,4 +1,4 @@
-_[Français](../fr/Access.md)_
+_[Français](../../fr/Access.md)_
 # Request Access
 
 If you have already been given access to the platform, see [How to login](Login.md) for more information.

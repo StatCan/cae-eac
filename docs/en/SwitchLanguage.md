@@ -1,4 +1,4 @@
-_[Français](../fr/Langue.md)_
+_[Français](../../fr/Langue.md)_
 # Switch Language
 How to swtich langiages using the folliwng tools...
 

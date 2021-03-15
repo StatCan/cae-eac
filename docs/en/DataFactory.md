@@ -1,4 +1,4 @@
-_[Français](../fr/DataFactory)_
+_[Français](../../fr/DataFactory)_
 # Azure Data Factory (ADF)
 
 ## Access Data Factory
