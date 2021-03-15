@@ -1,4 +1,4 @@
-_[English](../en/Dashboards.md)_
+_[English](../en/Dashboards)_
 # Tableaux de bord
 
 Les tableaux de bord affichent vos ressources infonuagiques dans le portail Azure de façon précise et organisée. Ils servent d'espace de

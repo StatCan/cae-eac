@@ -1,4 +1,4 @@
-_[English](../en/DataFactory.md)_
+_[English](../en/DataFactory)_
 # Azure Data Factory (ADF)
 
 ## Accès à Data Factory

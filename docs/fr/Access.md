@@ -1,4 +1,4 @@
-_[English](../en/RequestAccess.md)_
+_[English](../en/RequestAccess)_
 # Demande d'accès
 
 Si vous avez déjà obtenu l'accès à la plateforme, consultez les

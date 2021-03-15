@@ -1,4 +1,4 @@
-_[English](../en/FAQ.md)_
+_[English](../en/FAQ)_
 # FAQ
 
 ## Ingestion de données

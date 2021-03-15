@@ -1,4 +1,4 @@
-_[English](../en/AzureStorage.md)_
+_[English](../en/AzureStorage)_
 # Stockage Azure
 
 

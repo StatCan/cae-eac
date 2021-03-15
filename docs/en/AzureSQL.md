@@ -1,4 +1,4 @@
-_[Français](../fr/AzureSQL.md)_
+_[Français](../fr/AzureSQL)_
 # Azure SQL Database
 An Azure SQL Database can be setup in advance if your project requires one.
 

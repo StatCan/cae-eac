@@ -1,4 +1,4 @@
-_[Français](../fr/FAQ.md)_
+_[Français](../fr/FAQ)_
 # FAQ
 
 ## Data Ingestion ##
