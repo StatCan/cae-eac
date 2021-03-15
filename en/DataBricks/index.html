@@ -13,8 +13,8 @@
       
         <link rel="canonical" href="https://statcan.github.io/cae-eac/en/DataBricks/">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
@@ -75,11 +75,9 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://statcan.github.io/cae-eac/en/" title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-header__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)">
+    <a href=".." title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-header__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -171,11 +169,9 @@
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://statcan.github.io/cae-eac/en/" title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-nav__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)">
+    <a href=".." title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-nav__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -409,6 +405,33 @@
   <a href="#databricks-connect-vm-setup" class="md-nav__link">
     Databricks Connect VM Setup
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-libraries" class="md-nav__link">
+    Installing Libraries
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#databricks-cluster" class="md-nav__link">
+    Databricks Cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notebook" class="md-nav__link">
+    Notebook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -716,6 +739,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#installing-libraries" class="md-nav__link">
+    Installing Libraries
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#databricks-cluster" class="md-nav__link">
+    Databricks Cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notebook" class="md-nav__link">
+    Notebook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#microsoft-documentation" class="md-nav__link">
     Microsoft Documentation
   </a>
@@ -762,7 +812,7 @@
 <h4 id="databricks-url">Databricks URL</h4>
 <ol>
 <li>Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.<br />
-<img alt="Databricks URL" src="../images/DatabricksSelect.png" /> </li>
+<img alt="Databricks URL" src="../images/DatabricksSelect.png" /></li>
 </ol>
 <h4 id="azure-portal">Azure Portal</h4>
 <ol>
@@ -838,14 +888,14 @@ When you invoke a language magic command, the command is dispatched to the REPL 
 <img alt="Where to start a Databricks cluster" src="../images/DataBricksStartCluster.png" />  </li>
 </ol>
 <h3 id="databricks-connect-vm-setup">Databricks Connect VM Setup</h3>
-<p>Databricks connect is a method for accessing a databricks environment without having to connect through the Azure Portal. Its main use is to allow you to use other IDEs to work on databricks code.</p>
-<p>The following are the steps for installing and testing databricks connect on your VM environment.</p>
+<p>Databricks connect is a method for accessing a Databricks environment without having to connect through the Azure Portal or the Databricks UI. It allows you to use other IDEs to work on Databricks code.</p>
+<p>The following are the steps for installing and testing Databricks Connect on your virtual machine (VM):</p>
 <ol>
 <li>
-<p>Databricks Connect has conflictions with the Pyspark instalation that is on our DataScience VMs by default. The default path of this is <code>C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7</code>. This folder must be either deleted or moved in order to install Databricks connect.</p>
+<p>Databricks Connect conflicts with the Pyspark installation found on the Data Science Virtual Machine images. The default path for this Pyspark installation is <code>C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7</code>. Either delete or move this folder in order to install Databricks Connect.</p>
 </li>
 <li>
-<p>Before installing databricks connect a conda environment should be created. To do this open command prompt and do the following.</p>
+<p>Before installing Databricks Connect, create a conda environment. To do this, open a command prompt and run the following commands:</p>
 </li>
 </ol>
 <div class="codehilite"><pre><span></span><code>    <span class="nv">conda</span> <span class="nv">create</span> <span class="o">--</span><span class="nv">name</span> <span class="nv">dbconnect</span> <span class="nv">python</span><span class="o">=</span><span class="mi">3</span>.<span class="mi">7</span>
@@ -853,31 +903,47 @@ When you invoke a language magic command, the command is dispatched to the REPL 
     <span class="nv">type</span> <span class="nv">pip</span> <span class="nv">install</span> <span class="o">-</span><span class="nv">U</span> <span class="nv">databricks</span><span class="o">-</span><span class="k">connect</span><span class="o">==</span><span class="nv">X</span>.<span class="nv">Y</span>.<span class="o">*</span>
 </code></pre></div>
 
-<p>(X and Y are to be replaced with the version number of the spark cluster. To see this open databricks from the azure portal and click clusters on the left of the page. You are looking for the runtime) 
-3. Once the installation has finished, you will need to collect 3 peices of information (copy the text somewhere)
-* The <strong>databricks Org ID</strong> (check URL from databricks page, look for ?o= the number that follows is the org ID)
-* A <strong>personal access token</strong> (Look at the top right of the databricks window for the button "Databricks-XXX", click user settings, then Generate New Token)
-* <strong>Cluster ID</strong> (go back to the clusters page, click on the cluster you wish to use, check the URL for <code>clusters/XXXX-XXXXXX-XXXXXXXXX/configuration</code> the Xs are the value) 
-4. In command prompt type databricks-connect configure, then enter these values.</p>
+<p><strong>NOTE:</strong> Replace <strong>X</strong> and <strong>Y</strong> with the version number of the Databricks cluster. To find this value, open the Databricks workspace from the Azure portal, click on <strong>Clusters</strong> on the left of the page, and note the <strong>Runtime</strong> version for your cluster.</p>
+<ol>
+<li>
+<p>In a command prompt, type <strong>databricks-connect configure</strong>, then enter the following values when prompted:</p>
+</li>
+<li>
 <p><strong>Databricks Host:</strong> <code>https//:canadacentral.azuredatabricks.net</code></p>
-<div class="codehilite"><pre><span></span><code>**Databricks Token:** `the personal access token from step 3`
-
-**Cluster ID:** `the cluster ID from step 3`
-
-**Org ID:** `Once again from part 3`
-
-**Port:** leave as 15001
+</li>
+<li>
+<p><strong>Databricks Token:</strong> a <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token">personal access token</a> generated in your Databricks Workspace User Settings</p>
+</li>
+<li>
+<p><strong>Cluster ID:</strong> the value found under <strong>Cluster --&gt; Advanced Options --&gt; Tags</strong> in your Databricks workspace.
+<img alt="DatabrickConnectClusterID" src="../images/DatabrickConnectClusterID.PNG" /></p>
+</li>
+<li>
+<p><strong>Org ID:</strong> the part of the Databricks URL found after <strong>.net/?o=</strong>
+<img alt="DatabrickConnectOrgID" src="../images/DatabrickConnectOrgID.PNG" /></p>
+</li>
+<li>
+<p><strong>Port:</strong> keep the existing value</p>
+</li>
+<li>
+<p>Change the <code>SPARK_HOME</code> enviroment variable to <code>c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark</code>, and restart your VM. (Please ask for help via a <a href="https://cae-eac.slack.com">Slack</a> message if you do not know how to change environment variables.)</p>
+</li>
+<li>Test the connectivity to Azure Databricks by running <strong>databricks-connect test</strong> in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.</li>
+</ol>
+<h3 id="installing-libraries">Installing Libraries</h3>
+<h4 id="databricks-cluster">Databricks Cluster</h4>
+<p>Please contact the <a href="https://cae-eac.slack.com">slack</a> channel to have the support team install these libraries for you.</p>
+<h4 id="notebook">Notebook</h4>
+<p>Use the following commands to install a library in a notebook session:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">dbutils</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">installPyPI</span><span class="p">(</span><span class="s2">&quot;pypipackage&quot;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="n">repo</span><span class="o">=</span><span class="s2">&quot;repo&quot;</span><span class="p">,</span> <span class="n">extras</span><span class="o">=</span><span class="s2">&quot;extras&quot;</span><span class="p">)</span>
+<span class="n">dbutils</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">restartPython</span><span class="p">()</span> <span class="c1"># Removes Python state, but some libraries might not work without calling this function</span>
 </code></pre></div>
 
-<ol>
-<li>The last setup step requires changing an enviroment variable <code>SPARK_HOME</code> to <code>c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark</code> then restart your VM (If you do not know how to change environment variables please ask for help).</li>
-<li>To test if your configuration setup works enter databricks-connect test in command prompt. If the cluster you are using is not running when you start your test you will receive warning messages until it has started. This can take time.</li>
-</ol>
 <h3 id="microsoft-documentation">Microsoft Documentation</h3>
 <ul>
-<li><a href="https://docs.databricks.com/dev-tools/databricks-connect.html">Databricks-Connects</a> </li>
 <li><a href="https://docs.microsoft.com/en-us/azure/azure-databricks/quickstart-create-databricks-workspace-portal#run-a-spark-sql-job">First Access to Databricks</a>  </li>
 <li><a href="https://azure.microsoft.com/en-us/resources/videos/connect-2017-introduction-to-azure-databricks">For more information on Databricks</a>  </li>
+<li><a href="https://docs.databricks.com/dev-tools/databricks-connect.html">Databricks Connect</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/databricks/notebooks/notebooks-python-libraries">Install Libraries in Current Notebook Session</a>  </li>
 <li><a href="https://docs.microsoft.com/en-us/azure/databricks/libraries#:~:text=Azure%20Databricks%20supports%20three%20library,its%20path%20in%20the%20workspace">Library Management for Admins</a>  </li>
 </ul>
@@ -979,7 +1045,7 @@ When you invoke a language magic command, the command is dispatched to the REPL 
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
       
     
   </body>

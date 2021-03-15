@@ -13,8 +13,8 @@
       
         <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/R-Shiny/">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
@@ -75,11 +75,9 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://statcan.github.io/cae-eac/fr/" title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-header__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)">
+    <a href=".." title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-header__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -171,11 +169,9 @@
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://statcan.github.io/cae-eac/fr/" title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-nav__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)">
+    <a href=".." title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-nav__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -413,8 +409,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#acces-aux-fichiers-depuis-le-conteneur-interne" class="md-nav__link">
-    Accès aux fichiers depuis le conteneur interne
+  <a href="#acces-aux-fichiers-a-partir-du-lac-de-donnees" class="md-nav__link">
+    Accès aux fichiers à partir du lac de données
   </a>
   
 </li>
@@ -536,8 +532,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#acces-aux-fichiers-depuis-le-conteneur-interne" class="md-nav__link">
-    Accès aux fichiers depuis le conteneur interne
+  <a href="#acces-aux-fichiers-a-partir-du-lac-de-donnees" class="md-nav__link">
+    Accès aux fichiers à partir du lac de données
   </a>
   
 </li>
@@ -574,26 +570,26 @@
                   <h1>R-Shiny</h1>
                 
                 <h2 id="r-shiny-a-partir-de-rstudio">R-Shiny à partir de RStudio</h2>
-<p>Le document décrit comment accéder à R-Shiny à partir de l'application Rstudio.</p>
+<p>Ce document décrit comment accéder R-Shiny à partir de l'application Rstudio.</p>
 <h3 id="commencer">Commencer</h3>
-<p>Veuillez s'il vous plaît envoyer un message <a href="https://cae-eac.slack.com">Slack</a> à l'équipe CAE pour activer RStudio dans le cluster de databricks afin d'utiliser R-Shiny.</p>
-<p><strong>Avertissement</strong> : 
-Les clusters R-Shiny s'eteignent <strong>tous les jours à 19h</strong>. Pour faire des économies, veuillez s'il vous plaît arrêter vos clusters R-Shiny lorsque vous ne les utilisez pas.</p>
+<p>Afin d'utiliser R-Shiny, s.v.p. envoyer un message <a href="https://cae-eac.slack.com">Slack</a> à l'équipe de l'EAC pour activer RStudio dans votre cluster Databricks.</p>
+<p><strong>Avertissement</strong> :
+Les clusters R-Shiny s'éteignent <strong>tous les jours à 19h</strong>. Pour réduire vos coûts, veuillez arrêter vos clusters R-Shiny lorsque vous ne les utilisez pas.</p>
 <h3 id="acces-a-r-shiny">Accès à R-Shiny</h3>
 <ol>
-<li>À partir du portail Azure, lancer l'espace de travail Databricks créé pour vous.</li>
+<li>À partir du portail Azure, lancer l'espace de travail Databricks qui vous a été créé.</li>
 <li>
-<p>A partir de l'espace de travail Databricks, cliquez sur <strong>Clusters</strong>.
-    <img alt="RShiny" src="../images/RShiny_En.png" /> </p>
+<p>À partir de l'espace de travail Databricks, cliquez sur <strong>Cluster</strong>.
+    <img alt="RShiny" src="../images/RShiny_En.png" /></p>
 </li>
 <li>
 <p>À partir de la liste de clusters disponibles, selectionnez le cluster sur lequel RStudio a été installé.
-    <img alt="RShiny02" src="../images/RShiny02_En.png" /> </p>
-<p><strong>Note:</strong> Le cluster doit être actif pour pouvoir accéder à l'application RStudio. Consulter la <a href="../DataBricks/">section Databricks</a> pour plus de détails sur comment démarrer un cluster.</p>
+    <img alt="RShiny02" src="../images/RShiny02_En.png" /></p>
+<p><strong>Note:</strong> Le cluster doit être active pour accéder à l'application RStudio. Consulter la <a href="../DataBricks/">section Databricks</a> pour plus de détails à propos du démarrage d'un cluster.</p>
 </li>
 <li>
 <p>Selectionnez l'onglet <strong>Apps</strong>.
-    <img alt="RShiny03" src="../images/RShiny03_En.png" /> </p>
+    <img alt="RShiny03" src="../images/RShiny03_En.png" /></p>
 </li>
 <li>
 <p>Cliquez sur <strong>Set up RStudio</strong>.
@@ -601,44 +597,44 @@ Les clusters R-Shiny s'eteignent <strong>tous les jours à 19h</strong>. Pour fa
 </li>
 <li>
 <p>Un <strong>mot de passe à usage unique</strong> est généré pour vous, cliquez sur <strong>show</strong> pour l'afficher et le copier.
-    <img alt="RShiny05" src="../images/RShiny05_En.png" /> </p>
+    <img alt="RShiny05" src="../images/RShiny05_En.png" /></p>
 </li>
 <li>
 <p>Cliquez sur <strong>Open RStudio</strong>.
-    <img alt="RShiny06" src="../images/RShiny06_En.png" /> </p>
+    <img alt="RShiny06" src="../images/RShiny06_En.png" /></p>
 </li>
 <li>
 <p>Une nouvelle fenêtre s'ouvre, entrez le nom d'utilisateur et le mot de passe fournis (Étape 6) dans le formulaire de connexion afin de démarrer RStudio.</p>
-<p><img alt="RShiny07" src="../images/RShiny07_En.png" /> </p>
+<p><img alt="RShiny07" src="../images/RShiny07_En.png" /></p>
 </li>
 <li>
 <p>À partir de l'interface RStudio, entrez la commande <strong>library(shiny)</strong> dans la console afin d'importer la librarie Shiny.
-    <img alt="RShiny08" src="../images/RShiny08_En.png" /> </p>
+    <img alt="RShiny08" src="../images/RShiny08_En.png" /></p>
 </li>
 </ol>
 <h3 id="exemple-dune-application-r-shiny">Exemple d'une application R-Shiny</h3>
-<p>Nous utiliserons l'exemple <strong>Hello Shiny</strong> pour explorer la structure d'une application Shiny.</p>
+<p>Vous pouvez utiliser l'exemple <strong>Hello Shiny</strong> pour explorer la structure d'une application Shiny.</p>
 <ol>
 <li>
-<p>Lancer l'application à partir de votre session RStudio en entrant les commandes:</p>
+<p>Lancer l'application à partir de votre session RStudio en entrant les commandes suivantes:</p>
 <p>library(shiny)</p>
 <p>runExample("01_hello")</p>
 </li>
 <li>
-<p>Votre application devrait correspondre à l'image ci-dessous. 
-    <img alt="RShiny09" src="../images/RShiny09_En.PNG" /> </p>
+<p>Votre application devrait correspondre à l'image ci-dessous.
+    <img alt="RShiny09" src="../images/RShiny09_En.PNG" /></p>
 </li>
 </ol>
-<h3 id="acces-aux-fichiers-depuis-le-conteneur-interne">Accès aux fichiers depuis le conteneur interne</h3>
-<p>Par défaut, le répertoire de travail dans RStudio est sur le dossier de base, pour conserver votre travail, vous devrez utiliser DBFS.</p>
+<h3 id="acces-aux-fichiers-a-partir-du-lac-de-donnees">Accès aux fichiers à partir du lac de données</h3>
+<p>Par défaut, le répertoire de travail dans RStudio se trouve sur le noeud du pilote du cluster Databricks. Pour conserver votre travail, vous devrez utiliser DBFS.</p>
 <ol>
 <li>Pour avoir accès au DBFS dans l'explorateur de fichiers, cliquez sur le bouton <strong>...</strong> à droite et entrez <strong>/dbfs/mnt/</strong>.</li>
 </ol>
 <p><img alt="RShiny10" src="../images/Rshiny10_En.png" /></p>
 <ol>
-<li>Le conteneur sera disponible et vous pourrez accéder et stocker vos fichiers. Lorsque votre cluster s'éteint à la fin de votre session, votre travail reste disponible à votre retour.</li>
+<li>Le lac de données sera disponible et vous pourrez y accéder et stocker vos fichiers. Lorsque votre cluster s'éteint à la fin de votre session, votre travail reste disponible à votre retour.</li>
 </ol>
-<p><strong>NOTE:</strong> Voici des exemples de code pour accéder à vos fichiers à partir du conteneur.</p>
+<p><strong>NOTE:</strong> Voici des exemples de code pour accéder à vos fichiers à partir du lac de données.</p>
 <div class="codehilite"><pre><span></span><code>library(SparkR)
 sparkR.session()
 testData = as.data.frame(read.df(&quot;/mnt/le chemin du fichier&quot;, source = &quot;l&#39;extension du fichier&quot;, header=&quot;true&quot;, inferSchema = &quot;true&quot;))
@@ -748,7 +744,7 @@ str(testData)
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
       
     
   </body>

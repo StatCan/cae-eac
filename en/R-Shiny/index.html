@@ -13,8 +13,8 @@
       
         <link rel="canonical" href="https://statcan.github.io/cae-eac/en/R-Shiny/">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
@@ -75,11 +75,9 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://statcan.github.io/cae-eac/en/" title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-header__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)">
+    <a href=".." title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-header__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -171,11 +169,9 @@
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://statcan.github.io/cae-eac/en/" title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-nav__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)">
+    <a href=".." title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-nav__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -392,22 +388,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getting-starting" class="md-nav__link">
-    Getting Starting
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-access" class="md-nav__link">
-    How to Access
+  <a href="#accessing-r-shiny-from-databricks" class="md-nav__link">
+    Accessing R-Shiny from Databricks
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#rshiny-app-example" class="md-nav__link">
-    RShiny app example
+    RShiny App Example
   </a>
   
 </li>
@@ -515,22 +511,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getting-starting" class="md-nav__link">
-    Getting Starting
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-access" class="md-nav__link">
-    How to Access
+  <a href="#accessing-r-shiny-from-databricks" class="md-nav__link">
+    Accessing R-Shiny from Databricks
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#rshiny-app-example" class="md-nav__link">
-    RShiny app example
+    RShiny App Example
   </a>
   
 </li>
@@ -574,22 +570,22 @@
                   <h1>R-Shiny</h1>
                 
                 <h2 id="r-shiny-from-rstudio">R-Shiny from RStudio</h2>
-<p>The document describes how to access to R-Shiny package from RStudio.</p>
-<h3 id="getting-starting">Getting Starting</h3>
-<p>Please send a <a href="https://cae-eac.slack.com">slack</a> message to the CEA team to enable RStudio on your databricks cluster to be able to use R-Shiny.</p>
+<p>The document describes how to access the R-Shiny package from RStudio.</p>
+<h3 id="getting-started">Getting Started</h3>
+<p>To use R-Shiny, please send a <a href="https://cae-eac.slack.com">slack</a> message to the CEA team to enable RStudio on your Databricks cluster.</p>
 <p><strong>Warning</strong> :
-R-Shiny clusters are shut down <strong>everyday at 7pm</strong>. To save cost, please stop your R-Shiny clusters when you are not using them.</p>
-<h3 id="how-to-access">How to Access</h3>
+R-Shiny clusters are shut down <strong>every day at 7pm</strong>. To save on costs, please stop your R-Shiny clusters when you are not using them.</p>
+<h3 id="accessing-r-shiny-from-databricks">Accessing R-Shiny from Databricks</h3>
 <ol>
-<li>From the Azure portal, Launch the Databricks workspace that was created for you.</li>
+<li>From the Azure portal, launch the Databricks workspace that was created for you.</li>
 <li>
 <p>From the Databricks workspace, click on <strong>Clusters</strong>.
     <img alt="RShiny" src="../images/RShiny_En.png" />  </p>
 </li>
 <li>
-<p>From the available list of clusters, select the cluster with RStudio installed.
+<p>From the list of available clusters, select the cluster with RStudio installed.
     <img alt="RShiny02" src="../images/RShiny02_En.png" />  </p>
-<p><strong>Note:</strong> You must have the cluster running before you can access to RStudio. See the <a href="../DataBricks/">Databricks section</a> for information on how to start a cluster.</p>
+<p><strong>Note:</strong> You must have the cluster running before you can access RStudio. See the <a href="../DataBricks/">Databricks section</a> for information on how to start a cluster.</p>
 </li>
 <li>
 <p>Select the <strong>Apps</strong> tab.
@@ -600,7 +596,7 @@ R-Shiny clusters are shut down <strong>everyday at 7pm</strong>. To save cost, p
     <img alt="RShiny04" src="../images/RShiny04_En.png" /></p>
 </li>
 <li>
-<p>A <strong>one-time password</strong> is generated for you, click on the <strong>show</strong> to display and copy it.
+<p>A <strong>one-time password</strong> is generated for you, click on <strong>show</strong> to display and copy it.
     <img alt="RShiny05" src="../images/RShiny05_En.png" /></p>
 </li>
 <li>
@@ -616,8 +612,8 @@ R-Shiny clusters are shut down <strong>everyday at 7pm</strong>. To save cost, p
     <img alt="RShiny08" src="../images/RShiny08_En.png" /></p>
 </li>
 </ol>
-<h3 id="rshiny-app-example">RShiny app example</h3>
-<p>We will use the <strong>Hello Shiny</strong> example to explore the structure of a Shiny app.</p>
+<h3 id="rshiny-app-example">RShiny App Example</h3>
+<p>You can use use the <strong>Hello Shiny</strong> example to explore the structure of a Shiny app.</p>
 <ol>
 <li>
 <p>Launch the app from your R session by running:</p>
@@ -625,20 +621,20 @@ R-Shiny clusters are shut down <strong>everyday at 7pm</strong>. To save cost, p
 <p>runExample("01_hello")</p>
 </li>
 <li>
-<p>Your app should match the image below. 
+<p>Your app should match the image below.
     <img alt="RShiny09" src="../images/RShiny09_En.PNG" /></p>
 </li>
 </ol>
 <h3 id="accessing-files-from-the-datalake">Accessing files from the datalake</h3>
-<p>By default, the working directory in RStudio will be on the driver node, to persist your work you'll need to use DBFS.</p>
+<p>By default, the working directory in RStudio will be on the driver node of the Databricks cluster. To persist your work, you'll need to use DBFS.</p>
 <ol>
-<li>To have access DBFS in the File Explorer, click on the <strong>...</strong> to the right and enter <strong>/dbfs/mnt/</strong> at the prompt.</li>
+<li>To access DBFS in the File Explorer, click on the <strong>...</strong> to the right and enter <strong>/dbfs/mnt/</strong> at the prompt.</li>
 </ol>
 <p><img alt="RShiny10" src="../images/Rshiny10_En.png" /></p>
 <ol>
-<li>The datalake will be available and you will be able to acces and store your files. When your cluster is terminated at the end of your session, the work will be there for you when you return.</li>
+<li>The data lake will be available and you will be able to access and store your files. When your cluster is terminated at the end of your session, your work will be there for you when you return.</li>
 </ol>
-<p><strong>NOTE:</strong> Here are sample codes to access your files from the datalake.</p>
+<p><strong>NOTE:</strong> Here are some code samples to access your files from the datalake.</p>
 <div class="codehilite"><pre><span></span><code>library(SparkR)
 sparkR.session()
 testData = as.data.frame(read.df(&quot;/mnt/the file path&quot;, source = &quot;the file extension&quot;, header=&quot;true&quot;, inferSchema = &quot;true&quot;))
@@ -748,7 +744,7 @@ str(testData)
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
       
     
   </body>

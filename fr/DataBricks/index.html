@@ -13,8 +13,8 @@
       
         <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/DataBricks/">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
@@ -75,11 +75,9 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://statcan.github.io/cae-eac/fr/" title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-header__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)">
+    <a href=".." title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-header__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -171,11 +169,9 @@
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://statcan.github.io/cae-eac/fr/" title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-nav__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)">
+    <a href=".." title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-nav__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -402,6 +398,40 @@
   <a href="#demarrage-de-clusters-dans-databricks" class="md-nav__link">
     Démarrage de clusters dans Databricks
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-de-databricks-connect-sur-une-machine-virtuelle" class="md-nav__link">
+    Configuration de Databricks Connect sur une machine virtuelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-de-librairies" class="md-nav__link">
+    Installation de librairies
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation de librairies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster-databricks" class="md-nav__link">
+    Cluster Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carnet" class="md-nav__link">
+    Carnet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -702,6 +732,40 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#configuration-de-databricks-connect-sur-une-machine-virtuelle" class="md-nav__link">
+    Configuration de Databricks Connect sur une machine virtuelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-de-librairies" class="md-nav__link">
+    Installation de librairies
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation de librairies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster-databricks" class="md-nav__link">
+    Cluster Databricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carnet" class="md-nav__link">
+    Carnet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#documentation-microsoft" class="md-nav__link">
     Documentation Microsoft
   </a>
@@ -772,7 +836,7 @@
 <p>Une façon de créer un carnet consiste à cliquer sur l'option <strong>Nouveau carnet</strong> depuis la page principale de Databricks. Vous pouvez ensuite nommer votre carnet et choisir le langage par défaut.</p>
 </li>
 <li>
-<p>Dans le champ « Grappe », sélectionnez parmis la liste proposée le cluster auquel vous souhaitez attacher votre carnet. 
+<p>Dans le champ « Grappe », sélectionnez parmis la liste proposée le cluster auquel vous souhaitez attacher votre carnet.
    <img alt="Start a notebook" src="../images/DataBrickCreateNotebook.png" /></p>
 </li>
 <li>
@@ -831,6 +895,58 @@ Lorsque vous utilisez une commande spéciale Langage, celle-ci est distribuée
 <p><img alt="Where to start a Databricks cluster" src="../images/DataBricksStartCluter.png" /></p>
 </li>
 </ol>
+<h3 id="configuration-de-databricks-connect-sur-une-machine-virtuelle">Configuration de Databricks Connect sur une machine virtuelle</h3>
+<p>Databricks connect permet l'accès à un environnement Databricks sans avoir besoin de se connecter via le portail Azure ou l'IU Databricks. Il permet d'utiliser d'autres EDI pour travailler du code Databricks.</p>
+<p>Voici les étapes pour installer et tester Databricks Connect sur votre machine virtuelle:</p>
+<ol>
+<li>
+<p>Il y a un conflit entre Databricks Connect et l'installation Pyspark qui se trouve sur les images Data Science Virtual Machine. Par défaut, cette installation de Pyspark se trouve dans <code>C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7</code>. Veuillez supprimer ou déplacer ce dossier afin d'installer Databricks Connect.</p>
+</li>
+<li>
+<p>Avant d'installer Databricks Connect, créez un environment conda. Pour ce faire, ouvrez une invite de commandes et executéz les commandes suivantes:</p>
+</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>    <span class="nv">conda</span> <span class="nv">create</span> <span class="o">--</span><span class="nv">name</span> <span class="nv">dbconnect</span> <span class="nv">python</span><span class="o">=</span><span class="mi">3</span>.<span class="mi">7</span>
+    <span class="nv">conda</span> <span class="nv">activate</span> <span class="nv">dbconnect</span>
+    <span class="nv">type</span> <span class="nv">pip</span> <span class="nv">install</span> <span class="o">-</span><span class="nv">U</span> <span class="nv">databricks</span><span class="o">-</span><span class="k">connect</span><span class="o">==</span><span class="nv">X</span>.<span class="nv">Y</span>.<span class="o">*</span>
+</code></pre></div>
+
+<p><strong>REMARQUE:</strong> Remplacez <strong>X</strong> et <strong>Y</strong> avec le numéro de version de votre cluster Databricks. Vous pouvez trouvez cette valeur en ouvrant l'espace de travail Databricks du portail Azure. Cliquez sur <strong>Clusters</strong> dans le menu à gauche, et notez la version <strong>Runtime</strong> pour votre cluster.</p>
+<ol>
+<li>
+<p>Dans une invite de commandes, entrez <strong>databricks-connect configure</strong>, et entez les valeurs suivantes quand demandées:</p>
+</li>
+<li>
+<p><strong>Hôte Databricks:</strong> <code>https//:canadacentral.azuredatabricks.net</code></p>
+</li>
+<li>
+<p><strong>Jeton</strong> : le <a href="https://docs.microsoft.com/fr-ca/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token">jeton d’accès personnel</a> généré dans les paramètres utilisateur de votre espace de travail Databricks</p>
+</li>
+<li>
+<p><strong>ID du cluster</strong> : la valeur indiquée sous <strong>Instance de calcul --&gt; Options avancées--&gt; Étiquettes</strong> dans votre espace de travail Databricks
+<img alt="DatabrickConnectClusterID" src="../images/DatabrickConnectClusterID.PNG" /></p>
+</li>
+<li>
+<p><strong>ID de l’organisation</strong> : la partie de l’URL de Databricks qui se trouve après <strong>.net/?o=</strong><br />
+<img alt="DatabrickConnectOrgID" src="../images/DatabrickConnectOrgID.PNG" /></p>
+</li>
+<li>
+<p><strong>Port</strong> : conserver la valeur existante</p>
+</li>
+<li>
+<p>Changez la valeur de la variable d'environnement <code>SPARK_HOME</code> à <code>c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark</code>, et redémarrez votre machine virtuelle. (Veuillez demander de l'aide via un message <a href="https://cae-eac.slack.com">Slack</a> si vous ne savez pas comment changer des variables d'environnement.)</p>
+</li>
+<li>Testez la connectivité avec Azure Databricks en exécutant <strong>databricks-connect test</strong> dans une invite de commandes. Si votre cluster Databricks est arrêté quand vous commencez ce test, vous recevrez des messages d'avertissement jusqu'à ce qu'il ait démarré, ce qui peut prendre du temps.</li>
+</ol>
+<h3 id="installation-de-librairies">Installation de librairies</h3>
+<h4 id="cluster-databricks">Cluster Databricks</h4>
+<p>Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les librairies pour vous.</p>
+<h4 id="carnet">Carnet</h4>
+<p>Veuillez utiliser les commandes suivantes pour installer une librairie dans une session de carnet.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">dbutils</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">installPyPI</span> <span class="p">(</span><span class="s2">&quot;pypipackage&quot;</span><span class="p">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="n">repo</span> <span class="o">=</span> <span class="s2">&quot;repo&quot;</span><span class="p">,</span> <span class="n">extras</span> <span class="o">=</span> <span class="s2">&quot;extras&quot;</span><span class="p">)</span>
+<span class="n">dbutils</span><span class="o">.</span><span class="n">library</span><span class="o">.</span><span class="n">restartPython</span> <span class="p">()</span> <span class="c1"># Supprime l&#39;état Python, mais certaines bibliothèques peuvent ne pas fonctionner sans appeler cette fonction</span>
+</code></pre></div>
+
 <h3 id="documentation-microsoft">Documentation Microsoft</h3>
 <ul>
 <li>
@@ -839,6 +955,9 @@ Lorsque vous utilisez une commande spéciale Langage, celle-ci est distribuée
 <li>
 <p><a href="https://azure.microsoft.com/fr-ca/resources/videos/connect-2017-introduction-to-azure-databricks/">En savoir plus sur Databricks</a>
     (en anglais seulement)</p>
+</li>
+<li>
+<p><a href="https://docs.databricks.com/dev-tools/databricks-connect.html">Databricks Connect</a> (en anglais seulement)</p>
 </li>
 <li>
 <p><a href="https://docs.microsoft.com/fr-ca/azure/databricks/notebooks/notebooks-python-libraries">Installer des bibliothèques dans la session active d'un carnet</a></p>
@@ -945,7 +1064,7 @@ Lorsque vous utilisez une commande spéciale Langage, celle-ci est distribuée
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
       
     
   </body>
