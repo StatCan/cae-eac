@@ -1,4 +1,4 @@
-_[Français](../../fr/Login.md)_
+_[Français](../../fr/Login)_
 # How to Login
 ## Prerequisites
 - An authorized StatCan Cloud account or guest account. Access using StatCan Network accounts is currently only available for the Power BI Service, but may be added in the future for other services in the Collaborative Analytics Environment (CAE).

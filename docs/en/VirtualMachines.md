@@ -1,4 +1,4 @@
-_[Français](../../fr/VirtualMachine.md)_
+_[Français](../../fr/VirtualMachine)_
 # Virtual Machines
 
 ## Find Your DevTest Lab

@@ -1,4 +1,4 @@
-_[Français](../../fr/Language.md)_
+_[Français](../../fr/Language)_
 # Language 
 The document describes how to change languages in the various service offerings.
 
