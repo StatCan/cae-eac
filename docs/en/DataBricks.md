@@ -101,9 +101,9 @@ Notebooks also support a few auxiliary magic commands:
 ## Databricks Connect VM Setup
 Databricks connect is a method for accessing a Databricks environment without having to connect through the Azure Portal or the Databricks UI. It allows you to use other IDEs to work on Databricks code.
 
-The following are the steps for installing and testing Databricks Connect on your virtual machine (VM).
+The following are the steps for installing and testing Databricks Connect on your virtual machine (VM):
 
-1. Databricks Connect conflicts with the Pyspark installation that found on the Data Science Virtual Machine images. The default path for this Pyspark installation is `C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7`. Either delete or move this folder in order to install Databricks Connect.
+1. Databricks Connect conflicts with the Pyspark installation found on the Data Science Virtual Machine images. The default path for this Pyspark installation is `C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7`. Either delete or move this folder in order to install Databricks Connect.
 
 2. Before installing Databricks Connect, create a conda environment. To do this, open a command prompt and run the following commands:
 ```
@@ -127,7 +127,7 @@ The following are the steps for installing and testing Databricks Connect on you
 
 * **Port:** keep the existing value
 
-4. Change the `SPARK_HOME` enviroment variable to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, and restart your VM. (Please ask for help via a a [Slack](https://cae-eac.slack.com) message if you do not know how to change environment variables.)
+4. Change the `SPARK_HOME` enviroment variable to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, and restart your VM. (Please ask for help via a [Slack](https://cae-eac.slack.com) message if you do not know how to change environment variables.)
 5. Test the connectivity to Azure Databricks by running **databricks-connect test** in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.
 
 ## Installing Libraries 
@@ -141,9 +141,9 @@ dbutils.library.restartPython() # Removes Python state, but some libraries might
 ```
 
 ## Microsoft Documentation  
-- [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html)
 - [First Access to Databricks](https://docs.microsoft.com/en-us/azure/azure-databricks/quickstart-create-databricks-workspace-portal#run-a-spark-sql-job)  
 - [For more information on Databricks](https://azure.microsoft.com/en-us/resources/videos/connect-2017-introduction-to-azure-databricks)  
+- [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html)
 - [Install Libraries in Current Notebook Session](https://docs.microsoft.com/en-us/azure/databricks/notebooks/notebooks-python-libraries)  
 - [Library Management for Admins](https://docs.microsoft.com/en-us/azure/databricks/libraries#:~:text=Azure%20Databricks%20supports%20three%20library,its%20path%20in%20the%20workspace)  
 
