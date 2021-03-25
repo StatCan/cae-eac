@@ -22,7 +22,13 @@ Pour accéder au tableau de bord en français de l’environnement d’Analyse c
 ![Dashboard](images/LanguageSettings/Dashboard_Fr.png)
 
 ## DataFactory
-Cet outil est disponible uniquement en anglais pour le moment.
+Pour configurer la langue, voici les étapes à suivre:
+
+1. Ouvre _Azure Datafactory_, utilisez le menu  **Paramètres**
+2. Sélectionnez _Français‎_ 
+3. Cliquez sur le bouton **Appliquer**
+
+![DataFactory](images/ADFLangue.png)  
 
 
 ## Databricks
