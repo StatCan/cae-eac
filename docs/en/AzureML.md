@@ -1,5 +1,8 @@
 _[Français](../../fr/AzureML)_
 # Azure Machine Learning
+
+*New:* Please access Azure ML form your CAE [Virtual Machine](VirtualMarchine.md).
+
 ## Accessing Azure Machine Learning
 ### Dashboard
 

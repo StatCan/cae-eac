@@ -1,5 +1,8 @@
 _[English](../../en/AzureML)_
 # Azure Machine Learning
+
+*Nouveau:* Veuillez accéder à Azure ML à l'aide de votre EAC [machine virtuelle](VirtualMarchine.md)
+
 ## Accès à Azure Machine Learning
 ### Tableau de bord
 
