@@ -1,7 +1,7 @@
 _[English](../../en/AzureML)_
 # Azure Machine Learning
 
-*Nouveau:* Veuillez accéder à Azure ML à l'aide de votre EAC [machine virtuelle](VirtualMarchine.md)
+*Nouveau:* Veuillez accéder à Azure ML à partir de votre [machine virtuelle](VirtualMarchine.md) de l'EAC.
 
 ## Accès à Azure Machine Learning
 ### Tableau de bord
@@ -91,7 +91,7 @@ databricks-connect test (databricks - test de connexion)
 6.	Databricks Connect devrait maintenant être configuré! Essayez le code échantillon Databricks Connect dans le bloc-notes, en remplaçant public-data/incoming/1test.txt par le chemin d’accès à un fichier dans votre conteneur de lac de données.
 
 # Demander un calcul
-Veuillez utiliser [slack](https://cae-eac.slack.com) pour demander un calcul à distance. Vous recevrez l'erreur suivante si vous procédez à la création par vous-même:
+ Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [slack](https://cae-eac.slack.com) pour demander un calcul dans Azure Machine Learning. Vous recevrez l'erreur suivante si vous procédez à la création par vous-même:
 ![Erreur Creation Calcul](images/AzureMLErreurCreationCalcul.png)
 
 # Changer la langue d'affichage
