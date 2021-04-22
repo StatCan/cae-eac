@@ -117,7 +117,7 @@ databricks-connect test
 6.	Databricks connect should be setup now! Try the [Databricks connect example code](https://github.com/StatCan/cae-eac/blob/master/Examples/AzureML/Databricks-Connect-Example.txt) in a notebook, replacing **public-data/incoming/1test.txt** with the path to a file in your data lake container.
 
 # Request compute
-Please use the [slack](https://cae-eac.slack.com)  to request a remote compute. You will receive the following error when creating it yourself:
+Please contact the support team through the [slack](https://cae-eac.slack.com) channel to request Azure ML compute. You will receive the following error when creating it yourself:
 ![Create Compute Error](images/AzureMLCreateComputeError.png)
 
 # Change Display Language
