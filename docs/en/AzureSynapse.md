@@ -11,9 +11,28 @@ _[Français](../../fr/AzureSynapse)_
 3. Start typing "synapse" into the search bar to find **Azure Synapse Analytics**.
 ![Access Synapse](images/AzureSynapseAccess.png) 
 
----
-How to login - cloud vm
+4. Find your Synapse Workspace in the list and click on it. Then click **Open Synapse Studio**.
+![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
 
+## Home
+
+## Data
+
+## Develop
+
+## Integrate
+
+## Monitor
+
+## Manage
+
+
+# Change Display Language
+See [Language](Language.md) page to find out how to change the display language.
+
+
+---
+### Rough Notes (to be deleted later)
 How to access the data lake from azure synapse
 
 All components:
