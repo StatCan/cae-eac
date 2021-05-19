@@ -2,7 +2,9 @@ _[Français](../../fr/AzureSynapse)_
 
 # Azure Synapse
 
-## Access Azure Synapse
+## Getting Started
+
+### Access Azure Synapse
 
 1. Make sure you are in your cloud VM in order to access Azure Synapse. See [Virtual Machines](VirtualMachines.md) for information on how to create one if needed.
 
@@ -15,7 +17,7 @@ _[Français](../../fr/AzureSynapse)_
 ![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
 
 
-## Start and Stop SQL Pool
+### Start and Stop SQL Pool
 
 1. Click on the **Manage** tab.
 ![Manage tab](images/AzureSynapseStartStopPool_1.png)
@@ -43,9 +45,11 @@ This is where you can:
 
 ## Develop
 
-(rough notes)
+From here, you can create and save resources such as SQL scripts, notebooks, and Power BI reports.
 
-- create SQL scripts, notebooks, Power BI reports
+To add a new resource, click the plus button. A drop-down menu will open.
+
+![Add a Resource](images/AzureSynapseDevelop.png)
 
 ## Integrate
 
@@ -69,6 +73,14 @@ Can see things like pipeline runs, trigger runs, and SQL requests.
 - access control to grant access to different groups of users
 - set up git integration
 
+## Microsoft Documentation
+
+- [What is Azure Synapse Analytics?](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) 
+- [Analyse Data with Dedicated SQL Pools](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-sql-pool)
+- [Integrate with Pipelines](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-pipelines)
+- [Visualize Data with Power BI](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-visualize-power-bi)
+- [Monitor Your Synapse Workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-monitor)
+
 # Change Display Language
 See [Language](Language.md) page to find out how to change the display language.
 
@@ -79,5 +91,3 @@ How to access the data lake from azure synapse
 
 How to  create power bi reports?
 Please contact the CEA support team to validate that a linked service is setup
-
-Link to Microsoft documentation if available.
