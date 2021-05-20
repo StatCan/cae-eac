@@ -48,8 +48,30 @@ This is where you can:
 From here, you can create and save resources such as SQL scripts, notebooks, and Power BI reports.
 
 To add a new resource, click the plus button. A drop-down menu will open.
-
 ![Add a Resource](images/AzureSynapseDevelop.png)
+
+To make your changes visible to others, you need to click the **Publish** button.
+
+### SQL Scripts
+
+Be sure to connect to your dedicated SQL pool in order to run SQL scripts.
+![SQL Scripts](images/AzureSynapseDevelopSQL.png)
+
+### Notebooks
+
+In order to run notebook cells, you first need to select your Apache Spark pool.
+![Notebooks](images/AzureSynapseDevelopNotebooks.png)
+
+See [Databricks](Databricks.md) page for more info on notebooks, including how to change the default language and use multiple languages.
+
+### Dataflows
+
+To add a source to a dataflow, under **Source Settings**, click the plus button, then select **Azure Data Lake Storage Gen2** (you may need to search for this). Click **Continue**, select the data format, then on the next page, select your Linked Service.
+![Dataflows](images/AzureSynapseDevelopDataflows.png)
+
+### Power BI Reports
+
+You can view and create Power BI reports directly in Azure Synapse. Please contact the CAE support team to validate that a linked service is setup.
 
 ## Integrate
 
@@ -61,17 +83,16 @@ Also transformations on data.
 
 ## Monitor
 
-(rough notes)
-
-Can see things like pipeline runs, trigger runs, and SQL requests.
+From the Monitor tab, you can view usuage statistics such as pipeline runs, trigger runs, and SQL requests.
 
 ## Manage
 
-(rough notes)
-
-- start and stop SQL and Apache Spark pools
-- access control to grant access to different groups of users
-- set up git integration
+This is where you can:
+- Add new SQL or Apache Spark pools
+- Start and stop your SQL pool (see **Getting Started** section)
+- Add new linked services
+- Grant others access to the workspace
+- Set up git integration
 
 ## Microsoft Documentation
 
@@ -89,5 +110,4 @@ See [Language](Language.md) page to find out how to change the display language.
 ### Rough Notes (to be deleted later)
 How to access the data lake from azure synapse
 
-How to  create power bi reports?
-Please contact the CEA support team to validate that a linked service is setup
+
