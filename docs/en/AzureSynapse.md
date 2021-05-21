@@ -35,13 +35,22 @@ From here, you can access shortcuts for common tasks such as creating SQL script
 
 ## Data
 
-(rough notes)
+The Data tab is where you can explore everything in your database and linked datasets.
 
-This is where you can:
-- explore everything in your database
-- explore linked datasets
-- read data from CSV files
-- bring data in from linked services
+### How to Bring in Data from Linked Services
+
+1. Click the plus button the add a new resource, then click **Integration Dataset**.
+![Add New Resource](images/AzureSynapseData_1.png)
+2. Select **Azure Data Lake Storage Gen2** (you may need to search for this), then click **Continue**.
+![Azure Data Lake Storage Gen2](images/AzureSynapseData_2.png)
+3. Select the format type, then click **Continue**.
+4. Enter a name, then click the drop-down menu under **Linked service** and select your data lake. Set additional properties as appropriate, then click **OK**.
+![Set properties](images/AzureSynapseData_3.png)
+
+### How to Read Data from a CSV File
+
+Find your dataset in the list and click on it. Then right click the CSV file. A menu will open with options to preview the data, or create resources such as SQL scripts and notebooks.
+![Read Data from CSV File](images/AzureSynapseData_4.png)
 
 ## Develop
 
@@ -75,11 +84,20 @@ You can view and create Power BI reports directly in Azure Synapse. Please conta
 
 ## Integrate
 
-(rough notes)
+This is where you can create pipelines and perform transformations on data, like in [Azure Data Factory](DataFactory.md). 
 
-This is where you create pipelines, much like Data Factory. Show how to do a copy data.
-
-Also transformations on data.
+### Example: Copy Data
+1. Click the plus button to add a new resource, then click on **Pipeline**.
+![Add a Resource](images/AzureSynapseIntegrate_1.png)
+2. Under **Move & transform**, drag and drop **Copy data** into the window.
+![Drag and drop Copy data](images/AzureSynapseIntegrate_2.png)
+3. Click on the **Source** tab, then click **New** to add your source dataset (where you want to copy the data from).
+![Add source dataset](images/AzureSynapseIntegrate_3.png)
+4. Select **Azure Data Lake Storage Gen2**. Select the format type. Under **Linked service**, choose your data lake. Set any additional properties if relevant, then click **OK**.
+5. Drag and drop a second **Copy data**, then set the sink dataset as you did for the source.
+![Set sink dataset](images/AzureSynapseIntegrate_4.png)
+6. Click and drag the green square to create a connection from the source to the sink.
+![Connect source to sink](images/AzureSynapseIntegrate_5.png)
 
 ## Monitor
 
@@ -104,10 +122,3 @@ This is where you can:
 
 # Change Display Language
 See [Language](Language.md) page to find out how to change the display language.
-
-
----
-### Rough Notes (to be deleted later)
-How to access the data lake from azure synapse
-
-
