@@ -99,7 +99,7 @@ See [Databricks](Databricks.md) page for more info on notebooks, including how t
 ### Dataflows
 
 To add a source to a dataflow, under **Source Settings**, click the plus button, then select **Azure Data Lake Storage Gen2** (you may need to search for this). Click **Continue**, select the data format, then on the next page, select your Linked Service.
-![Dataflows](images/AzureSynapseDevelopDataflows.png)
+![Dataflows](images/AzureSynapseDevelopDataflow.png)
 
 ### Power BI Reports
 
