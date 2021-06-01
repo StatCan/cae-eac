@@ -10,49 +10,72 @@ _[Français](../../fr/AzureSynapse)_
 
 2. Inside your virtual machine, open a web browser and navigate to the Azure Portal (https://portal.azure.com). Sign in with your cloud account credentials.
 
-3. Start typing "synapse" into the search bar to find **Azure Synapse Analytics**.
-![Access Synapse](images/AzureSynapseAccess.png) 
+3. 
+    a. Click on the **Azure Synapse Analytics** icon under **Azure services**. If you do not see this icon, follow step 3b instead.
+    ![Access Synapse](images/AzureSynapseAccess_2.png)
 
-4. Find your Synapse Workspace in the list and click on it. Then click **Open Synapse Studio**.
+    b. Start typing "synapse" into the search bar to find **Azure Synapse Analytics**.
+    ![Access Synapse](images/AzureSynapseAccess.png) 
+
+4. Find your Synapse workspace in the list and click on it. Then click **Open Synapse Studio**.
 ![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
 
+Note: You can also acccess Synapse workspaces from the Collaborative Analytics Environment dashboard.
 
 ### Start and Stop SQL Pool
 
-1. Click on the **Manage** tab.
+1. Click on the **Integrate** tab.
 ![Manage tab](images/AzureSynapseStartStopPool_1.png)
 
-2. Find your dedicated SQL pool in the list and hover over it. You should see a pause button if the pool is currently running, or a start button if it is not. Click the button to start or stop your SQL pool.
+2. Under **Pipelines**, click on either **Start Dedicated SQL Pool** or **Pause Dedicated SQL Pool**. Then click the trigger button to open a menu, and select **Trigger now**. On the next screen, click **OK**.
 ![Start or Stop SQL Pools](images/AzureSynapseStartStopPool_2.png)
 
 Note: SQL pools automatically stop running after one hour of inactivity.
 
-## Home
+## ![Home](images/AzureSynapseHomeIcon.png) Home
 
 The **Home** tab is where you start when you first open Azure Synapse Studio. 
 
 From here, you can access shortcuts for common tasks such as creating SQL scripts or notebooks by clicking the **New** dropdown menu button. Recently opened resources are also displayed.
 
-## Data
+## ![Data](images/AzureSynapseDataIcon.png) Data
 
 The Data tab is where you can explore everything in your database and linked datasets.
 
+Under the **Workspace** tab, you can explore the dedicated SQL pool database and any Spark databases.
+
+Under the **Linked** tab, you can explore external objects (e.g. Data Lake accounts) and explore/create any integration datasets from external linked data (e.g. Data Lake, Blob Storage, web service, etc) to be used in pipelines.
+
 ### How to Bring in Data from Linked Services
+
+(Note: This example shows how to get data from the Data Lake, although there are many source types available.)
 
 1. Click the plus button the add a new resource, then click **Integration Dataset**.
 ![Add New Resource](images/AzureSynapseData_1.png)
 2. Select **Azure Data Lake Storage Gen2** (you may need to search for this), then click **Continue**.
 ![Azure Data Lake Storage Gen2](images/AzureSynapseData_2.png)
 3. Select the format type, then click **Continue**.
-4. Enter a name, then click the drop-down menu under **Linked service** and select your data lake. Set additional properties as appropriate, then click **OK**.
+4. Enter a name, then click the drop-down menu under **Linked service** and select your data lake.
 ![Set properties](images/AzureSynapseData_3.png)
+5. Under **Connect via integration runtime**, ensure that interactive authoring is enabled. If it is not, click the edit button to enable it, then click **Apply**.
+![Enable interactive authoring](images/AzureSynapseData_6.png)
+6. Set additional properties as appropriate, then click **OK**.
 
-### How to Read Data from a CSV File
+### How to Explore Data in the Data Lake
 
-Find your dataset in the list and click on it. Then right click the CSV file. A menu will open with options to preview the data, or create resources such as SQL scripts and notebooks.
+Browse to find your dataset file (CSV, Parquet, JSON, Avro, etc) and right click on it. A menu will open with options to preview the data, or create resources such as SQL scripts and notebooks.
 ![Read Data from CSV File](images/AzureSynapseData_4.png)
 
-## Develop
+### How to Explore the Dedicated SQL Pool
+Under the **Workspace** tab, you can explore databases similarly to SQL Server Management Studio (SSMS). Right click on any table, highlight **New SQL script**, and click **Select TOP 100 rows** to create a new query. You can then view the results as either a table or a chart.
+![Explore Dedicated SQL Pool](images/AzureSynapseData_5.png)
+
+### Importing Data to the Dedicated SQL Pool
+To import data to the dedicated SQL pool, you can either:
+- create a pipeline with a **Copy data** activity (most efficient for large datasets); or
+- use the [Bulk Load Wizard](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-load-studio-sql-pool).
+
+## ![Develop](images/AzureSynapseDevelopIcon.png) Develop
 
 From here, you can create and save resources such as SQL scripts, notebooks, and Power BI reports.
 
@@ -82,7 +105,7 @@ To add a source to a dataflow, under **Source Settings**, click the plus button,
 
 You can view and create Power BI reports directly in Azure Synapse. Please contact the CAE support team to validate that a linked service is setup.
 
-## Integrate
+## ![Integrate](images/AzureSynapseIntegrateIcon.png) Integrate
 
 This is where you can create pipelines and perform transformations on data, like in [Azure Data Factory](DataFactory.md). 
 
@@ -99,11 +122,11 @@ This is where you can create pipelines and perform transformations on data, like
 6. Click and drag the green square to create a connection from the source to the sink.
 ![Connect source to sink](images/AzureSynapseIntegrate_5.png)
 
-## Monitor
+## ![Monitor](images/AzureSynapseMonitorIcon.png) Monitor
 
-From the Monitor tab, you can view usuage statistics such as pipeline runs, trigger runs, and SQL requests.
+From the Monitor tab, you can monitor live pipeline runs (inputs/outputs of each activity and any errors) and view historical pipeline runs, trigger runs, SQL requests, etc.
 
-## Manage
+## ![Manage](images/AzureSynapseManageIcon.png) Manage
 
 This is where you can:
 - Add new SQL or Apache Spark pools
@@ -114,6 +137,7 @@ This is where you can:
 
 ## Microsoft Documentation
 
+- [Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/)
 - [What is Azure Synapse Analytics?](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) 
 - [Analyse Data with Dedicated SQL Pools](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-sql-pool)
 - [Integrate with Pipelines](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-pipelines)
