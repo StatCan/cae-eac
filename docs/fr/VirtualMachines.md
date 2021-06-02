@@ -6,6 +6,7 @@ _[English](../../en/VirtualMachines)_
 
 
 1.  Dans le portail Azure, cliquez sur le laboratoire DevTest dans le tableau de bord personnalisé de votre projet. ![Access DevTest Lab](images/newAccessDTL.png)
+2.  Sélectionnez le DevTest Lab qui a été attribué.
 
 ## Créez votre machine virtuelle
 
@@ -21,6 +22,9 @@ Si vous devez apporter des changements à votre machine virtuelle, consultez la 
 
 3.  Entrez un nom pour votre machine virtuelle ainsi qu'un nom d'utilisateur et un mot de passe que vous utiliserez pour vous
     connecter à la machine virtuelle. Décochez les cases *Utiliser un secret enregistré* et *Enregistrer comme mot de passe par défaut*.
+
+4. Vous pouvez cliquer sur le lien **Changer la taille** pour modifier la taille de votre machine virtuelle si vous le souhaitez.
+
     Laissez les autres champs par défaut et cliquez sur le bouton **Créer**.
 
  ![Enter New VM Details](images/EnterNewVMDetails.png)
@@ -53,6 +57,9 @@ Si vous devez apporter des changements à votre machine virtuelle, consultez la 
 
     **Note** : Par défaut, la machine virtuelle **Ubuntu** s'ouvre en mode Serveur Terminal. Vous pouvez acceder à l’interface graphique de votre machine Ubuntu à l'aide de l'application [X2Go](https://docs.microsoft.com/fr-fr/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#x2go), à partir de votre machine Windows.
 
+    **Note** : Après avoir tenté de vous connecter pour la première fois, une erreur peut apparaître indiquant qu'un bloqueur de fenêtres contextuelles empêche l'ouverture d'une nouvelle fenêtre. Pour le désactiver, une icône apparaîtra dans la barre de recherche du navigateur, sélectionnez le bouton et cliquez sur **toujours autoriser**.
+    
+    ![VM Allow PopUp](images/VMPopUp.png)
 
 ## Arrêtez votre machine virtuelle
 
