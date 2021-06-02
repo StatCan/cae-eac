@@ -94,7 +94,8 @@ Be sure to connect to your dedicated SQL pool in order to run SQL scripts.
 In order to run notebook cells, you first need to select your Apache Spark pool.
 ![Notebooks](images/AzureSynapseDevelopNotebooks.png)
 
-See [Databricks](Databricks.md) page for more info on notebooks, including how to change the default language and use multiple languages.
+To change languages for a single cell, you can use magic commands: %%pyspark, %%spark, %%csharp, %%sql. You can also change the default language using the **Language** dropdown menu.
+![Change language](images/AzureSynapseDevelopNotebooks_2.png)
 
 ### Dataflows
 
@@ -107,20 +108,26 @@ You can view and create Power BI reports directly in Azure Synapse. Please conta
 
 ## ![Integrate](images/AzureSynapseIntegrateIcon.png) Integrate
 
-This is where you can create pipelines and perform transformations on data, like in [Azure Data Factory](DataFactory.md). 
+This is where you can create pipelines for ingesting, preparing and transforming all of your data, like in [Azure Data Factory](DataFactory.md). 
 
-### Example: Copy Data
+### Example: Copy Data from External Blob to Data Lake
 1. Click the plus button to add a new resource, then click on **Pipeline**.
 ![Add a Resource](images/AzureSynapseIntegrate_1.png)
 2. Under **Move & transform**, drag and drop **Copy data** into the window.
 ![Drag and drop Copy data](images/AzureSynapseIntegrate_2.png)
-3. Click on the **Source** tab, then click **New** to add your source dataset (where you want to copy the data from).
+3. Click on the **Source** tab, then click **New** to add the source dataset (where you want to copy the data from).
 ![Add source dataset](images/AzureSynapseIntegrate_3.png)
-4. Select **Azure Data Lake Storage Gen2**. Select the format type. Under **Linked service**, choose your data lake. Set any additional properties if relevant, then click **OK**.
-5. Drag and drop a second **Copy data**, then set the sink dataset as you did for the source.
-![Set sink dataset](images/AzureSynapseIntegrate_4.png)
-6. Click and drag the green square to create a connection from the source to the sink.
-![Connect source to sink](images/AzureSynapseIntegrate_5.png)
+4. Select **Azure Blob Storage**, then select the format type (CSV, Parquet, JSON, etc). Set any additional properties if relevant, then click **OK**.
+5. Click on the **Sink**, then click **New** to set the sink dataset (where you want the data to be copied to). Choose **Azure Data Lake Storage Gen2**, then select the format type. Under **Linked service**, choose your data lake and ensure that interactive authoring is enabled (see **How to Bring in Data from Linked Services** under **Data** for more info).
+
+### Debugging and Running Pipelines
+To run a pipeline in debug mode, click the **Debug** button at the top of the pipeline window. Results will appear in the **Output** tab.
+![Debugging pipelines](images/AzureSynapseIntegrate_4.png)
+
+To run a pipeline without debugging, click the **Add trigger** button, then **Trigger now**.
+
+When you are ready to publish your pipelines, click the **Validate all** button, then click the **Publish all** button. Note that this will publish for all users to see everything that you currently have open (pipelines, SQL scripts, notebooks, etc).
+![Publish pipelines](images/AzureSynapseIntegrate_5.png)
 
 ## ![Monitor](images/AzureSynapseMonitorIcon.png) Monitor
 
@@ -130,7 +137,6 @@ From the Monitor tab, you can monitor live pipeline runs (inputs/outputs of each
 
 This is where you can:
 - Add new SQL or Apache Spark pools
-- Start and stop your SQL pool (see **Getting Started** section)
 - Add new linked services
 - Grant others access to the workspace
 - Set up git integration
