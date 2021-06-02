@@ -70,6 +70,15 @@ You must first start a Databricks cluster that was previously created for you:
 2. Navigate to your cluster and click on the **Start** (arrow) button.  
 ![Start Cluster](images/DataBricksStartCluster2.png)
 
+### What type of clusters are available in databricks?
+See the following link for the different types of available clusters: 
+https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20
+
+Generally, LTS (long term support) clusters are supported and recommended by Databricks. If you need a different version of the databricks cluster, please contact the CAE support team.
+
+### What happens when clusters are upgraded?
+LTS (long term support) have support for 1-2 years. They will need to be periodically updated to a newer version. When upgraded, all code should be re-run to ensure there are no issues when a cluster is updated
+
 ## Dashboard
 ### How do I change my subscription so that I can see my resources?
 1. In the Azure Portal click the **Directory + subscription** icon.
@@ -88,6 +97,9 @@ Steps:
 1. Login to your CAE VM.  
 2. Launch Power BI Desktop.  
 3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
+
+### How can Statistics Canada employees transfer files from their data centre?
+For Statistics Canada Employees, they can refer to this internal documentation: https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion
 
 ### How do I add a FAQ?
 Please send your suggestion through the https://cae-eac.slack.com channel.
