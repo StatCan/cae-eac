@@ -5,7 +5,7 @@ _[English](../../en/VirtualMachines)_
 ## Trouvez votre laboratoire DevTest
 
 
-1.  Dans le portail Azure, cliquez sur le laboratoire DevTest dans le tableau de bord personnalisé de votre projet. ![Access DevTest Lab](images/AccessDTL.png)
+1.  Dans le portail Azure, cliquez sur le laboratoire DevTest dans le tableau de bord personnalisé de votre projet. ![Access DevTest Lab](images/newAccessDTL.png)
 
 ## Créez votre machine virtuelle
 

@@ -1,10 +1,10 @@
-_[Français](../../fr/VirtualMachine)_
+_[Français](../../fr/VirtualMachines)_
 # Virtual Machines
 
 ## Find Your DevTest Lab
 1. In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.    
-![Access DevTest Lab](images/AccessDTL.png)  
-
+![Access DevTest Lab](images/newAccessDTL.png)  
+ 
 ## Create Your Virtual Machine
 **Note:** In some instances a Virtual Machine will be pre-created for you and you will not have permission to create a virtual machine. See the [FAQ](FAQ.md) if you need to make changes to your virtual machine.  
 
