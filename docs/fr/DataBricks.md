@@ -145,9 +145,16 @@ Voici les étapes pour installer et tester Databricks Connect sur votre machine 
 Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les librairies pour vous.
 ### Carnet
 Veuillez utiliser les commandes suivantes pour installer une librairie dans une session de carnet.
+
+Python: 
 ```python
 dbutils.library.installPyPI ("pypipackage", version = "version", repo = "repo", extras = "extras")
 dbutils.library.restartPython () # Supprime l'état Python, mais certaines bibliothèques peuvent ne pas fonctionner sans appeler cette fonction
+```
+
+R Code:
+```R
+install.packages("library") 
 ```
 ## Documentation Microsoft
 

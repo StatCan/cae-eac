@@ -136,9 +136,15 @@ The following are the steps for installing and testing Databricks Connect on you
 Please contact the [slack](https://cae-eac.slack.com) channel to have the support team install these libraries for you.
 ### Notebook
 Use the following commands to install a library in a notebook session:
+
+Python: 
 ```python
 dbutils.library.installPyPI("pypipackage", version="version", repo="repo", extras="extras")
 dbutils.library.restartPython() # Removes Python state, but some libraries might not work without calling this function
+```
+R Code:
+```R
+install.packages("library") 
 ```
 
 ## Microsoft Documentation  
