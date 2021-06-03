@@ -22,15 +22,13 @@ _[Français](../../fr/AzureSynapse)_
 
 Note: You can also acccess Synapse workspaces from the Collaborative Analytics Environment dashboard.
 
-### Start and Stop SQL Pool
+### Start and Stop Dedicated SQL Pool
 
 1. Click on the **Integrate** tab.
 ![Manage tab](images/AzureSynapseStartStopPool_1.png)
 
 2. Under **Pipelines**, click on either **Start Dedicated SQL Pool** or **Pause Dedicated SQL Pool**. Then click the trigger button to open a menu, and select **Trigger now**. On the next screen, click **OK**.
 ![Start or Stop SQL Pools](images/AzureSynapseStartStopPool_2.png)
-
-Note: SQL pools automatically stop running after one hour of inactivity.
 
 ## ![Home](images/AzureSynapseHomeIcon.png) Home
 
