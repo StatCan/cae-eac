@@ -102,6 +102,14 @@ Voir le lien suivant pour les différents types de clusters disponibles: https:/
 ### Que se passe-t-il lorsque les clusters sont mis à niveau?
 LTS (support à long terme) a un support pendant 1-2 ans. Ils devront être périodiquement mis à jour vers une version plus récente. Lors de la mise à niveau, tout le code doit être réexécuté pour s'assurer qu'il n'y a pas de problèmes lors de la mise à jour d'un cluster.
 
+### Comment lire un fichier excel avec databricks/python?
+Voici un exemple de lecture dans un fichier excel :
+```python
+%python
+import pandas as pd
+pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
+```
+
 ## Tableau de bord
 ### Comment changer mon abonnement pour voir mes ressources?
 1. Dans le portail Azure, cliquez sur l'icône **Répertoire + abonnement**.
