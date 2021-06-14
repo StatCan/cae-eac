@@ -79,6 +79,14 @@ Generally, LTS (long term support) clusters are supported and recommended by Dat
 ### What happens when clusters are upgraded?
 LTS (long term support) have support for 1-2 years. They will need to be periodically updated to a newer version. When upgraded, all code should be re-run to ensure there are no issues when a cluster is updated
 
+### How do you read an excel file with databricks/python?
+Here is an example of how to read in an excel file:
+```python
+%python
+import pandas as pd
+pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
+```
+
 ## Dashboard
 ### How do I change my subscription so that I can see my resources?
 1. In the Azure Portal click the **Directory + subscription** icon.
