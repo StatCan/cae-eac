@@ -38,7 +38,21 @@ SELECT * FROM sample_table VERSION AS OF 0
 
 ## How to Use Delta in Azure Synapse
 
-_Content goes here._
+Using Delta Lake in Synapse notebooks is very similar to Databricks.
+
+1. Read in your data file.
+```
+data = spark.read.format('csv').options(header='true', inferSchema='true', multiline='true').load('abfss://public-data@statsconviddsinternal.dfs.core.windows.net/incoming/data_duplicate.csv')
+```
+2. Write to delta format and save to your delta table directory.
+```
+data.write.format("delta").save(delta_table_path)
+```
+3. Create your SQL table using delta:
+```
+spark.sql("CREATE TABLE example USING DELTA LOCATION '{0}'".format(delta_table_path))
+```
+4. Now you can run SQL queries on your data.
 
 
 ## How to Use Delta in Data Factory
