@@ -2,25 +2,26 @@ _[Français](../../fr/BestPracticesFAQ)_
 
 # Best Practices FAQ
 
-## What is the best file format to use for large data files?
-Recommend using newer format like Parquet because....
+## What is the best file format to use for large data files? (important)
+Recommend using newer format like Parquet because it does save larger datesets in a smaller file in comparison to a CSV file. If only accessing certain sections of the dataset, it is also faster using Parquet as it uses columnar storage format.
 
-## Do I need a SQL database?
+## Do I need a SQL database?  (important)
 In many cases a SQL database is not needed, data can be saved in files to the datalake.
 
-## Do I need a SQL database when using Power BI?
+## Do I need a SQL database when using Power BI? (important) (Example, link to the FAQ to it)
 No, you can load files locally into Power BI, you can also read files from Azure Storage. A database is only needed when you are using a more complex star-schema like system...
 
 ## When should we use a SQL database vs. Delta Lake?
 Sabrina....
 
-## How should we structure our projects data lake container? (1)
+## How should we structure our projects data lake container? (1) (important)
 Bronze Silver Gold
 Raw, Cleansed, Curated
 https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b430
+https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/
 more links...
 
-##  I get an out of memory exception in Databricks? (2)
+##  I get an out of memory exception in Databricks? (2) (important)
 (show screen shot)
 The fastest and most expensive way to fix this is to increase the size of your cluster.
 A more programmatic way to fix this would be to.... (use Spark, change file format, show examples with SQL, Python, R doing a simple query)...
@@ -29,12 +30,21 @@ Consider changing the file format to something like Parquet which uses less spac
 
 ## How can i easily convert SAS code to Python or R?
 Are there any tools they can use...
+Note: https://www.sas2py.com/#:~:text=SAS2PY%20automatically%20converts%20code%20written,learning%20packages%20available%20via%20Python. 
+This is a possible link but may not be reliable.
+Note: Done research of doing conversion and so far lots of thread say that they must do it manually/themselves.
 
 ## How can i easily convert SAS files to another format? (3)
 You can use SAS on network A to convert the files. Other tools? SAS library? Example code in a notebook, could upload a sas file to data lake and put example notbook in github repo
 website with SAS files - Danielle
 possible to make a .dbd with notebooks + files? Meddell
+https://stattransfer.com/
 https://www.chicagobooth.edu/research/kilts/datasets/dominicks
+In databricks, it may be possible to convert the SAS file (xpt) to a csv file
+```R
+xpt = sasxport.get("xpt/DEMO.xpt")
+write.csv(xpt, file="demo.csv")
+```
 
 ## How do I validate that I am developing my application in the most cost effective way in the cloud using Microsoft technologies (CAE)?
 
@@ -62,7 +72,7 @@ https://docs.microsoft.com/en-us/power-bi/guidance/star-schema
 import pandas as pd
 pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 ```
-Meddell Connor might have an example - make a DBF example or notebook
+make a DBF example or notebook
 
 ## How to convert files (CSV, text, JSON) to parquet using databricks?
 https://sparkbyexamples.com/spark/spark-convert-csv-to-avro-parquet-json/
@@ -73,17 +83,21 @@ https://sparkbyexamples.com/spark/spark-convert-csv-to-avro-parquet-json/
 ### Parquet  
 It is good to use for very large datasets. It is also good to use if only a section of the dataset is needed which reads in the data in a faster rate.
 
-AVRO -  Just as Parquet, it is great for very large datasets. To compare, it is better used for editing/writing into a dataset and for querying all columns in the dataset.
+### Avro
+Just as Parquet, it is great for very large datasets. To compare, it is better used for editing/writing into a dataset and for querying all columns in the dataset.
 
-CSV - It is fine to use with marginally smaller datasets as CSV files do not load well when the file size is very large. But with smaller data sets, it is simple and human-readable.
+### CSV
+It is fine to use with marginally smaller datasets as CSV files do not load well when the file size is very large. But with smaller data sets, it is simple and human-readable.
 
 Excel - try not to use :)
+
+Put all these into an exmple and check how to read, access, manipulate. 
 
 https://medium.com/ssense-tech/csv-vs-parquet-vs-avro-choosing-the-right-tool-for-the-right-job-79c9f56914a8
 https://blog.clairvoyantsoft.com/big-data-file-formats-3fb659903271
 
 ###  Can I read Word document in Databricks? (5)
-
+Read in Office
 
 ###  Can\How I convert Word document to a notebook?f (6)
 
@@ -92,3 +106,11 @@ https://blog.clairvoyantsoft.com/big-data-file-formats-3fb659903271
 I get an error message accessing data bricks (URL) error?
 
 Web Scraping example: Databricks & Data Factory
+
+## When to use Spark Dataframe or Spark Table?
+
+(Ask Hubert)
+
+## How to create Spark Table? Examples in R, Python, Scala SQL?
+
+## What is the best way to get data files into Azure ML?
