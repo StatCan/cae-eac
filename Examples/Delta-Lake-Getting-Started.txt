@@ -1,0 +1,29 @@
+
+--- PYTHON ---
+
+# save the path where delta files will be stored
+path = "/mnt/public-data/delta/"
+
+# read in data
+testData = spark.read.format('json').options(header='true', inferSchema='true', multiline='true').load('/mnt/public-data/incoming/covid_tracking.json')
+
+# write to delta format
+testData.write.format("delta").mode("overwrite").save(path)
+
+# create an SQL table using delta
+spark.sql("CREATE TABLE IF NOT EXISTS example USING DELTA LOCATION '{0}'".format(path))
+
+# in Databricks, you can now run SQL queries on this table
+# SQL is not supported in Azure Synapse; however, SELECT statements seem to work
+
+
+--- SCALA ---
+
+// save the path where delta files will be stored
+val path = "/mnt/public-data/delta/"
+
+// read in data
+val testData = spark.read.format('json').options(header='true', inferSchema='true', multiline='true').load('/mnt/public-data/incoming/covid_tracking.json')
+
+// write to delta format
+testData.write.format("delta").mode("overwrite").save(path)
