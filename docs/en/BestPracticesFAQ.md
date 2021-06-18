@@ -2,23 +2,19 @@ _[Français](../../fr/BestPracticesFAQ)_
 
 # Best Practices FAQ
 
-## What is the best file format to use for large data files? (important)
+## What is the best file format to use for large data files?
 Recommend using newer format like Parquet because it does save larger datesets in a smaller file in comparison to a CSV file. If only accessing certain sections of the dataset, it is also faster using Parquet as it uses columnar storage format.
 
-## Do I need a SQL database?  (important)
+## Do I need a SQL database?
 In many cases a SQL database is not needed, data can be saved in files to the datalake.
 
-## Do I need a SQL database when using Power BI? (important) (Example, link to the FAQ to it)
+## Do I need a SQL database when using Power BI?
 It is not needed to have an SQL datbase when using Power BI. You are able to read files from the Azure Storage. A database is only needed when you are using a more complex star-schema like system. 
 
 To connect to the internal data lake with Power BI desktop, please refer to this link:
 https://statcan.github.io/cae-eac/en/FAQ/#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop
 
-
-## When should we use a SQL database vs. Delta Lake?
-Sabrina....
-
-## How should we structure our projects data lake container? (1) (important)
+## How should we structure our projects data lake container?
 There are 3 parts in which to structure your data lake container:
 
 ### **Bronze/Raw Zone**
@@ -40,7 +36,7 @@ https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b
 https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/
 more links...
 
-##  I get an out of memory exception in Databricks? (2) (important)
+##  I get an out of memory exception in Databricks?
 
 ### **Option 1:**
 The fastest and most expensive way to fix this is to increase the size of your cluster.
@@ -78,18 +74,6 @@ diamonds.write.format("avro").save("/mnt/public-data/incoming/testingFile")
 ## How can i easily convert SAS code to Python or R?
 It is not possible to easily convert SAS code to Python or R automatically, the only known way to convert is to manually do the conversion. 
 
-## How can i easily convert SAS files to another format? (3)
-You can use SAS on network A to convert the files. Other tools? SAS library? Example code in a notebook, could upload a sas file to data lake and put example notbook in github repo
-website with SAS files - Danielle
-possible to make a .dbd with notebooks + files? Meddell
-https://stattransfer.com/
-https://www.chicagobooth.edu/research/kilts/datasets/dominicks
-In databricks, it may be possible to convert the SAS file (xpt) to a csv file
-```R
-xpt = sasxport.get("xpt/DEMO.xpt")
-write.csv(xpt, file="demo.csv")
-```
-
 ## How do I validate that I am developing my application in the most cost effective way in the cloud using Microsoft technologies (CAE)?
 There are plenty of ways to validate that your development is the most cost effective it can be:
 
@@ -105,16 +89,12 @@ There are plenty of ways to validate that your development is the most cost effe
 4. Delete data files that you are not using.
 
     a. Ensure that any files that are no longer needed or not in use anymore are deleted from the container.
+    
 5. Try not to do processing on a cloud VM.
-
     
 6. Ask for a review of your architecture.
+
 7. Code review.
-
-## When should we use ADF vs. Databricks for data ingestion?
-https://www.mssqltips.com/sqlservertip/6438/azure-data-factory-vs-ssis-vs-azure-databricks/
-
-## When is a good time to use Azure Synapse vs. ADF and Databricks?
 
 ## How should data be structured if we plan to use Power BI?
 Data should be structured using the Star Schema.
@@ -123,7 +103,7 @@ For more details about using Star Schema, click the link below for details about
 
 https://docs.microsoft.com/en-us/power-bi/guidance/star-schema
 
-##  How to read in an Excel file from Databricks? (6)
+##  How to read in an Excel file from Databricks?
 Here is an example of how to read an Excel file using Python:
 
 ```python
@@ -132,12 +112,7 @@ import pandas as pd
 pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 ```
 
-## How to convert files (CSV, text, JSON) to parquet using databricks?
-https://sparkbyexamples.com/spark/spark-convert-csv-to-avro-parquet-json/
-
-**Will have to write examples**
-
-##  Which file types are best to use when? (4)
+##  Which file types are best to use when?
 ### Parquet  
 It is good to use for very large datasets. It is also good to use if only a section of the dataset is needed which reads in the data in a faster rate.
 
@@ -151,6 +126,11 @@ display(data)
 
 Write:
 
+```python
+%python
+//Assumption that a dataframe has been created already
+
+data.write.parquet("/tmp/tempFile")
 ```
 
 ### Avro
@@ -187,19 +167,63 @@ display(data)
 ### Excel
 It is discouraged to use Excel as much as possible as it is a bigger sized file compared to CSV and is also slower to use.
 
-Put all these into an exmple and check how to read, access, manipulate. 
+## How to convert files (CSV, Text, JSON) to parquet using databricks?
+The rule of thumb in converting a file to parquet is to first read in the file and then write a new file into parquet
 
-https://medium.com/ssense-tech/csv-vs-parquet-vs-avro-choosing-the-right-tool-for-the-right-job-79c9f56914a8
-https://blog.clairvoyantsoft.com/big-data-file-formats-3fb659903271
+CSV to Parquet: 
+```python
+%python
 
-###  Can I read Word document in Databricks? (5)
-It is best practice to read Word documents via Office. 
+testConvert = spark.read.format('csv').options(header='true', inferSchema='true').load('/mnt/public-data/incoming/titanic.csv')
+testConvert.write.parquet("/mnt/public-data/incoming/testingFile")
+```
 
-###  Can\How I convert Word document to a notebook?f (6)
+JSON to Parquet:
+```python
+%python
+
+testConvert = spark.read.json('tmp/test.json')
+testConvert.write.parquet('tmp/testingJson')
+```
+
+Text to Parquet:
+```python
+%python
+
+testConvert = spark.read.text("/mnt/public-data/incoming/testing.txt")
+testConvert.write.parquet("/mnt/public-data/incoming/testingFile")
+```
+
+## Can I read Word document in Databricks?
+It is best practice to read Word documents via Office instead.
+
+---------------------------------------------------Currently Working On---------------------------------------------------------------------
+
+## When should we use a SQL database vs. Delta Lake?
+Sabrina....
+
+## How can i easily convert SAS files to another format?
+You can use SAS on network A to convert the files. Other tools? SAS library? Example code in a notebook, could upload a sas file to data lake and put example notbook in github repo
+website with SAS files - Danielle
+possible to make a .dbd with notebooks + files? Meddell
+https://stattransfer.com/
+https://www.chicagobooth.edu/research/kilts/datasets/dominicks
+In databricks, it may be possible to convert the SAS file (xpt) to a csv file
+```R
+xpt = sasxport.get("xpt/DEMO.xpt")
+write.csv(xpt, file="demo.csv")
+```
+
+## When should we use ADF vs. Databricks for data ingestion?
+
+
+https://www.mssqltips.com/sqlservertip/6438/azure-data-factory-vs-ssis-vs-azure-databricks/
+
+## When is a good time to use Azure Synapse vs. ADF and Databricks?
+
+###  Can\How I convert Word document to a notebook?
 
 **ADF - unzip file example **
-
-I get an error message accessing data bricks (URL) error?
 
 Web Scraping example: Databricks & Data Factory
 
