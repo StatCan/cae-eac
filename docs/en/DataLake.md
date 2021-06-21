@@ -4,7 +4,7 @@ _[Français](../../fr/DataLake)_
 
 Azure Data Lake is a set of capabilities dedicated to big data analytics, built on top of Azure Blob Storage, with enhanced performance, management, and security.
 
-## Microsoft Documentation
+### Microsoft Documentation
 - [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
 
 # Delta Lake
@@ -13,9 +13,24 @@ Delta Lake is an open-source storage layer that runs on top of an existing data 
 
 Azure Data Lake is _not_ ACID compliant, so Delta Lake should be used wherever data integrity and reliability are essential, or when there is a risk of bad data.
 
-A delta lake is basically a folder inside the data lake containing a log file and data files (stored in parquet format) for each version of a table. As long as the log and data files exist, you can use the time travel feature to query previous versions of a delta table, and view the history of that table.
+### Microsoft Documentation
+- [What is Delta Lake](https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake)
+- [Delta Lake on Azure](https://techcommunity.microsoft.com/t5/analytics-on-azure/delta-lake-on-azure/ba-p/1869746)
+
+### Official Documentation
+- [Delta Lake Documentation](https://docs.delta.io/latest/index.html)
+
+## How Delta Lake Works
+
+A delta lake is basically a folder inside the data lake containing **log files** (in the sub-folder **_delta_log**) and **data files** (stored in parquet format in the root folder) for each version of a table. As long as the log and data files exist, you can use the time travel feature to query previous versions of a delta table, and view the history of that table.
+
+**If the log files are deleted**, you will not be able to read the table at all. To fix this, you will need to empty the delta lake folder (delete everything in it), then write your original data file to it to start over.
 
 Delta works at the table level, so multi-table queries and joins are not supported.
+
+## When to Use Delta Lake
+
+*---TO DO---*
 
 ## Time Travel
 
@@ -35,6 +50,8 @@ df1 = spark.read.format("delta").option("timestampAsOf", 2020-03-13).load("/delt
 df2 = spark.read.format("delta").option("timestampAsOf", 2019-01-01T00:00:00.000Z).load("/delta/example_table")
 df3 = spark.read.format("delta").option("versionAsOf", version).load("/delta/example_table")
 ```
+
+### Removing Old Data Files
 
 To remove old data files (not log files) that are no longer referenced by a delta table, you can run the **vacuum** command.
 
@@ -73,6 +90,23 @@ val deltaTable = DeltaTable.forPath(spark, pathToTable)
 deltaTable.vacuum()        // vacuum files not required by versions older than the default retention period
 
 deltaTable.vacuum(100)     // vacuum files not required by versions more than 100 hours old
+```
+
+### Revert Back to a Previous Version
+
+You can revert back to and work from a previous version of your table by using the time travel feature to read in your target version as a dataframe, then write it back to the delta lake folder. 
+
+This will create a new version that is identical to the target version, which you can then work from. Other previous versions remain intact.
+
+Example:
+
+**Python**
+```
+# read in old version of table
+df = spark.read.format("delta").option("versionAsOf", 0).load(delta_table_path)
+
+# write back to new version of table, must set mode to "overwrite"
+df.write.format("delta").mode("overwrite").save(delta_table_path)
 ```
 
 ### Official Documentation
@@ -140,15 +174,9 @@ You can use Azure Data Factory to copy data to and from a delta lake stored in A
 ### Microsoft Documentation
 - [Delta Format in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/format-delta)
 
-## Power BI
+## Using Delta with Power BI
 
-_TO DO: How does delta lake work in Power BI?_
-
-## Microsoft Documentation
-- [What is Delta Lake](https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake)
-- [Delta Lake on Azure](https://techcommunity.microsoft.com/t5/analytics-on-azure/delta-lake-on-azure/ba-p/1869746)
-
-
+To read delta tables natively in Power BI, please see [this documentation on GitHub](https://github.com/gbrueckl/PowerBI/tree/main/PowerQuery/DeltaLake).
 
 
 # Change Display Language
