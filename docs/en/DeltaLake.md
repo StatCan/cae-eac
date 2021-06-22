@@ -1,15 +1,8 @@
 _[Français](../../fr/DataLake)_
 
-# Data Lake
-
-Azure Data Lake is a set of capabilities dedicated to big data analytics, built on top of Azure Blob Storage, with enhanced performance, management, and security.
-
-### Microsoft Documentation
-- [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
-
 # Delta Lake
 
-Delta Lake is an open-source storage layer that runs on top of an existing data lake, adding the capabilities of ACID (atomicity, consistency, isolation, durability) properties and transactions. Delta Lake is fully compatible with Apache Spark.
+Delta Lake is an open-source storage layer that runs on top of an existing data lake, adding the capabilities of ACID (atomicity, consistency, isolation, durability) properties and transactions. Delta Lake is fully compatible with Apache Spark in Azure Databricks and Synapse.
 
 Azure Data Lake is _not_ ACID compliant, so Delta Lake should be used wherever data integrity and reliability are essential, or when there is a risk of bad data.
 
@@ -177,6 +170,10 @@ You can use Azure Data Factory to copy data to and from a delta lake stored in A
 ## Using Delta with Power BI
 
 To read delta tables natively in Power BI, please see [this documentation on GitHub](https://github.com/gbrueckl/PowerBI/tree/main/PowerQuery/DeltaLake).
+
+## Delta in Azure Machine Learning
+
+*--- to be confirmed ---* Delta lake is not currently supported in Azure ML.
 
 
 # Change Display Language
