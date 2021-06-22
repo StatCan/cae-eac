@@ -31,17 +31,17 @@ This zone is mainly for analytics rather than data ingestion or processing. The 
 ### **Laboratory Zone**
 This zone is mainly for experimentation and exploration. It is used for prototype and innovation mixing both your own data sets with data sets from production. This zone is not a replacement for a development or test data lake which is required for more careful development. Each wil data lake project would have their own laboratory area via a folder. Permissions in this zone are typically read and write for each user/project.
 
+For more information about structuring your projects data lake container:
 
 https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b430
 https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/
-more links...
 
 ##  I get an out of memory exception in Databricks?
 
 ### **Option 1:**
 The fastest and most expensive way to fix this is to increase the size of your cluster.
 
-To increase the size of the cluster, you must find the cluster you are using, select edit and increase the max amount of workers.
+To increase the size of the cluster, please contact the CAE support team for more information.
 ![ClusterEdit](images/BestPracticesClusterEdit.png)
 
 ### **Option 2:**
@@ -79,7 +79,7 @@ There are plenty of ways to validate that your development is the most cost effe
 
 1. Take advantage of Spark in databricks.
 
-    a. Spark is a great addition to databricks that runs faster and better especially for large data sets. Using Spark would cost less because it does take less time to do its task.
+    a. Spark is a great addition to databricks that runs faster and better especially for large data sets. Using Spark would cost less because it does take less time to do its task. Using spark will also
 2. Make sure you cluster is running for the minimal amout of time.
 
     a. If the cluster is no longer needed or not being use, ensure that it is not running and only run when it is needed.
@@ -96,6 +96,8 @@ There are plenty of ways to validate that your development is the most cost effe
 
 7. Code review.
 
+8. If you are using Pandas, it is a good idea to use Koalas
+
 ## How should data be structured if we plan to use Power BI?
 Data should be structured using the Star Schema.
 
@@ -104,7 +106,7 @@ For more details about using Star Schema, click the link below for details about
 https://docs.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ##  How to read in an Excel file from Databricks?
-Here is an example of how to read an Excel file using Python:
+Here is an example of how to read an Excel file using Python: 
 
 ```python
 %python
@@ -165,7 +167,9 @@ display(data)
 ```
 
 ### Excel
-It is discouraged to use Excel as much as possible as it is a bigger sized file compared to CSV and is also slower to use.
+Please see above on how to use Excel.
+
+The other formats above are perferable over excel
 
 ## How to convert files (CSV, Text, JSON) to parquet using databricks?
 The rule of thumb in converting a file to parquet is to first read in the file and then write a new file into parquet
@@ -197,40 +201,62 @@ testConvert.write.parquet("/mnt/public-data/incoming/testingFile")
 ## Can I read Word document in Databricks?
 It is best practice to read Word documents via Office instead.
 
----------------------------------------------------Currently Working On---------------------------------------------------------------------
-
-## When should we use a SQL database vs. Delta Lake?
-Sabrina....
-
-## How can i easily convert SAS files to another format?
-You can use SAS on network A to convert the files. Other tools? SAS library? Example code in a notebook, could upload a sas file to data lake and put example notbook in github repo
-website with SAS files - Danielle
-possible to make a .dbd with notebooks + files? Meddell
-https://stattransfer.com/
-https://www.chicagobooth.edu/research/kilts/datasets/dominicks
-In databricks, it may be possible to convert the SAS file (xpt) to a csv file
-```R
-xpt = sasxport.get("xpt/DEMO.xpt")
-write.csv(xpt, file="demo.csv")
-```
-
 ## When should we use ADF vs. Databricks for data ingestion?
+Databricks is able to do real-time streaming through the Apache Spark API that can handle the streaming analytics workloads. Databricks does not need you to wrap the python code into functions or executable modules, all the code is able to work just as is. Databricks also supports Machine Learning which makes data ingestion easier as well.
 
+For any code that is already in an Azure Function or is easily translated into an executable, using data factory is usable. Data factory is also good to use if it is a heavy algorithm that is not usable within Databricks. 
 
-https://www.mssqltips.com/sqlservertip/6438/azure-data-factory-vs-ssis-vs-azure-databricks/
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-data-ingest-adf
+
+## What is the difference between SQL databse temporal tables and Delta Lake?
+SQL temporal tables is specific to SQL 2018 and is not currently available in Azure Synapse. On the other hand, Delta lake is available in both Azure Synapse and in Databricks. Another difference is that SQL temporal tables are only available with only SQL queries while Delta lake time travel is available in Scala, Python, and SQL. 
+
+## When to use Power BI or R-Shiny?
+It is recommended to use Power BI over R-shiny because you can develop Power BI and it is easier. There are a lot of benefits to using Power BI including the additional amount of chart types that are at hand, visualisation of data into charts is easier to use in Power BI compared to R-Shiny, the creation of a dashboard is faster within PowerBI, and the ease of connectivity with other applications within Azure.
 
 ## When is a good time to use Azure Synapse vs. ADF and Databricks?
+Azure Synapse is good to use when doing queries and data analysis via the data lake, doing SQL analyses and data warehousing, and using additional services like Power BI. Synapse less steps when querying data from the data lake as you do not have to mount the data lake to the workspace. As for data analyses and data warehousing, synapse is perferred as it allows full realtional data models, provide all SQL features and also uses Delta Lake. Synapse also includes direct services with Power BI for ease of use.
+
+On the other hand, Databricks is preferred when doing machine learning development and real-time transformations. Databricks includes their own machine learning development that includes popular libraries like PyTorch, manage version of MLflow and still be able to use AzureML as well. Databricks is also preferred for real-time transformations as it uses Spark structured streaming and being able to view changes from other users in real time.
+
+## When should we use a SQL database data warehouse vs. Delta Lake?
+Best practice would be to use Delta lake over SQL server as it does not use additional SQL computes and will reduce the overall cloud costs.
+
+## How can i easily convert SAS files to another format?
+Statcan users can use SAS on the internal stats-can network to convert it to a supported file. 
+
+You are able to convert a SAS file to CSV or JSON with this method:
+
+1. First open Powershell and install the sas7bdat-converter.
+
+![Powershell](images/BestPracticesPowershell.png)
+
+2. Using python and your code editor of your choice, type in this code with the file directory that the file is in and the directory where you want the output file to be in.
+
+![ScriptConvert](images/BestPracticesConvertScript.png)
+
+You will then get the output file within the directory you have specified.
+
+For more information about the converter, please refer to this link:
+
+https://pypi.org/project/sas7bdat-converter/
 
 ###  Can\How I convert Word document to a notebook?
+If you have the file downloaded on to your device, you are able to convert the file on this website to a jupyter notebook.
 
-**ADF - unzip file example **
+https://alldocs.app/convert-word-docx-to-jupyter-notebook
 
-Web Scraping example: Databricks & Data Factory
-
-## When to use Spark Dataframe or Spark Table?
+------------------------------------------------------Currently Working On---------------------------------------------------------------------
+## When to use Spark Dataframe or Spark Table? (Important)
 
 (Ask Hubert)
 
-## How to create Spark Table? Examples in R, Python, Scala SQL?
+## How to create Spark Table? Examples in R, Python, Scala SQL? (Important)
+
+
 
 ## What is the best way to get data files into Azure ML?
+
+
+
+Section FIle Type, Data organization, Tools
