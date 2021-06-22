@@ -20,8 +20,6 @@ There are 3 parts in which to structure your data lake container:
 ### **Bronze/Raw Zone**
 This zone stores the original format of any files or files/data that is immutable. The data contained in this zone is usually locked and are only accessible to certain members or is read-only. This zone is also organised in different folders per source system, with each ingestion process having a write access to only their associated folder.
 
-(Check if needed to talk about storage costs and lifecycle management)
-
 ### **Silver/Cleansed Zone**
 This zone is where parts of data removes unnecessary columns from the data, validates, standarizes and harmonises that data within this zone. This zone is mainly a folder per project. Any data that must be accessed within this zone is usually granted read-only access.
 
@@ -41,11 +39,11 @@ https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/
 ### **Option 1:**
 The fastest and most expensive way to fix this is to increase the size of your cluster.
 
-To increase the size of the cluster, please contact the CAE support team for more information.
+To increase the size of the cluster, please contact the CAE support team to increase the size of the cluster
 ![ClusterEdit](images/BestPracticesClusterEdit.png)
 
 ### **Option 2:**
-For a more programtic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark instead. PySpark does run faster than pandas, it has better benefits from using data ingestion pipelines abd also works efficiently as it runs parallel on different nodes in a cluster.
+For a more programtic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark instead or to koalas. PySpark and koalas does run faster than pandas, it has better benefits from using data ingestion pipelines abd also works efficiently as it runs parallel on different nodes in a cluster.
 
 https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
 
@@ -96,7 +94,9 @@ There are plenty of ways to validate that your development is the most cost effe
 
 7. Code review.
 
-8. If you are using Pandas, it is a good idea to use Koalas
+8. If you are using Pandas, it is a good idea to switch over to Koalas.
+
+9. If you are using a new file format, the file is also smaller and if you are using parquet files, it is possible to partition into different sections. 
 
 ## How should data be structured if we plan to use Power BI?
 Data should be structured using the Star Schema.
@@ -227,13 +227,26 @@ Statcan users can use SAS on the internal stats-can network to convert it to a s
 
 You are able to convert a SAS file to CSV or JSON with this method:
 
-1. First open Powershell and install the sas7bdat-converter.
+1. First open databricks and install the sas7bdat-converter within your notebook.
 
-![Powershell](images/BestPracticesPowershell.png)
+```python
+%pip install sas7bdat-converter
+```
 
 2. Using python and your code editor of your choice, type in this code with the file directory that the file is in and the directory where you want the output file to be in.
 
-![ScriptConvert](images/BestPracticesConvertScript.png)
+```python
+%python
+
+import sas7bdat_converter
+
+file_dicts = [{
+    'sas7bdat_file': '/dbfs/mnt/public-data/ToNetA/sas7bdat/tablea_1_10k.sas7bdat',
+    'export_file': '/dbfs/mnt/public-data/testFolder/testingConvert.csv',
+}]
+
+sas7bdat_converter.batch_to_csv(file_dicts)
+```
 
 You will then get the output file within the directory you have specified.
 
@@ -241,21 +254,29 @@ For more information about the converter, please refer to this link:
 
 https://pypi.org/project/sas7bdat-converter/
 
-###  Can\How I convert Word document to a notebook?
-If you have the file downloaded on to your device, you are able to convert the file on this website to a jupyter notebook.
+###  Can\How I convert Word document to a notebook? 
+There is no easy way to convert a word document to a notebook as there are specific CSS that must be done so that it is recognizable as a notebook in databricks.
 
-https://alldocs.app/convert-word-docx-to-jupyter-notebook
+A manual solution to convert a Word document to a notebook is by copying any of the code that is within the word document into a notebook.
+
+
+## How big of a dataframe/spark table can we store within the workspace?
+Spark tables are stored as parquet files and are stored in the internal storage account linked with the Databricks workspace, but it is best practice to delete the table if it is no longer in use.
+
+## What is the best way to get data files into Azure ML?
+The best way would be to upload your files to the data lake. If you need to add a new link to a different storage account, contact the CAE team to add the storage account to the Azure ML studio.
+You can add the data file as a global data or to data that is only available to yourself.
 
 ------------------------------------------------------Currently Working On---------------------------------------------------------------------
-## When to use Spark Dataframe or Spark Table? (Important)
-
-(Ask Hubert)
+## When to use Spark Dataframe or Spark Table? (Important) (ask Hubert)
+Ones in memory, other is in disk.
 
 ## How to create Spark Table? Examples in R, Python, Scala SQL? (Important)
 
 
+## Whats the difference to Machine Learning in Databricks or in Azure ML?
 
-## What is the best way to get data files into Azure ML?
+
 
 
 
