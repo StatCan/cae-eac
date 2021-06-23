@@ -254,11 +254,10 @@ For more information about the converter, please refer to this link:
 
 https://pypi.org/project/sas7bdat-converter/
 
-###  Can\How I convert Word document to a notebook? 
+##  Can\How I convert Word document to a notebook? 
 There is no easy way to convert a word document to a notebook as there are specific CSS that must be done so that it is recognizable as a notebook in databricks.
 
 A manual solution to convert a Word document to a notebook is by copying any of the code that is within the word document into a notebook.
-
 
 ## How big of a dataframe/spark table can we store within the workspace?
 Spark tables are stored as parquet files and are stored in the internal storage account linked with the Databricks workspace, but it is best practice to delete the table if it is no longer in use.
@@ -267,17 +266,62 @@ Spark tables are stored as parquet files and are stored in the internal storage 
 The best way would be to upload your files to the data lake. If you need to add a new link to a different storage account, contact the CAE team to add the storage account to the Azure ML studio.
 You can add the data file as a global data or to data that is only available to yourself.
 
-------------------------------------------------------Currently Working On---------------------------------------------------------------------
-## When to use Spark Dataframe or Spark Table? (Important) (ask Hubert)
+## Whats the difference to Machine Learning in Databricks or in Azure ML?
+The main difference between Azure ML and Databricks is the language that each application uses. Azure ML utilizes python-based libraries or R while Databricks utilizes the Apache Spark Platform and MLFlow. 
+
+Azure ML also contains a tracking system which is able to track individual runs of the experiment and include the specific metrics of what wants to be seen. Databricks does include MLflow which also allows tracking but does not come with as many features as Azure ML but is a bit simpler. 
+
+As a recommendation, it is best practice to use Databricks for data prep and large datasets but to use Azure ML for their tracking system, machine learning on normal datasets, deep learning on GPUs, and operationalization. 
+
+## How do you create a Table in Databricks?
+
+### Option 1: Use Create Table function
+In Databricks, select Data and within the Database you have selected, click on Create Table.
+
+![CreateTable](images/BestPracticesTable.png)
+
+For more information about this option, please view this link:
+
+https://docs.databricks.com/data/tables.html#create-a-table
+
+### Option 2: Create Table from Dataframe table
+Python:
+
+```python
+df.write.saveAsTable("Table-Name")
+```
+
+SQL:
+
+```sql
+CREATE TABLE IF NOT EXISTS Table-Name AS 
+SELECT * FROM df
+```
+
+### Option 3: Create Table Programatically
+
+SQL:
+```
+CREATE TABLE example (id INT, name STRING, age INT) USING CSV;
+```
+
+## When to use Spark Dataframe or Spark Table?
+There are really no difference between using a Spark Dataframe or Spark Table. 
+
+Currently with Databricks, best practice right now would be to store tables as delta tables as it is saved in parquet format and gives the tracking capabilities.
+
+<!--------------------------------------------------------Currently Working On---------------------------------------------------------------------
+
+technically nothing, as of databricks runtime, the default is delta table
+
+when doing SQL, select * from parquet and stuff like that
+
+There is low level differences, since standard is delta, all tables and dataframes will always be saved as parquet in delta format
+query with them in scala and all that jazz
+
+save table as delta format, create reference to it using delta
+Use a dataframe when you are
 Ones in memory, other is in disk.
 
-## How to create Spark Table? Examples in R, Python, Scala SQL? (Important)
 
-
-## Whats the difference to Machine Learning in Databricks or in Azure ML?
-
-
-
-
-
-Section FIle Type, Data organization, Tools
+Section FIle Type, Data organization, Tools -->
