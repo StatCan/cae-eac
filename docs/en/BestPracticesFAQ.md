@@ -111,7 +111,7 @@ Here is an example of how to read an Excel file using Python:
 ```python
 %python
 import pandas as pd
-pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
+pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openpyxl')
 ```
 
 ##  Which file types are best to use when?
