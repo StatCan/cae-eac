@@ -23,7 +23,11 @@ Delta works at the table level, so multi-table queries and joins are not support
 
 ## When to Use Delta Lake
 
-*---TO DO---*
+Delta lake is best to use:
+
+- for any permanent table in Databricks;
+- for large amounts of semi-structured data (10 million+ records to get the most performance benefits); or
+- when you want version control and/or data access tracking (delta log files keep track of every time the data is modified and by whom).
 
 ## Time Travel
 
@@ -110,7 +114,7 @@ df.write.format("delta").mode("overwrite").save(delta_table_path)
 
 Databricks has native support for Delta Lake, and can run queries using Python, R, Scala, and SQL.
 
-1. You first need to create a directory to store the delta log files, and keep note of the path to this directory.
+1. You first need to create a directory to store the delta files, and keep note of the path to this directory.
 2. Read in your data file, then write it to "delta" format and save it in the directory created above.
 ```
 # read data file
@@ -119,14 +123,16 @@ testData = spark.read.format('json').options(header='true', inferSchema='true', 
 # write to delta format
 testData.write.format("delta").mode("overwrite").save("/mnt/public-data/delta")
 ```
-3. Create your SQL table using delta:
+3. Optional (**not a best practice**): Create an SQL table using delta:
 ```
 spark.sql("CREATE TABLE sample_table USING DELTA LOCATION '/mnt/public-data/delta/'")
 ```
-4. Now you can run SQL queries on your delta table, including querying by version number or timestamp to "time travel" to previous versions of your data.
+4. Now you can run SQL queries on your delta table, including querying by version number or timestamp to "time travel" to previous versions of your data. **If you created a table in step 3**, you can run queries using the table name. **Otherwise (best practice)**, in place of the table name you can use *delta.\`{delta_table_path}\`* (replace {delta_table_path} with the actual path).
 ```
 %sql
 SELECT * FROM sample_table VERSION AS OF 0
+
+SELECT * FROM delta.`/mnt/public-data/delta/`
 ```
 
 ### Microsoft Documentation
@@ -144,7 +150,7 @@ data = spark.read.format('csv').options(header='true', inferSchema='true', multi
 ```
 data.write.format("delta").save(delta_table_path)
 ```
-3. Create your SQL table using delta:
+3. Optional: Create an SQL table using delta (only required if you want to run SQL queries, **not necessary if you're only using Python, Scala, or C#**).
 ```
 spark.sql("CREATE TABLE example USING DELTA LOCATION '{0}'".format(delta_table_path))
 ```
@@ -173,7 +179,7 @@ To read delta tables natively in Power BI, please see [this documentation on Git
 
 ## Delta in Azure Machine Learning
 
-*--- to be confirmed ---* Delta lake is not currently supported in Azure ML.
+Delta lake is not currently supported in Azure ML.
 
 
 # Change Display Language
