@@ -96,7 +96,7 @@ There are plenty of ways to validate that your development is the most cost effe
 
 8. If you are using Pandas, it is a good idea to switch over to Koalas.
 
-9. If you are using a new file format, the file is also smaller and if you are using parquet files, it is possible to partition into different sections. 
+9. If you are using a new file format, the file is also smaller and if you are using parquet files.
 
 ## How should data be structured if we plan to use Power BI?
 Data should be structured using the Star Schema.
@@ -310,18 +310,4 @@ There are really no difference between using a Spark Dataframe or Spark Table.
 
 Currently with Databricks, best practice right now would be to store tables as delta tables as it is saved in parquet format and gives the tracking capabilities.
 
-<!--------------------------------------------------------Currently Working On---------------------------------------------------------------------
 
-technically nothing, as of databricks runtime, the default is delta table
-
-when doing SQL, select * from parquet and stuff like that
-
-There is low level differences, since standard is delta, all tables and dataframes will always be saved as parquet in delta format
-query with them in scala and all that jazz
-
-save table as delta format, create reference to it using delta
-Use a dataframe when you are
-Ones in memory, other is in disk.
-
-
-Section FIle Type, Data organization, Tools -->
