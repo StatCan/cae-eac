@@ -206,8 +206,6 @@ Databricks is able to do real-time streaming through the Apache Spark API that c
 
 For any code that is already in an Azure Function or is easily translated into an executable, using data factory is usable. Data factory is also good to use if it is a heavy algorithm that is not usable within Databricks. 
 
-https://docs.microsoft.com/en-us/azure/machine-learning/how-to-data-ingest-adf
-
 ## What is the difference between SQL databse temporal tables and Delta Lake?
 SQL temporal tables is specific to SQL 2018 and is not currently available in Azure Synapse. On the other hand, Delta lake is available in both Azure Synapse and in Databricks. Another difference is that SQL temporal tables are only available with only SQL queries while Delta lake time travel is available in Scala, Python, and SQL. 
 
@@ -310,4 +308,6 @@ There are really no difference between using a Spark Dataframe or Spark Table.
 
 Currently with Databricks, best practice right now would be to store tables as delta tables as it is saved in parquet format and gives the tracking capabilities.
 
+# Change Display Language
 
+See [Language](Language.md) page to find out how to change the display language.
