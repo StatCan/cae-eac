@@ -308,6 +308,41 @@ There are really no difference between using a Spark Dataframe or Spark Table.
 
 Currently with Databricks, best practice right now would be to store tables as delta tables as it is saved in parquet format and gives the tracking capabilities.
 
+## What should I do if the size of the broadcasted table far exceeds estimates and exceeds limit of spark.driver.maxResultSize = _____?
+Change the Spark configuration "spark.driver.maxResultSize" to "0" (means no limit) or something larger than your needs.
+
+## What Should I do if I cannot broadcast the table that is larger than 8GB?
+This occurs only with BroadcastHashJoin. There are 2 options:
+
+1. Change the Spark configuration "spark.sql.autoBroadcastJoinThreshold" to "-1". This forces Databricks to perform a SortMergeJoin.
+
+    ### Note About changing Spark Configuration
+    **Warning: Changing Spark configuraitons can cause out-of-memory-errors**
+
+    Normal approach:
+
+        - spark.conf.set("configuration", "value")
+
+    If you do not have permissions to change some configurations, this seems to be a work around:
+
+        - conf = spark.sparkContext._cibf,setAkk([("configuration", "value"), ("configuration", "value")])
+
+    How to get Spark Configuration:
+
+        - spark.conf.get("configuration")
+
+
+
+2. Steps to avoid changing configurations:
+
+    a. Partition DataFrame A into parts.
+
+    b. Perform joins with each parittion from DataFrame A with DataFrame B (concurrently is the fastest way but may require writing Dataframes to file for reading in next step).
+
+    c. Perform a union on all the joined DataFrames.
+
+
+
 # Change Display Language
 
 See [Language](Language.md) page to find out how to change the display language.
