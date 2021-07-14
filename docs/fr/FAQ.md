@@ -96,6 +96,20 @@ Vous devez d'abord démarrer un cluster dans Databricks qui a déjà été cré�
 
 ![Start Cluster](images/DataBricksStartCluster2.png)
 
+### Quels types de clusters sont disponibles dans Databricks?
+Voir le lien suivant pour les différents types de clusters disponibles: https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20
+
+### Que se passe-t-il lorsque les clusters sont mis à niveau?
+LTS (support à long terme) a un support pendant 1-2 ans. Ils devront être périodiquement mis à jour vers une version plus récente. Lors de la mise à niveau, tout le code doit être réexécuté pour s'assurer qu'il n'y a pas de problèmes lors de la mise à jour d'un cluster.
+
+### Comment lire un fichier excel avec databricks/python?
+Voici un exemple de lecture dans un fichier excel :
+```python
+%python
+import pandas as pd
+pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
+```
+
 ## Tableau de bord
 ### Comment changer mon abonnement pour voir mes ressources?
 1. Dans le portail Azure, cliquez sur l'icône **Répertoire + abonnement**.
@@ -115,6 +129,9 @@ Prérequis :
 1.  Connectez-vous à votre machine virtuelle dans l'EAC.
 2.  Lancez Power BI Desktop.
 3.  Suivez les étapes dans [Analysez des données dans Azure Data Lake Storage Gen2 avec Power BI - Créer un rapport dans Power BI Desktop (document anglais)](https://docs.microsoft.com/fr-ca/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). S.v.p. envoyez un message slack à https://cae-eac.slack.com si vous ne connaissez pas l'URL du Azure Data Lake Storage Gen2.
+
+### Comment les employés de Statistique Canada peuvent-ils transférer des fichiers de leur centre de données?
+Pour les employés de Statistique Canada, ils peuvent se référer à cette documentation interne : https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion
 
 ### Comment puis-je ajouter une question à la FAQ?
 

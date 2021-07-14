@@ -21,12 +21,19 @@ To select the English dashboard of the Collaborative Analytics Environment (CAE)
 
 ![Dashboard](images/LanguageSettings/Dashboard_En.png)  
 
-## DataFactory
-This tool is available only in english for now.
+## Data Factory
+To select the language:
+
+1. In Azure Data Factory, go to **Settings**.
+2. Select **English**.
+3. Click on **Apply**.
+
+![DataFactory](images/ADFLanguage.png)  
+
 
 
 ## Databricks
-This tool is available only in english for now.
+This tool is available only in English for now.
 
 ## Virtual Machines
 ### Windows Server
