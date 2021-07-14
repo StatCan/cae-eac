@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://statcan.github.io/cae-eac/en/VirtualMachines/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1fe995fd.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -46,6 +46,8 @@
     
     
       
+
+
     
     
   </head>
@@ -600,21 +602,24 @@
                 
                   <h1>Virtual Machines (VMs)</h1>
                 
-                <p><em><a href="../../fr/VirtualMachine">Français</a></em></p>
+                <p><em><a href="../../fr/VirtualMachines">Français</a></em></p>
 <h2 id="virtual-machines">Virtual Machines</h2>
 <h3 id="find-your-devtest-lab">Find Your DevTest Lab</h3>
 <ol>
 <li>In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.  <br />
-<img alt="Access DevTest Lab" src="../images/AccessDTL.png" />  </li>
+<img alt="Access DevTest Lab" src="../images/newAccessDTL.png" />  </li>
+<li>Select the DevTest Lab that was assigned.</li>
 </ol>
 <h3 id="create-your-virtual-machine">Create Your Virtual Machine</h3>
 <p><strong>Note:</strong> In some instances a Virtual Machine will be pre-created for you and you will not have permission to create a virtual machine. See the <a href="../FAQ/">FAQ</a> if you need to make changes to your virtual machine.  </p>
 <ol>
 <li>From the DevTest Lab <strong>Overview</strong> page, click on the <strong>+ Add</strong> button.  </li>
 <li>Choose an appropriate base for your VM (e.g., Data Science Virtual Machine - Windows Server 2019). For more details on the software included with the Data Science Virtual Machines, please <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/tools-included">click here</a>.  </li>
-<li>Enter a name for your VM and a User name and password that you will use to login to the VM. Be sure to deselect the <em>Use a saved secret</em> and <em>Save as default password</em> checkboxes. Leave the rest as defaults and click on the <strong>Create</strong> button.  <br />
-<img alt="Enter New VM Details" src="../images/EnterNewVMDetails.png" />  </li>
+<li>Enter a name for your VM and a User name and password that you will use to login to the VM. Be sure to deselect the <em>Use a saved secret</em> and <em>Save as default password</em> checkboxes.</li>
+<li>You may click the <strong>Change Size Link</strong> to change your VM size if you wish to do so.</li>
 </ol>
+<p>Leave the rest as defaults and click on the <strong>Create</strong> button.  <br />
+<img alt="Enter New VM Details" src="../images/EnterNewVMDetails.png" />  </p>
 <h3 id="find-your-virtual-machine">Find Your Virtual Machine</h3>
 <ol>
 <li>From the DevTest Lab <strong>Overview</strong> page, scroll down until you see your VM under <strong>My virtual machines</strong>. Click on your VM to access its <strong>Overview</strong> page.  </li>
@@ -633,6 +638,8 @@
 <li>
 <p>Ensure the <em>Open in new window</em> checkbox is selected, enter the Username and Password that you used when you created your VM, and click on the <strong>Connect</strong> button. Your VM should open in a new browser tab.</p>
 <p><strong>Note</strong> : By default, the <strong>Ubuntu</strong> virtual machine opens in Terminal mode. You can access the GUI of your Ubuntu machine from a Windows machine using <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro#x2go">X2Go</a>.</p>
+<p><strong>Note</strong> : After attempting to login for the first time, an error may appear that a popup blocker is preventing a new window to open. To disable it, an icon will pop up on the browser's search bar, select the button and click <strong>always allow</strong>. 
+<img alt="VM Allow PopUp" src="../images/VMPopUp.png" /></p>
 </li>
 </ol>
 <h3 id="stop-your-virtual-machine">Stop Your Virtual Machine</h3>
@@ -659,7 +666,8 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../AzureStorage/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../AzureStorage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Azure Storage" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -674,7 +682,8 @@
         </a>
       
       
-        <a href="../AzureSQL/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../AzureSQL/" class="md-footer__link md-footer__link--next" aria-label="Next: Azure SQL Database" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -735,10 +744,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
     
   </body>

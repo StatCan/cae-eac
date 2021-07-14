@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://statcan.github.io/cae-eac/en/FAQ/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1fe995fd.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -46,6 +46,8 @@
     
     
       
+
+
     
     
   </head>
@@ -554,6 +556,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#what-type-of-clusters-are-available-in-databricks" class="md-nav__link">
+    What type of clusters are available in databricks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-clusters-are-upgraded" class="md-nav__link">
+    What happens when clusters are upgraded?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-you-read-an-excel-file-with-databrickspython" class="md-nav__link">
+    How do you read an excel file with databricks/python?
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -590,6 +613,13 @@
           <li class="md-nav__item">
   <a href="#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop" class="md-nav__link">
     How do I connect to the internal data lake with Power BI Desktop?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-can-statistics-canada-employees-transfer-files-from-their-data-centre" class="md-nav__link">
+    How can Statistics Canada employees transfer files from their data centre?
   </a>
   
 </li>
@@ -837,6 +867,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#what-type-of-clusters-are-available-in-databricks" class="md-nav__link">
+    What type of clusters are available in databricks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-clusters-are-upgraded" class="md-nav__link">
+    What happens when clusters are upgraded?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-you-read-an-excel-file-with-databrickspython" class="md-nav__link">
+    How do you read an excel file with databricks/python?
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -873,6 +924,13 @@
           <li class="md-nav__item">
   <a href="#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop" class="md-nav__link">
     How do I connect to the internal data lake with Power BI Desktop?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-can-statistics-canada-employees-transfer-files-from-their-data-centre" class="md-nav__link">
+    How can Statistics Canada employees transfer files from their data centre?
   </a>
   
 </li>
@@ -971,6 +1029,19 @@ To disable Auto-shutdown:<br />
 1. Click on Clusters.<br />
 2. Navigate to your cluster and click on the <strong>Start</strong> (arrow) button.<br />
 <img alt="Start Cluster" src="../images/DataBricksStartCluster2.png" /></p>
+<h4 id="what-type-of-clusters-are-available-in-databricks">What type of clusters are available in databricks?</h4>
+<p>See the following link for the different types of available clusters: 
+https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20</p>
+<p>Generally, LTS (long term support) clusters are supported and recommended by Databricks. If you need a different version of the databricks cluster, please contact the CAE support team.</p>
+<h4 id="what-happens-when-clusters-are-upgraded">What happens when clusters are upgraded?</h4>
+<p>LTS (long term support) have support for 1-2 years. They will need to be periodically updated to a newer version. When upgraded, all code should be re-run to ensure there are no issues when a cluster is updated</p>
+<h4 id="how-do-you-read-an-excel-file-with-databrickspython">How do you read an excel file with databricks/python?</h4>
+<p>Here is an example of how to read in an excel file:</p>
+<div class="codehilite"><pre><span></span><code><span class="o">%</span><span class="n">python</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx&quot;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;openyxl&#39;</span><span class="p">)</span>
+</code></pre></div>
+
 <h3 id="dashboard">Dashboard</h3>
 <h4 id="how-do-i-change-my-subscription-so-that-i-can-see-my-resources">How do I change my subscription so that I can see my resources?</h4>
 <ol>
@@ -987,6 +1058,8 @@ To disable Auto-shutdown:<br />
 1. Login to your CAE VM.<br />
 2. Launch Power BI Desktop.<br />
 3. Follow the steps in <a href="https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop">Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop</a>. Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.</p>
+<h4 id="how-can-statistics-canada-employees-transfer-files-from-their-data-centre">How can Statistics Canada employees transfer files from their data centre?</h4>
+<p>For Statistics Canada Employees, they can refer to this internal documentation: https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion</p>
 <h4 id="how-do-i-add-a-faq">How do I add a FAQ?</h4>
 <p>Please send your suggestion through the https://cae-eac.slack.com channel.</p>
 <h2 id="change-display-language">Change Display Language</h2>
@@ -1009,7 +1082,8 @@ To disable Auto-shutdown:<br />
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../R-Shiny/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../R-Shiny/" class="md-footer__link md-footer__link--prev" aria-label="Previous: R-Shiny" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1024,7 +1098,8 @@ To disable Auto-shutdown:<br />
         </a>
       
       
-        <a href="../help/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../help/" class="md-footer__link md-footer__link--next" aria-label="Next: Help/Contact" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -1085,10 +1160,10 @@ To disable Auto-shutdown:<br />
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
     
   </body>
