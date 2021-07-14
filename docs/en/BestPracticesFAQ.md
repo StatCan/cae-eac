@@ -43,7 +43,7 @@ To increase the size of the cluster, please contact the CAE support team to incr
 ![ClusterEdit](images/BestPracticesClusterEdit.png)
 
 ### **Option 2:**
-For a more programtic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark instead or to koalas. PySpark and koalas does run faster than pandas, it has better benefits from using data ingestion pipelines abd also works efficiently as it runs parallel on different nodes in a cluster.
+For a more programtic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark or koalas. PySpark and koalas can run faster than pandas, it has better benefits from using data ingestion pipelines and also works efficiently as it runs parallel on different nodes in a cluster.
 
 https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
 
@@ -96,7 +96,7 @@ There are plenty of ways to validate that your development is the most cost effe
 
 8. If you are using Pandas, it is a good idea to switch over to Koalas.
 
-9. If you are using a new file format, the file is also smaller and if you are using parquet files.
+9. Use a file format that is optimal for your work load (i.e. Parquet, Avro)
 
 ## How should data be structured if we plan to use Power BI?
 Data should be structured using the Star Schema.
@@ -169,7 +169,7 @@ display(data)
 ### Excel
 Please see above on how to use Excel.
 
-The other formats above are perferable over excel
+The other formats above are perferable over excel.
 
 ## How to convert files (CSV, Text, JSON) to parquet using databricks?
 The rule of thumb in converting a file to parquet is to first read in the file and then write a new file into parquet
@@ -206,22 +206,22 @@ Databricks is able to do real-time streaming through the Apache Spark API that c
 
 For any code that is already in an Azure Function or is easily translated into an executable, using data factory is usable. Data factory is also good to use if it is a heavy algorithm that is not usable within Databricks. 
 
-## What is the difference between SQL databse temporal tables and Delta Lake?
+## What is the difference between SQL database temporal tables and Delta Lake?
 SQL temporal tables is specific to SQL 2018 and is not currently available in Azure Synapse. On the other hand, Delta lake is available in both Azure Synapse and in Databricks. Another difference is that SQL temporal tables are only available with only SQL queries while Delta lake time travel is available in Scala, Python, and SQL. 
 
 ## When to use Power BI or R-Shiny?
-It is recommended to use Power BI over R-shiny because you can develop Power BI and it is easier. There are a lot of benefits to using Power BI including the additional amount of chart types that are at hand, visualisation of data into charts is easier to use in Power BI compared to R-Shiny, the creation of a dashboard is faster within PowerBI, and the ease of connectivity with other applications within Azure.
+It is recommended to use Power BI over R-shiny because less coding is required when using Power BI. There are a lot of benefits to using Power BI including the additional amount of chart types that are at hand, visualisation of data into charts is easier to use in Power BI compared to R-Shiny, the creation of a dashboard is faster within PowerBI, and the ease of connectivity with other applications within Azure.
 
 ## When is a good time to use Azure Synapse vs. ADF and Databricks?
-Azure Synapse is good to use when doing queries and data analysis via the data lake, doing SQL analyses and data warehousing, and using additional services like Power BI. Synapse less steps when querying data from the data lake as you do not have to mount the data lake to the workspace. As for data analyses and data warehousing, synapse is perferred as it allows full realtional data models, provide all SQL features and also uses Delta Lake. Synapse also includes direct services with Power BI for ease of use.
+Azure Synapse is good to use when doing queries and data analysis via the data lake, doing SQL analyses and data warehousing, and using additional services like Power BI. It is easy to query data from the data lake using Azure Snapse and you do not have to mount the data lake to the workspace. As for data analyses and data warehousing, synapse is perferred as it allows full realtional data models, provide all SQL features and also uses Delta Lake. Synapse also includes direct services with Power BI for ease of use.
 
-On the other hand, Databricks is preferred when doing machine learning development and real-time transformations. Databricks includes their own machine learning development that includes popular libraries like PyTorch, manage version of MLflow and still be able to use AzureML as well. Databricks is also preferred for real-time transformations as it uses Spark structured streaming and being able to view changes from other users in real time.
+On the other hand, Databricks is preferred when doing machine learning development and real-time transformations. Databricks includes their own machine learning development that includes popular libraries like PyTorch, manage version of MLflow.  Databricks is also preferred for real-time transformations as it uses Spark structured streaming and it gives you the ability to view changes from other users in real time.
 
 ## When should we use a SQL database data warehouse vs. Delta Lake?
-Best practice would be to use Delta lake over SQL server as it does not use additional SQL computes and will reduce the overall cloud costs.
+Best practice would be to use Delta lake over SQL server as it does not use additional SQL compute resouces and will reduce the overall cloud costs.
 
 ## How can i easily convert SAS files to another format?
-Statcan users can use SAS on the internal stats-can network to convert it to a supported file. 
+Statcan users can use SAS on the internal stats-can network to convert it to a supported file form. 
 
 You are able to convert a SAS file to CSV or JSON with this method:
 
@@ -253,7 +253,7 @@ For more information about the converter, please refer to this link:
 https://pypi.org/project/sas7bdat-converter/
 
 ##  Can\How I convert Word document to a notebook? 
-There is no easy way to convert a word document to a notebook as there are specific CSS that must be done so that it is recognizable as a notebook in databricks.
+There is no easy way to convert a word document to a notebook.
 
 A manual solution to convert a Word document to a notebook is by copying any of the code that is within the word document into a notebook.
 
@@ -261,15 +261,14 @@ A manual solution to convert a Word document to a notebook is by copying any of 
 Spark tables are stored as parquet files and are stored in the internal storage account linked with the Databricks workspace, but it is best practice to delete the table if it is no longer in use.
 
 ## What is the best way to get data files into Azure ML?
-The best way would be to upload your files to the data lake. If you need to add a new link to a different storage account, contact the CAE team to add the storage account to the Azure ML studio.
-You can add the data file as a global data or to data that is only available to yourself.
+The best way would be to upload your files to the data lake. If you need to add a new cloud storage account, contact the CAE team to add the storage account to the Azure ML studio.
 
 ## Whats the difference to Machine Learning in Databricks or in Azure ML?
 The main difference between Azure ML and Databricks is the language that each application uses. Azure ML utilizes python-based libraries or R while Databricks utilizes the Apache Spark Platform and MLFlow. 
 
-Azure ML also contains a tracking system which is able to track individual runs of the experiment and include the specific metrics of what wants to be seen. Databricks does include MLflow which also allows tracking but does not come with as many features as Azure ML but is a bit simpler. 
+Azure ML also contains a tracking system which is able to track individual runs of the experiment and include the specific metrics of what wants to be seen. Databricks includes MLflow which also allows tracking but does not come with as many features as Azure ML. 
 
-As a recommendation, it is best practice to use Databricks for data prep and large datasets but to use Azure ML for their tracking system, machine learning on normal datasets, deep learning on GPUs, and operationalization. 
+As a recommendation, it is best practice to use Databricks for data preperation and for large datasets but to use Azure ML for their tracking system, machine learning on normal datasets, deep learning on GPUs, and operationalization. 
 
 ## How do you create a Table in Databricks?
 
