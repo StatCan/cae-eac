@@ -173,6 +173,32 @@ To switch the menu language and model language in Power BI Desktop:
 
 **NOTE**: The **Import language** is set separately in the **CURRENT FILE** section **Regional Settings**. You need to change this only if you import data files that have numbers and dates in a specific locale (e.g., Canada English DD/MM/YYYY, United State English MM/DD/YYYY).
 
+### Databricks
+
+To change the language settings in Databricks:
+
+1. Select the user dropdown at the top right and select **User Settings**
+
+![Databricks](images/LanguageSettings/Databricks_En1.png)
+
+2. On the page, select **Language Settings**
+
+![Databricks01](images/LanguageSettings/Databricks_En2.png)
+
+3. Click on the dropdown and select the language of your choice.
+
+### Data Factory
+
+To change the language settings in Data Factory:
+
+1. Select the **Settings Icon** at the top right
+
+![Datafactory](images/LanguageSettings/Datafactory_En.png)
+
+2. Get to the Language section and select the language of your choice. 
+
+![Datafactory02](images/LanguageSettings/Datafactory_En2.png)
+
 ## Web browsers
 
 * [Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en)
