@@ -1,4 +1,4 @@
-_[Français](../../fr/Databricks)_
+_[Français](../../fr/DataBricks)_
 # Azure Databricks
 
 ## Accessing Databricks
