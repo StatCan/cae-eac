@@ -1,4 +1,4 @@
-_[English](../../en/Help)_
+_[English](../../en/help)_
 # Aide
 
 ## FAQ
