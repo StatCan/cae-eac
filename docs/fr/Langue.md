@@ -1,4 +1,4 @@
-_[English](../../en/SwitchLanguage)_
+_[English](../../en/Language)_
 # Langue
 Le document décrit la façon de changer la langue dans les différents services offerts.
 
