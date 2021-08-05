@@ -199,6 +199,89 @@ To change the language settings in Data Factory:
 
 ![Datafactory02](images/LanguageSettings/Datafactory_En2.png)
 
+### JupyterLab
+
+To change the language settings in JupyterLab:
+
+1. Within JupyterLab, open up a console or terminal.
+
+2. Install the language example of your choice using pip.
+
+Example:
+
+```python
+pip install jupyterlab-language-pack-zh-CN
+```
+3. Under the settings tab, highlight over language and select the language you installed.
+
+![JupyterLab](images/LanguageSettings/JupyterlabsLanguage.png)
+
+4. Click on **OK** to refresh the page, you will see the language change.
+
+For More information about changing languages:
+
+https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
+
+### VSCode
+
+To change the display language in VSCode:
+
+1. Open VSCode and open the command Pallette (Ctrl+Shift+P).
+
+2. In the command pallette, type in "display" and select **install additional languages**.
+
+![VSCode02](images/LanguageSettings/VSCode_en2.png)
+
+Note: If you have already installed the language you wanted, you can select the language from the dropdown.
+
+3. On the left side of VSCode, languages will appear which can be installed, select the language of your choice.
+
+4. A pop-up may appear at the bottom right of the screen in which you can change the language and it will restart VSCode. 
+
+![VSCode](images/LanguageSettings/VSCode_en.png)
+
+### Visual Studio
+
+If you have already installed language packages within Visual Studio:
+
+1. On the top bar, select **Tools** then **Options**.
+
+![VisualStudio](images/LanguageSettings/VisualStudio_En.png)
+
+2. From the menu, under the **Environment** tab, select **International Settings**
+
+![VisualStudio02](images/LanguageSettings/VisualStudio_En2.png)
+
+3. From the drop down under **Language**, select the language of your choice.
+
+If you have not installed other language packages within Visual Studio:
+
+1. On your computer, open the Visual Studio Installer.
+
+2. In the installer, select the modify button.
+
+![VisualStudio03](images/LanguageSettings/VisualStudio_En3.png)
+
+3. On the new window, select **Language Packs**. Select all the languages you want to add and then select modify.
+
+![VisualStudio03](images/LanguageSettings/VisualStudio_En4.png)
+
+4. From here you can follow the steps on using the installed language packages within Visual Studio. 
+
+### RStudio
+
+To set RStudio into a different language: 
+
+1. Open up RStudio and open up the console.
+
+2. In the console, type in "Sys.getenv(LANGUAGE = "fr")
+Note: "fr" is for the french language, for a list of other languages that can be used:
+
+https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+
+
+3. To test it, you can type "2+x" and it should give an error in the language inputted.
+
 ## Web browsers
 
 * [Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en)
