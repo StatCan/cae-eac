@@ -1,4 +1,4 @@
-_[English](../../en/Databricks)_
+_[English](../../en/DataBricks)_
 # Azure Databricks
 
 ## Accès à Databricks

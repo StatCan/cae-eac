@@ -1,4 +1,4 @@
-_[English](../../en/SwitchLanguage)_
+_[English](../../en/Language)_
 # Langue
 Le document décrit la façon de changer la langue dans les différents services offerts.
 
@@ -164,6 +164,114 @@ Pour changer la langue du menu et la langue du modèle dans Power BI Desktop, vo
  ![Power BI D02](images/LanguageSettings/PowerBiDesktop02_Fr.jpg)  
 
 **NOTE**: La **langue d'importation** des données est fixée séparément dans les  **Paramètres régionaux** de la section **FICHIER ACTIF**. Vous devez la changer seulement si vous importez des fichiers de données comportant des nombres ou des dates suivant des paramètres régionaux précis (p. ex. le format de date JJ/MM/AAAA de l’anglais du Canada et le format de date MM/JJ/AAAA de l’anglais des États-Unis).
+
+### Databricks
+
+Pour modifier les paramètres de langue dans Databricks:
+
+1. Sélectionnez le menu déroulant de l'utilisateur en haut à droite et sélectionnez **Paramètres utilisateur**.
+
+![Databricks](images/LanguageSettings/Databricks_Fr.png)
+
+2. Sur la page, sélectionnez **Paramètres de langue**.
+
+![Databricks02](images/LanguageSettings/Databricks_Fr2.png)
+
+3. Cliquez sur la liste déroulante et sélectionnez la langue de votre choix.
+
+### Datafactory
+
+Pour modifier les paramètres de langue dans Data Factory:
+
+1. Sélectionnez l'**Icône Paramètres** en haut à droite.
+
+![Datafactory](images/LanguageSettings/Datafactory_Fr.png)
+
+2. Accédez à la section Langue et sélectionnez la langue de votre choix.
+
+![Datafactory02](images/LanguageSettings/Datafactory_Fr2.png)
+
+### JupyterLab
+
+Pour modifier les paramètres de langue dans JupyterLab:
+
+1. Dans JupyterLab, ouvrez une console ou un terminal. 
+
+2. Installez l'exemple de langue de votre choix à l'aide de pip. 
+
+Exemple:
+
+```python
+pip install jupyterlab-language-pack-fr-FR
+```
+
+3. Sous **settings**, mettez en surbrillance **Language** et sélectionnez la langue que vous avez installée.
+
+4. Cliquez sur **OK** pour rafraîchir la page, vous verrez le changement de langue. 
+
+![JupyterLab](images/LanguageSettings/JupyterlabsLanguage.png)
+
+Pour plus d'informations sur le changement de langue:
+
+https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
+
+### VSCode
+
+Pour changer la langue d'affichage dans VSCode:
+
+1. Ouvrez VSCode et ouvrez la palette de commandes (Ctrl+Maj+P).
+
+2. Dans la palette de commandes, tapez "affichage" et sélectionnez **installer des langues supplémentaires** 
+
+![VSCode](images/LanguageSettings/VSCode_fr.png)
+
+Remarque : si vous avez déjà installé la langue souhaitée, vous pouvez la sélectionner dans la liste déroulante. 
+
+3. Sur le côté gauche de VSCode, les langues qui peuvent être installées apparaîtront, sélectionnez la langue de votre choix. 
+
+4. Une fenêtre contextuelle peut apparaître en bas à droite de l'écran dans laquelle vous pouvez changer la langue et redémarrera VSCode. 
+
+![VSCode02](images/LanguageSettings/VSCode_fr2.png)
+
+### Visual Studio
+
+Si vous avez déjà installé des packages de langue dans Visual Studio:
+
+1. Dans la barre supérieure, sélectionnez **Outils** puis **Options**. 
+
+![VisualStudio](images/LanguageSettings/VisualStudio_Fr.png)
+
+2. Dans le menu, sous l'onglet **Environnement**, sélectionnez **Paramètres internationaux** 
+
+![VisualStudio02](images/LanguageSettings/VisualStudio_Fr2.png)
+
+3. Dans le menu déroulant sous **Langue**, sélectionnez la langue de votre choix. 
+
+Si vous n'avez pas installé d'autres packages de langue dans Visual Studio :
+
+1. Sur votre ordinateur, ouvrez le programme d'installation de Visual Studio.
+
+2. Dans le programme d'installation, sélectionnez le bouton Modifier. 
+
+![VisualStudio03](images/LanguageSettings/VisualStudio_Fr3.png)
+
+3. Dans la nouvelle fenêtre, sélectionnez **Packs linguistiques**. Sélectionnez toutes les langues que vous souhaitez ajouter, puis sélectionnez modifier. 
+
+![VisualStudio04](images/LanguageSettings/VisualStudio_Fr4.png)
+
+4. À partir de là, vous pouvez suivre les étapes d'utilisation des packages de langue installés dans Visual Studio. 
+
+Pour configurer RStudio dans une autre langue :
+
+1. Ouvrez RStudio et ouvrez la console.
+
+2. Dans la console, tapez "Sys.getenv(LANGUAGE = "fr")
+Note : "fr" est pour la langue française, pour une liste d'autres langues qui peuvent être utilisées :
+
+https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+
+
+3. Pour le tester, vous pouvez taper "2+x" et cela devrait donner une erreur dans la langue saisie.
 
 ## Fureteurs Web
 
