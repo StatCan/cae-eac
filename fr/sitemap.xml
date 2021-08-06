@@ -2,72 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/Access/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/Aide/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureML/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureSQL/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureStorage/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://statcan.github.io/cae-eac/fr/AzureSynapse/</loc>
+         <lastmod>2021-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://statcan.github.io/cae-eac/fr/BestPracticesFAQ/</loc>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/Dashboards/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/DataBricks/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/DataFactory/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/FAQ/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/Langue/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/Login/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/R-Shiny/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/VirtualMachines/</loc>
-         <lastmod>2021-07-14</lastmod>
+         <lastmod>2021-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
