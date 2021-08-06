@@ -1,6 +1,6 @@
 _[Français](../../fr/BestPracticesFAQ)_
 
-# Best Practices FAQ
+# Best Practices Guide
 
 ## What is the best file format to use for large data files?
 Recommend using newer format like Parquet because it does save larger datesets in a smaller file in comparison to a CSV file. If only accessing certain sections of the dataset, it is also faster using Parquet as it uses columnar storage format.
