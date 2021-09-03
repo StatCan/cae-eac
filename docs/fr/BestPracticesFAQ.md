@@ -2,57 +2,57 @@ _[Français](../../fr/BestPracticesFAQ)_
 
 # Best Practices FAQ
 
-## What is the best file format to use for large data files?
-Recommend using newer format like Parquet because it does save larger datesets in a smaller file in comparison to a CSV file. If only accessing certain sections of the dataset, it is also faster using Parquet as it uses columnar storage format.
+## Quel est le meilleur format de fichier à utiliser pour les fichiers de données volumineux? 
+Il est recommandé d'utiliser un format plus récent comme Parquet, car il enregistre des ensembles de dates plus volumineux dans un fichier plus petit par rapport à un fichier CSV. Si vous n'accédez qu'à certaines sections de l'ensemble de données, il est également plus rapide d'utiliser Parquet car il utilise un format de stockage en colonnes.
 
-## Do I need a SQL database?
-In many cases a SQL database is not needed, data can be saved in files to the datalake.
+## Ai-je besoin d'une base de données SQL?
+Dans de nombreux cas, une base de données SQL n'est pas nécessaire, les données peuvent être enregistrées dans des fichiers sur le datalake.
 
-## Do I need a SQL database when using Power BI?
-It is not needed to have an SQL datbase when using Power BI. You are able to read files from the Azure Storage. A database is only needed when you are using a more complex star-schema like system. 
+## Ai-je besoin d'une base de données SQL lorsque j'utilise Power BI?
+Il n'est pas nécessaire d'avoir une base de données SQL lors de l'utilisation de Power BI. Vous pouvez lire des fichiers à partir du stockage Azure. Une base de données n'est nécessaire que lorsque vous utilisez un système similaire à un schéma en étoile plus complexe.
 
-To connect to the internal data lake with Power BI desktop, please refer to this link:
-https://statcan.github.io/cae-eac/en/FAQ/#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop
+Pour vous connecter au lac de données interne avec Power BI Desktop, veuillez vous référer à ce lien :
+https://statcan.github.io/cae-eac/fr/FAQ/#comment-puis-je-me-connecter-au-compte-de-stockage-interne-data-lake-avec-power-bi-desktop
 
-## How should we structure our projects data lake container?
-There are 3 parts in which to structure your data lake container:
+## Comment devons-nous structurer le conteneur de lac de données de nos projets?
+Il y a 4 parties dans lesquelles structurer votre conteneur de lac de données :
 
-### **Bronze/Raw Zone**
-This zone stores the original format of any files or files/data that is immutable. The data contained in this zone is usually locked and are only accessible to certain members or is read-only. This zone is also organised in different folders per source system, with each ingestion process having a write access to only their associated folder.
+### **Zone Bronze/Brute**
+Cette zone stocke le format d'origine de tous les fichiers ou fichiers/données qui sont immuables. Les données contenues dans cette zone sont généralement verrouillées et ne sont accessibles qu'à certains membres ou sont en lecture seule. Cette zone est également organisée en différents dossiers par système source, chaque processus d'ingestion n'ayant un accès en écriture qu'à son dossier associé.
 
-### **Silver/Cleansed Zone**
-This zone is where parts of data removes unnecessary columns from the data, validates, standarizes and harmonises that data within this zone. This zone is mainly a folder per project. Any data that must be accessed within this zone is usually granted read-only access.
+### **Zone Argent/Nettoyée**
+Cette zone est l'endroit où des parties de données suppriment les colonnes inutiles des données, valide, standardise et harmonise ces données au sein de cette zone. Cette zone est principalement un dossier par projet. Toutes les données auxquelles il faut accéder dans cette zone bénéficient généralement d'un accès en lecture seule.
 
-### **Gold/Curated Zone**
-This zone is mainly for analytics rather than data ingestion or processing. The data in the curated zone is stored in star schemas. The dimensional modelling is usually done using Spark or Data Factory instead of inside the database engine. But if the dimensional modelling is done outside of the lake then it is best to publish the model back to the lake. This zone is best suited to run for large-scale queries and analysis that do not have strict time-sensitive reporting needs.
+### **Zone Or/Curé**
+Cette zone est principalement destinée à l'analyse plutôt qu'à l'ingestion ou au traitement de données. Les données de la zone organisée sont stockées dans des schémas en étoile. La modélisation dimensionnelle est généralement effectuée à l'aide de Spark ou de Data Factory au lieu de l'intérieur du moteur de base de données. Mais si la modélisation dimensionnelle est effectuée à l'extérieur du lac, il est préférable de publier le modèle dans le lac. Cette zone est la mieux adaptée pour exécuter des requêtes et des analyses à grande échelle qui n'ont pas de besoins stricts en matière de rapports sensibles au temps.
 
-### **Laboratory Zone**
-This zone is mainly for experimentation and exploration. It is used for prototype and innovation mixing both your own data sets with data sets from production. This zone is not a replacement for a development or test data lake which is required for more careful development. Each wil data lake project would have their own laboratory area via a folder. Permissions in this zone are typically read and write for each user/project.
+### **Zone Laboratoire**
+Cette zone est principalement destinée à l'expérimentation et à l'exploration. Il est utilisé pour le prototype et l'innovation en mélangeant à la fois vos propres ensembles de données avec des ensembles de données de production. Cette zone ne remplace pas un lac de données de développement ou de test requis pour un développement plus minutieux. Chaque projet de lac de données wil aurait sa propre zone de laboratoire via un dossier. Les autorisations dans cette zone sont généralement en lecture et en écriture pour chaque utilisateur/projet.
 
-For more information about structuring your projects data lake container:
+Pour plus d'informations sur la structuration du conteneur de lac de données de vos projets :
 
 https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b430
 https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/
 
-##  I get an out of memory exception in Databricks?
+## Je reçois une exception de mémoire insuffisante dans Databricks?
 
 ### **Option 1:**
-The fastest and most expensive way to fix this is to increase the size of your cluster.
+Le moyen le plus rapide et le plus coûteux de résoudre ce problème consiste à augmenter la taille de votre cluster.
 
-To increase the size of the cluster, please contact the CAE support team to increase the size of the cluster
+Pour augmenter la taille du cluster, veuillez contacter l'équipe d'assistance CAE pour augmenter la taille du cluster.
 
 ### **Option 2:**
-For a more programtic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark or koalas. PySpark and koalas can run faster than pandas, it has better benefits from using data ingestion pipelines and also works efficiently as it runs parallel on different nodes in a cluster.
+Pour une réponse plus programmatique, si vous utilisez des pandas, il est également suggéré de basculer et d'utiliser pySpark ou koalas. PySpark et les koalas peuvent s'exécuter plus rapidement que les pandas, ils ont de meilleurs avantages à utiliser des pipelines d'ingestion de données et fonctionnent également efficacement car ils s'exécutent en parallèle sur différents nœuds d'un cluster.
 
 https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
 
 ### **Option 3:**
-Consider to use a subset of your data when doing queries if possible. If you are working with only a certain section of the dataset but are quering through all of it, it is possible to use just the subset. 
+Pensez à utiliser un sous-ensemble de vos données lorsque vous effectuez des requêtes si possible. Si vous ne travaillez qu'avec une certaine section de l'ensemble de données mais que vous l'interrogez sur l'ensemble, il est possible d'utiliser uniquement le sous-ensemble.
 
 ### **Option 4:**
-Consider changing the file format to something like Parquet or Avro which uses less space than a traditional CSV file.
+Envisagez de changer le format de fichier en quelque chose comme Parquet ou Avro qui utilise moins d'espace qu'un fichier CSV traditionnel.
 
-Conversion from CSV to Parquet:
+Conversion de CSV en parquet:
 ```python
 %python
 
@@ -60,7 +60,7 @@ testConvert = spark.read.format('csv').options(header='true', inferSchema='true'
 testConvert.write.parquet("/mnt/public-data/incoming/testingFile")
 ```
 
-Conversion from CSV to Avro:
+Conversion de CSV en Avro:
 ```python
 %python
 
@@ -68,44 +68,47 @@ diamonds = spark.read.format('csv').options(header='true', inferSchema='true').l
 diamonds.write.format("avro").save("/mnt/public-data/incoming/testingFile")
 ```
 
-## How can i easily convert SAS code to Python or R?
-It is not possible to easily convert SAS code to Python or R automatically, the only known way to convert is to manually do the conversion. 
+## Comment puis-je facilement convertir le code SAS en Python ou R?
+Il n'est pas possible de convertir facilement le code SAS en Python ou R automatiquement, le seul moyen connu de convertir est de faire manuellement la conversion.
 
-## How do I validate that I am developing my application in the most cost effective way in the cloud using Microsoft technologies (CAE)?
-There are plenty of ways to validate that your development is the most cost effective it can be:
+## Comment puis-je valider que je développe mon application de la manière la plus rentable dans le cloud à l'aide des technologies Microsoft (CAE) ?
+Il existe de nombreuses façons de valider que votre développement est le plus rentable possible:
 
-1. Take advantage of Spark in databricks.
+1. Profitez de Spark dans les databricks.
 
-    a. Spark is a great addition to databricks that runs faster and better especially for large data sets. Using Spark would cost less because it does take less time to do its task. Using spark will also
-2. Make sure you cluster is running for the minimal amout of time.
+    a. Spark est un excellent ajout aux databricks qui s'exécutent plus rapidement et mieux, en particulier pour les grands ensembles de données. Utiliser Spark coûterait moins cher car cela prend moins de temps pour faire sa tâche.
 
-    a. If the cluster is no longer needed or not being use, ensure that it is not running and only run when it is needed.
-3. Ensure your databricks cluster is correctly sized.
+2. Assurez-vous que votre cluster est en cours d'exécution pendant une durée minimale.
 
-    a. Make sure that you have to correct amount of workers in your cluster, too many clusters results in a higher cost.
-4. Delete data files that you are not using.
+    a. Si le cluster n'est plus nécessaire ou n'est pas utilisé, assurez-vous qu'il n'est pas en cours d'exécution et qu'il ne s'exécute que lorsqu'il est nécessaire.
 
-    a. Ensure that any files that are no longer needed or not in use anymore are deleted from the container.
+3. Assurez-vous que votre cluster de briques de données est correctement dimensionné.
+
+    a. Assurez-vous que vous devez corriger le nombre de travailleurs dans votre cluster, un trop grand nombre de clusters entraîne un coût plus élevé.
+
+4. Supprimez les fichiers de données que vous n'utilisez pas.
+
+    a. Assurez-vous que tous les fichiers qui ne sont plus nécessaires ou qui ne sont plus utilisés sont supprimés du conteneur.
     
-5. Try not to do processing on a cloud VM.
+5. Essayez de ne pas effectuer de traitement sur une machine virtuelle cloud.
     
-6. Ask for a review of your architecture.
+6. Demandez un examen de votre architecture.
 
-7. Code review.
+7. Revue de code.
 
-8. If you are using Pandas, it is a good idea to switch over to Koalas.
+8. Si vous utilisez des Pandas, c'est une bonne idée de passer aux Koalas.
 
-9. Use a file format that is optimal for your work load (i.e. Parquet, Avro)
+9. Utilisez un format de fichier optimal pour votre charge de travail (par exemple, Parquet, Avro)
 
-## How should data be structured if we plan to use Power BI?
-Data should be structured using the Star Schema.
+## Comment les données doivent-elles être structurées si nous prévoyons d'utiliser Power BI?
+Les données doivent être structurées à l'aide du schéma en étoile.
 
-For more details about using Star Schema, click the link below for details about using Star Schema and the benefits with Power BI: 
+Pour plus de détails sur l'utilisation de Star Schema, cliquez sur le lien ci-dessous pour en savoir plus sur l'utilisation de Star Schema et les avantages avec Power BI:
 
-https://docs.microsoft.com/en-us/power-bi/guidance/star-schema
+https://docs.microsoft.com/fr-ca/power-bi/guidance/star-schema
 
-##  How to read in an Excel file from Databricks?
-Here is an example of how to read an Excel file using Python: 
+## Comment lire dans un fichier Excel depuis Databricks?
+Voici un exemple de lecture d'un fichier Excel à l'aide de Python:
 
 ```python
 %python
@@ -113,11 +116,11 @@ import pandas as pd
 pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openpyxl')
 ```
 
-##  Which file types are best to use when?
+## Quels types de fichiers sont les meilleurs à utiliser quand?
 ### Parquet  
-It is good to use for very large datasets. It is also good to use if only a section of the dataset is needed which reads in the data in a faster rate.
+Il est bon à utiliser pour de très grands ensembles de données. Il est également bon de l'utiliser si seule une section de l'ensemble de données est nécessaire pour lire les données à un rythme plus rapide.
 
-Read:
+Lire:
 
 ```python
 %python
@@ -125,26 +128,26 @@ data = spark.read.parquet("/tmp/testParquet")
 display(data)
 ```
 
-Write:
+Écrivez:
 
 ```python
 %python
-//Assumption that a dataframe has been created already
+//Supposition qu'un cadre de données a déjà été créé
 
 data.write.parquet("/tmp/tempFile")
 ```
 
 ### Avro
-Just as Parquet, it is great for very large datasets. To compare, it is better used for editing/writing into a dataset and for querying all columns in the dataset.
+Tout comme Parquet, il est idéal pour les très grands ensembles de données. Pour comparer, il est préférable de l'utiliser pour éditer/écrire dans un ensemble de données et pour interroger toutes les colonnes de l'ensemble de données.
 
-Read:
+Lire:
 
 ```python
 data = spark.read.format("avro").load("/tmp/test_dataset")
 display(data)
 ```
 
-Write:
+Écrivez:
 
 ```scala
 %scala
@@ -155,9 +158,9 @@ ex.write.format("avro").save("/tmp/testExample")
 ```
 
 ### CSV
-It is fine to use with marginally smaller datasets as CSV files do not load well when the file size is very large. But with smaller data sets, it is simple and human-readable. For writing within a CSV file, it is also good to note that you are able to edit the file with Office. 
+Il convient de l'utiliser avec des ensembles de données légèrement plus petits, car les fichiers CSV ne se chargent pas bien lorsque la taille du fichier est très volumineuse. Mais avec des ensembles de données plus petits, c'est simple et lisible par l'homme. Pour écrire dans un fichier CSV, il est également bon de noter que vous pouvez modifier le fichier avec Office.
 
-Read:
+Lire:
 
 ```python
 %python
@@ -166,14 +169,14 @@ display(data)
 ```
 
 ### Excel
-Please see above on how to use Excel.
+Veuillez voir ci-dessus comment utiliser Excel.
 
-The other formats above are perferable over excel.
+Les autres formats ci-dessus sont préférables à Excel.
 
-## How to convert files (CSV, Text, JSON) to parquet using databricks?
-The rule of thumb in converting a file to parquet is to first read in the file and then write a new file into parquet
+## Comment convertir des fichiers (CSV, Text, JSON) en parquet à l'aide de databricks?
+La règle de base lors de la conversion d'un fichier en parquet est de d'abord lire le fichier, puis d'écrire un nouveau fichier dans le parquet.
 
-CSV to Parquet: 
+CSV vers Parquet: 
 ```python
 %python
 
@@ -181,7 +184,7 @@ testConvert = spark.read.format('csv').options(header='true', inferSchema='true'
 testConvert.write.parquet("/mnt/public-data/incoming/testingFile")
 ```
 
-JSON to Parquet:
+JSON vers Parquet:
 ```python
 %python
 
@@ -189,7 +192,7 @@ testConvert = spark.read.json('tmp/test.json')
 testConvert.write.parquet('tmp/testingJson')
 ```
 
-Text to Parquet:
+Text vers Parquet:
 ```python
 %python
 
@@ -197,40 +200,40 @@ testConvert = spark.read.text("/mnt/public-data/incoming/testing.txt")
 testConvert.write.parquet("/mnt/public-data/incoming/testingFile")
 ```
 
-## Can I read Word document in Databricks?
-It is best practice to read Word documents via Office instead.
+## Puis-je lire un document Word dans Databricks?
+Il est préférable de lire les documents Word via Office à la place.
 
-## When should we use ADF vs. Databricks for data ingestion?
-Databricks is able to do real-time streaming through the Apache Spark API that can handle the streaming analytics workloads. Databricks does not need you to wrap the python code into functions or executable modules, all the code is able to work just as is. Databricks also supports Machine Learning which makes data ingestion easier as well.
+## Quand devons-nous utiliser ADF ou Databricks pour l'ingestion de données?
+Databricks est capable de diffuser en temps réel via l'API Apache Spark qui peut gérer les charges de travail d'analyse de streaming. Databricks n'a pas besoin que vous encapsulez le code python dans des fonctions ou des modules exécutables, tout le code peut fonctionner tel quel. Databricks prend également en charge le Machine Learning, ce qui facilite également l'ingestion de données.
 
-For any code that is already in an Azure Function or is easily translated into an executable, using data factory is usable. Data factory is also good to use if it is a heavy algorithm that is not usable within Databricks. 
+Pour tout code qui se trouve déjà dans une fonction Azure ou qui est facilement traduit en un exécutable, l'utilisation de la fabrique de données est utilisable. L'usine de données est également bonne à utiliser s'il s'agit d'un algorithme lourd qui n'est pas utilisable dans Databricks.
 
-## What is the difference between SQL database temporal tables and Delta Lake?
-SQL temporal tables is specific to SQL 2018 and is not currently available in Azure Synapse. On the other hand, Delta lake is available in both Azure Synapse and in Databricks. Another difference is that SQL temporal tables are only available with only SQL queries while Delta lake time travel is available in Scala, Python, and SQL. 
+## Quelle est la différence entre les tables temporelles de la base de données SQL et Delta Lake?
+Les tables temporelles SQL sont spécifiques à SQL 2018 et ne sont actuellement pas disponibles dans Azure Synapse. D'autre part, Delta Lake est disponible à la fois dans Azure Synapse et dans Databricks. Une autre différence est que les tables temporelles SQL ne sont disponibles qu'avec des requêtes SQL, tandis que le voyage dans le temps du lac Delta est disponible en Scala, Python et SQL.
 
-## When to use Power BI or R-Shiny?
-It is recommended to use Power BI over R-shiny because less coding is required when using Power BI. There are a lot of benefits to using Power BI including the additional amount of chart types that are at hand, visualisation of data into charts is easier to use in Power BI compared to R-Shiny, the creation of a dashboard is faster within PowerBI, and the ease of connectivity with other applications within Azure.
+## Quand utiliser Power BI ou R-Shiny?
+Il est recommandé d'utiliser Power BI sur R-shiny car moins de codage est requis lors de l'utilisation de Power BI. L'utilisation de Power BI présente de nombreux avantages, notamment la quantité supplémentaire de types de graphiques disponibles, la visualisation des données dans des graphiques est plus facile à utiliser dans Power BI par rapport à R-Shiny, la création d'un tableau de bord est plus rapide dans PowerBI, et la facilité de connectivité avec d'autres applications au sein d'Azure.
 
-## When is a good time to use Azure Synapse vs. ADF and Databricks?
-Azure Synapse is good to use when doing queries and data analysis via the data lake, doing SQL analyses and data warehousing, and using additional services like Power BI. It is easy to query data from the data lake using Azure Snapse and you do not have to mount the data lake to the workspace. As for data analyses and data warehousing, synapse is perferred as it allows full realtional data models, provide all SQL features and also uses Delta Lake. Synapse also includes direct services with Power BI for ease of use.
+## Quel est le bon moment pour utiliser Azure Synapse vs ADF et Databricks?
+Azure Synapse est utile pour effectuer des requêtes et des analyses de données via le lac de données, effectuer des analyses SQL et un entreposage de données, et utiliser des services supplémentaires comme Power BI. Il est facile d'interroger les données du lac de données à l'aide d'Azure Snapse et vous n'avez pas besoin de monter le lac de données sur l'espace de travail. En ce qui concerne les analyses de données et l'entreposage de données, synapse est préféré car il permet des modèles de données réels complets, fournit toutes les fonctionnalités SQL et utilise également Delta Lake. Synapse inclut également des services directs avec Power BI pour une facilité d'utilisation.
 
-On the other hand, Databricks is preferred when doing machine learning development and real-time transformations. Databricks includes their own machine learning development that includes popular libraries like PyTorch, manage version of MLflow.  Databricks is also preferred for real-time transformations as it uses Spark structured streaming and it gives you the ability to view changes from other users in real time.
+D'autre part, Databricks est préféré lors du développement de l'apprentissage automatique et des transformations en temps réel. Databricks inclut son propre développement d'apprentissage automatique qui inclut des bibliothèques populaires telles que PyTorch, gère la version de MLflow. Databricks est également préféré pour les transformations en temps réel car il utilise le streaming structuré Spark et il vous donne la possibilité de visualiser les modifications des autres utilisateurs en temps réel.
 
-## When should we use a SQL database data warehouse vs. Delta Lake?
-Best practice would be to use Delta lake over SQL server as it does not use additional SQL compute resouces and will reduce the overall cloud costs.
+## Quand devrions-nous utiliser un entrepôt de données de base de données SQL par rapport à Delta Lake?
+La meilleure pratique serait d'utiliser Delta Lake sur le serveur SQL car il n'utilise pas de ressources de calcul SQL supplémentaires et réduira les coûts globaux du cloud.
 
-## How can i easily convert SAS files to another format?
-Statcan users can use SAS on the internal stats-can network to convert it to a supported file form. 
+## Comment puis-je facilement convertir des fichiers SAS dans un autre format?
+Les utilisateurs de Statcan peuvent utiliser SAS sur le réseau interne stats-can pour le convertir en un format de fichier pris en charge. 
 
-You are able to convert a SAS file to CSV or JSON with this method:
+Vous pouvez convertir un fichier SAS en CSV ou JSON avec cette méthode:
 
-1. First open databricks and install the sas7bdat-converter within your notebook.
+1. Ouvrez d'abord les databricks et installez le convertisseur sas7bdat dans votre ordinateur portable.
 
 ```python
 %pip install sas7bdat-converter
 ```
 
-2. Using python and your code editor of your choice, type in this code with the file directory that the file is in and the directory where you want the output file to be in.
+2. À l'aide de python et de l'éditeur de code de votre choix, saisissez ce code avec le répertoire du fichier dans lequel se trouve le fichier et le répertoire dans lequel vous souhaitez que le fichier de sortie se trouve.
 
 ```python
 %python
@@ -245,42 +248,42 @@ file_dicts = [{
 sas7bdat_converter.batch_to_csv(file_dicts)
 ```
 
-You will then get the output file within the directory you have specified.
+Vous obtiendrez alors le fichier de sortie dans le répertoire que vous avez spécifié.
 
-For more information about the converter, please refer to this link:
+Pour plus d'informations sur le convertisseur, veuillez vous référer à ce lien :
 
 https://pypi.org/project/sas7bdat-converter/
 
-##  Can\How I convert Word document to a notebook? 
-There is no easy way to convert a word document to a notebook.
+##  Puis-je convertir un document Word en bloc-notes?
+Il n'y a pas de moyen facile de convertir un document Word en bloc-notes.
 
-A manual solution to convert a Word document to a notebook is by copying any of the code that is within the word document into a notebook.
+Une solution manuelle pour convertir un document Word en bloc-notes consiste à copier le code contenu dans le document Word dans un bloc-notes.
 
-## How big of a dataframe/spark table can we store within the workspace?
-Spark tables are stored as parquet files and are stored in the internal storage account linked with the Databricks workspace, but it is best practice to delete the table if it is no longer in use.
+## Quelle taille de table dataframe/spark peut-on stocker dans l'espace de travail?
+Les tables Spark sont stockées en tant que fichiers parquet et sont stockées dans le compte de stockage interne lié à l'espace de travail Databricks, mais il est recommandé de supprimer la table si elle n'est plus utilisée.
 
-## What is the best way to get data files into Azure ML?
-The best way would be to upload your files to the data lake. If you need to add a new cloud storage account, contact the CAE team to add the storage account to the Azure ML studio.
+## Quelle est la meilleure façon d'obtenir des fichiers de données dans Azure ML?
+Le meilleur moyen serait de télécharger vos fichiers sur le lac de données. Si vous devez ajouter un nouveau compte de stockage cloud, contactez l'équipe CAE pour ajouter le compte de stockage au studio Azure ML.
 
-## Whats the difference to Machine Learning in Databricks or in Azure ML?
-The main difference between Azure ML and Databricks is the language that each application uses. Azure ML utilizes python-based libraries or R while Databricks utilizes the Apache Spark Platform and MLFlow. 
+## Quelle est la différence avec le Machine Learning dans Databricks ou dans Azure ML?
+La principale différence entre Azure ML et Databricks réside dans le langage utilisé par chaque application. Azure ML utilise des bibliothèques basées sur python ou R tandis que Databricks utilise la plate-forme Apache Spark et MLFlow.
 
-Azure ML also contains a tracking system which is able to track individual runs of the experiment and include the specific metrics of what wants to be seen. Databricks includes MLflow which also allows tracking but does not come with as many features as Azure ML. 
+Azure ML contient également un système de suivi capable de suivre les exécutions individuelles de l'expérience et d'inclure les métriques spécifiques de ce qui doit être vu. Databricks inclut MLflow qui permet également le suivi mais n'offre pas autant de fonctionnalités qu'Azure ML.
 
-As a recommendation, it is best practice to use Databricks for data preperation and for large datasets but to use Azure ML for their tracking system, machine learning on normal datasets, deep learning on GPUs, and operationalization. 
+À titre de recommandation, il est recommandé d'utiliser Databricks pour la préparation des données et pour les grands ensembles de données, mais d'utiliser Azure ML pour leur système de suivi, l'apprentissage automatique sur les ensembles de données normaux, l'apprentissage profond sur les GPU et l'opérationnalisation.
 
-## How do you create a Table in Databricks?
+## Comment créer une table dans Databricks?
 
-### Option 1: Use Create Table function
-In Databricks, select Data and within the Database you have selected, click on Create Table.
+### Option 1 : Utiliser la fonction Créer une table
+Dans Databricks, sélectionnez Données et dans la base de données que vous avez sélectionnée, cliquez sur Créer une table. 
 
 ![CreateTable](images/BestPracticesTable.png)
 
-For more information about this option, please view this link:
+Pour plus d'informations sur cette option, veuillez consulter ce lien :
 
 https://docs.databricks.com/data/tables.html#create-a-table
 
-### Option 2: Create Table from Dataframe table
+### Option 2 : Créer une table à partir d'une table Dataframe
 Python:
 
 ```python
@@ -301,46 +304,46 @@ SQL:
 CREATE TABLE example (id INT, name STRING, age INT) USING CSV;
 ```
 
-## When to use Spark Dataframe or Spark Table?
-There are really no difference between using a Spark Dataframe or Spark Table. 
+## Quand utiliser Spark Dataframe ou Spark Table?
+Il n'y a vraiment aucune différence entre l'utilisation d'un Spark Dataframe ou Spark Table.
 
-Currently with Databricks, best practice right now would be to store tables as delta tables as it is saved in parquet format and gives the tracking capabilities.
+Actuellement avec Databricks, la meilleure pratique en ce moment serait de stocker les tables en tant que tables delta car elles sont enregistrées au format parquet et donnent les capacités de suivi.
 
-## What should I do if the size of the broadcasted table far exceeds estimates and exceeds limit of spark.driver.maxResultSize = _____?
-Change the Spark configuration "spark.driver.maxResultSize" to "0" (means no limit) or something larger than your needs.
+## Que dois-je faire si la taille de la table diffusée dépasse de loin les estimations et dépasse la limite de spark.driver.maxResultSize = _____?
+Modifiez la configuration Spark "spark.driver.maxResultSize" en "0" (signifie pas de limite) ou quelque chose de plus grand que vos besoins.
 
-## What Should I do if I cannot broadcast the table that is larger than 8GB?
-This occurs only with BroadcastHashJoin. There are 2 options:
+## Que dois-je faire si je ne peux pas diffuser la table dont la taille est supérieure à 8GB?
+Cela se produit uniquement avec BroadcastHashJoin. Il y a 2 possibilités :
 
-1. Change the Spark configuration "spark.sql.autoBroadcastJoinThreshold" to "-1". This forces Databricks to perform a SortMergeJoin.
+1. Remplacez la configuration Spark "spark.sql.autoBroadcastJoinThreshold" par "-1". Cela force Databricks à effectuer un SortMergeJoin.
 
-    ### Note About changing Spark Configuration
-    **Warning: Changing Spark configuraitons can cause out-of-memory-errors**
+    ### Remarque sur la modification de la configuration Spark
+     **Avertissement : La modification des configurations Spark peut entraîner des erreurs de mémoire insuffisante**
 
-    Normal approach:
+    Approche normale:
 
         - spark.conf.set("configuration", "value")
 
-    If you do not have permissions to change some configurations, this seems to be a work around:
+    Si vous n'êtes pas autorisé à modifier certaines configurations, cela semble être une solution:
 
         - conf = spark.sparkContext._cibf,setAkk([("configuration", "value"), ("configuration", "value")])
 
-    How to get Spark Configuration:
+    Comment obtenir la configuration Spark :
 
         - spark.conf.get("configuration")
 
 
 
-2. Steps to avoid changing configurations:
+2. Étapes pour éviter de modifier les configurations:
 
-    a. Partition DataFrame A into parts.
+     a. Partitionner le DataFrame A en plusieurs parties.
 
-    b. Perform joins with each parittion from DataFrame A with DataFrame B (concurrently is the fastest way but may require writing Dataframes to file for reading in next step).
+     b. Effectuez des jointures avec chaque partition de DataFrame A avec DataFrame B (c'est simultanément le moyen le plus rapide mais peut nécessiter l'écriture de Dataframes dans un fichier pour la lecture à l'étape suivante).
 
-    c. Perform a union on all the joined DataFrames.
+     c. Effectuez une union sur tous les DataFrames joints.
 
 
 
-# Change Display Language
+# Changer la langue d'affichage
 
-See [Language](Language.md) page to find out how to change the display language.
+Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.
