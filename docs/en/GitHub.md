@@ -1,5 +1,7 @@
 # GitHub
 
+Description of how we use GitHub.com. Do not use protected B data on GitHub.
+
 ## Creating a GitHub Account
 
 Information on creating a GitHub account (or using your existing account) can be found at: https://digital.statcan.gc.ca/drafts/guides-platforms-github.
@@ -43,4 +45,29 @@ Information on creating a GitHub account (or using your existing account) can be
 
 ## Azure Machine Learning
 
+1. Create a compute instance, then open a terminal.
+![Open a terminal](images/GitHub_ML_1.png)
+2. In the terminal window, enter the following (replace the example email with your own): `ssh-keygen -t rsa -b 4096 -C "first.last@canada.ca"`
+3. Press **ENTER** until your key is generated.
+![Generate an RSA key pair](images/GitHub_ML_2.png)
+4. Enter in the terminal: `cat ~/.ssh/id_rsa.pub`. Select the output and copy it to the clipboard.
+![Copy the SSH key](images/GitHub_ML_3.png)
+5. Go to your GitHub account settings (on GitHub.com), click on **SSH and GPG keys**, then **New SSH key**. Paste in the key you just copied, then click **Add SSH key**.
+![Add the SSH key to GitHub](images/GitHub_ML_4.png)
+6. In the terminal window, type: `git clone [url]` (replace **[url]** with the SSH url for your GitHub repository, e.g. `git@github.com:username/reponame.git`).
+7. When prompted, type `yes`.
+
+### Microsoft Documentation
+- [Git Integration for Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-train-model-git-integration)
+
+
 ## Azure Synapse
+
+1. On the Manage tab, click on **Git configuration**.
+![Git configuration](images/GitHub_Synapse_1.png)
+2. Click **Configure**. Under **Repository type**, select **GitHub**, then enter your GitHub account username. Click **Continue**.
+3. A pop-up will appear. Enter your GitHub account login info, then click **AuthorizeAzureSynapse**.
+4. Configure a repository. You can either select a repository that you own, or enter a repository link. Specify additional settings, then click **Apply**.
+5. Set your working branch. You can either create a new branch or use an existing one. Then click **Save**.
+
+**To remove GitHub Integration:** On the Git configuration screen, click **Disconnect**. Enter the workspace name, then click **Disconnect** again to confirm.
