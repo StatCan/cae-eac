@@ -2,15 +2,15 @@ _[English](../../en/DeltaLake)_
 
 # Delta Lake
 
-Delta Lake est une couche de stockage open source qui s'exécute sur un lac de données existant, ajoutant les capacités des propriétés et des transactions ACID (atomicité, cohérence, isolation, durabilité). Delta Lake est entièrement compatible avec Apache Spark dans Azure Databricks et Synapse.
+Delta Lake est une couche de stockage à code source ouvert qui s’exécute au-dessus d’un lac de données existant, ajoutant les capacités des propriétés et des transactions ACID (atomicité, cohérence, isolation, durabilité). Delta Lake est entièrement compatible avec Apache Spark dans Azure Databricks et Azure Synapse.
 
-Azure Data Lake n'est _pas_ conforme à l'ACID, donc Delta Lake doit être utilisé partout où l'intégrité et la fiabilité des données sont essentielles, ou lorsqu'il existe un risque de données erronées.
+Azure Data Lake n’est pas conforme à la norme ACID. Il convient donc d’utiliser Delta Lake lorsque l’intégrité et la fiabilité des données sont essentielles, ou lorsqu’il existe un risque de mauvaises données.
 
 ### Documentation Microsoft
-- [Qu'est-ce que le Delta Lake](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake)
+- [Présentation de Delta Lake](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake)
 - [Delta Lake sur Azure](https://techcommunity.microsoft.com/t5/analytics-on-azure/delta-lake-on-azure/ba-p/1869746)
 
-### Documents Officiels
+### Documents Officielle
 - [Documentation Delta Lake](https://docs.delta.io/latest/index.html)
 
 ## Comment fonctionne le Delta Lake
@@ -19,19 +19,22 @@ Un lac delta est essentiellement un dossier à l'intérieur du lac de données c
 
 **Si les fichiers journaux sont supprimés**, vous ne pourrez pas du tout lire le tableau. Pour résoudre ce problème, vous devrez vider le dossier du Delta Lake (supprimer tout ce qu'il contient), puis y écrire votre fichier de données d'origine pour recommencer.
 
-Delta Lake fonctionne au niveau de la table, les requêtes et jointures multi-tables ne sont donc pas prises en charge.
+Delta fonctionne au niveau des tables, ce qui signifie que les requêtes et les jointures sur plusieurs tables ne sont pas prises en charge.
 
 ## Quand utiliser Delta Lake
 
-Il est préférable d'utiliser le Delta Lake:
+Delta Lake est préférable :
 
-- pour toute table permanente dans Databricks;
-- pour de grandes quantités de données semi-structurées (plus de 10 millions d'enregistrements pour tirer le meilleur parti des performances); ou
-- lorsque vous souhaitez un contrôle de version et/ou un suivi des accès aux données (les fichiers log delta gardent une trace de chaque modification des données et par qui).
+•	Pour toute table permanente dans Databricks;
 
-## Voyage dans le temps
+•	Pour les grandes quantités de données semi-structurées (10 millions d’enregistrements ou plus pour obtenir les meilleurs avantages sur le plan de la performance);
 
-Vous pouvez utiliser le voyage dans le temps pour interroger un ancien instantané d'une table, soit par numéro de version, soit par horodatage. Par défaut, les fichiers de données sont stockés pendant 30 jours.
+•	Lorsque vous souhaitez un contrôle de version ou un suivi de l’accès aux données (les fichiers journaux delta permettent de savoir chaque fois que les données sont modifiées et par qui).
+
+
+## Déplacement dans le temps
+
+Vous pouvez utiliser le déplacement dans le temps pour interroger un ancien instantané d’une table, soit par numéro de version, soit par horodatage. Par défaut, les fichiers de données sont conservés pendant 30 jours.
 
 Exemple:
 
@@ -89,7 +92,7 @@ deltaTable.vacuum()        // fichiers vacuum non requis par les versions antér
 deltaTable.vacuum(100)     // fichiers vides non requis par les versions de plus de 100 heures
 ```
 
-### Revenir à une version précédente
+### Revenir à Une Version Antérieure
 
 Vous pouvez revenir à une version précédente de votre table et y travailler en utilisant la fonction de voyage dans le temps pour lire votre version cible en tant que trame de données, puis la réécrire dans le dossier delta lake.
 
@@ -114,7 +117,7 @@ df.write.format("delta").mode("overwrite").save(delta_table_path)
 
 Databricks prend en charge en natif Delta Lake et peut exécuter des requêtes à l'aide de Python, R, Scala et SQL.
 
-1. Vous devez d'abord créer un répertoire pour stocker les fichiers delta et noter le chemin d'accès à ce répertoire.
+`1. Vous devez d'abord créer un répertoire pour stocker les fichiers delta et noter le chemin d'accès à ce répertoire.
 2. Lisez votre fichier de données, puis écrivez-le au format "delta" et enregistrez-le dans le répertoire créé ci-dessus.
 ```
 # lire le fichier de données
