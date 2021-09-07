@@ -279,22 +279,6 @@ https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
 3. To test it, you can type "2+x" and it should give an error in the language inputted.
 
-### SQL Server
-
-To change the default language in SQL Server:
-
-1. Open up SQL Server Management Studio and login to the SQL Server you would like to adjust.
-
-2. Right-click on the SQL server and select **Properties**.
-
-![SQLServer](images/LanguageSettings/SQLServer_En.png)
-
-3. Within properties, you can find **Default Language** and can select the dropdown on the right.
-
-![SQLServer](images/LanguageSettings/SQLServer_En2.png)
-
-4. Once the language is selected, click **OK**
-
 ## Web browsers
 
 * [Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en)
