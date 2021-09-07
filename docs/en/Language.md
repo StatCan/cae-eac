@@ -30,8 +30,6 @@ To select the language:
 
 ![DataFactory](images/ADFLanguage.png)  
 
-
-
 ## Databricks
 This tool is available only in English for now.
 
