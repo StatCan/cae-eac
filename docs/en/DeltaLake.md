@@ -1,4 +1,4 @@
-_[Français](../../fr/DataLake)_
+_[Français](../../fr/DeltaLake)_
 
 # Delta Lake
 

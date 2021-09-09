@@ -1,3 +1,5 @@
+_[Français](../../fr/GitHub)_
+
 # GitHub
 
 GitHub.com is an online platform that is used for collaboration as well as tracking changes and versioning for a variety of project types.
@@ -58,7 +60,7 @@ git config user.email "first.last@canada.ca"
 #### How to Commit changes
 1. When you are ready to publish your changes to GitHub, on the **Source Control** tab, type in a commit message, then click the checkmark button.
 ![Commit changes](images/GitHub_VM_3.png)
-2. Click the source control menu button, then click **Push**. If you get an error message (this will happen if your local copy of the repository is not up to date with the version stored on GitHub), click **Pull** instead to merge your changes.
+2. Click the source control menu button, then click **Push**. If you get an error message (this will happen if your local copy of the repository is not up to date with the version stored on GitHub), first click **Pull, then Push** to merge your changes.
 ![Push changes](images/GitHub_VM_5.png)
 
 ### R-Studio
@@ -73,7 +75,7 @@ git config user.email "first.last@canada.ca"
 ![Commit button](images/GitHub_VM_8.png)
 2. Click the checkbox for each of changes you want to commit. Enter a commit message briefly describing your changes, then click **Commit**. A pop-up will appear confirming that your commit was successful. Click **Close**.
 ![Commit changes](images/GitHub_VM_9.png)
-3. Click the **Push** button to upload your changes to GitHub. A pop-up will appear confirming that the push was successful. If you get an error message, (this will happen if your local copy of the repository is not up to date with the version stored on GitHub), click **Pull** instead to merge your changes.
+3. Click the **Push** button to upload your changes to GitHub. A pop-up will appear confirming that the push was successful. If you get an error message, (this will happen if your local copy of the repository is not up to date with the version stored on GitHub), first click **Pull, then Push** to merge your changes.
 
 ## Azure Machine Learning
 
@@ -103,3 +105,6 @@ git config user.email "first.last@canada.ca"
 5. Set your working branch. You can either create a new branch or use an existing one. Then click **Save**.
 
 **To remove GitHub Integration:** On the Git configuration screen, click **Disconnect**. Enter the workspace name, then click **Disconnect** again to confirm.
+
+# Change Display Language
+See [Language](Language.md) page to find out how to change the display language.
