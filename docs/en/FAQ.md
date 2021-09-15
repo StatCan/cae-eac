@@ -93,7 +93,25 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 ![subscription](images/Subscription.png)
 2. Select the **vdl** subscription.
 
-## SQL Server Machine Leaning Services
+## CAE's SQL Server Deployment Options
+
+<table>
+  <tr>
+    <th>Azure SQL Database</th>
+    <th>Azure SQL Database - Managed Instance</th>
+    <th>SQL Server on Azure Virtual Machines</th>
+  </tr>
+  <tr>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+</table>
+
+## SQL Server Machine Learning Services
+Machine Learning Services is a feature in SQL Server that allows to run Python and R scripts and perform predictive analytics and machine learning with relational data. The scripts are executed in-database without the need to move data outside SQL Server and can use open-source packages and frameworks as well as Microsoft's enterprise packages. This feature is offered only offered in 2 of the 3 Azure Cloud SQL Server deployment options, SQL Server on Azure Virtual Machines and Azure SQL Database - Managed Instance.
+
+Presently, CAE has only Azure SQL Database that doesn't offer this feature.
 
 
 ## Other
