@@ -93,6 +93,8 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 ![subscription](images/Subscription.png)
 2. Select the **vdl** subscription.
 
+## SQL Server Machine Leaning Services
+
 
 ## Other
 
