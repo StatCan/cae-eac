@@ -113,6 +113,8 @@ Machine Learning Services is a feature in SQL Server that allows to run Python a
 
 Presently, CAE has only Azure SQL Database that doesn't offer this feature.
 
+However, CAE users can experiment with SQL ML services on their datascience VM Azure SQL server (developer edition). 
+
 
 ## Other
 
