@@ -96,6 +96,18 @@ git config user.email "first.last@canada.ca"
 ![Commit changes](images/GitHub_VM_9.png)
 3. Click the **Push** button to upload your changes to GitHub. A pop-up will appear confirming that the push was successful. If you get an error message, (this will happen if your local copy of the repository is not up to date with the version stored on GitHub), first click **Pull, then Push** to merge your changes.
 
+## FAQ
+
+*I get an error when trying to push changes. What's happening?*
+
+This could mean that your local copy of the repository is not up to date with the copy stored on GitHub. Try clicking **pull** first, then push your changes. It is a best practice to always run a pull command before starting to work with a repository to ensure you are working on the latest version, and no more than one person should be editing the same file at the same time.
+
+*How do I revert back to a previous commit?*
+
+1. In VS Code, open a terminal (by clicking *Terminal -> New Terminal*).
+2. Within the terminal window, type `git revert HEAD~n --no-edit` and press enter (replace *n* with the number of commits you want to revert, starting from 0). Note: you can find your commit history from GitHub by clicking on *x commits* near the top right of your repository.
+3. If there are merge conflicts, click **Accept incoming change**, then commit and push as normal (see above for detailed instructions on how to do this in VS Code).
+
 
 # Change Display Language
 See [Language](Language.md) page to find out how to change the display language.
