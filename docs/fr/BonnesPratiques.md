@@ -1,6 +1,6 @@
 _[English](../../en/BestPractices)_
 
-# Bonnes pratiques
+# Bonnes pratiques 
 
 ## Quel est le meilleur format de fichier à utiliser pour les fichiers de données volumineux? 
 Il est recommandé d'utiliser un format plus récent comme Parquet, car il enregistre des ensembles de dates plus volumineux dans un fichier plus petit par rapport à un fichier CSV. Si vous n'accédez qu'à certaines sections de l'ensemble de données, il est également plus rapide d'utiliser Parquet car il utilise un format de stockage en colonnes.
