@@ -18,7 +18,7 @@
     
     
       
-        <title>BonnesPratiques - Statistique Canada - Environnement d’Analyse Collaborative (EAC)</title>
+        <title>Bonnes pratiques - Statistique Canada - Environnement d’Analyse Collaborative (EAC)</title>
       
     
     
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BonnesPratiques
+              Bonnes pratiques
             
           </span>
         </div>
@@ -397,6 +397,394 @@
       <a href="../FAQ/" class="md-nav__link">
         FAQ
       </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bonnes pratiques
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Bonnes pratiques
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bonnes-pratiques" class="md-nav__link">
+    Bonnes pratiques
+  </a>
+  
+    <nav class="md-nav" aria-label="Bonnes pratiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quel-est-le-meilleur-format-de-fichier-a-utiliser-pour-les-fichiers-de-donnees-volumineux" class="md-nav__link">
+    Quel est le meilleur format de fichier à utiliser pour les fichiers de données volumineux?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-je-besoin-dune-base-de-donnees-sql" class="md-nav__link">
+    Ai-je besoin d'une base de données SQL?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-je-besoin-dune-base-de-donnees-sql-lorsque-jutilise-power-bi" class="md-nav__link">
+    Ai-je besoin d'une base de données SQL lorsque j'utilise Power BI?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-devons-nous-structurer-le-conteneur-de-lac-de-donnees-de-nos-projets" class="md-nav__link">
+    Comment devons-nous structurer le conteneur de lac de données de nos projets?
+  </a>
+  
+    <nav class="md-nav" aria-label="Comment devons-nous structurer le conteneur de lac de données de nos projets?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zone-bronzebrute" class="md-nav__link">
+    Zone Bronze/Brute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zone-argentnettoyee" class="md-nav__link">
+    Zone Argent/Nettoyée
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zone-orcure" class="md-nav__link">
+    Zone Or/Curé
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zone-laboratoire" class="md-nav__link">
+    Zone Laboratoire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#je-recois-une-exception-de-memoire-insuffisante-dans-databricks" class="md-nav__link">
+    Je reçois une exception de mémoire insuffisante dans Databricks?
+  </a>
+  
+    <nav class="md-nav" aria-label="Je reçois une exception de mémoire insuffisante dans Databricks?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1" class="md-nav__link">
+    Option 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2" class="md-nav__link">
+    Option 2:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3" class="md-nav__link">
+    Option 3:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-4" class="md-nav__link">
+    Option 4:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-puis-je-facilement-convertir-le-code-sas-en-python-ou-r" class="md-nav__link">
+    Comment puis-je facilement convertir le code SAS en Python ou R?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-puis-je-valider-que-je-developpe-mon-application-de-la-maniere-la-plus-rentable-dans-le-cloud-a-laide-des-technologies-microsoft-cae" class="md-nav__link">
+    Comment puis-je valider que je développe mon application de la manière la plus rentable dans le cloud à l'aide des technologies Microsoft (CAE) ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-les-donnees-doivent-elles-etre-structurees-si-nous-prevoyons-dutiliser-power-bi" class="md-nav__link">
+    Comment les données doivent-elles être structurées si nous prévoyons d'utiliser Power BI?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-lire-dans-un-fichier-excel-depuis-databricks" class="md-nav__link">
+    Comment lire dans un fichier Excel depuis Databricks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quels-types-de-fichiers-sont-les-meilleurs-a-utiliser-quand" class="md-nav__link">
+    Quels types de fichiers sont les meilleurs à utiliser quand?
+  </a>
+  
+    <nav class="md-nav" aria-label="Quels types de fichiers sont les meilleurs à utiliser quand?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parquet" class="md-nav__link">
+    Parquet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avro" class="md-nav__link">
+    Avro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel" class="md-nav__link">
+    Excel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-convertir-des-fichiers-csv-text-json-en-parquet-a-laide-de-databricks" class="md-nav__link">
+    Comment convertir des fichiers (CSV, Text, JSON) en parquet à l'aide de databricks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puis-je-lire-un-document-word-dans-databricks" class="md-nav__link">
+    Puis-je lire un document Word dans Databricks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quand-devons-nous-utiliser-adf-ou-databricks-pour-lingestion-de-donnees" class="md-nav__link">
+    Quand devons-nous utiliser ADF ou Databricks pour l'ingestion de données?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelle-est-la-difference-entre-les-tables-temporelles-de-la-base-de-donnees-sql-et-delta-lake" class="md-nav__link">
+    Quelle est la différence entre les tables temporelles de la base de données SQL et Delta Lake?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quand-utiliser-power-bi-ou-r-shiny" class="md-nav__link">
+    Quand utiliser Power BI ou R-Shiny?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quel-est-le-bon-moment-pour-utiliser-azure-synapse-vs-adf-et-databricks" class="md-nav__link">
+    Quel est le bon moment pour utiliser Azure Synapse vs ADF et Databricks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quand-devrions-nous-utiliser-un-entrepot-de-donnees-de-base-de-donnees-sql-par-rapport-a-delta-lake" class="md-nav__link">
+    Quand devrions-nous utiliser un entrepôt de données de base de données SQL par rapport à Delta Lake?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-puis-je-facilement-convertir-des-fichiers-sas-dans-un-autre-format" class="md-nav__link">
+    Comment puis-je facilement convertir des fichiers SAS dans un autre format?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puis-je-convertir-un-document-word-en-bloc-notes" class="md-nav__link">
+    Puis-je convertir un document Word en bloc-notes?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelle-taille-de-table-dataframespark-peut-on-stocker-dans-lespace-de-travail" class="md-nav__link">
+    Quelle taille de table dataframe/spark peut-on stocker dans l'espace de travail?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelle-est-la-meilleure-facon-dobtenir-des-fichiers-de-donnees-dans-azure-ml" class="md-nav__link">
+    Quelle est la meilleure façon d'obtenir des fichiers de données dans Azure ML?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quelle-est-la-difference-avec-le-machine-learning-dans-databricks-ou-dans-azure-ml" class="md-nav__link">
+    Quelle est la différence avec le Machine Learning dans Databricks ou dans Azure ML?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-creer-une-table-dans-databricks" class="md-nav__link">
+    Comment créer une table dans Databricks?
+  </a>
+  
+    <nav class="md-nav" aria-label="Comment créer une table dans Databricks?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-utiliser-la-fonction-creer-une-table" class="md-nav__link">
+    Option 1 : Utiliser la fonction Créer une table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-creer-une-table-a-partir-dune-table-dataframe" class="md-nav__link">
+    Option 2 : Créer une table à partir d'une table Dataframe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3-create-table-programatically" class="md-nav__link">
+    Option 3: Create Table Programatically
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quand-utiliser-spark-dataframe-ou-spark-table" class="md-nav__link">
+    Quand utiliser Spark Dataframe ou Spark Table?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-dois-je-faire-si-la-taille-de-la-table-diffusee-depasse-de-loin-les-estimations-et-depasse-la-limite-de-sparkdrivermaxresultsize-_____" class="md-nav__link">
+    Que dois-je faire si la taille de la table diffusée dépasse de loin les estimations et dépasse la limite de spark.driver.maxResultSize = _____?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-dois-je-faire-si-je-ne-peux-pas-diffuser-la-table-dont-la-taille-est-superieure-a-8gb" class="md-nav__link">
+    Que dois-je faire si je ne peux pas diffuser la table dont la taille est supérieure à 8GB?
+  </a>
+  
+    <nav class="md-nav" aria-label="Que dois-je faire si je ne peux pas diffuser la table dont la taille est supérieure à 8GB?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remarque-sur-la-modification-de-la-configuration-spark" class="md-nav__link">
+    Remarque sur la modification de la configuration Spark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changer-la-langue-daffichage" class="md-nav__link">
+    Changer la langue d'affichage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -815,7 +1203,7 @@
                   </a>
                 
                 
-                  <h1>BonnesPratiques</h1>
+                  <h1>Bonnes pratiques</h1>
                 
                 <p><em><a href="../../fr/BestPracticesFAQ">Français</a></em></p>
 <h2 id="bonnes-pratiques">Bonnes pratiques</h2>
@@ -1100,6 +1488,41 @@ https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/</
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="../FAQ/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: FAQ" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              FAQ
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Aide/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Aide/Contact" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Aide/Contact
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
