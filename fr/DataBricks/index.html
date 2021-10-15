@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/DataBricks/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.3">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.1118c9be.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.5143246d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ba0d045b.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -78,7 +78,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href=".." title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-header__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" data-md-component="logo">
       
@@ -157,11 +159,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -865,10 +870,10 @@
 <h3 id="lecture-de-fichiers-montes">Lecture de fichiers montés</h3>
 <p><img alt="Accédez aux fichiers dans votre conteneur de la même façon que vous accédez aux fichiers locaux" src="../images/Accessmountedfile.png" /></p>
 <p>Exemple :</p>
-<div class="codehilite"><pre><span></span><code><span class="nf">%python</span>
-<span class="n">testData</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">format</span><span class="p">(</span><span class="err">&#39;</span><span class="n">csv</span><span class="err">&#39;</span><span class="p">).</span><span class="n">options</span><span class="p">(</span><span class="n">header</span><span class="o">=</span><span class="err">&#39;</span><span class="nb">true</span><span class="err">&#39;</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="err">&#39;</span><span class="nb">true</span><span class="err">&#39;</span><span class="p">).</span><span class="n">load</span><span class="p">(</span><span class="err">&#39;</span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">mad</span><span class="o">-</span><span class="n">du</span><span class="o">/</span><span class="n">incoming</span><span class="o">/</span><span class="n">age</span><span class="o">-</span><span class="n">single</span><span class="o">-</span><span class="n">years</span><span class="mi">-2018</span><span class="o">-</span><span class="n">census</span><span class="o">-</span><span class="n">csv</span><span class="p">.</span><span class="n">csv</span><span class="err">&#39;</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><code><span class="nf">%python</span><span class="w"></span>
+<span class="n">testData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spark</span><span class="p">.</span><span class="n">read</span><span class="p">.</span><span class="n">format</span><span class="p">(</span><span class="err">&#39;</span><span class="n">csv</span><span class="err">&#39;</span><span class="p">).</span><span class="n">options</span><span class="p">(</span><span class="n">header</span><span class="o">=</span><span class="err">&#39;</span><span class="nb">true</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">inferSchema</span><span class="o">=</span><span class="err">&#39;</span><span class="nb">true</span><span class="err">&#39;</span><span class="p">).</span><span class="n">load</span><span class="p">(</span><span class="err">&#39;</span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">mad</span><span class="o">-</span><span class="n">du</span><span class="o">/</span><span class="n">incoming</span><span class="o">/</span><span class="n">age</span><span class="o">-</span><span class="n">single</span><span class="o">-</span><span class="n">years</span><span class="mi">-2018</span><span class="o">-</span><span class="n">census</span><span class="o">-</span><span class="n">csv</span><span class="p">.</span><span class="n">csv</span><span class="err">&#39;</span><span class="p">)</span><span class="w"></span>
 
-<span class="n">display</span><span class="p">(</span><span class="n">testData</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">testData</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 
 <h3 id="modification-du-langage-par-defaut-dans-un-carnet">Modification du langage par défaut dans un carnet</h3>
@@ -1042,10 +1047,12 @@ Lorsque vous utilisez une commande spéciale Langage, celle-ci est distribuée
             Copyright &copy; 2020 Statistique Canada
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -1079,10 +1086,10 @@ Lorsque vous utilisez une commande spéciale Langage, celle-ci est distribuée
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.2b46852b.min.js"></script>
+      <script src="../assets/javascripts/bundle.f89c2efe.min.js"></script>
       
     
   </body>

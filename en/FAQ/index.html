@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://statcan.github.io/cae-eac/en/FAQ/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.3">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.1118c9be.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.5143246d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ba0d045b.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -78,7 +78,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Statistics Canada - Collaborative Analytics Environment (CAE)" class="md-header__button md-logo" aria-label="Statistics Canada - Collaborative Analytics Environment (CAE)" data-md-component="logo">
       
@@ -157,11 +159,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -607,6 +612,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#caes-sql-server-deployment-options" class="md-nav__link">
+    CAE's SQL Server Deployment Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql-server-machine-learning-services" class="md-nav__link">
+    SQL Server Machine Learning Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#other" class="md-nav__link">
     Other
   </a>
@@ -918,6 +937,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#caes-sql-server-deployment-options" class="md-nav__link">
+    CAE's SQL Server Deployment Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql-server-machine-learning-services" class="md-nav__link">
+    SQL Server Machine Learning Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#other" class="md-nav__link">
     Other
   </a>
@@ -1053,6 +1086,24 @@ https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases
 <img alt="subscription" src="../images/Subscription.png" /></li>
 <li>Select the <strong>vdl</strong> subscription.</li>
 </ol>
+<h3 id="caes-sql-server-deployment-options">CAE's SQL Server Deployment Options</h3>
+<table>
+  <tr>
+    <th>Azure SQL Database</th>
+    <th>Azure SQL Database - Managed Instance</th>
+    <th>SQL Server on Azure Virtual Machines</th>
+  </tr>
+  <tr>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+</table>
+
+<h3 id="sql-server-machine-learning-services">SQL Server Machine Learning Services</h3>
+<p>Machine Learning Services is a feature in SQL Server that allows to run Python and R scripts and perform predictive analytics and machine learning with relational data. The scripts are executed in-database without the need to move data outside SQL Server and can use open-source packages and frameworks as well as Microsoft's enterprise packages. This feature is offered only offered in 2 of the 3 Azure Cloud SQL Server deployment options, SQL Server on Azure Virtual Machines and Azure SQL Database - Managed Instance.</p>
+<p>Presently, CAE has only Azure SQL Database that doesn't offer this feature.</p>
+<p>However, CAE users can experiment with SQL ML services on their datascience VM Azure SQL server (developer edition). </p>
 <h3 id="other">Other</h3>
 <h4 id="how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop">How do I connect to the internal data lake with Power BI Desktop?</h4>
 <p>Prerequisites:
@@ -1127,10 +1178,12 @@ https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases
             Copyright &copy; 2020 Statistics Canada
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -1164,10 +1217,10 @@ https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.2b46852b.min.js"></script>
+      <script src="../assets/javascripts/bundle.f89c2efe.min.js"></script>
       
     
   </body>
