@@ -1,4 +1,4 @@
-_[Français](../../fr/BestPracticesFAQ)_
+_[English](../../en/BestPractices)_
 
 # Bonnes pratiques
 
