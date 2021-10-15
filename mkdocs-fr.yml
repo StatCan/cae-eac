@@ -51,6 +51,7 @@ nav:
   - Azure Synapse:  AzureSynapse.md
   - R-Shiny: R-Shiny.md
   - FAQ: FAQ.md
+  - Bonnes pratiques: BonnesPratiques.md
   - Aide/Contact: Aide.md
   - Langue: Langue.md
 
