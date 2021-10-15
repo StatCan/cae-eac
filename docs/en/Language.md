@@ -30,8 +30,6 @@ To select the language:
 
 ![DataFactory](images/ADFLanguage.png)  
 
-
-
 ## Databricks
 This tool is available only in English for now.
 
@@ -278,7 +276,6 @@ To set RStudio into a different language:
 Note: "fr" is for the french language, for a list of other languages that can be used:
 
 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-
 
 3. To test it, you can type "2+x" and it should give an error in the language inputted.
 
