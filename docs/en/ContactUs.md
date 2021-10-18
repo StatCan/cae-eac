@@ -1,6 +1,6 @@
 _[Français](../../fr/ContactezNous)_
 # Contact Us
-## Slack
+## Technical Support
 Subscribe to the following slack channel:
  - [https://cae-eac.slack.com](https://cae-eac.slack.com)
 
@@ -13,6 +13,9 @@ Subscribe to the following slack channel:
 
 ## Microsoft Documentation 
  - [Azure documentation](https://docs.microsoft.com/en-ca/azure/)
+
+## Collaborative Analytics Environment (CAE) Documentation
+ - [https://statcan.github.io/cae-eac/en/](https://statcan.github.io/cae-eac/en/)
 
 # Change Display Language
 See [Language](Language.md) page to find out how to change the display language.
