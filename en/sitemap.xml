@@ -91,11 +91,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://statcan.github.io/cae-eac/en/SwitchLanguage/</loc>
-         <lastmod>2021-10-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://statcan.github.io/cae-eac/en/VirtualMachines/</loc>
          <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
