@@ -1,4 +1,5 @@
 _[English](../../en/Dashboards)_
+
 Les tableaux de bord affichent vos ressources infonuagiques dans le portail Azure de façon précise et organisée. Ils servent d'espace de
 travail où vous pouvez rapidement lancer des tâches pour les opérations quotidiennes et surveiller les ressources. Par exemple, vous pouvez
 créer des tableaux de bord personnalisés en fonction des projets, des tâches ou des rôles des utilisateurs.
