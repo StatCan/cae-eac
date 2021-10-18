@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://statcan.github.io/cae-eac/fr/Aide/</loc>
-         <lastmod>2021-10-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureML/</loc>
          <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
@@ -32,6 +27,11 @@
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/BonnesPratiques/</loc>
+         <lastmod>2021-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://statcan.github.io/cae-eac/fr/ContactezNous/</loc>
          <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -71,12 +71,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://statcan.github.io/cae-eac/fr/Login/</loc>
+         <loc>https://statcan.github.io/cae-eac/fr/R-Shiny/</loc>
          <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://statcan.github.io/cae-eac/fr/R-Shiny/</loc>
+         <loc>https://statcan.github.io/cae-eac/fr/SeConnecter/</loc>
          <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
