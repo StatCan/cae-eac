@@ -1,4 +1,4 @@
-_[Français](../../fr/Dashboards)_
+_[Français](../../fr/TableauxDeBord)_
 Dashboards are a focused and organized view of your cloud resources in the Azure portal. They serve as a workspace where you can quickly launch tasks for day-to-day operations and monitor resources. Build custom dashboards based on projects, tasks, or user roles, for example.
 
 The Azure portal provides a default dashboard as a starting point. You can edit the default dashboard. Create and customize additional dashboards, and publish and share dashboards to make them available to other users.

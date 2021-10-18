@@ -42,8 +42,8 @@ nav:
   - Inscrivez votre projet: InscrivezProjet.md
   - Contactez-nous: ContactezNous.md
   - Se connecter: SeConnecter.md
-  - Tableaux de bord: Dashboards.md
-  - Machines Virtuelle: VirtualMachines.md
+  - Tableaux de bord: TableauxDeBord.md
+  - Machines Virtuelle: MachinesVirtuelle.md
   - Azure Databricks: DataBricks.md
   - Azure Data Factory: DataFactory.md
   - Stockage Azure: AzureStorage.md
