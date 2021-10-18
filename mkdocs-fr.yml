@@ -39,7 +39,7 @@ extra:
 # Page tree
 nav:
   - En avant!: index.md
-  - Créer un compte: CreerCompte.md
+  - Inscrivez votre projet: InscrivezProjet.md
   - Se connecter: Login.md
   - Tableaux de bord: Dashboards.md
   - Machines Virtuelle: VirtualMachines.md
