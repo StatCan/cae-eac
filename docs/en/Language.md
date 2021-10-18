@@ -21,16 +21,6 @@ To select the English dashboard of the Collaborative Analytics Environment (CAE)
 
 ![Dashboard](images/LanguageSettings/Dashboard_En.png)  
 
-## Azure Data Factory
-To select the language:
-
-1. In Azure Data Factory, go to **Settings**.
-2. Select **English**.
-3. Click on **Apply**.
-
-![DataFactory](images/ADFLanguage.png)  
-
-
 ## Virtual Machines
 ### Windows Server
 To configure the display language for a Windows virtual machine:
@@ -56,7 +46,6 @@ To configure the display language for a Windows virtual machine:
 <!-- To configure an Ubuntu virtual machine display language, see [Language settings](https://help.ubuntu.com/stable/ubuntu-help/prefs-language-install.html.en). -->
 If you are using **X2GO** to access the GUI of your Ubuntu machine, you might need to manually install additional language packages because the default session is available only in English.
 
-
 ## Azure Machine Learning
 To change the language settings in the Microsoft Azure Machine Learning workspace:
 
@@ -80,8 +69,6 @@ pip install git+https://github.com/StatCan/jupyterlab-language-pack-fr_FR
 ```
 4. In JupyterLab, switch Settings - Language - French
 
-
-
 ## Slack
 To change the language settings in the Slack application:
 
@@ -98,8 +85,6 @@ To change the language settings in the Slack application:
  ![Slack02](images/LanguageSettings/Slack02_En.png) 
 
 5. Close the **Preferences** window.
-
-
 
 ##  Azure Storage Explorer
 
@@ -118,7 +103,6 @@ To change the language settings on Microsoft Azure Storage Explorer:
 ![Storage Explorer02](images/LanguageSettings/StorageExplorer02_En.png) 
 
 4.	To switch to the new language, close and restart the application.
-
 
 ## Power BI
 
@@ -183,17 +167,15 @@ To change the language settings in Databricks:
 
 3. Click on the dropdown and select the language of your choice.
 
-## Data Factory
+## Azure Data Factory
+To select the language:
 
-To change the language settings in Data Factory:
+1. In Azure Data Factory, go to **Settings**.
+2. Select **English**.
+3. Click on **Apply**.
 
-1. Select the **Settings Icon** at the top right
+![DataFactory](images/ADFLanguage.png)  
 
-![Datafactory](images/LanguageSettings/Datafactory_En.png)
-
-2. Get to the Language section and select the language of your choice. 
-
-![Datafactory02](images/LanguageSettings/Datafactory_En2.png)
 
 ## JupyterLab
 

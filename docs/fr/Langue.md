@@ -21,15 +21,6 @@ Pour accéder au tableau de bord en français de l’environnement d’Analyse c
 
 ![Dashboard](images/LanguageSettings/Dashboard_Fr.png)
 
-## Azure Data Factory
-Pour configurer la langue, voici les étapes à suivre:
-
-1. Dans Azure Data Factory, sélectionnez **Paramètres**.
-2. Sélectionnez **Français**. 
-3. Cliquez sur **Appliquer**.
-
-![DataFactory](images/ADFLangue.png)  
-
 
 ## Machines Virtuelles
 ### Serveur Windows
@@ -175,17 +166,15 @@ Pour modifier les paramètres de langue dans Databricks:
 
 3. Cliquez sur la liste déroulante et sélectionnez la langue de votre choix.
 
-## Azure Datafactory
 
-Pour modifier les paramètres de langue dans Data Factory:
+## Azure Data Factory
+Pour configurer la langue, voici les étapes à suivre:
 
-1. Sélectionnez l'**Icône Paramètres** en haut à droite.
+1. Dans Azure Data Factory, sélectionnez **Paramètres**.
+2. Sélectionnez **Français**. 
+3. Cliquez sur **Appliquer**.
 
-![Datafactory](images/LanguageSettings/Datafactory_Fr.png)
-
-2. Accédez à la section Langue et sélectionnez la langue de votre choix.
-
-![Datafactory02](images/LanguageSettings/Datafactory_Fr2.png)
+![DataFactory](images/ADFLangue.png)  
 
 ## JupyterLab
 
