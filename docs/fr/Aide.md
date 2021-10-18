@@ -2,8 +2,8 @@ _[English](../../en/help)_
 # Aide
 
 ## Slack
-Abonnez-vous au canal de Slack suivant : 
-  - [https://cae-eac.slack.com](https://cae-eac.slack.com).
+Abonnez-vous au canal de Slack suivant :
+ - [https://cae-eac.slack.com](https://cae-eac.slack.com)
 
 ## Documentation
  - [Foire aux questions (FAQ)](FAQ.md)
