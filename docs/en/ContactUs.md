@@ -4,6 +4,9 @@ _[Français](../../fr/ContactezNous)_
 Subscribe to the following slack channel:
  - [https://cae-eac.slack.com](https://cae-eac.slack.com)
 
+ ## Feedback
+ - [https://www.statcan.gc.ca/data-analytics-service](https://www.statcan.gc.ca/data-analytics-service)
+
 ## Documentation
 - [Frequently Asked Questions (FAQ)](FAQ.md)
 - [Best Practices](BestPractices.md)
