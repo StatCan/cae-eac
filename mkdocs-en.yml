@@ -40,7 +40,8 @@ extra:
 nav:
   - Getting Started: index.md
   - Register your Project: RegisterProject.md
-  - Login: Login.md
+  - Contact Us: ContactUs.md
+  - How to Login: Login.md
   - Dashboards: Dashboards.md
   - Virtual Machines: VirtualMachines.md
   - Azure Databricks: DataBricks.md
@@ -52,6 +53,6 @@ nav:
   - R-Shiny: R-Shiny.md
   - FAQ: FAQ.md
   - Best Parctices: BestPractices.md
-  - Help/Contact: help.md
+
   - Language: Language.md
 

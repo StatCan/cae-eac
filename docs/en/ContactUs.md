@@ -1,5 +1,5 @@
-_[Français](../../fr/Aide)_
-# Help
+_[Français](../../fr/ContactezNous)_
+# Contact Us
 ## Slack
 Subscribe to the following slack channel:
  - [https://cae-eac.slack.com](https://cae-eac.slack.com)
@@ -8,7 +8,7 @@ Subscribe to the following slack channel:
 - [Frequently Asked Questions (FAQ)](FAQ.md)
 - [Best Practices](BestPractices.md)
 
- ## Microsoft Documentation 
+## Microsoft Documentation 
  - [Azure documentation](https://docs.microsoft.com/en-ca/azure/)
 
 # Change Display Language

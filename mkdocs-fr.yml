@@ -40,7 +40,8 @@ extra:
 nav:
   - En avant!: index.md
   - Inscrivez votre projet: InscrivezProjet.md
-  - Se connecter: Login.md
+  - Contactez-nous: ContactezNous.md
+  - Se connecter: SeConnecter.md
   - Tableaux de bord: Dashboards.md
   - Machines Virtuelle: VirtualMachines.md
   - Azure Databricks: DataBricks.md
@@ -52,6 +53,5 @@ nav:
   - R-Shiny: R-Shiny.md
   - FAQ: FAQ.md
   - Bonnes pratiques: BonnesPratiques.md
-  - Aide/Contact: Aide.md
   - Langue: Langue.md
 

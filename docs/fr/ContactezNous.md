@@ -1,5 +1,5 @@
-_[English](../../en/help)_
-# Aide
+_[English](../../en/ContactUs)_
+# Contactez-nous
 
 ## Slack
 Abonnez-vous au canal de Slack suivant :
