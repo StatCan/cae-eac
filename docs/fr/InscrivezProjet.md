@@ -4,7 +4,7 @@ Inscrivez-vous ici pour faire partie de la Communauté des premiers utilisateurs
 
 [https://www.statcan.gc.ca/data-analytics-service/fr](https://www.statcan.gc.ca/data-analytics-service/fr) 
 
-_Si vous avez déjà obtenu l'accès à la plateforme, consultez les directives pour savoir [comment ouvrir une session](Login.md)._
+_Si vous avez déjà obtenu l'accès à la plateforme, consultez les directives pour savoir [comment ouvrir une session](SeConnecter.md)._
 
 # Changer la langue d'affichage
 Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.
