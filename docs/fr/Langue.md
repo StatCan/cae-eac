@@ -21,7 +21,7 @@ Pour accéder au tableau de bord en français de l’environnement d’Analyse c
 
 ![Dashboard](images/LanguageSettings/Dashboard_Fr.png)
 
-## Data Factory
+## Azure Data Factory
 Pour configurer la langue, voici les étapes à suivre:
 
 1. Dans Azure Data Factory, sélectionnez **Paramètres**.
@@ -29,10 +29,6 @@ Pour configurer la langue, voici les étapes à suivre:
 3. Cliquez sur **Appliquer**.
 
 ![DataFactory](images/ADFLangue.png)  
-
-
-## Databricks
-Cet outil est disponible uniquement en anglais pour le moment.
 
 
 ## Machines Virtuelles
@@ -165,7 +161,7 @@ Pour changer la langue du menu et la langue du modèle dans Power BI Desktop, vo
 
 **NOTE**: La **langue d'importation** des données est fixée séparément dans les  **Paramètres régionaux** de la section **FICHIER ACTIF**. Vous devez la changer seulement si vous importez des fichiers de données comportant des nombres ou des dates suivant des paramètres régionaux précis (p. ex. le format de date JJ/MM/AAAA de l’anglais du Canada et le format de date MM/JJ/AAAA de l’anglais des États-Unis).
 
-## Databricks
+## Azure Databricks
 
 Pour modifier les paramètres de langue dans Databricks:
 
@@ -179,7 +175,7 @@ Pour modifier les paramètres de langue dans Databricks:
 
 3. Cliquez sur la liste déroulante et sélectionnez la langue de votre choix.
 
-## Datafactory
+## Azure Datafactory
 
 Pour modifier les paramètres de langue dans Data Factory:
 
@@ -215,7 +211,7 @@ Pour plus d'informations sur le changement de langue:
 
 https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
 
-## VSCode
+## Visual Studio Code (VSCode)
 
 Pour changer la langue d'affichage dans VSCode:
 

@@ -21,7 +21,7 @@ To select the English dashboard of the Collaborative Analytics Environment (CAE)
 
 ![Dashboard](images/LanguageSettings/Dashboard_En.png)  
 
-## Data Factory
+## Azure Data Factory
 To select the language:
 
 1. In Azure Data Factory, go to **Settings**.
@@ -30,8 +30,6 @@ To select the language:
 
 ![DataFactory](images/ADFLanguage.png)  
 
-## Databricks
-This tool is available only in English for now.
 
 ## Virtual Machines
 ### Windows Server
@@ -103,7 +101,7 @@ To change the language settings in the Slack application:
 
 
 
-## Microsoft Azure Storage Explorer
+##  Azure Storage Explorer
 
 By default, the application detects your language based on the language preferences on your computer. 
 
@@ -171,7 +169,7 @@ To switch the menu language and model language in Power BI Desktop:
 
 **NOTE**: The **Import language** is set separately in the **CURRENT FILE** section **Regional Settings**. You need to change this only if you import data files that have numbers and dates in a specific locale (e.g., Canada English DD/MM/YYYY, United State English MM/DD/YYYY).
 
-## Databricks
+## Azure Databricks
 
 To change the language settings in Databricks:
 
@@ -220,7 +218,7 @@ For More information about changing languages:
 
 https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
 
-## VSCode
+## Visual Studio Code (VSCode)
 
 To change the display language in VSCode:
 
