@@ -6,6 +6,7 @@ Subscribe to the following slack channel:
 
 ## Feedback
 Use the _Feedback_ form on this website:
+
  - [https://www.statcan.gc.ca/data-analytics-service](https://www.statcan.gc.ca/data-analytics-service)
 
 ## Documentation
