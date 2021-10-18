@@ -165,7 +165,7 @@ Pour changer la langue du menu et la langue du modèle dans Power BI Desktop, vo
 
 **NOTE**: La **langue d'importation** des données est fixée séparément dans les  **Paramètres régionaux** de la section **FICHIER ACTIF**. Vous devez la changer seulement si vous importez des fichiers de données comportant des nombres ou des dates suivant des paramètres régionaux précis (p. ex. le format de date JJ/MM/AAAA de l’anglais du Canada et le format de date MM/JJ/AAAA de l’anglais des États-Unis).
 
-### Databricks
+## Databricks
 
 Pour modifier les paramètres de langue dans Databricks:
 
@@ -179,7 +179,7 @@ Pour modifier les paramètres de langue dans Databricks:
 
 3. Cliquez sur la liste déroulante et sélectionnez la langue de votre choix.
 
-### Datafactory
+## Datafactory
 
 Pour modifier les paramètres de langue dans Data Factory:
 
@@ -191,7 +191,7 @@ Pour modifier les paramètres de langue dans Data Factory:
 
 ![Datafactory02](images/LanguageSettings/Datafactory_Fr2.png)
 
-### JupyterLab
+## JupyterLab
 
 Pour modifier les paramètres de langue dans JupyterLab:
 
@@ -215,7 +215,7 @@ Pour plus d'informations sur le changement de langue:
 
 https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
 
-### VSCode
+## VSCode
 
 Pour changer la langue d'affichage dans VSCode:
 
@@ -233,7 +233,7 @@ Remarque : si vous avez déjà installé la langue souhaitée, vous pouvez la s�
 
 ![VSCode02](images/LanguageSettings/VSCode_fr2.png)
 
-### Visual Studio
+## Visual Studio
 
 Si vous avez déjà installé des packages de langue dans Visual Studio:
 

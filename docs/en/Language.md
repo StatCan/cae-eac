@@ -171,7 +171,7 @@ To switch the menu language and model language in Power BI Desktop:
 
 **NOTE**: The **Import language** is set separately in the **CURRENT FILE** section **Regional Settings**. You need to change this only if you import data files that have numbers and dates in a specific locale (e.g., Canada English DD/MM/YYYY, United State English MM/DD/YYYY).
 
-### Databricks
+## Databricks
 
 To change the language settings in Databricks:
 
@@ -185,7 +185,7 @@ To change the language settings in Databricks:
 
 3. Click on the dropdown and select the language of your choice.
 
-### Data Factory
+## Data Factory
 
 To change the language settings in Data Factory:
 
@@ -197,7 +197,7 @@ To change the language settings in Data Factory:
 
 ![Datafactory02](images/LanguageSettings/Datafactory_En2.png)
 
-### JupyterLab
+## JupyterLab
 
 To change the language settings in JupyterLab:
 
@@ -220,7 +220,7 @@ For More information about changing languages:
 
 https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
 
-### VSCode
+## VSCode
 
 To change the display language in VSCode:
 
@@ -238,7 +238,7 @@ Note: If you have already installed the language you wanted, you can select the 
 
 ![VSCode](images/LanguageSettings/VSCode_en.png)
 
-### Visual Studio
+## Visual Studio
 
 If you have already installed language packages within Visual Studio:
 
@@ -266,7 +266,7 @@ If you have not installed other language packages within Visual Studio:
 
 4. From here you can follow the steps on using the installed language packages within Visual Studio. 
 
-### RStudio
+## RStudio
 
 To set RStudio into a different language: 
 
