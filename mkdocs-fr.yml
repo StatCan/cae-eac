@@ -39,13 +39,13 @@ extra:
 # Page tree
 nav:
   - En avant!: index.md
-  - Demande d'accès: Access.md
+  - Créer un compte: CreerCompte.md
   - Se connecter: Login.md
   - Tableaux de bord: Dashboards.md
-  - Databricks: DataBricks.md
-  - Data Factory: DataFactory.md
-  - Stockage Azure: AzureStorage.md
   - Machines Virtuelle: VirtualMachines.md
+  - Azure Databricks: DataBricks.md
+  - Azure Data Factory: DataFactory.md
+  - Stockage Azure: AzureStorage.md
   - Base de données Azure SQL: AzureSQL.md
   - Azure Machine Learning: AzureML.md
   - Azure Synapse:  AzureSynapse.md
