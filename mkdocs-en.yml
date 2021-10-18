@@ -38,7 +38,7 @@ extra:
 
 # Page tree
 nav:
-  - Getting Started: index.md
+  - About: index.md
   - Register your Project: RegisterProject.md
   - Contact Us: ContactUs.md
   - How to Login: Login.md
