@@ -1,6 +1,4 @@
 _[English](../../en/ContactUs)_
-# Contactez-nous
-
 ## Soutien technique
 Abonnez-vous au canal de Slack suivant :
  - [https://cae-eac.slack.com](https://cae-eac.slack.com)
