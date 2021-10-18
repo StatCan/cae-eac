@@ -39,7 +39,7 @@ extra:
 # Page tree
 nav:
   - Getting Started: index.md
-  - Register your Project: RegisteProject.md
+  - Register your Project: RegisterProject.md
   - Login: Login.md
   - Dashboards: Dashboards.md
   - Virtual Machines (VMs): VirtualMachines.md
