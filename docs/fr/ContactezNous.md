@@ -5,6 +5,8 @@ Abonnez-vous au canal de Slack suivant :
  - [https://cae-eac.slack.com](https://cae-eac.slack.com)
 
 ## Commentaires
+Utilisez le formulaire _Commentaires_ sur ce site Web :
+
  - [https://www.statcan.gc.ca/data-analytics-service/fr](https://www.statcan.gc.ca/data-analytics-service/fr)
 
 ## Documentation
