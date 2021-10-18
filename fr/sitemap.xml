@@ -36,11 +36,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://statcan.github.io/cae-eac/fr/CreerCompte/</loc>
-         <lastmod>2021-10-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://statcan.github.io/cae-eac/fr/Dashboards/</loc>
          <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
