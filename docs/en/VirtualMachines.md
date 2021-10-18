@@ -1,5 +1,5 @@
 _[Français](../../fr/VirtualMachines)_
-# Virtual Machines
+# Virtual Machines (VM)
 
 ## Find Your DevTest Lab
 1. In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.    

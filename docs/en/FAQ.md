@@ -1,7 +1,7 @@
 _[Français](../../fr/FAQ)_
-# FAQ
+# Frequently Asked Questions (FAQ)
 
-## Data Ingestion ##
+## Data Ingestion
 
 ### How do I ingest data (including large files) into the platform?
 

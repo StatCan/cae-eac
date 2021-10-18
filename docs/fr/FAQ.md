@@ -1,5 +1,5 @@
 _[English](../../en/FAQ)_
-# FAQ
+# Foire aux questions (FAQ)
 
 ## Ingestion de données
 

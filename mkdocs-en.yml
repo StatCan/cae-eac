@@ -42,7 +42,7 @@ nav:
   - Register your Project: RegisterProject.md
   - Login: Login.md
   - Dashboards: Dashboards.md
-  - Virtual Machines (VMs): VirtualMachines.md
+  - Virtual Machines: VirtualMachines.md
   - Azure Databricks: DataBricks.md
   - Azure Data Factory: DataFactory.md
   - Azure Storage: AzureStorage.md
