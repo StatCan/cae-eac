@@ -4,6 +4,8 @@ _[Français](../../fr/GitHubGettingStarted)_
 
 GitHub.com is an online platform that is used for collaboration as well as tracking changes and versioning for a variety of project types.
 
+This document shows how to start using git with various Azure services that already have git integration set up. See [GitHub - Configuration](/GitHubConfiguration) for instructions on how to set this up.
+
 **IMPORTANT: Do not store protected B data on GitHub.**
 
 ## Creating a GitHub Account
@@ -23,10 +25,10 @@ To change which branch you're working one (the default collaboration branch is *
 
 Before you can work with GitHub repositories in Databricks, you first need to configure a personal access token (this gives Databricks access to your GitHub account).
 
-1. Go to **User Setting**, then click on the **Git Integration** tab.
+1. In Databricks, go to **User Settings**, then click on the **Git Integration** tab.
 ![Set up Git Integration](images/GitHub_Databricks_2.png)
 2. Under **Git provider**, select GitHub. Enter your GitHub username.
-3. From your GitHub account, [follow the instructions to create a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token), ensuring that the **repo** permission is checked.
+3. From your GitHub account, [follow the instructions to create a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token), ensuring that the **repo** permission is checked. If you set an expiration date, you will need to repeat this process to create a new token after this date.
 ![Create personal access token](images/GitHub_Databricks_3.png)
 4. Copy the token, and paste it into Databricks. Click **Save**.
 
@@ -51,6 +53,10 @@ It is a best practice to do all of your work on your own **branch** (not main), 
 1. From the **Repos** tab, click the folder containing the GitHub repository to open it. Click on the down arrow next to the branch name, then click **Git...**.
 2. Make sure all the changes that you want to commit are checked, type a short summary describing what was changed, then click **Commit & Push**.
 ![Committing and pushing changes](images/GitHub_Databricks_7.png)
+
+## Azure Synapse
+
+See **Azure Data Factory** above. Synapse works exactly the same.
 
 ## VS Code
 
@@ -104,9 +110,12 @@ This could mean that your local copy of the repository is not up to date with th
 
 **How do I revert back to a previous commit?**
 
-1. In VS Code, open a terminal (by clicking **Terminal -> New Terminal**).
-2. Within the terminal window, type `git revert HEAD~n --no-edit` and press enter (replace *n* with the number of commits you want to revert, starting from 0). Note: you can find your commit history from GitHub by clicking on **x commits** near the top right of your repository.
-3. If there are merge conflicts, click **Accept incoming change**, then commit and push as normal (see above for detailed instructions on how to do this in VS Code).
+This must be done from VS Code (accessible through a cloud VM), regardless of where you primarily use git.
+
+1. In VS Code, follow the steps above to clone a repository if you haven't done so already.
+2. Open a terminal (by clicking **Terminal -> New Terminal**).
+3. Within the terminal window, type `git revert HEAD~n --no-edit` and press enter (replace *n* with the number of commits you want to revert, starting from 0). Note: you can find your commit history from GitHub by clicking on **x commits** near the top right of your repository.
+4. If there are merge conflicts, click **Accept incoming change**, then commit and push as normal (see above for detailed instructions on how to do this in VS Code).
 
 
 # Change Display Language
