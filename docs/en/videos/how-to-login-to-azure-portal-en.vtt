@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:03.900
+Go to portal.azure.com in your web browser
+
+2
+00:00:04.000 --> 00:00:07.000
+Enter your credential and password
+
+3
+00:00:07.500 --> 00:00:10.800
+For internal Statcan users, use your cloud account
+
+4
+00:00:11.000 --> 00:00:14.000
+For external users, use your external account
+
+5
+00:00:15.000 --> 00:00:19.000
+The first time you login you will be prompted to enter your security questions
+
+6
+00:00:20.000 --> 00:00:25.000
+For multifactor authentication, you can use the Microsoft Authenticator app on your cell phone
