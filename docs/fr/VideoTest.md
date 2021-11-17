@@ -3,8 +3,8 @@
 ## Comment se Connecter au Portal Azure
 
 <video width="640" height="360" controls>
-    <source src="videos/login-fr.mp4" type="video/mp4"> 
-    <track src="videos/login-fr.vtt" kind="subtitles" srclang="fr" label="Français" default>
+    <source src="../videos/login-fr.mp4" type="video/mp4"> 
+    <track src="../videos/login-fr.vtt" kind="subtitles" srclang="fr" label="Français" default>
 </video>
 
 <details class="details-reset border rounded-2">
