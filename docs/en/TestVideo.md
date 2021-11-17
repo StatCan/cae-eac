@@ -3,8 +3,8 @@
 ## How to Login to the Azure Portal
 
 <video width="640" height="360" controls>
-    <source src="videos/how-to-login-to-azure-portal-en.mp4" type="video/mp4"> 
-    <track src="videos/how-to-login-to-azure-portal-en.vtt" kind="subtitles" srclang="en" label="English">
+    <source src="videos/login-en.mp4" type="video/mp4"> 
+    <track src="videos/login-en.vtt" kind="subtitles" srclang="en" label="English" default>
 </video>
 
 <details class="details-reset border rounded-2">
