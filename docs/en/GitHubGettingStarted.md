@@ -56,7 +56,7 @@ It is a best practice to do all of your work on your own **branch** (not main), 
 
 ## Azure Synapse
 
-See **Azure Data Factory** above. Synapse works exactly the same.
+See **Azure Data Factory** above. 
 
 ## VS Code
 

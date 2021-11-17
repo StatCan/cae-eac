@@ -4,11 +4,11 @@ _[Français](../../fr/GitHubConfiguration)_
 
 GitHub.com is an online platform that is used for collaboration as well as tracking changes and versioning for a variety of project types.
 
-**IMPORTANT: Do not store protected B data on GitHub.**
+**IMPORTANT: Do not store protected B data on GitHub.com**
 
 ## Creating a GitHub Account
 
-Information on creating a GitHub account (or using your existing account) can be found at: https://digital.statcan.gc.ca/drafts/guides-platforms-github.
+Information on creating a GitHub account (or using your existing account) can be found at: [https://digital.statcan.gc.ca/drafts/guides-platforms-github](https://digital.statcan.gc.ca/drafts/guides-platforms-github).
 
 ## Azure Data Factory
 
