@@ -33,7 +33,11 @@ For Statcan employees, please use the Software Centre to request the AVD Softwar
 
 1. Can I copy and paste from the OZ Laptop to my virtual machine?
 
+    Yes you are able to copy from the OZ laptop to the virtual desktop.
+
 2. Can I take screenshots?
+
+    Yes you are able to take screenshots.
 
 3. Do I have admin privilege?
 
@@ -42,6 +46,8 @@ For Statcan employees, please use the Software Centre to request the AVD Softwar
 5. Do I have a roaming profile?
 
 6. How do I copy data from the CAE environment to my virtual machine?
+
+    You are able to copy data from the CAE environment, but only from external storage, not from any internal storage.
 
 7. How do I get support if my machine is too slow or if I have any other issues with my machine?
 
