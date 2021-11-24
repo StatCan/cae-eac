@@ -2,92 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureML/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureSQL/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureStorage/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureSynapse/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/BonnesPratiques/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/ContactezNous/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/DataBricks/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/DataFactory/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/DeltaLake/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/FAQ/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://statcan.github.io/cae-eac/fr/GitHubConfiguration/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://statcan.github.io/cae-eac/fr/GitHubGettingStarted/</loc>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/InscrivezProjet/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/Langue/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/MachinesVirtuelle/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/R-Shiny/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/SeConnecter/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/TableauxDeBord/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/VideoTest/</loc>
-         <lastmod>2021-11-18</lastmod>
+         <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
