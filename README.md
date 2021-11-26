@@ -11,7 +11,7 @@ File/Directory  | Description
 ------------- | -------------
 https://github.com/StatCan/cae-eac/blob/gh-pages-publish/.github/workflows/PublishGhPages.yml | Action to build gh-pages
 mkdocs-en.yml  |  English
-mkdocs-fr.yml  |  Frncch 
+mkdocs-fr.yml  |  French 
 docs  |  Documents
 
 

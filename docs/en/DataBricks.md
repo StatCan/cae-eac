@@ -116,7 +116,7 @@ The following are the steps for installing and testing Databricks Connect on you
 
 3. In a command prompt, type **databricks-connect configure**, then enter the following values when prompted:
 
-* **Databricks Host:** `https//:canadacentral.azuredatabricks.net`
+* **Databricks Host:** `https://canadacentral.azuredatabricks.net`
 
 * **Databricks Token:** a [personal access token](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token) generated in your Databricks Workspace User Settings
 
@@ -130,6 +130,8 @@ The following are the steps for installing and testing Databricks Connect on you
 
 4. Change the `SPARK_HOME` enviroment variable to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, and restart your VM. (Please ask for help via a [Slack](https://cae-eac.slack.com) message if you do not know how to change environment variables.)
 5. Test the connectivity to Azure Databricks by running **databricks-connect test** in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.
+### Troubleshooting :
+1-If you are using databricks connect on windows and you get an error saying: *Cannot find winutils.exe* please refers to https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows.
 
 ## Installing Libraries 
 ### Databricks Cluster
