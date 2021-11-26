@@ -451,6 +451,19 @@
     Databricks Connect VM Setup
   </a>
   
+    <nav class="md-nav" aria-label="Databricks Connect VM Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -784,6 +797,19 @@
     Databricks Connect VM Setup
   </a>
   
+    <nav class="md-nav" aria-label="Databricks Connect VM Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -958,7 +984,7 @@ When you invoke a language magic command, the command is dispatched to the REPL 
 <p>In a command prompt, type <strong>databricks-connect configure</strong>, then enter the following values when prompted:</p>
 </li>
 <li>
-<p><strong>Databricks Host:</strong> <code>https//:canadacentral.azuredatabricks.net</code></p>
+<p><strong>Databricks Host:</strong> <code>https://canadacentral.azuredatabricks.net</code></p>
 </li>
 <li>
 <p><strong>Databricks Token:</strong> a <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token">personal access token</a> generated in your Databricks Workspace User Settings</p>
@@ -979,6 +1005,8 @@ When you invoke a language magic command, the command is dispatched to the REPL 
 </li>
 <li>Test the connectivity to Azure Databricks by running <strong>databricks-connect test</strong> in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.</li>
 </ol>
+<h4 id="troubleshooting">Troubleshooting :</h4>
+<p>1-If you are using databricks connect on windows and you get an error saying: <em>Cannot find winutils.exe</em> please refers to https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows.</p>
 <h3 id="installing-libraries">Installing Libraries</h3>
 <h4 id="databricks-cluster">Databricks Cluster</h4>
 <p>Please contact the <a href="https://cae-eac.slack.com">slack</a> channel to have the support team install these libraries for you.</p>

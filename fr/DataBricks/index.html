@@ -451,6 +451,19 @@
     Configuration de Databricks Connect sur une machine virtuelle
   </a>
   
+    <nav class="md-nav" aria-label="Configuration de Databricks Connect sur une machine virtuelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -784,6 +797,19 @@
     Configuration de Databricks Connect sur une machine virtuelle
   </a>
   
+    <nav class="md-nav" aria-label="Configuration de Databricks Connect sur une machine virtuelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -966,7 +992,7 @@ Lorsque vous utilisez une commande spéciale Langage, celle-ci est distribuée
 <p>Dans une invite de commandes, entrez <strong>databricks-connect configure</strong>, et entez les valeurs suivantes quand demandées:</p>
 </li>
 <li>
-<p><strong>Hôte Databricks:</strong> <code>https//:canadacentral.azuredatabricks.net</code></p>
+<p><strong>Hôte Databricks:</strong> <code>https://canadacentral.azuredatabricks.net</code></p>
 </li>
 <li>
 <p><strong>Jeton</strong> : le <a href="https://docs.microsoft.com/fr-ca/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token">jeton d’accès personnel</a> généré dans les paramètres utilisateur de votre espace de travail Databricks</p>
@@ -987,6 +1013,8 @@ Lorsque vous utilisez une commande spéciale Langage, celle-ci est distribuée
 </li>
 <li>Testez la connectivité avec Azure Databricks en exécutant <strong>databricks-connect test</strong> dans une invite de commandes. Si votre cluster Databricks est arrêté quand vous commencez ce test, vous recevrez des messages d'avertissement jusqu'à ce qu'il ait démarré, ce qui peut prendre du temps.</li>
 </ol>
+<h4 id="troubleshooting">Troubleshooting :</h4>
+<p>1- Si vous utilisez databricks connect sur windows vous pouvez avoir cette erreur : <em>Cannot find winutils.exe</em>, Dans ce cas referez-vous a  https://docs.microsoft.com/en-us/azure/databricks/dev-toolsdatabricks-connect#cannot-find-winutilsexe-on-windows</p>
 <h3 id="installation-de-librairies">Installation de librairies</h3>
 <h4 id="cluster-databricks">Cluster Databricks</h4>
 <p>Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les librairies pour vous.</p>
