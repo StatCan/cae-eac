@@ -38,15 +38,15 @@ For Statcan employees, please use the Software Centre to request the AVD Softwar
 
 1. Can I copy and paste from the OZ Laptop to my virtual machine?
 
-    Yes you are able to copy from the OZ laptop to the virtual desktop.
+    Yes, you are able to copy from the OZ laptop to the virtual desktop.
 
 2. Can I take screenshots?
 
-    Yes you are able to take screenshots.
+    Yes, you are able to take screenshots.
 
 3. Do I have admin privilege?
 
-    No you do not have admin privilege.
+    No, you do not have admin privilege.
 
 4. How do I request new software?
 
