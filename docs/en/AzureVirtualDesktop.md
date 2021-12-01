@@ -54,6 +54,8 @@ For Statcan employees, please use the Software Centre to request the AVD Softwar
 
 5. Do I have a roaming profile?
 
+    Yes, users using AVD will have a roaming profile.
+
 6. How do I copy data from the CAE environment to my virtual machine?
 
     You are able to copy data from the CAE environment, but only from external storage, not from any internal storage.
