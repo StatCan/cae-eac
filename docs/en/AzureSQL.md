@@ -1,5 +1,3 @@
-_[Français](../../fr/AzureSQL)_
-# Azure SQL Database
 An Azure SQL Database can be setup in advance if your project requires one.
 
 **Reminder**: The CAE Azure SQL Databases are only accessible from inside the CAE cloud environment. They are not accessible from any of the Government of Canada Data Centres.
@@ -15,16 +13,15 @@ Databricks notebooks can be configured to connect to the database. Because addit
 ### Virtual Machine
 
 You can access an Azure SQL database from your cloud virtual machine, using various applications including:  
-1. SQL Server Management Studio 
-2. Power BI Desktop
-3. Azure Data Studio
-4. Visual Studio or Visual Studio Code
+- SQL Server Management Studio 
+- Power BI Desktop
+- Azure Data Studio
+- Visual Studio or Visual Studio Code
 
 #### Prerequisites
 
-1. A **virtual machine** in the Collaborative Analytics Environment (CAE). See the [VM page](VirtualMachines.md) for more information.
-
-2. **SQL Server Management Studio** or another tool such as **Power BI Desktop**. These tools are available by default in the **Windows Data Science Virtual Machine** images.
+- A **virtual machine** in the Collaborative Analytics Environment (CAE). See the [VM page](VirtualMachines.md) for more information.
+- **SQL Server Management Studio** or another tool such as **Power BI Desktop**. These tools are available by default in the **Windows Data Science Virtual Machine** images.
 
 #### Steps
 
@@ -43,7 +40,3 @@ You can access an Azure SQL database from your cloud virtual machine, using vari
     ![Specify database name](images/SQLServer2.png)
    
 7. Sign in with your cloud account credentials.
-
-# Change Display Language
-
-See [Language](Language.md) page to find out how to change the display language.

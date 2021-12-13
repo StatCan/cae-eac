@@ -1,44 +1,50 @@
-_[Français](../../fr/Langue)_
-# Language 
-The document describes how to change languages in the various service offerings.
+This document describes how to change languages in the various service offerings.
 
 ## Azure portal
 To change the language settings in the Azure portal:
 
 1. Click the **Settings** menu in the global page header.
+
 2. Click the **Language & region** tab.
+
 3. Use the drop-downs to choose your preferred language and regional format settings.
+
 4. Click **Apply** to update your language and regional format settings.
 
-![Portal Settings](images/LanguageSettings/Portal_Settings_En.png)  
+    ![Portal Settings](images/LanguageSettings/Portal_Settings_En.png)  
 
 ## Dashboard
 To select the English dashboard of the Collaborative Analytics Environment (CAE):
 
 1. From the dashboard view, click the arrow next to the dashboard name.
-2. Select the **Collaborative Analytics Environment** dashboard from the displayed list of dashboards. 
-</br>**Note:** If the dashboard is not listed, select **Browse all dashboards** to access the complete list.
 
-![Dashboard](images/LanguageSettings/Dashboard_En.png)  
+2. Select the **Collaborative Analytics Environment** dashboard from the displayed list of dashboards. Note: If the dashboard is not listed, select **Browse all dashboards** to access the complete list.
+
+    ![Dashboard](images/LanguageSettings/Dashboard_En.png)  
 
 ## Virtual Machines
 ### Windows Server
 To configure the display language for a Windows virtual machine:
 
 1.	Go to **Settings**. 
-![VM Settings](images/LanguageSettings/VM_Settings_En.png)  
+
+    ![VM Settings](images/LanguageSettings/VM_Settings_En.png)  
 
 2.	Select **Time & Language**.
-![VM Settings02](images/LanguageSettings/VM_Settings02_En.png)  
+
+    ![Select time and language](images/LanguageSettings/VM_Settings02_En.png)  
  
 3.	Select **Language**. Under **Preferred languages**, select **Add a language**. 
-![VM Settings03](images/LanguageSettings/VM_Settings03_En.png)  
+
+    ![Add a language](images/LanguageSettings/VM_Settings03_En.png)  
 
 4.	In the **Choose a language to install** dialog box, select your preferred language pack and then click **Next**.
-![VM Settings04](images/LanguageSettings/VM_Settings04_En.png)  
+
+    ![Choose a language to install](images/LanguageSettings/VM_Settings04_En.png)  
  
 5.	In the **Install language features** dialog box, click **Install**. 
-![VM Settings05](images/LanguageSettings/VM_Settings05_En.png)  
+
+    ![Install language features](images/LanguageSettings/VM_Settings05_En.png)  
  
 6.	The Windows display language box should now include the newly added language. To switch to the new language, select it from the Windows display language box, sign out of the current Windows session, and then sign back in.
 
@@ -55,18 +61,22 @@ To change the language settings in the Microsoft Azure Machine Learning workspac
 
 3. Click **Apply** to update your language and regional format settings.
 
-![Machine Learning](images/LanguageSettings/MachineLearning_En.png) 
+    ![Machine Learning Language Settings](images/LanguageSettings/MachineLearning_En.png) 
 
 ###  Azure Machine Learning - Jupyter Lab
+
 1. Run in Azure ML compute instance terminal: 
-```sh
-pip install jupyterlab==3
-```
+    ```sh
+    pip install jupyterlab==3
+    ```
+
 2. Restart compute instance
+
 3. Run in Azure ML compute instance terminal: 
-```sh
-pip install git+https://github.com/StatCan/jupyterlab-language-pack-fr_FR
-```
+    ```sh
+    pip install git+https://github.com/StatCan/jupyterlab-language-pack-fr_FR
+    ```
+
 4. In JupyterLab, switch Settings - Language - French
 
 ## Slack
@@ -76,13 +86,13 @@ To change the language settings in the Slack application:
 
 2.	Click **Preferences**.
 
- ![Slack](images/LanguageSettings/Slack_En.png) 
+    ![Slack Preferences](images/LanguageSettings/Slack_En.png) 
 
 3. Select the **Language & region** tab.
 
 4. Under **Language**, use the drop-down to choose your preferred language.
 
- ![Slack02](images/LanguageSettings/Slack02_En.png) 
+    ![Language and Region](images/LanguageSettings/Slack02_En.png) 
 
 5. Close the **Preferences** window.
 
@@ -96,11 +106,11 @@ To change the language settings on Microsoft Azure Storage Explorer:
 
 2.	Click **Settings**. 
 
-![Storage Explorer](images/LanguageSettings/StorageExplorer_En.png) 
+    ![Storage Explorer Settings](images/LanguageSettings/StorageExplorer_En.png) 
 
 3.	In the Settings page, select **Application**. Under **Regional Settings**, use the drop-down to choose your preferred language.  
 
-![Storage Explorer02](images/LanguageSettings/StorageExplorer02_En.png) 
+    ![Regional Settings](images/LanguageSettings/StorageExplorer02_En.png) 
 
 4.	To switch to the new language, close and restart the application.
 
@@ -116,11 +126,11 @@ To switch the menu language in the Power BI service:
 
 1.	In the Power BI service, click the **Settings icon** and select **Settings**.
 
-![Power BI S](images/LanguageSettings/PowerBiService_En.jpg)  
+    ![Power BI Settings](images/LanguageSettings/PowerBiService_En.jpg)  
 
 2.	In the **General** tab, select **Language**.
 
- ![Power BI S02](images/LanguageSettings/PowerBiService02_En.jpg)  
+    ![Power BI Language Settings](images/LanguageSettings/PowerBiService02_En.jpg)  
 
 3.	Select your language and click **Apply**.
 
@@ -129,13 +139,10 @@ See [Languages for the Power BI service](https://docs.microsoft.com/en-us/power-
 
 ### Power BI Desktop
 
-By default,
-
-•   the **Application language** is based on the **Windows language**
-
-•	the **Model language** is based on the **Application language**
-
-•	the **Query steps** are based on the **Application language**.
+By default:
+- the **Application language** is based on the **Windows language**
+- the **Model language** is based on the **Application language**
+- the **Query steps** are based on the **Application language**.
 
 It is recommended to set the **Model language** to **English (United States)**.
 
@@ -145,11 +152,11 @@ To switch the menu language and model language in Power BI Desktop:
 
 1.	Open the **Options** menu.
 
-![Power BI D](images/LanguageSettings/PowerBiDesktop_En.jpg)   
+    ![Power BI Options](images/LanguageSettings/PowerBiDesktop_En.jpg)   
 
 2.	Under **GLOBAL**, click **Regional Settings** and set the **Application language** and **Model language** to the desired language.
 
- ![Power BI D02](images/LanguageSettings/PowerBiDesktop02_En.jpg)   
+    ![Application Language](images/LanguageSettings/PowerBiDesktop02_En.jpg)   
 
 **NOTE**: The **Import language** is set separately in the **CURRENT FILE** section **Regional Settings**. You need to change this only if you import data files that have numbers and dates in a specific locale (e.g., Canada English DD/MM/YYYY, United State English MM/DD/YYYY).
 
@@ -159,11 +166,11 @@ To change the language settings in Databricks:
 
 1. Select the user dropdown at the top right and select **User Settings**
 
-![Databricks](images/LanguageSettings/Databricks_En1.png)
+    ![Databricks User Settings](images/LanguageSettings/Databricks_En1.png)
 
 2. On the page, select **Language Settings**
 
-![Databricks01](images/LanguageSettings/Databricks_En2.png)
+    ![Language Settngs](images/LanguageSettings/Databricks_En2.png)
 
 3. Click on the dropdown and select the language of your choice.
 
@@ -171,10 +178,12 @@ To change the language settings in Databricks:
 To select the language:
 
 1. In Azure Data Factory, go to **Settings**.
+
 2. Select **English**.
+
 3. Click on **Apply**.
 
-![DataFactory](images/ADFLanguage.png)  
+    ![DataFactory](images/ADFLanguage.png)  
 
 
 ## JupyterLab
@@ -185,14 +194,13 @@ To change the language settings in JupyterLab:
 
 2. Install the language example of your choice using pip.
 
-Example:
-
-```python
-pip install jupyterlab-language-pack-zh-CN
-```
+    Example:
+    ```python
+    pip install jupyterlab-language-pack-zh-CN
+    ```
 3. Under the settings tab, highlight over language and select the language you installed.
 
-![JupyterLab](images/LanguageSettings/JupyterlabsLanguage.png)
+    ![JupyterLab Language Settings](images/LanguageSettings/JupyterlabsLanguage.png)
 
 4. Click on **OK** to refresh the page, you will see the language change.
 
@@ -208,7 +216,7 @@ To change the display language in VSCode:
 
 2. In the command pallette, type in "display" and select **install additional languages**.
 
-![VSCode02](images/LanguageSettings/VSCode_en2.png)
+    ![VSCode Command pallette](images/LanguageSettings/VSCode_en2.png)
 
 Note: If you have already installed the language you wanted, you can select the language from the dropdown.
 
@@ -216,7 +224,7 @@ Note: If you have already installed the language you wanted, you can select the 
 
 4. A pop-up may appear at the bottom right of the screen in which you can change the language and it will restart VSCode. 
 
-![VSCode](images/LanguageSettings/VSCode_en.png)
+    ![VSCode Change Language pop-up](images/LanguageSettings/VSCode_en.png)
 
 ## Visual Studio
 
@@ -224,25 +232,25 @@ If you have already installed language packages within Visual Studio:
 
 1. On the top bar, select **Tools** then **Options**.
 
-![VisualStudio](images/LanguageSettings/VisualStudio_En.png)
+    ![Visual Studio Options](images/LanguageSettings/VisualStudio_En.png)
 
-2. From the menu, under the **Environment** tab, select **International Settings**
+2. From the menu, under the **Environment** tab, select **International Settings**.
 
-![VisualStudio02](images/LanguageSettings/VisualStudio_En2.png)
+    ![International Settings](images/LanguageSettings/VisualStudio_En2.png)
 
 3. From the drop down under **Language**, select the language of your choice.
 
-If you have not installed other language packages within Visual Studio:
+### If you have not installed other language packages within Visual Studio
 
 1. On your computer, open the Visual Studio Installer.
 
 2. In the installer, select the modify button.
 
-![VisualStudio03](images/LanguageSettings/VisualStudio_En3.png)
+    ![Modify button](images/LanguageSettings/VisualStudio_En3.png)
 
 3. On the new window, select **Language Packs**. Select all the languages you want to add and then select modify.
 
-![VisualStudio03](images/LanguageSettings/VisualStudio_En4.png)
+    ![Language Packs](images/LanguageSettings/VisualStudio_En4.png)
 
 4. From here you can follow the steps on using the installed language packages within Visual Studio. 
 
@@ -253,19 +261,17 @@ To set RStudio into a different language:
 1. Open up RStudio and open up the console.
 
 2. In the console, type in "Sys.getenv(LANGUAGE = "fr")
-Note: "fr" is for the french language, for a list of other languages that can be used:
-
-https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+Note: "fr" is for the french language, for a list of other languages that can be used, [click here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
 3. To test it, you can type "2+x" and it should give an error in the language inputted.
 
 ## Web browsers
 
-* [Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en)
-* [Safari](https://support.apple.com/en-ca/guide/mac-help/mh26684/mac)
-* [Edge](https://support.microsoft.com/en-US/microsoft-edge/use-microsoft-edge-in-another-language-4da8b5e0-11ce-7ea4-81d7-4e332eec551f)
-* [Firefox](https://support.mozilla.org/en-US/kb/use-firefox-another-language)
-* [Opera](https://help.opera.com/en/latest/customization/#changeLanguage)
+- [Chrome](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en)
+- [Safari](https://support.apple.com/en-ca/guide/mac-help/mh26684/mac)
+- [Edge](https://support.microsoft.com/en-US/microsoft-edge/use-microsoft-edge-in-another-language-4da8b5e0-11ce-7ea4-81d7-4e332eec551f)
+- [Firefox](https://support.mozilla.org/en-US/kb/use-firefox-another-language)
+- [Opera](https://help.opera.com/en/latest/customization/#changeLanguage)
 
 
 

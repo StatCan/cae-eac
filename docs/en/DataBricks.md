@@ -1,25 +1,26 @@
-_[Français](../../fr/DataBricks)_
-# Azure Databricks
-
 ## Accessing Databricks
 ### Dashboard
 
 See the [Dashboard section](Dashboards.md) of this documentation from more information.  
 1. Click on the Dashboard menu from the Azure Portal.  
-![Dashboard](images/DataFactoryDashboard.png)  
+
+    ![Dashboard](images/DataFactoryDashboard.png)  
 
 ### Databricks URL
 
 1. Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
-![Databricks URL](images/DatabricksSelect.png)
+
+    ![Databricks URL](images/DatabricksSelect.png)
 
 ### Azure Portal
 
 1. In the Azure Portal Search box, search for **Databricks**.  
-![Azure Portal Search](images/DatabricksPortalSearch.png)  
+
+    ![Azure Portal Search](images/DatabricksPortalSearch.png)  
 
 2. You should then see a list of the Databricks workspaces you were given permission to access.  
-![DataFactory List](images/DatabricksPortalList.png)
+
+    ![DataFactory List](images/DatabricksPortalList.png)
 
 ## Getting Started
 
@@ -36,7 +37,8 @@ Since you do not have permission to create a cluster, please send a [slack](http
  - One way to create a notebook is to click on the **New Notebook** link from the main Databricks page. You can then provide a name for your notebook and select the default notebook language.
 
  - From the available list of clusters, select the cluster to which you wish to attach your notebook.
-![Start a notebook](images/DataBrickCreateNotebook.png)
+
+    ![Start a notebook](images/DataBrickCreateNotebook.png)
 
  - To start or change a cluster from within a notebook, open the notebook and click on the cluster drop down found at the top right of the notebook. You can then start the cluster or detach it and attach a different one.  
 
@@ -73,6 +75,7 @@ display(testData)
 ## Changing Notebook Default Language
 
 ![Change notebook languange](images/changelanguage.png)
+
 ![and then](images/changelanguage2.png)
 
 ## Mixing Notebook Languages
@@ -90,13 +93,11 @@ Notebooks also support a few auxiliary magic commands:
 ## Starting a Databricks Cluster
 
 1. Click on the cluster drop-down list.
-2. Select a cluster from the list.
-3. Click on the **Start Cluster** link.  
-![Where to start a Databricks cluster](images/DataBricksStartCluster.png)  
 
-1. Click on the cluster drop-down list.
 2. Select a cluster from the list.
+
 3. Click on the **Start Cluster** link.  
+
 ![Where to start a Databricks cluster](images/DataBricksStartCluster.png)  
 
 ## Databricks Connect VM Setup
@@ -116,22 +117,26 @@ The following are the steps for installing and testing Databricks Connect on you
 
 3. In a command prompt, type **databricks-connect configure**, then enter the following values when prompted:
 
-* **Databricks Host:** `https://canadacentral.azuredatabricks.net`
+    - **Databricks Host:** `https://canadacentral.azuredatabricks.net`
 
-* **Databricks Token:** a [personal access token](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token) generated in your Databricks Workspace User Settings
+    - **Databricks Token:** a [personal access token](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token) generated in your Databricks Workspace User Settings
 
-* **Cluster ID:** the value found under **Cluster --> Advanced Options --> Tags** in your Databricks workspace.
-![DatabrickConnectClusterID](images/DatabrickConnectClusterID.PNG)
+    - **Cluster ID:** the value found under **Cluster --> Advanced Options --> Tags** in your Databricks workspace.
 
-* **Org ID:** the part of the Databricks URL found after **.net/?o=**
-![DatabrickConnectOrgID](images/DatabrickConnectOrgID.PNG)
+        ![DatabrickConnectClusterID](images/DatabrickConnectClusterID.PNG)
 
-* **Port:** keep the existing value
+    - **Org ID:** the part of the Databricks URL found after **.net/?o=**
+
+        ![DatabrickConnectOrgID](images/DatabrickConnectOrgID.PNG)
+
+    - **Port:** keep the existing value
 
 4. Change the `SPARK_HOME` enviroment variable to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, and restart your VM. (Please ask for help via a [Slack](https://cae-eac.slack.com) message if you do not know how to change environment variables.)
+
 5. Test the connectivity to Azure Databricks by running **databricks-connect test** in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.
+
 ### Troubleshooting :
-1-If you are using databricks connect on windows and you get an error saying: *Cannot find winutils.exe* please refers to https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows.
+1-If you are using databricks connect on windows and you get an error saying: *Cannot find winutils.exe* please refer to [this link](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows).
 
 ## Installing Libraries 
 ### Databricks Cluster
@@ -155,7 +160,3 @@ install.packages("library")
 - [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html)
 - [Install Libraries in Current Notebook Session](https://docs.microsoft.com/en-us/azure/databricks/notebooks/notebooks-python-libraries)  
 - [Library Management for Admins](https://docs.microsoft.com/en-us/azure/databricks/libraries#:~:text=Azure%20Databricks%20supports%20three%20library,its%20path%20in%20the%20workspace)  
-
-# Change Display Language
-
-See [Language](Language.md) page to find out how to change the display language.

@@ -1,7 +1,3 @@
-_[Français](../../fr/BonnesPratiques)_
-
-# Best Practices
-
 ## What is the best file format to use for large data files?
 Recommend using newer format like Parquet because it does save larger datesets in a smaller file in comparison to a CSV file. If only accessing certain sections of the dataset, it is also faster using Parquet as it uses columnar storage format.
 
@@ -11,8 +7,7 @@ In many cases a SQL database is not needed, data can be saved in files to the da
 ## Do I need a SQL database when using Power BI?
 It is not needed to have an SQL datbase when using Power BI. You are able to read files from the Azure Storage. A database is only needed when you are using a more complex star-schema like system. 
 
-To connect to the internal data lake with Power BI desktop, please refer to this link:
-https://statcan.github.io/cae-eac/en/FAQ/#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop
+To connect to the internal data lake with Power BI desktop, please [click here](https://statcan.github.io/cae-eac/en/FAQ/#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop).
 
 ## How should we structure our projects data lake container?
 There are 3 parts in which to structure your data lake container:
@@ -31,8 +26,8 @@ This zone is mainly for experimentation and exploration. It is used for prototyp
 
 For more information about structuring your projects data lake container:
 
-https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b430
-https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/
+- [Building your Data Lake on Azure Data Lake Storage gen2](https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b430)
+- [Designing an Azure Data Lake Store Gen2](https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/)
 
 ##  I get an out of memory exception in Databricks?
 
@@ -42,9 +37,9 @@ The fastest and most expensive way to fix this is to increase the size of your c
 To increase the size of the cluster, please contact the CAE support team to increase the size of the cluster
 
 ### **Option 2:**
-For a more programtic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark or koalas. PySpark and koalas can run faster than pandas, it has better benefits from using data ingestion pipelines and also works efficiently as it runs parallel on different nodes in a cluster.
+For a more programatic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark or koalas. PySpark and koalas can run faster than pandas, it has better benefits from using data ingestion pipelines and also works efficiently as it runs parallel on different nodes in a cluster.
 
-https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
+More information: [Spark Dataframe and Operations](https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/)
 
 ### **Option 3:**
 Consider to use a subset of your data when doing queries if possible. If you are working with only a certain section of the dataset but are quering through all of it, it is possible to use just the subset. 
@@ -100,9 +95,7 @@ There are plenty of ways to validate that your development is the most cost effe
 ## How should data be structured if we plan to use Power BI?
 Data should be structured using the Star Schema.
 
-For more details about using Star Schema, click the link below for details about using Star Schema and the benefits with Power BI: 
-
-https://docs.microsoft.com/en-us/power-bi/guidance/star-schema
+For more details about using Star Schema, click this link: [Understand star schema and the importance for Power BI](https://docs.microsoft.com/en-us/power-bi/guidance/star-schema).
 
 ##  How to read in an Excel file from Databricks?
 Here is an example of how to read an Excel file using Python: 
@@ -129,7 +122,7 @@ Write:
 
 ```python
 %python
-//Assumption that a dataframe has been created already
+# Assumption that a dataframe has been created already
 
 data.write.parquet("/tmp/tempFile")
 ```
@@ -247,11 +240,9 @@ sas7bdat_converter.batch_to_csv(file_dicts)
 
 You will then get the output file within the directory you have specified.
 
-For more information about the converter, please refer to this link:
+For more information about the converter, please [click here](https://pypi.org/project/sas7bdat-converter/).
 
-https://pypi.org/project/sas7bdat-converter/
-
-##  Can\How I convert Word document to a notebook? 
+##  Can\How I convert a Word document to a notebook? 
 There is no easy way to convert a word document to a notebook.
 
 A manual solution to convert a Word document to a notebook is by copying any of the code that is within the word document into a notebook.
@@ -276,9 +267,7 @@ In Databricks, select Data and within the Database you have selected, click on C
 
 ![CreateTable](images/BestPracticesTable.png)
 
-For more information about this option, please view this link:
-
-https://docs.databricks.com/data/tables.html#create-a-table
+For more information about this option, please [click here](https://docs.databricks.com/data/tables.html#create-a-table).
 
 ### Option 2: Create Table from Dataframe table
 Python:
@@ -338,9 +327,3 @@ This occurs only with BroadcastHashJoin. There are 2 options:
     b. Perform joins with each parittion from DataFrame A with DataFrame B (concurrently is the fastest way but may require writing Dataframes to file for reading in next step).
 
     c. Perform a union on all the joined DataFrames.
-
-
-
-# Change Display Language
-
-See [Language](Language.md) page to find out how to change the display language.
