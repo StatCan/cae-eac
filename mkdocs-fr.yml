@@ -35,6 +35,13 @@ extra:
       link: https://github.com/statcan/cae-eac
     - icon: fontawesome/brands/slack
       link: https://cae-eac.slack.com
+  alternate:
+    - name: French
+      link: https://statcan.github.io/cae-eac/fr/
+      lang: fr
+    - name: English
+      link: https://statcan.github.io/cae-eac/en/
+      lang: en
 
 # Page tree
 nav:
