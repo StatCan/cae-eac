@@ -12,7 +12,7 @@ Consultez la [section Tableau de bord](Dashboards.md) de cette documentation pou
 
 ### Adresse URL de Databricks
 
-1.  Rendez-vous au site https://canadacentral.azuredatabricks.net/, ouvrez une session en utilisant vos justificatifs d'identité du compte infonuagique et sélectionnez l'espace de travail Databricks qui a été créé pour vous.
+1.  Rendez-vous au site [https://canadacentral.azuredatabricks.net/](https://canadacentral.azuredatabricks.net/), ouvrez une session en utilisant vos justificatifs d'identité du compte infonuagique et sélectionnez l'espace de travail Databricks qui a été créé pour vous.
 
  ![Databricks URL](images/DatabricksSelect.png)
 
@@ -145,7 +145,7 @@ Voici les étapes pour installer et tester Databricks Connect sur votre machine 
 
 ## Installation de librairies
 ### Cluster Databricks
-Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les librairies pour vous.
+Veuillez contacter le canal [Slack](https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les librairies pour vous.
 ### Carnet
 Veuillez utiliser les commandes suivantes pour installer une librairie dans une session de carnet.
 

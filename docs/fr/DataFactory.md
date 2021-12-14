@@ -14,7 +14,7 @@ de cette documentation pour obtenir de plus amples renseignements.
 
 ### ADRESSE URL D'ADF
 
-1.  Rendez-vous à https://adf.azure.com et sélectionnez l'instance Data Factory qui a été créée pour vous.
+1.  Rendez-vous à [https://adf.azure.com](https://adf.azure.com) et sélectionnez l'instance Data Factory qui a été créée pour vous.
 
  ![Data Factory URL](images/DataFactorySelect.png)
 

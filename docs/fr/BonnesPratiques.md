@@ -12,7 +12,7 @@ Dans de nombreux cas, une base de données SQL n'est pas nécessaire, les donné
 Il n'est pas nécessaire d'avoir une base de données SQL lors de l'utilisation de Power BI. Vous pouvez lire des fichiers à partir du stockage Azure. Une base de données n'est nécessaire que lorsque vous utilisez un système similaire à un schéma en étoile plus complexe.
 
 Pour vous connecter au lac de données interne avec Power BI Desktop, veuillez vous référer à ce lien :
-https://statcan.github.io/cae-eac/fr/FAQ/#comment-puis-je-me-connecter-au-compte-de-stockage-interne-data-lake-avec-power-bi-desktop
+[Comment puis je me connecter au compte de stockage interne data lake avec power bi desktop](https://statcan.github.io/cae-eac/fr/FAQ/#comment-puis-je-me-connecter-au-compte-de-stockage-interne-data-lake-avec-power-bi-desktop)
 
 ## Comment devons-nous structurer le conteneur de lac de données de nos projets?
 Il y a 4 parties dans lesquelles structurer votre conteneur de lac de données :
@@ -31,8 +31,8 @@ Cette zone est principalement destinée à l'expérimentation et à l'exploratio
 
 Pour plus d'informations sur la structuration du conteneur de lac de données de vos projets :
 
-https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b430
-https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/
+[Construire votre Data Lake sur Azure Data Lake Storage gen2](https://medium.com/microsoftazure/building-your-data-lake-on-adls-gen2-3f196fc6b430)
+[Concevoir Azure Data Lake Storage](https://www.mssqltips.com/sqlservertip/6807/design-azure-data-lake-store-gen2/)
 
 ## Je reçois une exception de mémoire insuffisante dans Databricks?
 
@@ -44,7 +44,7 @@ Pour augmenter la taille du cluster, veuillez contacter l'équipe d'assistance C
 ### **Option 2:**
 Pour une réponse plus programmatique, si vous utilisez des pandas, il est également suggéré de basculer et d'utiliser pySpark ou koalas. PySpark et les koalas peuvent s'exécuter plus rapidement que les pandas, ils ont de meilleurs avantages à utiliser des pipelines d'ingestion de données et fonctionnent également efficacement car ils s'exécutent en parallèle sur différents nœuds d'un cluster.
 
-https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
+[Opérations Spark Dataframe](https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/)
 
 ### **Option 3:**
 Pensez à utiliser un sous-ensemble de vos données lorsque vous effectuez des requêtes si possible. Si vous ne travaillez qu'avec une certaine section de l'ensemble de données mais que vous l'interrogez sur l'ensemble, il est possible d'utiliser uniquement le sous-ensemble.
@@ -71,7 +71,7 @@ diamonds.write.format("avro").save("/mnt/public-data/incoming/testingFile")
 ## Comment puis-je facilement convertir le code SAS en Python ou R?
 Il n'est pas possible de convertir facilement le code SAS en Python ou R automatiquement, le seul moyen connu de convertir est de faire manuellement la conversion.
 
-## Comment puis-je valider que je développe mon application de la manière la plus rentable dans le cloud à l'aide des technologies Microsoft (CAE) ?
+## Comment puis-je valider que je développe mon application de la manière la plus rentable dans le cloud à l'aide des technologies Microsoft (CAE)?
 Il existe de nombreuses façons de valider que votre développement est le plus rentable possible:
 
 1. Profitez de Spark dans les databricks.
@@ -105,7 +105,7 @@ Les données doivent être structurées à l'aide du schéma en étoile.
 
 Pour plus de détails sur l'utilisation de Star Schema, cliquez sur le lien ci-dessous pour en savoir plus sur l'utilisation de Star Schema et les avantages avec Power BI:
 
-https://docs.microsoft.com/fr-ca/power-bi/guidance/star-schema
+[Documentation du Star Schema](https://docs.microsoft.com/fr-ca/power-bi/guidance/star-schema)
 
 ## Comment lire dans un fichier Excel depuis Databricks?
 Voici un exemple de lecture d'un fichier Excel à l'aide de Python:
@@ -252,7 +252,7 @@ Vous obtiendrez alors le fichier de sortie dans le répertoire que vous avez sp�
 
 Pour plus d'informations sur le convertisseur, veuillez vous référer à ce lien :
 
-https://pypi.org/project/sas7bdat-converter/
+[Documentation du sas7bdat](https://pypi.org/project/sas7bdat-converter/)
 
 ##  Puis-je convertir un document Word en bloc-notes?
 Il n'y a pas de moyen facile de convertir un document Word en bloc-notes.
@@ -281,7 +281,7 @@ Dans Databricks, sélectionnez Données et dans la base de données que vous ave
 
 Pour plus d'informations sur cette option, veuillez consulter ce lien :
 
-https://docs.databricks.com/data/tables.html#create-a-table
+[Databricks créer un tableau](https://docs.databricks.com/data/tables.html#create-a-table)
 
 ### Option 2 : Créer une table à partir d'une table Dataframe
 Python:

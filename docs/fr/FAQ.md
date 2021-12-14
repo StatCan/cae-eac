@@ -13,7 +13,7 @@ Les fichiers peuvent être téléversés dans dans le conteneur **inbox** ou **t
 *Remarque:* Les comptes de stockage externe ont la convention de dénomination **stats*project-acronym*external**.
 
 #### Service de transfert électronique de fichiers (TEF)
-Les employés de Statistique Canada peuvent utiliser le [TEF](https://www75.statcan.gc.ca/eft-tef) pour transférer des fichiers de / vers les réseaux sur site (Rés. A ou B) vers / depuis l'environnement infonuagique Azure. Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com pour plus d'information sur ce processus.
+Les employés de Statistique Canada peuvent utiliser le [TEF](https://www75.statcan.gc.ca/eft-tef) pour transférer des fichiers de / vers les réseaux sur site (Rés. A ou B) vers / depuis l'environnement infonuagique Azure. Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com) pour plus d'information sur ce processus.
 
 #### Outils de plateforme
 
@@ -37,7 +37,7 @@ Des outils de plateforme comme Databricks ou Data Factory peuvent être utilis�
 
 *Pour les employés de Statistique Canada seulement*
 
-Pour demander un jeton SAP temporaire, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com.
+Pour demander un jeton SAP temporaire, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
 
 ### Pourquoi est-ce que j'obtiens un message d'erreur lorsque j'accède au compte de stockage interne Data Lake?
 
@@ -48,7 +48,7 @@ Le compte de stockage interne Data Lake n'est accessible qu'à partir d'une mac
 
 ### Comment puis-je relier mon compte Visual Studio à mon compte infonuagique de StatCan?
 
-1.  Connectez-vous à votre compte Visual Studio sur le site https://visualstudio.microsoft.com/fr/subscriptions/ en
+1.  Connectez-vous à votre compte Visual Studio sur le site [https://visualstudio.microsoft.com/fr/subscriptions/](https://visualstudio.microsoft.com/fr/subscriptions/) en
     utilisant l'adresse électronique de votre organisation. Pour les employés de StatCan, il s'agit de votre adresse électronique qui se termine par « canada.ca ».
 
  ![Sign in to Visual Studiosubscription](images/AzureSubscription.png)
@@ -63,7 +63,7 @@ Le compte de stockage interne Data Lake n'est accessible qu'à partir d'une mac
 
 ### Que dois-je faire si j'ai oublié le mot de passe de ma machine virtuelle?
 
-Si vous oubliez le mot de passe de votre machine virtuelle, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com pour réinitialiser votre mot de passe.
+Si vous oubliez le mot de passe de votre machine virtuelle, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com) pour réinitialiser votre mot de passe.
 
 Vous pouvez également supprimer votre machine virtuelle, puis en créer une autre. Ce faisant, vous perdrez malheureusement les données et les logiciels sur votre ancienne machine.
 
@@ -82,7 +82,7 @@ Pour désactiver l'arrêt automatique :
 
 ### Comment puis-je apporter des changements à ma machine virtuelle?
 
-Si la machine virtuelle que vous utilisez actuellement ne répond pas à vos besoins, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com.
+Si la machine virtuelle que vous utilisez actuellement ne répond pas à vos besoins, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
 
 ## Databricks
 
@@ -97,7 +97,7 @@ Vous devez d'abord démarrer un cluster dans Databricks qui a déjà été cré�
 ![Start Cluster](images/DataBricksStartCluster2.png)
 
 ### Quels types de clusters sont disponibles dans Databricks?
-Voir le lien suivant pour les différents types de clusters disponibles: https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20
+Voir le lien suivant pour les différents types de clusters disponibles: [https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20](https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20)
 
 ### Que se passe-t-il lorsque les clusters sont mis à niveau?
 LTS (support à long terme) a un support pendant 1-2 ans. Ils devront être périodiquement mis à jour vers une version plus récente. Lors de la mise à niveau, tout le code doit être réexécuté pour s'assurer qu'il n'y a pas de problèmes lors de la mise à jour d'un cluster.
@@ -128,14 +128,14 @@ Prérequis :
 
 1.  Connectez-vous à votre machine virtuelle dans l'EAC.
 2.  Lancez Power BI Desktop.
-3.  Suivez les étapes dans [Analysez des données dans Azure Data Lake Storage Gen2 avec Power BI - Créer un rapport dans Power BI Desktop (document anglais)](https://docs.microsoft.com/fr-ca/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). S.v.p. envoyez un message slack à https://cae-eac.slack.com si vous ne connaissez pas l'URL du Azure Data Lake Storage Gen2.
+3.  Suivez les étapes dans [Analysez des données dans Azure Data Lake Storage Gen2 avec Power BI - Créer un rapport dans Power BI Desktop (document anglais)](https://docs.microsoft.com/fr-ca/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). S.v.p. envoyez un message à [Slack](https://cae-eac.slack.com) si vous ne connaissez pas l'URL du Azure Data Lake Storage Gen2.
 
 ### Comment les employés de Statistique Canada peuvent-ils transférer des fichiers de leur centre de données?
-Pour les employés de Statistique Canada, ils peuvent se référer à cette documentation interne : https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion
+Pour les employés de Statistique Canada, ils peuvent se référer à cette documentation interne : [Data Ingestion](https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion)
 
 ### Comment puis-je ajouter une question à la FAQ?
 
-Veuillez faire parvenir votre suggestion de question par l'intermédiaire du canal https://cae-eac.slack.com.
+Veuillez faire parvenir votre suggestion de question par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
 
 # Changer la langue d'affichage
 Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.

@@ -45,7 +45,7 @@ téléverser des données du réseau B.*
 
 2.  Lancez l'Explorateur de stockage Azure à partir du menu Démarrer.
 
-3.  Sur un VDI du réseau B, la seule façon d'accéder à votre compte de stockage est d'utiliser un jeton SAP temporaire. Pour en faire la demande, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com.
+3.  Sur un VDI du réseau B, la seule façon d'accéder à votre compte de stockage est d'utiliser un jeton SAP temporaire. Pour en faire la demande, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
 
 **Note :** Pour obtenir des renseignements sur la configuration des paramètres du proxy du réseau B, consultez la
 [FAQ](FAQ.md).

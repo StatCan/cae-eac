@@ -198,7 +198,7 @@ pip install jupyterlab-language-pack-fr-FR
 
 Pour plus d'informations sur le changement de langue:
 
-https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
+[https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language](https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language)
 
 ## Visual Studio Code (VSCode)
 
@@ -253,7 +253,7 @@ Pour configurer RStudio dans une autre langue :
 2. Dans la console, tapez "Sys.getenv(LANGUAGE = "fr")
 Note : "fr" est pour la langue française, pour une liste d'autres langues qui peuvent être utilisées :
 
-https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+[https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 
 
 3. Pour le tester, vous pouvez taper "2+x" et cela devrait donner une erreur dans la langue saisie.

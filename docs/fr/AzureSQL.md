@@ -7,10 +7,10 @@ Une base de données Azure SQL peut être créée à l'avance si vous en avez be
 ## Accès à une base de données Azure SQL
 
 ### Azure Data Factory
-On peut créer un service lié dans Azure Data Factory. Configurez le service lié pour se connecter via le runtime d'intégration auto-hébergé et utilisez **Identité managée** comme **Méthode d'authentification**. Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com si vous avez besoin d'aide.
+On peut créer un service lié dans Azure Data Factory. Configurez le service lié pour se connecter via le runtime d'intégration auto-hébergé et utilisez **Identité managée** comme **Méthode d'authentification**. Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com) si vous avez besoin d'aide.
 
 ### Databricks
-On peut configurer un carnet Databricks pour ouvrir une connexion à la base de données. Puisque ceci exige une configuration additionnelle, veuillez faire une demande auprès de l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com.
+On peut configurer un carnet Databricks pour ouvrir une connexion à la base de données. Puisque ceci exige une configuration additionnelle, veuillez faire une demande auprès de l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
 
 ### Machine virtuelle
 Vous pouvez vous connecter à une base de données Azure SQL à partir de votre machine virtuelle en infonuagique, en utilisant une application telle que: 
