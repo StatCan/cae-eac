@@ -95,8 +95,8 @@ When Data Factory is not integrated with source control your workflows are store
 ![Data Factory Workspace](images/DataFactorySaveNoGit.png)
 
 ## Ingest and Transform Data with ADF 
-- [Copy Data Wizard](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-copy-data-tool#start-the-copy-data-tool) 
-- [Mapping Data Flows – GUI-driven ETL](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity )
+- [Copy Data Wizard documentation link](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-copy-data-tool#start-the-copy-data-tool) 
+- [Mapping Data Flows – GUI-driven ETL documentation link](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-data-flow#create-a-pipeline-with-a-data-flow-activity )
 
 ## Integration Runtimes
 ### AutoResolveIntegrationRuntime

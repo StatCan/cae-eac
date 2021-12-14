@@ -5,10 +5,10 @@ An Azure SQL Database can be setup in advance if your project requires one.
 ## Accessing Azure SQL Database
 
 ### Azure Data Factory
-A linked service can be setup inside Azure Data Factory. Configure the linked service to connect via the self-hosted integration runtime and use **Managed Identity** as the **Authentication type**. Please contact the support team through the https://cae-eac.slack.com channel if you need assistance.
+A linked service can be setup inside Azure Data Factory. Configure the linked service to connect via the self-hosted integration runtime and use **Managed Identity** as the **Authentication type**. Please contact the support team through the [Slack](https://cae-eac.slack.com) channel if you need assistance.
 
 ### Databricks
-Databricks notebooks can be configured to connect to the database. Because additional setup is required, please contact the the support team through the https://cae-eac.slack.com channel to request this configuration as well as example notebooks.
+Databricks notebooks can be configured to connect to the database. Because additional setup is required, please contact the the support team through the [Slack](https://cae-eac.slack.com) channel to request this configuration as well as example notebooks.
 
 ### Virtual Machine
 

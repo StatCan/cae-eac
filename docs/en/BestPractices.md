@@ -7,7 +7,9 @@ In many cases a SQL database is not needed, data can be saved in files to the da
 ## Do I need a SQL database when using Power BI?
 It is not needed to have an SQL datbase when using Power BI. You are able to read files from the Azure Storage. A database is only needed when you are using a more complex star-schema like system. 
 
-To connect to the internal data lake with Power BI desktop, please [click here](https://statcan.github.io/cae-eac/en/FAQ/#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop).
+Additional Information:
+
+- [How to connect to the internal data lake with Power BI Desktop](https://statcan.github.io/cae-eac/en/FAQ/#how-do-i-connect-to-the-internal-data-lake-with-power-bi-desktop).
 
 ## How should we structure our projects data lake container?
 There are 3 parts in which to structure your data lake container:
@@ -39,7 +41,9 @@ To increase the size of the cluster, please contact the CAE support team to incr
 ### **Option 2:**
 For a more programatic answer, if you are using pandas, it is also a suggestion to switch over and use pySpark or koalas. PySpark and koalas can run faster than pandas, it has better benefits from using data ingestion pipelines and also works efficiently as it runs parallel on different nodes in a cluster.
 
-More information: [Spark Dataframe and Operations](https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/)
+More information: 
+
+- [Spark Dataframe and Operations](https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/)
 
 ### **Option 3:**
 Consider to use a subset of your data when doing queries if possible. If you are working with only a certain section of the dataset but are quering through all of it, it is possible to use just the subset. 
@@ -95,7 +99,9 @@ There are plenty of ways to validate that your development is the most cost effe
 ## How should data be structured if we plan to use Power BI?
 Data should be structured using the Star Schema.
 
-For more details about using Star Schema, click this link: [Understand star schema and the importance for Power BI](https://docs.microsoft.com/en-us/power-bi/guidance/star-schema).
+For more details about using Star Schema, click this link: 
+
+[Understand star schema and the importance for Power BI](https://docs.microsoft.com/en-us/power-bi/guidance/star-schema).
 
 ##  How to read in an Excel file from Databricks?
 Here is an example of how to read an Excel file using Python: 
@@ -240,7 +246,9 @@ sas7bdat_converter.batch_to_csv(file_dicts)
 
 You will then get the output file within the directory you have specified.
 
-For more information about the converter, please [click here](https://pypi.org/project/sas7bdat-converter/).
+Converter Documentation:
+
+[sas7bdat website documentation](https://pypi.org/project/sas7bdat-converter/)
 
 ##  Can\How I convert a Word document to a notebook? 
 There is no easy way to convert a word document to a notebook.
@@ -267,7 +275,9 @@ In Databricks, select Data and within the Database you have selected, click on C
 
 ![CreateTable](images/BestPracticesTable.png)
 
-For more information about this option, please [click here](https://docs.databricks.com/data/tables.html#create-a-table).
+For more information about creating tables in Databricks:
+
+[Databricks Create a Table](https://docs.databricks.com/data/tables.html#create-a-table).
 
 ### Option 2: Create Table from Dataframe table
 Python:

@@ -136,7 +136,7 @@ The following are the steps for installing and testing Databricks Connect on you
 5. Test the connectivity to Azure Databricks by running **databricks-connect test** in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.
 
 ### Troubleshooting :
-1-If you are using databricks connect on windows and you get an error saying: *Cannot find winutils.exe* please refer to [this link](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows).
+- If you are using databricks connect on windows and you get an error saying: *Cannot find winutils.exe* please refer to [the Databricks documentation on the error](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows).
 
 ## Installing Libraries 
 ### Databricks Cluster

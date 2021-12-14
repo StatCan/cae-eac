@@ -104,7 +104,7 @@ Please note that step 5 (Internet password) below may not appear in the order sp
 
 1. From a StatCan laptop or Network B VDI, and using Chrome or Chromium, open either:   
     - The Power BI App URL (if provided) or  
-    - https://powerbi.microsoft.com/en-us/landing/signin/  
+    - [https://powerbi.microsoft.com/en-us/landing/signin/](https://powerbi.microsoft.com/en-us/landing/signin/)
 
 2. You will be directed to the Microsoft Power BI Sign In landing page, as shown below, saying “Already have an account?”.   
 

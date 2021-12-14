@@ -204,9 +204,9 @@ To change the language settings in JupyterLab:
 
 4. Click on **OK** to refresh the page, you will see the language change.
 
-For More information about changing languages:
+For More information about changing languages, click the link below:
 
-https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language
+[Jupyerlab change language display](https://jupyterlab.readthedocs.io/en/stable/user/language.html#changing-the-display-language)
 
 ## Visual Studio Code (VSCode)
 
