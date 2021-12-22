@@ -20,7 +20,7 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
 
 2. You should then see a list of the Databricks workspaces you were given permission to access.  
 
-    ![DataFactory List](images/DatabricksPortalList.png)
+    ![Databricks workspaces List](images/DatabricksPortalList.png)
 
 ## Getting Started
 
@@ -98,7 +98,7 @@ Notebooks also support a few auxiliary magic commands:
 
 3. Click on the **Start Cluster** link.  
 
-![Where to start a Databricks cluster](images/DataBricksStartCluster.png)  
+    ![Where to start a Databricks cluster](images/DataBricksStartCluster.png)  
 
 ## Databricks Connect VM Setup
 Databricks connect is a method for accessing a Databricks environment without having to connect through the Azure Portal or the Databricks UI. It allows you to use other IDEs to work on Databricks code.
@@ -139,8 +139,10 @@ The following are the steps for installing and testing Databricks Connect on you
 - If you are using databricks connect on windows and you get an error saying: *Cannot find winutils.exe* please refer to [the Databricks documentation on the error](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows).
 
 ## Installing Libraries 
+
 ### Databricks Cluster
 Please contact the [slack](https://cae-eac.slack.com) channel to have the support team install these libraries for you.
+
 ### Notebook
 Use the following commands to install a library in a notebook session:
 

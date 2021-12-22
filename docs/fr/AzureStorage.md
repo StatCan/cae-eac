@@ -1,7 +1,3 @@
-_[English](../../en/AzureStorage)_
-# Stockage Azure
-
-
 Les données peuvent être téléversées sur la plateforme par l'entremise du portail Azure ou de l'application Explorateur de stockage Azure. Une
 fois qu'elles auront été téléversées dans un compte de stockage externe **Blob Azure**, elles seront automatiquement ingérées dans un compte de
 stockage interne **Azure Data Lake Storage (ADLS)**. Lorsque les données seront dans Data Lake, les utilisateurs pourront choisir des outils de
@@ -17,26 +13,29 @@ collaboratif (EAC); voir la [FAQ](FAQ.md).
 ## Explorateur de stockage -- Portail Azure
 
 
-1.  Accédez au compte de stockage (aperçu) Storage Account (Preview)     à partir du portail Azure.
-    ![StorageExplorerSearch](images/StorageExplorerSearchPortal.png)
+1.  Accédez au compte de stockage (aperçu) Storage Account (Preview) à partir du portail Azure.
 
-2.  Sélectionnez votre type d'abonnement, puis naviguez dans votre     compte de stockage.
- ![StorageExplorerPortal](images/StorageExplorerPortalPreview.PNG)
+    ![boîte de recherche du portail Azure](images/StorageExplorerSearchPortal.png)
+
+2.  Sélectionnez votre type d'abonnement, puis naviguez dans votre compte de stockage.
+
+    ![comptes de stockage](images/StorageExplorerPortalPreview.PNG)
 
 ## Explorateur de stockage -- Poste de travail personnel ou machine virtuelle sur nuage
-
 
 1.  Téléchargez l'application [Explorateur de stockage Azure](https://azure.microsoft.com/fr-ca/features/storage-explorer/)et installez-la sur votre poste de travail ou votre machine virtuelle.
 
 2.  Lancez l'Explorateur de stockage Azure à partir du menu Démarrer.
 
 3.  Ouvrez une session avec votre compte Azure.
- ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)
 
-4.  Entrez vos justificatifs d'identité du nuage![Use your Cloud  Credentials](images/AzureStorageConnectionCloudVM2.png).
+    ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)
+
+4.  Entrez vos justificatifs d'identité du nuage
+
+    ![Use your Cloud  Credentials](images/AzureStorageConnectionCloudVM2.png).
 
 ## Explorateur de stockage -- VDI du réseau B
-
 
 *Cette section s'adresse aux employés de Statistique Canada qui doivent
 téléverser des données du réseau B.*
@@ -52,9 +51,5 @@ téléverser des données du réseau B.*
 
 ## Documentation Microsoft
 
-
 - [Téléchargez l'Explorateur de stockage Azure](https://azure.microsoft.com/fr-fr/features/storage-explorer/)
 - [Démarrage rapide : Charger, télécharger et lister les objets blob avec le portail Azure](https://docs.microsoft.com/fr-fr/azure/storage/blobs/storage-quickstart-blobs-portal)
-
-# Changer la langue d'affichage
-Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.

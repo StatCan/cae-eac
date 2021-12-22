@@ -18,6 +18,7 @@ Platform tools such as Databricks or Data Factory may be used to ingest data fro
 ## Storage Explorer
 
 ### How do I configure Azure Storage Explorer proxy settings on a network B VDI?
+
 _For Statistics Canada Employees only_
 
 1. Proxy configuration is required if you receive the following error:  
@@ -29,6 +30,7 @@ _For Statistics Canada Employees only_
     ![Storage Explorer Proxy Settings](images/StorageExplorerProxy.png)  
 
 ### How do I request a new SAS token (required for Azure Storage Explorer on a Network B VDI)?
+
 _For Statistics Canada Employees only_
 
 Please contact the support team through the https://cae-eac.slack.com channel to request a temporary SAS token.
@@ -141,10 +143,10 @@ Prerequisites:
 Steps:
 1. Login to your CAE VM.  
 2. Launch Power BI Desktop.  
-3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
+3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to [Slack]https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
 
 ### How can Statistics Canada employees transfer files from their data centre?
-For Statistics Canada Employees, they can refer to this internal documentation: https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion
+For Statistics Canada Employees, they can refer to this internal documentation: [Data Ingestion](https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion)
 
 ### How do I add a FAQ?
-Please send your suggestion through the https://cae-eac.slack.com channel.
+Please send your suggestion through the [Slack](https://cae-eac.slack.com) channel.

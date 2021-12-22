@@ -14,6 +14,7 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
     ![Data Factory URL](images/DataFactorySelect.png) 
 
 ### Azure Portal
+
 1. In the Azure Portal Search box, search for **Data factories**.  
 
     ![Azure Portal Search](images/DataFactoryPortalSearch.png)  
@@ -23,6 +24,7 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
     ![DataFactory List](images/DataFactoryPortalList.png)    
 
 ## Authoring
+
 Click on **Author and Monitor**.  
 
 ![Author Monitor](images/DataFactoryAuthorMonitor.png)  
@@ -50,7 +52,7 @@ A Data Lake connection has been pre-configured for your environment.
 
 3. The linked service with the **Azure Data Lake Storage Gen2** type is your _Data Lake_.  
 
-    ![DataLake](images/DataFactoryDataLake.png)  
+    ![Data Lake](images/DataFactoryDataLake.png)  
 
 Note: You have been granted access to specific containers created in the Data Lake for your environment.
 

@@ -1,6 +1,3 @@
-_[English](../../en/FAQ)_
-# Foire aux questions (FAQ)
-
 ## Ingestion de données
 
 ### Comment puis-je ingérer des données (y compris des fichiers volumineux) dans la plateforme?
@@ -24,14 +21,16 @@ Des outils de plateforme comme Databricks ou Data Factory peuvent être utilis�
 ### Comment puis-je configurer les paramètres du proxy de l'Explorateur de stockage Azure sur un VDI du réseau B?
 
 *Pour les employés de Statistique Canada seulement* 
+
 1. La configuration des paramètres du proxy est nécessaire, si vous recevez le message d'erreur suivant :
 
-![Storage Explorer Proxy Error](images/StorageExplorerError.png)
+    ![erreur du proxy](images/StorageExplorerError.png)
 
 2. Dans l'Explorateur de stockage Azure, allez à **Modifier**
+
 3. **Paramètres du proxy**. Entrez les paramètres du proxy nécessaires et cliquez sur **OK**.
 
-![Storage Explorer Proxy Settings](images/StorageExplorerProxy.png)
+    ![Paramètres du proxy](images/StorageExplorerProxy.png)
 
 ### Comment puis-je demander un nouveau jeton SAP (requis pour l'Explorateur de stockage Azure sur un VDI du réseau B)?
 
@@ -51,11 +50,11 @@ Le compte de stockage interne Data Lake n'est accessible qu'à partir d'une mac
 1.  Connectez-vous à votre compte Visual Studio sur le site [https://visualstudio.microsoft.com/fr/subscriptions/](https://visualstudio.microsoft.com/fr/subscriptions/) en
     utilisant l'adresse électronique de votre organisation. Pour les employés de StatCan, il s'agit de votre adresse électronique qui se termine par « canada.ca ».
 
- ![Sign in to Visual Studiosubscription](images/AzureSubscription.png)
+    ![Connectez-vous à votre compte Visual Studio](images/AzureSubscription.png)
 
 2.  Ajoutez votre compte infonuagique comme compte secondaire. Vous pourrez ainsi utiliser vos licences pour Visual Studio et Azure DevOps dans l'EAC.
 
-![Add alternate email](images/AlternateAccount.png)
+    ![Ajoutez compte secondaire](images/AlternateAccount.png)
 
 **Pour les employés de Statistique Canada :** Si vous n'avez pas d'abonnement Visual Studio, veuillez communiquer avec votre superviseur. S'il décide que vous avez besoin d'un abonnement, il pourra alors soumettre une demande de soutien en votre nom auprès de la Gestion des biens logiciels de StatCan pour vous obtenir une licence.
 
@@ -76,16 +75,16 @@ Les machines sont arrêtées tous les jours à 19 h (HNE), afin de réduire l
 Pour désactiver l'arrêt automatique :
 
 1. Accédez à votre machine virtuelle dans le portail Azure.
+
 2. Désactivez l'arrêt automatique.
 
-![Auto Shutoff](images/VirtualMachineAutoShutOff.png)
+    ![arrêt automatique](images/VirtualMachineAutoShutOff.png)
 
 ### Comment puis-je apporter des changements à ma machine virtuelle?
 
 Si la machine virtuelle que vous utilisez actuellement ne répond pas à vos besoins, veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
 
 ## Databricks
-
 
 ### Pourquoi suis-je incapable d'exécuter le code à partir de mon notebook dans Databricks?
 
@@ -94,7 +93,7 @@ Vous devez d'abord démarrer un cluster dans Databricks qui a déjà été cré�
 
 2. Naviguez vers votre cluster et cliquez sur le bouton **Démarrer** (icône de la flèche).
 
-![Start Cluster](images/DataBricksStartCluster2.png)
+    ![Démarrer le Cluster](images/DataBricksStartCluster2.png)
 
 ### Quels types de clusters sont disponibles dans Databricks?
 Voir le lien suivant pour les différents types de clusters disponibles: [https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20](https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20)
@@ -113,29 +112,27 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 ## Tableau de bord
 ### Comment changer mon abonnement pour voir mes ressources?
 1. Dans le portail Azure, cliquez sur l'icône **Répertoire + abonnement**.
-![subscription](images/Subscription.png)
+
+    ![abonnement](images/Subscription.png)
+
 2. Sélectionnez l'abonnement **vdl**.
 
 ## Autre
 ### Comment puis-je me connecter au compte de stockage interne Data Lake avec Power BI Desktop?
 
-Prérequis :
+Prérequis:
+-  Une machine virtuelle dans l'Environnement d'analyse collaborative (EAC).
+-  Power BI Desktop. (Offert par défaut dans les images de machine virtuelle Data Science Virtual Machine.)
 
-1.  Une machine virtuelle dans l'Environnement d'analyse collaborative (EAC).
-2.  Power BI Desktop. (Offert par défaut dans les images de machine virtuelle Data Science Virtual Machine.)
-
-Étapes :
+Étapes:
 
 1.  Connectez-vous à votre machine virtuelle dans l'EAC.
 2.  Lancez Power BI Desktop.
 3.  Suivez les étapes dans [Analysez des données dans Azure Data Lake Storage Gen2 avec Power BI - Créer un rapport dans Power BI Desktop (document anglais)](https://docs.microsoft.com/fr-ca/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). S.v.p. envoyez un message à [Slack](https://cae-eac.slack.com) si vous ne connaissez pas l'URL du Azure Data Lake Storage Gen2.
 
 ### Comment les employés de Statistique Canada peuvent-ils transférer des fichiers de leur centre de données?
-Pour les employés de Statistique Canada, ils peuvent se référer à cette documentation interne : [Data Ingestion](https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion)
+Pour les employés de Statistique Canada, ils peuvent se référer à cette documentation interne: [Data Ingestion](https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion)
 
 ### Comment puis-je ajouter une question à la FAQ?
 
 Veuillez faire parvenir votre suggestion de question par l'intermédiaire du canal [Slack](https://cae-eac.slack.com).
-
-# Changer la langue d'affichage
-Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.

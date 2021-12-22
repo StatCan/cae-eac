@@ -3,13 +3,14 @@ Data can be uploaded to the platform via the Azure Portal or the Azure Storage E
 **Reminder:** Internal Storage Accounts can only be accessed from a VM in the Collaborative Analytics Environment (CAE) - See the [FAQ](FAQ.md) 
 
 ## Storage Explorer - Azure Portal 
+
 1. Navigate to the Storage Account (Preview) from the Azure Portal. 
 
-   ![StorageExplorerSearch](images/StorageExplorerSearchPortal.png)  
+   ![search box](images/StorageExplorerSearchPortal.png)  
 
 2. Select your subscription, then navigate the storage account.   
 
-   ![StorageExplorerPortal](images/StorageExplorerPortalPreview.png)  
+   ![storage accounts](images/StorageExplorerPortalPreview.png)  
 
 ## Storage Explorer - Personal Workstation or Cloud Virtual Machine
 1. Download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your workstation or VM.
@@ -37,5 +38,3 @@ _This section is for Statistics Canada employees who need to upload data from Ne
 ## Microsoft Documentation
 - [Azure Storage Explorer Download](https://azure.microsoft.com/en-us/features/storage-explorer/)  
 - [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) 
-
-

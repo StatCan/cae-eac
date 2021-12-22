@@ -1,7 +1,3 @@
-_[English](../../en/BestPractices)_
-
-# Bonnes pratiques 
-
 ## Quel est le meilleur format de fichier à utiliser pour les fichiers de données volumineux? 
 Il est recommandé d'utiliser un format plus récent comme Parquet, car il enregistre des ensembles de dates plus volumineux dans un fichier plus petit par rapport à un fichier CSV. Si vous n'accédez qu'à certaines sections de l'ensemble de données, il est également plus rapide d'utiliser Parquet car il utilise un format de stockage en colonnes.
 
@@ -229,24 +225,24 @@ Vous pouvez convertir un fichier SAS en CSV ou JSON avec cette méthode:
 
 1. Ouvrez d'abord les databricks et installez le convertisseur sas7bdat dans votre ordinateur portable.
 
-```python
-%pip install sas7bdat-converter
-```
+    ```python
+    %pip install sas7bdat-converter
+    ```
 
 2. À l'aide de python et de l'éditeur de code de votre choix, saisissez ce code avec le répertoire du fichier dans lequel se trouve le fichier et le répertoire dans lequel vous souhaitez que le fichier de sortie se trouve.
 
-```python
-%python
+    ```python
+    %python
 
-import sas7bdat_converter
+    import sas7bdat_converter
 
-file_dicts = [{
-    'sas7bdat_file': '/dbfs/mnt/public-data/ToNetA/sas7bdat/tablea_1_10k.sas7bdat',
-    'export_file': '/dbfs/mnt/public-data/testFolder/testingConvert.csv',
-}]
+    file_dicts = [{
+        'sas7bdat_file': '/dbfs/mnt/public-data/ToNetA/sas7bdat/tablea_1_10k.sas7bdat',
+        'export_file': '/dbfs/mnt/public-data/testFolder/testingConvert.csv',
+    }]
 
-sas7bdat_converter.batch_to_csv(file_dicts)
-```
+    sas7bdat_converter.batch_to_csv(file_dicts)
+    ```
 
 Vous obtiendrez alors le fichier de sortie dans le répertoire que vous avez spécifié.
 
@@ -277,7 +273,7 @@ Azure ML contient également un système de suivi capable de suivre les exécuti
 ### Option 1 : Utiliser la fonction Créer une table
 Dans Databricks, sélectionnez Données et dans la base de données que vous avez sélectionnée, cliquez sur Créer une table. 
 
-![CreateTable](images/BestPracticesTable.png)
+![Créer une table](images/BestPracticesTable.png)
 
 Pour plus d'informations sur cette option, veuillez consulter ce lien :
 
@@ -341,9 +337,3 @@ Cela se produit uniquement avec BroadcastHashJoin. Il y a 2 possibilités :
      b. Effectuez des jointures avec chaque partition de DataFrame A avec DataFrame B (c'est simultanément le moyen le plus rapide mais peut nécessiter l'écriture de Dataframes dans un fichier pour la lecture à l'étape suivante).
 
      c. Effectuez une union sur tous les DataFrames joints.
-
-
-
-# Changer la langue d'affichage
-
-Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.

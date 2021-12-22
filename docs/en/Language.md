@@ -183,7 +183,7 @@ To select the language:
 
 3. Click on **Apply**.
 
-    ![DataFactory](images/ADFLanguage.png)  
+    ![DataFactory Language Settings](images/ADFLanguage.png)  
 
 
 ## JupyterLab

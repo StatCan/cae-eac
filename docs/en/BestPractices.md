@@ -76,12 +76,15 @@ There are plenty of ways to validate that your development is the most cost effe
 1. Take advantage of Spark in databricks.
 
     a. Spark is a great addition to databricks that runs faster and better especially for large data sets. Using Spark would cost less because it does take less time to do its task. Using spark will also
+
 2. Make sure you cluster is running for the minimal amout of time.
 
     a. If the cluster is no longer needed or not being use, ensure that it is not running and only run when it is needed.
+
 3. Ensure your databricks cluster is correctly sized.
 
     a. Make sure that you have to correct amount of workers in your cluster, too many clusters results in a higher cost.
+
 4. Delete data files that you are not using.
 
     a. Ensure that any files that are no longer needed or not in use anymore are deleted from the container.
@@ -225,24 +228,24 @@ You are able to convert a SAS file to CSV or JSON with this method:
 
 1. First open databricks and install the sas7bdat-converter within your notebook.
 
-```python
-%pip install sas7bdat-converter
-```
+    ```python
+    %pip install sas7bdat-converter
+    ```
 
 2. Using python and your code editor of your choice, type in this code with the file directory that the file is in and the directory where you want the output file to be in.
 
-```python
-%python
+    ```python
+    %python
 
-import sas7bdat_converter
+    import sas7bdat_converter
 
-file_dicts = [{
-    'sas7bdat_file': '/dbfs/mnt/public-data/ToNetA/sas7bdat/tablea_1_10k.sas7bdat',
-    'export_file': '/dbfs/mnt/public-data/testFolder/testingConvert.csv',
-}]
+    file_dicts = [{
+        'sas7bdat_file': '/dbfs/mnt/public-data/ToNetA/sas7bdat/tablea_1_10k.sas7bdat',
+        'export_file': '/dbfs/mnt/public-data/testFolder/testingConvert.csv',
+    }]
 
-sas7bdat_converter.batch_to_csv(file_dicts)
-```
+    sas7bdat_converter.batch_to_csv(file_dicts)
+    ```
 
 You will then get the output file within the directory you have specified.
 

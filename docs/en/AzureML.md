@@ -71,7 +71,7 @@ A compute instance in Azure ML. You should see it under **Compute --> Compute in
 
 ### Requirements
 
-•	A compute instance in Azure ML. You should see it under **Compute --> Compute instances**.
+A compute instance in Azure ML. You should see it under **Compute --> Compute instances**.
 
 **Note**: If a compute instance has not been created for you, please contact the support team via [Slack](https://cae-eac.slack.com).
 
@@ -89,24 +89,24 @@ A compute instance in Azure ML. You should see it under **Compute --> Compute in
 
     **Host:** the **URL** from the **Overview** page for your Databricks workspace.
 
-    ![DatabrickConnectURL](images/DatabrickConnectURL.PNG)
+    ![Databrick Connect URL](images/DatabrickConnectURL.PNG)
 
     **Token:** the [personal access token](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token) generated in your Databricks Workspace User Settings.
 
     **Cluster ID:** the value found under **Cluster --> Advanced Options --> Tags** in your Databricks workspace.
     
-    ![DatabrickConnectClusterID](images/DatabrickConnectClusterID.PNG)
+    ![Databrick Connect Cluster ID](images/DatabrickConnectClusterID.PNG)
 
     **Org ID:** the part of the Databricks URL found after **.net/?o=**
     
-    ![DatabrickConnectOrgID](images/DatabrickConnectOrgID.PNG)
+    ![Databrick Connect Org ID](images/DatabrickConnectOrgID.PNG)
 
     **Port:** keep the existing value
 
 4.	Execute the following code in terminal to test the connectivity to Azure Databricks.
-```
-databricks-connect test
-```
+    ```
+    databricks-connect test
+    ```
 
 5.	Create a new notebook with Azure ML and select the **Python 3 kernel**. It should now display Python 3.7.9
 

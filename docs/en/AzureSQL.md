@@ -34,9 +34,11 @@ You can access an Azure SQL database from your cloud virtual machine, using vari
 4. Enter your **Azure SQL server name** and your **cloud account** username as User name.
 
     ![SQL Server Login](images/SSMS01_En.png) 
+
 5. Click on **Options**.
 
-6. In the **Connection Properties** tab, enter your database name next to the **Connect to database** label and click on **Connect**.  
+6. In the **Connection Properties** tab, enter your database name next to the **Connect to database** label and click on **Connect**. 
+
     ![Specify database name](images/SQLServer2.png)
    
 7. Sign in with your cloud account credentials.
