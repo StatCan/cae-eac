@@ -20,6 +20,7 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
 
 Once the resource page is open, by default you will land on the overview view. Within the view, there is a button to lauch the workspace and there is a attribute that provides the URL to your workspace. By clicking the "Launch Button" or by clicking the URL link you will be redirected your Databricks workspace as displayed in the following image.
 
+![Launch Workspace](images/Databricks/LaunchDatabricksWorkspace.png)
 
 Optionally one also has the option to access their Databricks workspace  without going through the Azure Portal by navigating to https://canadacentral.azuredatabricks.net/, authenticating with your cloud account credentials, and selecting the Databricks workspace that was created for you.  
 ![Databricks URL](images/DatabricksSelect.png)

@@ -96,4 +96,11 @@ One can also create a pipeline where the data undergoes a seiries of transformat
 <br/>
 
 # Databricks Jobs
+Databricks jobs are used to run code on a schedule. There are five types of jobs, Notebook, JAR, Spark Submit, Python and Pipeline. Each job has a task which essentially represents a step in a job. A job can have one or many tasks. Each notebook task, requires the creator to input the task name, the location of the notebook to run, and the parameters of the task. Whereas for each job, one has the option to configure the execution schedule, alerts, the permission structure, the maximum number of concurrent runs and the databricks cluster to run the code on.
 
+The value of parameters on a notebook task can be read from the notebook using the `dbutils.widgets.get("<parameter name")` command (Databricks widgets). Refer to [Databricks Widgets](https://docs.databricks.com/notebooks/widgets.html) for more information on widgets. 
+
+## All-Purpose Clusters vs Job Clusters
+As per the Databricks [documentation](https://docs.microsoft.com/en-us/azure/databricks/clusters/cluster-config-best-practices), "all-purpose clusters can be shared by multiple users and are best for performing ad-hoc analysis, data exploration or development". Once a all-purpose cluster has been started, it will run until it has been manually terminated or it has been idle for the amount of time configured for auto-shutdown.
+
+Job clusters on the other hand are not shared by other workloads and are only started when a job is executed and gets terminated immediately after the job completes. Therefore, using job clusters for Databricks jobs can benificial since each task runs in a fully isolated environment and it can save on costs because the cluster is only running for the duration of the job.

@@ -44,7 +44,12 @@ nav:
   - How to Login: Login.md
   - Dashboards: Dashboards.md
   - Virtual Machines: VirtualMachines.md
-  - Azure Databricks: DataBricks.md
+  - Azure Databricks:
+    - Databricks/Overview.md
+    - Databricks/AccessingDatabricks.md
+    - Databricks/DatabricksNotebook.md
+    - Databricks/Databricks/Cluster.md
+    - Databricks/IngestingData.md
   - Azure Data Factory: DataFactory.md
   - Azure Storage: AzureStorage.md
   - Azure SQL Database: AzureSQL.md
