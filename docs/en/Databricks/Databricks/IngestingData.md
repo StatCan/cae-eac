@@ -18,6 +18,9 @@ In this method, the data (files) will be downloaded manually to a CAE VM and the
 
 In the majority of cases, your project will have a dedicated container within the Azure data lake named **statsconviddsinternal**. Assuming this is the case for your project, after downloading the files to your local filesystem on your CAE VM, you can upload the data to the data lake through either the Azure Storage Explorer application or through the Azure portal. 
 
+![Upload a file using Azure Portal](images/uploadADLS-AzurePortal.png)
+![Upload a file using Storage Explorer](images/UploadFileADLS-StorageExplorer.png)
+
 After uploading the data to your container within the data lake, you can access the data within your mount point path /dbfs/<mount point name> in your databricks workspace.
 
 **Note:** One of the main benifits of using the Azure Storage Explorer application over the Azure portal is that with the application, one can upload folders and their contents to a data lake. Using the Azure portal, one cannot upload folders.  
