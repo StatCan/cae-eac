@@ -12,23 +12,28 @@ _[Français](../../fr/AzureSynapse)_
 
 3. 
     a. Cliquez sur l’icône **Azure Synapse Analytics** sous **Services Azure**. Si vous ne voyez pas cette icône, suivez plutôt l’étape 3b.
+    
     ![Access Synapse](images/AzureSynapseAccess_2.png)
 
     b. Commencez à taper "synapse" dans la barre de recherche pour trouver **Azure Synapse Analytics**.
+    
     ![Access Synapse](images/AzureSynapseAccess.png) 
 
 4. Repérez votre espace de travail Synapse dans la liste, puis cliquez dessus. Cliquez ensuite sur **Ouvrir Synapse Studio**.
-![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
+
+   ![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
 
 Note: Vous pouvez également accéder aux espaces de travail Synapse à partir du tableau de bord **Environnement d’analyse collaborative**.
 
 ### Démarrer et arrêter un pool SQL dédié
 
 1. Cliquez sur l’onglet **Intégrer**.
-![Manage tab](images/AzureSynapseStartStopPool_1.png)
+
+   ![Manage tab](images/AzureSynapseStartStopPool_1.png)
 
 2. Sous **Pipelines**, cliquez soit sur **Start Dedicated SQL Pool**, soit sur **Pause Dedicated SQL Pool**. Ensuite, cliquez sur le bouton de déclenchement pour ouvrir un menu, puis sélectionnez **Déclencher maintenant**. À l’écran suivant, cliquez sur **OK**.
-![Start or Stop SQL Pools](images/AzureSynapseStartStopPool_2.png)
+
+  ![Start or Stop SQL Pools](images/AzureSynapseStartStopPool_2.png)
 
 ## ![Accueil](images/AzureSynapseHomeIcon.png) Accueil
 
@@ -51,30 +56,36 @@ Sous l’onglet **Lié**, vous pouvez explorer des objets externes (p. ex. compt
 **Note**: Cet exemple montre comment obtenir des données à partir de Data Lake, bien qu’il y ait de nombreux types de sources disponibles.
 
 1. Cliquez sur le bouton « **+** » pour ajouter une nouvelle ressource, puis cliquez sur **Jeu de données d’intégration**.
-![Add New Resource](images/AzureSynapseData_1.png)
+
+   ![Add New Resource](images/AzureSynapseData_1.png)
 
 2.	Sélectionnez **Azure Data Lake Storage Gen2** (pour ce faire, vous devrez peut-être effectuer une recherche), puis cliquez sur **Continuer**. 
-![Azure Data Lake Storage Gen2](images/AzureSynapseData_2.png)
+
+   ![Azure Data Lake Storage Gen2](images/AzureSynapseData_2.png)
 
 3.	Sélectionnez le type de format, puis cliquez sur **Continuer**.
 
 4.	Saisissez un nom, puis cliquez sur le menu déroulant sous **Service lié**. Sélectionnez ensuite votre lac de données.
-![Set properties](images/AzureSynapseData_3.png)
+
+   ![Set properties](images/AzureSynapseData_3.png)
 
 5.	Sous **Runtime d’intégration**, assurez-vous que la création interactive est activée. Dans la négative, cliquez sur le bouton d’édition pour l’activer, puis cliquez sur **Appliquer**.
-![Enable interactive authoring](images/AzureSynapseData_6.png)
+
+   ![Enable interactive authoring](images/AzureSynapseData_6.png)
 
 6. Définissez des propriétés supplémentaires comme il convient, puis cliquez sur **OK**.
 
 ### Comment explorer les données dans le lac de données
 
 Recherchez votre fichier de données (CSV, Parquet, JSON, Avro, etc.) et faites un clic droit dessus. Un menu s’ouvre avec des options permettant d’avoir un aperçu des données ou de créer des ressources telles que des scripts SQL et des notebooks.
-![Read Data from CSV File](images/AzureSynapseData_4.png)
+
+   ![Read Data from CSV File](images/AzureSynapseData_4.png)
 
 ### Comment explorer le pool SQL dédié
 
 Sous l’onglet **Espace de travail**, vous pouvez explorer les bases de données de manière similaire à SQL Server Management Studio. Cliquez avec le bouton droit de la souris sur n’importe quel tableau, mettez en surbrillance **Nouveau script SQL**, puis cliquez sur **Sélectionner les 100 premières lignes** pour créer une nouvelle requête. Vous pouvez ensuite afficher les résultats sous forme de tableau ou de graphique.
-![Explore Dedicated SQL Pool](images/AzureSynapseData_5.png)
+
+   ![Explore Dedicated SQL Pool](images/AzureSynapseData_5.png)
 
 ### Importation de données vers le pool SQL dédié
 
@@ -87,27 +98,32 @@ Pour importer des données vers le pool SQL dédié, vous pouvez soit:
 À partir de là, vous pouvez créer et enregistrer des ressources telles que des scripts SQL, des notebooks et des rapports Power BI.
 
 Pour ajouter une nouvelle ressource, cliquez sur le bouton «**+**». Un menu déroulant s’ouvre.
-![Add a Resource](images/AzureSynapseDevelop.png)
+
+   ![Add a Resource](images/AzureSynapseDevelop.png)
 
 Pour rendre vos modifications visibles aux autres, vous devez cliquer sur le bouton **Publier**.
 
 ### Scripts SQL
 
 Assurez-vous de vous connecter à votre pool SQL dédié pour exécuter des scripts SQL.
-![SQL Scripts](images/AzureSynapseDevelopSQL.png)
+
+   ![SQL Scripts](images/AzureSynapseDevelopSQL.png)
 
 ### Notebooks
 
 Pour exécuter les cellules notebook, vous devez d’abord sélectionner votre pool Apache Spark.
-![Notebooks](images/AzureSynapseDevelopNotebooks.png)
+
+   ![Notebooks](images/AzureSynapseDevelopNotebooks.png)
 
 Pour changer de langue pour une seule cellule, vous pouvez utiliser les commandes magiques suivantes : %%pyspark, %%spark, %%csharp et %%sql. Vous pouvez également modifier la langue par défaut à l’aide du menu déroulant **Langue**.
-![Change language](images/AzureSynapseDevelopNotebooks_2.png)
+
+   ![Change language](images/AzureSynapseDevelopNotebooks_2.png)
 
 ### Flux de données
 
 Pour ajouter une source à un flux de données, cliquez sur le bouton «**+**» sous **Paramètres de la source**, puis sélectionnez **Azure Data Lake Storage Gen2** (pour ce faire, vous devrez peut-être effectuer une recherche). Cliquez sur **Continuer**, sélectionnez le format de données, puis, sur la page suivante, sélectionnez votre service lié.
-![Dataflows](images/AzureSynapseDevelopDataflow.png)
+
+   ![Dataflows](images/AzureSynapseDevelopDataflow.png)
 
 ### Rapports Power BI
 
@@ -119,22 +135,32 @@ C’est ici que vous pouvez créer des pipelines pour ingérer, préparer et tra
 
 ### Exemple : Copier les données d’un blob externe vers un lac de données
 1. Cliquez sur le bouton «**+**» pour ajouter une nouvelle ressource, puis cliquez sur **Pipeline**.
-![Add a Resource](images/AzureSynapseIntegrate_1.png)
+
+   ![Add a Resource](images/AzureSynapseIntegrate_1.png)
+
 2. Sous **Déplacer et transformer**, faites glisser et déposez **Copier les données** dans la fenêtre.
-![Drag and drop Copy data](images/AzureSynapseIntegrate_2.png)
+
+   ![Drag and drop Copy data](images/AzureSynapseIntegrate_2.png)
+
 3. Cliquez sur l’onglet **Source**, puis cliquez sur **Nouveau** pour ajouter le jeu de données source (d’où vous voulez copier les données).
-![Add source dataset](images/AzureSynapseIntegrate_3.png)
+
+   ![Add source dataset](images/AzureSynapseIntegrate_3.png)
+
 4. Sélectionnez **Azure Blob Storage**, puis sélectionnez le type de format (CSV, Parquet, JSON, etc.). Définissez toute propriété supplémentaire si nécessaire, puis cliquez sur **OK**.
+
 5. Cliquez sur **Récepteur**, puis sur **Nouveau** pour définir le jeu de données récepteur (où vous souhaitez que les données soient copiées). Choisissez **Azure Data Lake Storage Gen2**, puis sélectionnez le type de format. Sous **Service lié**, choisissez votre lac de données et assurez-vous que la création interactive est activée (voir **Comment introduire des données à partir de services liés** sous **Données** pour de plus amples renseignements).
 
 ### Débogage et exécution des pipelines
+
 Pour exécuter un pipeline en mode débogage, cliquez sur le bouton **Déboguer** en haut de la fenêtre du pipeline. Les résultats figureront dans l’onglet **Sortie**.
-![Debugging pipelines](images/AzureSynapseIntegrate_4.png)
+  
+  ![Debugging pipelines](images/AzureSynapseIntegrate_4.png)
 
 Pour exécuter un pipeline sans déboguer, cliquez sur le bouton **Ajouter un déclencheur**, puis sur **Déclencher maintenant**.
 
 Lorsque vous êtes prêt à publier vos pipelines, cliquez sur le bouton **Tout valider**, puis sur **Tout publier**. Il est à noter que cette publication permettra à l’ensemble des utilisateurs de voir tout ce que vous avez actuellement ouvert (pipelines, scripts SQL, notebooks, etc.).
-![Publish pipelines](images/AzureSynapseIntegrate_5.png)
+
+  ![Publish pipelines](images/AzureSynapseIntegrate_5.png)
 
 ## ![Superviser](images/AzureSynapseMonitorIcon.png) Superviser
 
