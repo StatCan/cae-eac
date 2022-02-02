@@ -1,152 +1,162 @@
-_[English](../../en/AzureSynapse)_
-
+_[Français](../../fr/AzureSynapse)_
+ 
 # Azure Synapse
 
-## Getting Started
+## Pour commencer
 
-### Access Azure Synapse
+### Accéder à Azure Synapse
 
-1. Make sure you are in your cloud VM in order to access Azure Synapse. See [Virtual Machines](VirtualMachines.md) for information on how to create one if needed.
+1.	Assurez-vous que vous utilisez votre machine virtuelle en nuage pour accéder à Azure Synapse. Reportez-vous à la rubrique [Machines virtuelles](VirtualMachines.md) pour savoir comment en créer une si nécessaire.
 
-2. Inside your virtual machine, open a web browser and navigate to the Azure Portal (https://portal.azure.com). Sign in with your cloud account credentials.
+2. Dans votre machine virtuelle, ouvrez un navigateur Web et accédez au [portail Azure](https://portal.azure.com). Ouvrez une session à l’aide des données d’identification de votre compte en nuage.
 
 3. 
-    a. Click on the **Azure Synapse Analytics** icon under **Azure services**. If you do not see this icon, follow step 3b instead.
+    a. Cliquez sur l’icône **Azure Synapse Analytics** sous **Services Azure**. Si vous ne voyez pas cette icône, suivez plutôt l’étape 3b.
     ![Access Synapse](images/AzureSynapseAccess_2.png)
 
-    b. Start typing "synapse" into the search bar to find **Azure Synapse Analytics**.
+    b. Commencez à taper "synapse" dans la barre de recherche pour trouver **Azure Synapse Analytics**.
     ![Access Synapse](images/AzureSynapseAccess.png) 
 
-4. Find your Synapse workspace in the list and click on it. Then click **Open Synapse Studio**.
+4. Repérez votre espace de travail Synapse dans la liste, puis cliquez dessus. Cliquez ensuite sur **Ouvrir Synapse Studio**.
 ![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
 
-Note: You can also acccess Synapse workspaces from the Collaborative Analytics Environment dashboard.
+Note: Vous pouvez également accéder aux espaces de travail Synapse à partir du tableau de bord **Environnement d’analyse collaborative**.
 
-### Start and Stop Dedicated SQL Pool
+### Démarrer et arrêter un pool SQL dédié
 
-1. Click on the **Integrate** tab.
+1. Cliquez sur l’onglet **Intégrer**.
 ![Manage tab](images/AzureSynapseStartStopPool_1.png)
 
-2. Under **Pipelines**, click on either **Start Dedicated SQL Pool** or **Pause Dedicated SQL Pool**. Then click the trigger button to open a menu, and select **Trigger now**. On the next screen, click **OK**.
+2. Sous **Pipelines**, cliquez soit sur **Start Dedicated SQL Pool**, soit sur **Pause Dedicated SQL Pool**. Ensuite, cliquez sur le bouton de déclenchement pour ouvrir un menu, puis sélectionnez **Déclencher maintenant**. À l’écran suivant, cliquez sur **OK**.
 ![Start or Stop SQL Pools](images/AzureSynapseStartStopPool_2.png)
 
-## ![Home](images/AzureSynapseHomeIcon.png) Home
+## ![Accueil](images/AzureSynapseHomeIcon.png) Accueil
 
-The **Home** tab is where you start when you first open Azure Synapse Studio. 
+L’onglet **Accueil** est l’endroit où vous commencez lorsque vous ouvrez Azure Synapse Studio pour la première fois.
 
-From here, you can access shortcuts for common tasks such as creating SQL scripts or notebooks by clicking the **New** dropdown menu button. Recently opened resources are also displayed.
+À partir de cet endroit, vous pouvez accéder à des raccourcis pour des tâches courantes telles que la création de scripts SQL ou de notebooks en cliquant sur le bouton du menu déroulant **Nouveau**. Les ressources récemment ouvertes sont également affichées.
 
-## ![Data](images/AzureSynapseDataIcon.png) Data
 
-The Data tab is where you can explore everything in your database and linked datasets.
+## ![Données](images/AzureSynapseDataIcon.png) Données
 
-Under the **Workspace** tab, you can explore the dedicated SQL pool database and any Spark databases.
+L’onglet Données est l’endroit où vous pouvez explorer tout ce qui se trouve dans votre base de données et les jeux de données liés.
 
-Under the **Linked** tab, you can explore external objects (e.g. Data Lake accounts) and explore/create any integration datasets from external linked data (e.g. Data Lake, Blob Storage, web service, etc) to be used in pipelines.
+Sous l’onglet **Espace de travail**, vous pouvez explorer la base de données du pool SQL dédié ainsi que toutes les bases de données Spark.
 
-### How to Bring in Data from Linked Services
+Sous l’onglet **Lié**, vous pouvez explorer des objets externes (p. ex. comptes Data Lake) et explorer et créer tous jeux de données d’intégration à partir de données externes liées (p. ex. Data Lake, stockage Blob, service Web) à utiliser dans les pipelines.
 
-(Note: This example shows how to get data from the Data Lake, although there are many source types available.)
 
-1. Click the plus button the add a new resource, then click **Integration Dataset**.
+### Comment introduire des données à partir de services liés
+
+**Note**: Cet exemple montre comment obtenir des données à partir de Data Lake, bien qu’il y ait de nombreux types de sources disponibles.
+
+1. Cliquez sur le bouton « **+** » pour ajouter une nouvelle ressource, puis cliquez sur **Jeu de données d’intégration**.
 ![Add New Resource](images/AzureSynapseData_1.png)
-2. Select **Azure Data Lake Storage Gen2** (you may need to search for this), then click **Continue**.
+
+2.	Sélectionnez **Azure Data Lake Storage Gen2** (pour ce faire, vous devrez peut-être effectuer une recherche), puis cliquez sur **Continuer**. 
 ![Azure Data Lake Storage Gen2](images/AzureSynapseData_2.png)
-3. Select the format type, then click **Continue**.
-4. Enter a name, then click the drop-down menu under **Linked service** and select your data lake.
+
+3.	Sélectionnez le type de format, puis cliquez sur **Continuer**.
+
+4.	Saisissez un nom, puis cliquez sur le menu déroulant sous **Service lié**. Sélectionnez ensuite votre lac de données.
 ![Set properties](images/AzureSynapseData_3.png)
-5. Under **Connect via integration runtime**, ensure that interactive authoring is enabled. If it is not, click the edit button to enable it, then click **Apply**.
+
+5.	Sous **Runtime d’intégration**, assurez-vous que la création interactive est activée. Dans la négative, cliquez sur le bouton d’édition pour l’activer, puis cliquez sur **Appliquer**.
 ![Enable interactive authoring](images/AzureSynapseData_6.png)
-6. Set additional properties as appropriate, then click **OK**.
 
-### How to Explore Data in the Data Lake
+6. Définissez des propriétés supplémentaires comme il convient, puis cliquez sur **OK**.
 
-Browse to find your dataset file (CSV, Parquet, JSON, Avro, etc) and right click on it. A menu will open with options to preview the data, or create resources such as SQL scripts and notebooks.
+### Comment explorer les données dans le lac de données
+
+Recherchez votre fichier de données (CSV, Parquet, JSON, Avro, etc.) et faites un clic droit dessus. Un menu s’ouvre avec des options permettant d’avoir un aperçu des données ou de créer des ressources telles que des scripts SQL et des notebooks.
 ![Read Data from CSV File](images/AzureSynapseData_4.png)
 
-### How to Explore the Dedicated SQL Pool
-Under the **Workspace** tab, you can explore databases similarly to SQL Server Management Studio (SSMS). Right click on any table, highlight **New SQL script**, and click **Select TOP 100 rows** to create a new query. You can then view the results as either a table or a chart.
+### Comment explorer le pool SQL dédié
+
+Sous l’onglet **Espace de travail**, vous pouvez explorer les bases de données de manière similaire à SQL Server Management Studio. Cliquez avec le bouton droit de la souris sur n’importe quel tableau, mettez en surbrillance **Nouveau script SQL**, puis cliquez sur **Sélectionner les 100 premières lignes** pour créer une nouvelle requête. Vous pouvez ensuite afficher les résultats sous forme de tableau ou de graphique.
 ![Explore Dedicated SQL Pool](images/AzureSynapseData_5.png)
 
-### Importing Data to the Dedicated SQL Pool
-To import data to the dedicated SQL pool, you can either:
-- create a pipeline with a **Copy data** activity (most efficient for large datasets); or
-- use the [Bulk Load Wizard](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-load-studio-sql-pool).
+### Importation de données vers le pool SQL dédié
 
-## ![Develop](images/AzureSynapseDevelopIcon.png) Develop
+Pour importer des données vers le pool SQL dédié, vous pouvez soit:
+-	**créer un pipeline avec une activité de copie de données** (la plus efficace pour les grands jeux de données);
+-	utiliser l’assistant [Chargement en masse](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-load-studio-sql-pool).
 
-From here, you can create and save resources such as SQL scripts, notebooks, and Power BI reports.
+## ![Développer](images/AzureSynapseDevelopIcon.png) Développer
 
-To add a new resource, click the plus button. A drop-down menu will open.
+À partir de là, vous pouvez créer et enregistrer des ressources telles que des scripts SQL, des notebooks et des rapports Power BI.
+
+Pour ajouter une nouvelle ressource, cliquez sur le bouton «**+**». Un menu déroulant s’ouvre.
 ![Add a Resource](images/AzureSynapseDevelop.png)
 
-To make your changes visible to others, you need to click the **Publish** button.
+Pour rendre vos modifications visibles aux autres, vous devez cliquer sur le bouton **Publier**.
 
-### SQL Scripts
+### Scripts SQL
 
-Be sure to connect to your dedicated SQL pool in order to run SQL scripts.
+Assurez-vous de vous connecter à votre pool SQL dédié pour exécuter des scripts SQL.
 ![SQL Scripts](images/AzureSynapseDevelopSQL.png)
 
 ### Notebooks
 
-In order to run notebook cells, you first need to select your Apache Spark pool.
+Pour exécuter les cellules notebook, vous devez d’abord sélectionner votre pool Apache Spark.
 ![Notebooks](images/AzureSynapseDevelopNotebooks.png)
 
-To change languages for a single cell, you can use magic commands: %%pyspark, %%spark, %%csharp, %%sql. You can also change the default language using the **Language** dropdown menu.
+Pour changer de langue pour une seule cellule, vous pouvez utiliser les commandes magiques suivantes : %%pyspark, %%spark, %%csharp et %%sql. Vous pouvez également modifier la langue par défaut à l’aide du menu déroulant **Langue**.
 ![Change language](images/AzureSynapseDevelopNotebooks_2.png)
 
-### Dataflows
+### Flux de données
 
-To add a source to a dataflow, under **Source Settings**, click the plus button, then select **Azure Data Lake Storage Gen2** (you may need to search for this). Click **Continue**, select the data format, then on the next page, select your Linked Service.
+Pour ajouter une source à un flux de données, cliquez sur le bouton «**+**» sous **Paramètres de la source**, puis sélectionnez **Azure Data Lake Storage Gen2** (pour ce faire, vous devrez peut-être effectuer une recherche). Cliquez sur **Continuer**, sélectionnez le format de données, puis, sur la page suivante, sélectionnez votre service lié.
 ![Dataflows](images/AzureSynapseDevelopDataflow.png)
 
-### Power BI Reports
+### Rapports Power BI
 
-You can view and create Power BI reports directly in Azure Synapse. Please contact the CAE support team to validate that a linked service is setup.
+Vous pouvez afficher et créer des rapports Power BI directement dans Azure Synapse. Veuillez communiquer avec l’équipe d’assistance de l’Environnement d’analyse collaborative pour valider qu’un service lié est configuré.
 
-## ![Integrate](images/AzureSynapseIntegrateIcon.png) Integrate
+## ![Intégrer](images/AzureSynapseIntegrateIcon.png) Intégrer
 
-This is where you can create pipelines for ingesting, preparing and transforming all of your data, like in [Azure Data Factory](DataFactory.md). 
+C’est ici que vous pouvez créer des pipelines pour ingérer, préparer et transformer toutes vos données, comme dans [Azure Data Factory](DataFactory.md). 
 
-### Example: Copy Data from External Blob to Data Lake
-1. Click the plus button to add a new resource, then click on **Pipeline**.
+### Exemple : Copier les données d’un blob externe vers un lac de données
+1. Cliquez sur le bouton «**+**» pour ajouter une nouvelle ressource, puis cliquez sur **Pipeline**.
 ![Add a Resource](images/AzureSynapseIntegrate_1.png)
-2. Under **Move & transform**, drag and drop **Copy data** into the window.
+2. Sous **Déplacer et transformer**, faites glisser et déposez **Copier les données** dans la fenêtre.
 ![Drag and drop Copy data](images/AzureSynapseIntegrate_2.png)
-3. Click on the **Source** tab, then click **New** to add the source dataset (where you want to copy the data from).
+3. Cliquez sur l’onglet **Source**, puis cliquez sur **Nouveau** pour ajouter le jeu de données source (d’où vous voulez copier les données).
 ![Add source dataset](images/AzureSynapseIntegrate_3.png)
-4. Select **Azure Blob Storage**, then select the format type (CSV, Parquet, JSON, etc). Set any additional properties if relevant, then click **OK**.
-5. Click on the **Sink**, then click **New** to set the sink dataset (where you want the data to be copied to). Choose **Azure Data Lake Storage Gen2**, then select the format type. Under **Linked service**, choose your data lake and ensure that interactive authoring is enabled (see **How to Bring in Data from Linked Services** under **Data** for more info).
+4. Sélectionnez **Azure Blob Storage**, puis sélectionnez le type de format (CSV, Parquet, JSON, etc.). Définissez toute propriété supplémentaire si nécessaire, puis cliquez sur **OK**.
+5. Cliquez sur **Récepteur**, puis sur **Nouveau** pour définir le jeu de données récepteur (où vous souhaitez que les données soient copiées). Choisissez **Azure Data Lake Storage Gen2**, puis sélectionnez le type de format. Sous **Service lié**, choisissez votre lac de données et assurez-vous que la création interactive est activée (voir **Comment introduire des données à partir de services liés** sous **Données** pour de plus amples renseignements).
 
-### Debugging and Running Pipelines
-To run a pipeline in debug mode, click the **Debug** button at the top of the pipeline window. Results will appear in the **Output** tab.
+### Débogage et exécution des pipelines
+Pour exécuter un pipeline en mode débogage, cliquez sur le bouton **Déboguer** en haut de la fenêtre du pipeline. Les résultats figureront dans l’onglet **Sortie**.
 ![Debugging pipelines](images/AzureSynapseIntegrate_4.png)
 
-To run a pipeline without debugging, click the **Add trigger** button, then **Trigger now**.
+Pour exécuter un pipeline sans déboguer, cliquez sur le bouton **Ajouter un déclencheur**, puis sur **Déclencher maintenant**.
 
-When you are ready to publish your pipelines, click the **Validate all** button, then click the **Publish all** button. Note that this will publish for all users to see everything that you currently have open (pipelines, SQL scripts, notebooks, etc).
+Lorsque vous êtes prêt à publier vos pipelines, cliquez sur le bouton **Tout valider**, puis sur **Tout publier**. Il est à noter que cette publication permettra à l’ensemble des utilisateurs de voir tout ce que vous avez actuellement ouvert (pipelines, scripts SQL, notebooks, etc.).
 ![Publish pipelines](images/AzureSynapseIntegrate_5.png)
 
-## ![Monitor](images/AzureSynapseMonitorIcon.png) Monitor
+## ![Superviser](images/AzureSynapseMonitorIcon.png) Superviser
 
-From the Monitor tab, you can monitor live pipeline runs (inputs/outputs of each activity and any errors) and view historical pipeline runs, trigger runs, SQL requests, etc.
+À partir de l’onglet Superviser, vous pouvez superviser les exécutions en direct du pipeline (les entrées et les sorties de chaque activité et les éventuelles erreurs) et afficher l’historique des exécutions du pipeline, des déclencheurs, des requêtes SQL, etc.
 
-## ![Manage](images/AzureSynapseManageIcon.png) Manage
+## ![Gérer](images/AzureSynapseManageIcon.png) Gérer
 
-This is where you can:
-- Add new SQL or Apache Spark pools
-- Add new linked services
-- Grant others access to the workspace
-- Set up git integration
+C’est ici que vous pouvez :
+-	ajouter de nouveaux pools SQL ou Apache Spark;
+-	ajouter de nouveaux services liés;
+-	accorder à d’autres personnes l’accès à l’espace de travail;
+-	configurer l’intégration de Git.
 
-## Microsoft Documentation
 
-- [Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/)
-- [What is Azure Synapse Analytics?](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) 
-- [Analyse Data with Dedicated SQL Pools](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-sql-pool)
-- [Integrate with Pipelines](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-pipelines)
-- [Visualize Data with Power BI](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-visualize-power-bi)
-- [Monitor Your Synapse Workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-monitor)
+## Documentation Microsoft
 
-# Change Display Language
-See [Language](Language.md) page to find out how to change the display language.
+- [Azure Synapse Analytics](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/)
+- [Qu’est-ce qu’Azure Synapse Analytics?](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/overview-what-is) 
+- [Analyser des données avec des pools SQL dédiés](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/get-started-analyze-sql-pool)
+- [Intégrer avec des pipelines](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/get-started-pipelines)
+- [Visualiser des données avec Power BI](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/get-started-visualize-power-bi)
+- [Surveiller votre espace de travail Synapse](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/get-started-monitor)
+
+# Changer la langue d’affichage
+Consultez la page [Langue](Language.md) pour savoir comment modifier la langue d’affichage.
