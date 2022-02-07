@@ -25,15 +25,16 @@ The packages can be installed from the Databricks workspace or a cluster.
 
 1.From the main page, click **Import Library**.
 
-![Databricks]( images/Artifactory-DBricks01.png)
+![Databricks](images/Artifactory-DBricks01.png)
 
 2. Under Library Source, choose either **PyPI** or **CRAN**.
 
 3. Paste the name of the library under **Package** and the URL under **Repository**.
 
-![Databricks]( images/Artifactory-DBricks02.png)
+![Databricks](images/Artifactory-DBricks02.PNG)
 
 4. Click **Create**.
+
 **Note**: Select **Install automatically on all cluster** under **Admin settings** if you wish to install the package on all the available clusters of the workspace.
 
 ### From a cluster
@@ -46,11 +47,11 @@ The packages can be installed from the Databricks workspace or a cluster.
 
 3. Paste the name of the library under **Package** and the URL under **Repository**.
 
-![Cluster](images/Artifactory-Cluster02.png)
+![Cluster](images/Artifactory-Cluster02.PNG)
 
 4. Click **Install**. You should see the installed libraries under **Libraries**.
 
-![Cluster](images/Artifactory-Cluster03.png)
+![Cluster](images/Artifactory-Cluster03.PNG)
 
 ## Azure Machine Learning
 
@@ -58,11 +59,11 @@ To install packages on a compute instance, you can use the **Curl** command in t
 
 ```curl -O "https://jfrog.aaw.cloud.statcan.ca/artifactory/cae-generic-test/<PackageName>"```
 
-![AzureML](images/Artifactory-AzureML01.png)
+![AzureML](images/Artifactory-AzureML01.PNG)
 
 ## Azure Synapse
 
-Please the **Collaborative Analytics Environment** team to install custom packages in your Azure Synapse environment.
+Please contact the **Collaborative Analytics Environment** team to install custom packages in your Azure Synapse environment.
 
 ## Azure Cloud VM
 
@@ -93,10 +94,10 @@ Please the **Collaborative Analytics Environment** team to install custom packag
 2.	Paste the link to your CRAN file, then click **Install**
 
 
-![RShiny](images/Artifactory-RShiny02.png)
+![RShiny](images/Artifactory-RShiny02.PNG)
 
 
 3.	The packages should now be listed in your System Library.
 
-![RShiny](images/Artifactory-RShiny02.png)
+![RShiny](images/Artifactory-RShiny03.PNG)
 
