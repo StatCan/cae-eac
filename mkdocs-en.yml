@@ -51,6 +51,8 @@ nav:
   - Azure Machine Learning: AzureML.md
   - Azure Synapse:  AzureSynapse.md
   - GitHub: GitHubGettingStarted.md
+    - Getting Started: GitHubGettingStarted.md
+    - Configuration: GitHubConfiguration.md
   - R-Shiny: R-Shiny.md
   - FAQ: FAQ.md
   - Best Practices: BestPractices.md
