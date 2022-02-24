@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/AzureML/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.cd566b2a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#azure-machine-learning" class="md-skip">
+        <a href="#acces-a-azure-machine-learning" class="md-skip">
           Aller au contenu
         </a>
       
@@ -146,7 +146,7 @@
         <a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     statcan/cae-eac
@@ -191,7 +191,7 @@
       <a href="https://github.com/statcan/cae-eac/" title="Aller au dépôt" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     statcan/cae-eac
@@ -389,14 +389,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#azure-machine-learning" class="md-nav__link">
-    Azure Machine Learning
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Machine Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#acces-a-azure-machine-learning" class="md-nav__link">
     Accès à Azure Machine Learning
   </a>
@@ -436,8 +428,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#utilisation-de-la-fonction-independante-notebook-dazure-machine-learning" class="md-nav__link">
     Utilisation de la fonction indépendante notebook d’Azure Machine Learning
   </a>
@@ -463,8 +455,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#utilisation-de-databricks-connect-comme-ordinateur-a-distance" class="md-nav__link">
     Utilisation de Databricks Connect comme ordinateur à distance
   </a>
@@ -490,22 +482,10 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#demander-un-calcul" class="md-nav__link">
     Demander un calcul
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#changer-la-langue-daffichage" class="md-nav__link">
-    Changer la langue d'affichage
   </a>
   
 </li>
@@ -618,14 +598,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#azure-machine-learning" class="md-nav__link">
-    Azure Machine Learning
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Machine Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#acces-a-azure-machine-learning" class="md-nav__link">
     Accès à Azure Machine Learning
   </a>
@@ -665,8 +637,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#utilisation-de-la-fonction-independante-notebook-dazure-machine-learning" class="md-nav__link">
     Utilisation de la fonction indépendante notebook d’Azure Machine Learning
   </a>
@@ -692,8 +664,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#utilisation-de-databricks-connect-comme-ordinateur-a-distance" class="md-nav__link">
     Utilisation de Databricks Connect comme ordinateur à distance
   </a>
@@ -719,22 +691,10 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#demander-un-calcul" class="md-nav__link">
     Demander un calcul
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#changer-la-langue-daffichage" class="md-nav__link">
-    Changer la langue d'affichage
   </a>
   
 </li>
@@ -756,40 +716,55 @@
 </a>
 
 
+
   <h1>Azure Machine Learning</h1>
 
-<p><em><a href="../../en/AzureML">English</a></em></p>
-<h2 id="azure-machine-learning">Azure Machine Learning</h2>
 <p><em>Nouveau:</em> Veuillez accéder à Azure ML à partir de votre <a href="VirtualMarchine.md">machine virtuelle</a> de l'EAC.</p>
 <h3 id="acces-a-azure-machine-learning">Accès à Azure Machine Learning</h3>
 <h4 id="tableau-de-bord">Tableau de bord</h4>
-<p>Consultez la section  <a href="Dashboards.md">Tableau de bord</a> de cette documentation pour obtenir de plus amples renseignements..<br />
-1.  Cliquez sur le menu <strong>Tableau de bord</strong> du portail Azure. L’affichage par défaut pourrait déjà correspondre au tableau de bord.  </p>
-<p><img alt="Access Dashboards" src="../images/AzureML01.png" /></p>
+<p>Consultez la section  <a href="Dashboards.md">Tableau de bord</a> de cette documentation pour obtenir de plus amples renseignements..  </p>
 <ol>
-<li>Sous <strong>Machine Learning</strong> (apprentissage automatique), sélectionnez l’espace de travail Machine Learning qui a été créé pour vous. Si l’espace de travail que vous souhaitez ouvrir n’est pas répertorié, cliquez sur <strong>Plus…</strong> pour accéder à la liste complète.</li>
+<li>
+<p>Cliquez sur le menu <strong>Tableau de bord</strong> du portail Azure. L’affichage par défaut pourrait déjà correspondre au tableau de bord.  </p>
+<p><img alt="Accès au Tableau de bord" src="../images/AzureML01.png" /></p>
+</li>
+<li>
+<p>Sous <strong>Machine Learning</strong> (apprentissage automatique), sélectionnez l’espace de travail Machine Learning qui a été créé pour vous. Si l’espace de travail que vous souhaitez ouvrir n’est pas répertorié, cliquez sur <strong>Plus…</strong> pour accéder à la liste complète.</p>
+<p><img alt="Tableau de bord AzureMl" src="../images/AzureML02.png" /></p>
+</li>
 </ol>
-<p><img alt="AzureMl Dashboard" src="../images/AzureML02.png" /></p>
 <h4 id="portail-azure">Portail Azure</h4>
 <ol>
-<li>Dans la boîte de recherche du portail Azure, cherchez <strong>Machine Learning</strong>.
- <img alt="AzureML_01" src="../images/AzureML03.png" /></li>
-<li>Vous devriez voir une liste des espaces de travail Machine Learning auxquels vous avez été autorisé à accéder. Sélectionnez l’<strong>espace de travail Machine Learning</strong> auquel vous souhaitez accéder
-<img alt="AzureML_02" src="../images/AzureML04.png" />  </li>
+<li>
+<p>Dans la boîte de recherche du portail Azure, cherchez <strong>Machine Learning</strong>.</p>
+<p><img alt="boîte de recherche du portail Azure" src="../images/AzureML03.png" /></p>
+</li>
+<li>
+<p>Vous devriez voir une liste des espaces de travail Machine Learning auxquels vous avez été autorisé à accéder. Sélectionnez l’<strong>espace de travail Machine Learning</strong> auquel vous souhaitez accéder</p>
+<p><img alt="espaces de travail Machine Learning" src="../images/AzureML04.png" />  </p>
+</li>
 </ol>
 <h4 id="adresse-de-machine-learning">Adresse de Machine Learning</h4>
 <ol>
-<li>Allez sur https://ml.azure.com/, connectez-vous avec les justificatifs d’identité de votre compte d’infonuagique, puis sélectionnez l’abonnement <strong>vdl</strong> et l’<strong>espace de travail Machine Learning</strong> qui a été créé pour vous.</li>
+<li>
+<p>Allez sur <a href="https://ml.azure.com/">Machine Learning</a>, connectez-vous avec les justificatifs d’identité de votre compte d’infonuagique, puis sélectionnez l’abonnement <strong>vdl</strong> et l’<strong>espace de travail Machine Learning</strong> qui a été créé pour vous.</p>
+<p><img alt="URL AzureML" src="images/AzureMlURL.png" /></p>
+</li>
 </ol>
-<p><img alt="AzureML URL" src="images/AzureMlURL.png" /></p>
 <h4 id="pour-commencer">Pour commencer</h4>
 <ol>
-<li>À la page <strong>Vue d’ensemble</strong> de l’apprentissage automatique, cliquez sur <strong>Lancer le studio</strong>.
- <img alt="AzureML_03" src="../images/AzureML05.png" />  </li>
-<li>Utilisez le menu déroulant pour sélectionner l’abonnement <strong>vdl</strong> et l’<strong>espace de travail Machine Learning</strong> auquel vous souhaitez accéder, puis cliquez sur Démarrer.
- <img alt="AzureML_04" src="images/AzureMlURL.png" /></li>
-<li>Une fois dans votre espace de travail Machine Learning, vous pouvez former, déployer et gérer des modèles d’apprentissage automatique, utiliser AutoML et utiliser des pipelines. <a href="https://docs.microsoft.com/fr-fr/azure/machine-learning/">Voir le Guide de démarrage</a> rapide pour obtenir de plus amples renseignements.
-<img alt="AzureML_05" src="../images/AzureML06.png" />  </li>
+<li>
+<p>À la page <strong>Vue d’ensemble</strong> de l’apprentissage automatique, cliquez sur <strong>Lancer le studio</strong>.</p>
+<p><img alt="bouton Lancer le studio" src="../images/AzureML05.png" />  </p>
+</li>
+<li>
+<p>Utilisez le menu déroulant pour sélectionner l’abonnement <strong>vdl</strong> et l’<strong>espace de travail Machine Learning</strong> auquel vous souhaitez accéder, puis cliquez sur Démarrer.</p>
+<p><img alt="sélectionner l’abonnement et l’espace de travail" src="images/AzureMlURL.png" /></p>
+</li>
+<li>
+<p>Une fois dans votre espace de travail Machine Learning, vous pouvez former, déployer et gérer des modèles d’apprentissage automatique, utiliser AutoML et utiliser des pipelines. <a href="https://docs.microsoft.com/fr-fr/azure/machine-learning/">Voir le Guide de démarrage</a> rapide pour obtenir de plus amples renseignements.</p>
+<p><img alt="studio Azure Machine Learning" src="../images/AzureML06.png" />  </p>
+</li>
 </ol>
 <h3 id="utilisation-de-la-fonction-independante-notebook-dazure-machine-learning">Utilisation de la fonction indépendante notebook d’Azure Machine Learning</h3>
 <h4 id="exigences">Exigences</h4>
@@ -797,48 +772,60 @@
 <strong>Note</strong> : Si une instance de calcul n’a pas été créée pour vous, veuillez communiquer avec l’équipe de soutien au moyen de <a href="https://cae-eac.slack.com/">Slack</a>.</p>
 <h4 id="etapes">Étapes</h4>
 <ol>
-<li>Sous <strong>Notebooks</strong>, créez un nouveau notebook dans votre répertoire d’utilisateur. Vous pouvez ensuite saisir le code à exécuter.
- <img alt="AzureML_06" src="../images/AzureML07.png" /></li>
-<li>Sélectionnez l’<strong>instance de calcul</strong> qui vous est attribuée.
- <img alt="AzureML_07" src="../images/AzureML08.png" /></li>
-<li>Cliquez sur le bouton <strong>Démarrer le calcul et exécuter toutes les cellules</strong> pour exécuter votre code.
-<img alt="AzureML_08" src="../images/AzureML09.png" /></li>
+<li>
+<p>Sous <strong>Notebooks</strong>, créez un nouveau notebook dans votre répertoire d’utilisateur. Vous pouvez ensuite saisir le code à exécuter.</p>
+<p><img alt="créez un nouveau notebook" src="../images/AzureML07.png" /></p>
+</li>
+<li>
+<p>Sélectionnez l’<strong>instance de calcul</strong> qui vous est attribuée.</p>
+<p><img alt="Sélectionnez l’instance de calcul" src="../images/AzureML08.png" /></p>
+</li>
+<li>
+<p>Cliquez sur le bouton <strong>Démarrer le calcul et exécuter toutes les cellules</strong> pour exécuter votre code.</p>
+<p><img alt="bouton exécuter toutes les cellules" src="../images/AzureML09.png" /></p>
+</li>
 </ol>
 <h3 id="utilisation-de-databricks-connect-comme-ordinateur-a-distance">Utilisation de Databricks Connect comme ordinateur à distance</h3>
 <p><strong>Avertissement</strong> : Veuillez noter que la configuration de Databricks Connect présentée ci-dessous est en cours de révision et qu’elle changera probablement dans un avenir proche.</p>
 <h4 id="exigences_1">Exigences</h4>
-<p>Une instance de calcul dans Azure Machine Learning est nécessaire. Vous devriez la voir sous <strong>Calculer --&gt; Instances de calcul</strong>.
-<strong>Note</strong> : Si une instance de calcul n’a pas été créée pour vous, veuillez communiquer avec l’équipe de soutien au moyen de <a href="https://cae-eac.slack.com/">Slack</a>.</p>
+<p>Une instance de calcul dans Azure Machine Learning est nécessaire. Vous devriez la voir sous <strong>Calculer --&gt; Instances de calcul</strong>.</p>
+<p><strong>Note</strong> : Si une instance de calcul n’a pas été créée pour vous, veuillez communiquer avec l’équipe de soutien au moyen de <a href="https://cae-eac.slack.com/">Slack</a>.</p>
 <h4 id="etapes_1">Étapes</h4>
 <ol>
-<li>Sous <strong>Notebooks</strong>, ouvrez <strong>Terminal</strong>.
- <img alt="AzureML_10" src="../images/AzureML10.png" /></li>
-<li>Sélectionnez votre <strong>instance de calcul</strong> dans le menu déroulant à côté de <strong>Calculer</strong>.</li>
+<li>
+<p>Sous <strong>Notebooks</strong>, ouvrez <strong>Terminal</strong>.</p>
+<p><img alt="ouvrez Terminal" src="../images/AzureML10.png" /></p>
+</li>
+<li>
+<p>Sélectionnez votre <strong>instance de calcul</strong> dans le menu déroulant à côté de <strong>Calculer</strong>.</p>
+</li>
 <li>
 <p>Exécutez le code à partir de la page <a href="https://github.com/StatCan/cae-eac/blob/master/Examples/AzureML/Databricks-Connect-Setup.txt">Databricks Connect Setup</a> dans le terminal tout en suivant les directives pour continuer selon les besoins. Ce code installe Python 3.7 et met en place un nouveau noyau pour les notebooks d’Azure Machine Learning.</p>
 <p>Lorsque vous y êtes invité, entrez les valeurs suivantes pour configurer Databricks Connect :</p>
-<p><strong>Hôte</strong> : l’URL de la page <strong>Vue d’ensemble</strong> pour votre espace de travail Databricks
- <img alt="AzureML_11" src="../images/AzureML11.png" /></p>
+<p><strong>Hôte</strong> : l’URL de la page <strong>Vue d’ensemble</strong> pour votre espace de travail Databricks</p>
+<p><img alt="URL Databrick Connect" src="../images/AzureML11.png" /></p>
 <p><strong>Jeton</strong> : le <a href="https://docs.microsoft.com/fr-ca/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token">jeton d’accès personnel</a> généré dans les paramètres utilisateur de votre espace de travail Databricks</p>
-<p><strong>ID de grappe</strong> : la valeur indiquée sous <strong>Instance de calcul --&gt; Options avancées--&gt; Étiquettes</strong> dans votre espace de travail Databricks
- <img alt="DatabrickConnectClusterID" src="../images/DatabrickConnectClusterID.PNG" /></p>
-<p><strong>ID de l’organisation</strong> : la partie de l’URL de Databricks qui se trouve après <strong>.net/?o=</strong><br />
-<img alt="DatabrickConnectOrgID" src="../images/DatabrickConnectOrgID.PNG" /></p>
+<p><strong>ID de grappe</strong> : la valeur indiquée sous <strong>Instance de calcul --&gt; Options avancées--&gt; Étiquettes</strong> dans votre espace de travail Databricks</p>
+<p><img alt="ID de grappe" src="../images/DatabrickConnectClusterID.PNG" /></p>
+<p><strong>ID de l’organisation</strong> : la partie de l’URL de Databricks qui se trouve après <strong>.net/?o=</strong>  </p>
+<p><img alt="ID de l’organisation" src="../images/DatabrickConnectOrgID.PNG" /></p>
 <p><strong>Port</strong> : conserver la valeur existante</p>
 </li>
 <li>
 <p>Exécutez le code suivant dans le terminal pour tester la connexion avec Azure Databricks.
- <code>databricks-connect test (databricks - test de connexion)</code></p>
+    <code>databricks-connect test (databricks - test de connexion)</code></p>
 </li>
-<li>Créez un nouveau notebook avec l’espace de travail Azure Machine Learning et sélectionnez noyau Python 3. La version Python 3.7.9 devrait maintenant s’afficher.
- <img alt="AzureML_14" src="../images/AzureML_13.png" /></li>
-<li>Databricks Connect devrait maintenant être configuré! Essayez le code échantillon Databricks Connect dans le bloc-notes, en remplaçant public-data/incoming/1test.txt par le chemin d’accès à un fichier dans votre conteneur de lac de données.</li>
+<li>
+<p>Créez un nouveau notebook avec l’espace de travail Azure Machine Learning et sélectionnez noyau Python 3. La version Python 3.7.9 devrait maintenant s’afficher.</p>
+<p><img alt="sélectionnez Python 3" src="../images/AzureML_13.png" /></p>
+</li>
+<li>
+<p>Databricks Connect devrait maintenant être configuré! Essayez le code échantillon Databricks Connect dans le bloc-notes, en remplaçant public-data/incoming/1test.txt par le chemin d’accès à un fichier dans votre conteneur de lac de données.</p>
+</li>
 </ol>
 <h2 id="demander-un-calcul">Demander un calcul</h2>
-<p>Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal <a href="https://cae-eac.slack.com">slack</a> pour demander un calcul dans Azure Machine Learning. Vous recevrez l'erreur suivante si vous procédez à la création par vous-même:
-<img alt="Erreur Creation Calcul" src="../images/AzureMLErreurCreationCalcul.png" /></p>
-<h2 id="changer-la-langue-daffichage">Changer la langue d'affichage</h2>
-<p>Voir la page <a href="../Langue/">Langue</a> pour savoir comment changer la langue d'affichage.</p>
+<p>Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal <a href="https://cae-eac.slack.com">slack</a> pour demander un calcul dans Azure Machine Learning. Vous recevrez l'erreur suivante si vous procédez à la création par vous-même:</p>
+<p><img alt="Erreur Creation Calcul" src="../images/AzureMLErreurCreationCalcul.png" /></p>
 
               
             </article>
@@ -908,7 +895,7 @@
       
     
     <a href="https://github.com/statcan/cae-eac" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
     </a>
   
     
@@ -917,7 +904,7 @@
       
     
     <a href="https://cae-eac.slack.com" target="_blank" rel="noopener" title="cae-eac.slack.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
     </a>
   
 </div>
@@ -930,10 +917,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.01de222e.min.js"></script>
+      <script src="../assets/javascripts/bundle.8aa65030.min.js"></script>
       
     
   </body>

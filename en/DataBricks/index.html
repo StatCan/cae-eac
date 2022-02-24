@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://statcan.github.io/cae-eac/en/DataBricks/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.cd566b2a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#azure-databricks" class="md-skip">
+        <a href="#accessing-databricks" class="md-skip">
           Skip to content
         </a>
       
@@ -146,7 +146,7 @@
         <a href="https://github.com/statcan/cae-eac/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     statcan/cae-eac
@@ -191,7 +191,7 @@
       <a href="https://github.com/statcan/cae-eac/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     statcan/cae-eac
@@ -329,14 +329,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#azure-databricks" class="md-nav__link">
-    Azure Databricks
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Databricks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#accessing-databricks" class="md-nav__link">
     Accessing Databricks
   </a>
@@ -369,78 +361,78 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     Getting Started
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#creating-a-cluster" class="md-nav__link">
     Creating a Cluster
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#creating-a-notebook" class="md-nav__link">
     Creating a Notebook
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#sharing-a-databricks-notebook" class="md-nav__link">
     Sharing a Databricks Notebook
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#ingesting-data-into-databricks" class="md-nav__link">
     Ingesting Data into Databricks
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#adding-data-to-databricks" class="md-nav__link">
     Adding Data to Databricks
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#reading-mounted-files" class="md-nav__link">
     Reading Mounted Files
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#changing-notebook-default-language" class="md-nav__link">
     Changing Notebook Default Language
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#mixing-notebook-languages" class="md-nav__link">
     Mixing Notebook Languages
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#starting-a-databricks-cluster" class="md-nav__link">
     Starting a Databricks Cluster
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#databricks-connect-vm-setup" class="md-nav__link">
     Databricks Connect VM Setup
   </a>
@@ -459,8 +451,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#installing-libraries" class="md-nav__link">
     Installing Libraries
   </a>
@@ -486,22 +478,10 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#microsoft-documentation" class="md-nav__link">
-    Microsoft Documentation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#change-display-language" class="md-nav__link">
-    Change Display Language
+  <a href="#microsoft-documentation" class="md-nav__link">
+    Microsoft Documentation
   </a>
   
 </li>
@@ -674,14 +654,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#azure-databricks" class="md-nav__link">
-    Azure Databricks
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Databricks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#accessing-databricks" class="md-nav__link">
     Accessing Databricks
   </a>
@@ -714,78 +686,78 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     Getting Started
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#creating-a-cluster" class="md-nav__link">
     Creating a Cluster
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#creating-a-notebook" class="md-nav__link">
     Creating a Notebook
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#sharing-a-databricks-notebook" class="md-nav__link">
     Sharing a Databricks Notebook
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#ingesting-data-into-databricks" class="md-nav__link">
     Ingesting Data into Databricks
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#adding-data-to-databricks" class="md-nav__link">
     Adding Data to Databricks
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#reading-mounted-files" class="md-nav__link">
     Reading Mounted Files
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#changing-notebook-default-language" class="md-nav__link">
     Changing Notebook Default Language
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#mixing-notebook-languages" class="md-nav__link">
     Mixing Notebook Languages
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#starting-a-databricks-cluster" class="md-nav__link">
     Starting a Databricks Cluster
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#databricks-connect-vm-setup" class="md-nav__link">
     Databricks Connect VM Setup
   </a>
@@ -804,8 +776,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#installing-libraries" class="md-nav__link">
     Installing Libraries
   </a>
@@ -831,22 +803,10 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#microsoft-documentation" class="md-nav__link">
-    Microsoft Documentation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#change-display-language" class="md-nav__link">
-    Change Display Language
+  <a href="#microsoft-documentation" class="md-nav__link">
+    Microsoft Documentation
   </a>
   
 </li>
@@ -868,29 +828,32 @@
 </a>
 
 
+
   <h1>Azure Databricks</h1>
 
-<p><em><a href="../../fr/DataBricks">Français</a></em></p>
-<h2 id="azure-databricks">Azure Databricks</h2>
 <h3 id="accessing-databricks">Accessing Databricks</h3>
 <h4 id="dashboard">Dashboard</h4>
 <p>See the <a href="../Dashboards/">Dashboard section</a> of this documentation from more information.<br />
-1. Click on the Dashboard menu from the Azure Portal.<br />
-<img alt="Dashboard" src="../images/DataFactoryDashboard.png" />  </p>
+1. Click on the Dashboard menu from the Azure Portal.  </p>
+<div class="codehilite"><pre><span></span><code><span class="err">!</span><span class="o">[</span><span class="n">Dashboard</span><span class="o">]</span><span class="p">(</span><span class="n">images</span><span class="o">/</span><span class="n">DataFactoryDashboard</span><span class="p">.</span><span class="n">png</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
 <h4 id="databricks-url">Databricks URL</h4>
 <ol>
-<li>Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.<br />
-<img alt="Databricks URL" src="../images/DatabricksSelect.png" /></li>
+<li>
+<p>Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  </p>
+<p><img alt="Databricks URL" src="../images/DatabricksSelect.png" /></p>
+</li>
 </ol>
 <h4 id="azure-portal">Azure Portal</h4>
 <ol>
 <li>
-<p>In the Azure Portal Search box, search for <strong>Databricks</strong>.<br />
-<img alt="Azure Portal Search" src="../images/DatabricksPortalSearch.png" />  </p>
+<p>In the Azure Portal Search box, search for <strong>Databricks</strong>.  </p>
+<p><img alt="Azure Portal Search" src="../images/DatabricksPortalSearch.png" />  </p>
 </li>
 <li>
-<p>You should then see a list of the Databricks workspaces you were given permission to access.<br />
-<img alt="DataFactory List" src="../images/DatabricksPortalList.png" /></p>
+<p>You should then see a list of the Databricks workspaces you were given permission to access.  </p>
+<p><img alt="Databricks workspaces List" src="../images/DatabricksPortalList.png" /></p>
 </li>
 </ol>
 <h3 id="getting-started">Getting Started</h3>
@@ -904,8 +867,8 @@
 <p>One way to create a notebook is to click on the <strong>New Notebook</strong> link from the main Databricks page. You can then provide a name for your notebook and select the default notebook language.</p>
 </li>
 <li>
-<p>From the available list of clusters, select the cluster to which you wish to attach your notebook.
-<img alt="Start a notebook" src="../images/DataBrickCreateNotebook.png" /></p>
+<p>From the available list of clusters, select the cluster to which you wish to attach your notebook.</p>
+<p><img alt="Start a notebook" src="../images/DataBrickCreateNotebook.png" /></p>
 </li>
 <li>
 <p>To start or change a cluster from within a notebook, open the notebook and click on the cluster drop down found at the top right of the notebook. You can then start the cluster or detach it and attach a different one.  </p>
@@ -930,8 +893,8 @@
 </code></pre></div>
 
 <h3 id="changing-notebook-default-language">Changing Notebook Default Language</h3>
-<p><img alt="Change notebook languange" src="../images/changelanguage.png" />
-<img alt="and then" src="../images/changelanguage2.png" /></p>
+<p><img alt="Change notebook languange" src="../images/changelanguage.png" /></p>
+<p><img alt="and then" src="../images/changelanguage2.png" /></p>
 <h3 id="mixing-notebook-languages">Mixing Notebook Languages</h3>
 <p>You can override the default language by specifying the language magic command % at the beginning of a cell. The supported magic commands are: %python, %r, %scala, and %sql.</p>
 <p><em>Note:</em><br />
@@ -942,18 +905,16 @@ When you invoke a language magic command, the command is dispatched to the REPL 
 %md: Allows you to include various types of documentation, including text, images, and mathematical formulas and equations.  </p>
 <h3 id="starting-a-databricks-cluster">Starting a Databricks Cluster</h3>
 <ol>
-<li>Click on the cluster drop-down list.</li>
-<li>Select a cluster from the list.</li>
-<li>
-<p>Click on the <strong>Start Cluster</strong> link.<br />
-<img alt="Where to start a Databricks cluster" src="../images/DataBricksStartCluster.png" />  </p>
-</li>
 <li>
 <p>Click on the cluster drop-down list.</p>
 </li>
-<li>Select a cluster from the list.</li>
-<li>Click on the <strong>Start Cluster</strong> link.<br />
-<img alt="Where to start a Databricks cluster" src="../images/DataBricksStartCluster.png" />  </li>
+<li>
+<p>Select a cluster from the list.</p>
+</li>
+<li>
+<p>Click on the <strong>Start Cluster</strong> link.  </p>
+<p><img alt="Where to start a Databricks cluster" src="../images/DataBricksStartCluster.png" />  </p>
+</li>
 </ol>
 <h3 id="databricks-connect-vm-setup">Databricks Connect VM Setup</h3>
 <p>Databricks connect is a method for accessing a Databricks environment without having to connect through the Azure Portal or the Databricks UI. It allows you to use other IDEs to work on Databricks code.</p>
@@ -975,7 +936,7 @@ When you invoke a language magic command, the command is dispatched to the REPL 
 <ol>
 <li>
 <p>In a command prompt, type <strong>databricks-connect configure</strong>, then enter the following values when prompted:</p>
-</li>
+<ul>
 <li>
 <p><strong>Databricks Host:</strong> <code>https://canadacentral.azuredatabricks.net</code></p>
 </li>
@@ -983,23 +944,29 @@ When you invoke a language magic command, the command is dispatched to the REPL 
 <p><strong>Databricks Token:</strong> a <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token">personal access token</a> generated in your Databricks Workspace User Settings</p>
 </li>
 <li>
-<p><strong>Cluster ID:</strong> the value found under <strong>Cluster --&gt; Advanced Options --&gt; Tags</strong> in your Databricks workspace.
-<img alt="DatabrickConnectClusterID" src="../images/DatabrickConnectClusterID.PNG" /></p>
+<p><strong>Cluster ID:</strong> the value found under <strong>Cluster --&gt; Advanced Options --&gt; Tags</strong> in your Databricks workspace.</p>
+<p><img alt="DatabrickConnectClusterID" src="../images/DatabrickConnectClusterID.PNG" /></p>
 </li>
 <li>
-<p><strong>Org ID:</strong> the part of the Databricks URL found after <strong>.net/?o=</strong>
-<img alt="DatabrickConnectOrgID" src="../images/DatabrickConnectOrgID.PNG" /></p>
+<p><strong>Org ID:</strong> the part of the Databricks URL found after <strong>.net/?o=</strong></p>
+<p><img alt="DatabrickConnectOrgID" src="../images/DatabrickConnectOrgID.PNG" /></p>
 </li>
 <li>
 <p><strong>Port:</strong> keep the existing value</p>
 </li>
+</ul>
+</li>
 <li>
 <p>Change the <code>SPARK_HOME</code> enviroment variable to <code>c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark</code>, and restart your VM. (Please ask for help via a <a href="https://cae-eac.slack.com">Slack</a> message if you do not know how to change environment variables.)</p>
 </li>
-<li>Test the connectivity to Azure Databricks by running <strong>databricks-connect test</strong> in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.</li>
+<li>
+<p>Test the connectivity to Azure Databricks by running <strong>databricks-connect test</strong> in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.</p>
+</li>
 </ol>
 <h4 id="troubleshooting">Troubleshooting :</h4>
-<p>1-If you are using databricks connect on windows and you get an error saying: <em>Cannot find winutils.exe</em> please refers to https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows.</p>
+<ul>
+<li>If you are using databricks connect on windows and you get an error saying: <em>Cannot find winutils.exe</em> please refer to <a href="https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#cannot-find-winutilsexe-on-windows">the Databricks documentation on the error</a>.</li>
+</ul>
 <h3 id="installing-libraries">Installing Libraries</h3>
 <h4 id="databricks-cluster">Databricks Cluster</h4>
 <p>Please contact the <a href="https://cae-eac.slack.com">slack</a> channel to have the support team install these libraries for you.</p>
@@ -1022,8 +989,6 @@ When you invoke a language magic command, the command is dispatched to the REPL 
 <li><a href="https://docs.microsoft.com/en-us/azure/databricks/notebooks/notebooks-python-libraries">Install Libraries in Current Notebook Session</a>  </li>
 <li><a href="https://docs.microsoft.com/en-us/azure/databricks/libraries#:~:text=Azure%20Databricks%20supports%20three%20library,its%20path%20in%20the%20workspace">Library Management for Admins</a>  </li>
 </ul>
-<h2 id="change-display-language">Change Display Language</h2>
-<p>See <a href="../Language/">Language</a> page to find out how to change the display language.</p>
 
               
             </article>
@@ -1093,7 +1058,7 @@ When you invoke a language magic command, the command is dispatched to the REPL 
       
     
     <a href="https://github.com/statcan/cae-eac" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
     </a>
   
     
@@ -1102,7 +1067,7 @@ When you invoke a language magic command, the command is dispatched to the REPL 
       
     
     <a href="https://cae-eac.slack.com" target="_blank" rel="noopener" title="cae-eac.slack.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
     </a>
   
 </div>
@@ -1115,10 +1080,10 @@ When you invoke a language magic command, the command is dispatched to the REPL 
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.01de222e.min.js"></script>
+      <script src="../assets/javascripts/bundle.8aa65030.min.js"></script>
       
     
   </body>
