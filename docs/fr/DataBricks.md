@@ -1,6 +1,3 @@
-_[English](../../en/DataBricks)_
-# Azure Databricks
-
 ## Accès à Databricks
 
 ### Tableau de bord
@@ -8,28 +5,28 @@ _[English](../../en/DataBricks)_
 Consultez la [section Tableau de bord](Dashboards.md) de cette documentation pour obtenir de plus amples renseignements.
 
 1. Cliquez sur le menu Tableau de bord dans le portail Azure.
-![Dashboard](images/DashboardBrowseAll.png)
+
+    ![Tableau de bord](images/DashboardBrowseAll.png)
 
 ### Adresse URL de Databricks
 
-1.  Rendez-vous au site https://canadacentral.azuredatabricks.net/, ouvrez une session en utilisant vos justificatifs d'identité du compte infonuagique et sélectionnez l'espace de travail Databricks qui a été créé pour vous.
+1.  Rendez-vous au site [https://canadacentral.azuredatabricks.net/](https://canadacentral.azuredatabricks.net/), ouvrez une session en utilisant vos justificatifs d'identité du compte infonuagique et sélectionnez l'espace de travail Databricks qui a été créé pour vous.
 
- ![Databricks URL](images/DatabricksSelect.png)
+    ![URL Databricks](images/DatabricksSelect.png)
 
 ### Portail Azure
 
 1.  Dans la boîte de recherche du portail Azure, recherchez **Databricks**.
 
- ![Azure Portal Search](images/DatabricksPortalSearch.PNG)
+    ![boîte de recherche du portail Azure](images/DatabricksPortalSearch.PNG)
 
 2.  Vous devriez alors voir une liste des espaces de travail Databricks auxquels vous pouvez accéder.
 
- ![DataFactory List](images/DatabricksPortalList.png)
+    ![liste des espaces de travail Databricks](images/DatabricksPortalList.png)
 
 ## Commencer
 
 Une fois dans Databricks, vous pouvez créer un carnet ou ouvrir un carnet existant. Pour plus d'information, veuillez consulter le processus à suivre pour [accéder à Databricks pour la première fois](https://docs.microsoft.com/fr-ca/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal?tabs=azure-portal#run-a-spark-sqljob).
-
 
 ## Création d'un cluster
 
@@ -42,7 +39,8 @@ Si aucun cluster n'a été créé pour vous ou si vous avez besoin d'apporter de
 -   Une façon de créer un carnet consiste à cliquer sur l'option **Nouveau carnet** depuis la page principale de Databricks. Vous pouvez ensuite nommer votre carnet et choisir le langage par défaut.
 
 -   Dans le champ « Grappe », sélectionnez parmis la liste proposée le cluster auquel vous souhaitez attacher votre carnet.
-   ![Start a notebook](images/DataBrickCreateNotebook.png)
+
+       ![créer un carnet](images/DataBrickCreateNotebook.png)
 
 -   Pour démarrer un cluster ou le modifier à partir d'un carnet, ouvrez le carnet et, dans le coin supérieur droit, cliquez sur le menu déroulant pour cluster. Vous pourrez alors démarrer le cluster ou le détacher et en attacher un autre.
 
@@ -52,7 +50,7 @@ Pour partager un carnet ou inviter d'autres collaborateurs, depuis le menu Espa
 
 **Note :** Pour ajouter un utilisateur à l'espace de travail Databricks, veuillez envoyer un message [Slack](https://cae-eac.slack.com).
 
-![How to share a Databricks notebook](images/DataBricksShareNotebook.png)
+![partager un carnet Databricks](images/DataBricksShareNotebook.png)
 
 ## Ingestion de données dans Databricks
 
@@ -80,6 +78,7 @@ display(testData)
 ## Modification du langage par défaut dans un carnet
 
 ![Changer le langage du carnet ](images/changelanguage.png)
+
 ![apres](images/changelanguage2.png)
 
 ## Utilisation de plusieurs langages dans un carnet
@@ -106,7 +105,7 @@ Les carnets prennent également en charge quelques commandes spéciales auxilia
 
 3.  Cliquez sur le bouton **Début** pour démarrer le cluster.
 
-4.  ![Where to start a Databricks cluster](images/DataBricksStartCluter.png)
+    ![Où démarrer le cluster Databricks](images/DataBricksStartCluter.png)
 
 ## Configuration de Databricks Connect sur une machine virtuelle
 Databricks connect permet l'accès à un environnement Databricks sans avoir besoin de se connecter via le portail Azure ou l'IU Databricks. Il permet d'utiliser d'autres EDI pour travailler du code Databricks.
@@ -116,36 +115,41 @@ Voici les étapes pour installer et tester Databricks Connect sur votre machine 
 1. Il y a un conflit entre Databricks Connect et l'installation Pyspark qui se trouve sur les images Data Science Virtual Machine. Par défaut, cette installation de Pyspark se trouve dans `C:\dsvm\tools\spark-2.4.4-bin-hadoop2.7`. Veuillez supprimer ou déplacer ce dossier afin d'installer Databricks Connect.
 
 2. Avant d'installer Databricks Connect, créez un environment conda. Pour ce faire, ouvrez une invite de commandes et executéz les commandes suivantes:
-```
+    ```
     conda create --name dbconnect python=3.7
     conda activate dbconnect
     type pip install -U databricks-connect==X.Y.*
-```
+    ```
 **REMARQUE:** Remplacez **X** et **Y** avec le numéro de version de votre cluster Databricks. Vous pouvez trouvez cette valeur en ouvrant l'espace de travail Databricks du portail Azure. Cliquez sur **Clusters** dans le menu à gauche, et notez la version **Runtime** pour votre cluster.
 
 3. Dans une invite de commandes, entrez **databricks-connect configure**, et entez les valeurs suivantes quand demandées:
 
-* **Hôte Databricks:** `https://canadacentral.azuredatabricks.net`
+    - **Hôte Databricks:** `https://canadacentral.azuredatabricks.net`
 
-* **Jeton** : le [jeton d’accès personnel](https://docs.microsoft.com/fr-ca/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token) généré dans les paramètres utilisateur de votre espace de travail Databricks
+    - **Jeton** : le [jeton d’accès personnel](https://docs.microsoft.com/fr-ca/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token) généré dans les paramètres utilisateur de votre espace de travail Databricks
 
-* **ID du cluster** : la valeur indiquée sous **Instance de calcul --> Options avancées--> Étiquettes** dans votre espace de travail Databricks
-![DatabrickConnectClusterID](images/DatabrickConnectClusterID.PNG)
+    - **ID du cluster** : la valeur indiquée sous **Instance de calcul --> Options avancées--> Étiquettes** dans votre espace de travail Databricks
 
-* **ID de l’organisation** : la partie de l’URL de Databricks qui se trouve après **.net/?o=**  
-![DatabrickConnectOrgID](images/DatabrickConnectOrgID.PNG)
+        ![ID du cluster Databricks Connect](images/DatabrickConnectClusterID.PNG)
 
-* **Port** : conserver la valeur existante
+    - **ID de l’organisation** : la partie de l’URL de Databricks qui se trouve après **.net/?o=**  
+
+        ![ID de l’organisation Databricks Connect](images/DatabrickConnectOrgID.PNG)
+
+    - **Port** : conserver la valeur existante
 
 4. Changez la valeur de la variable d'environnement `SPARK_HOME` à `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, et redémarrez votre machine virtuelle. (Veuillez demander de l'aide via un message [Slack](https://cae-eac.slack.com) si vous ne savez pas comment changer des variables d'environnement.)
+
 5. Testez la connectivité avec Azure Databricks en exécutant **databricks-connect test** dans une invite de commandes. Si votre cluster Databricks est arrêté quand vous commencez ce test, vous recevrez des messages d'avertissement jusqu'à ce qu'il ait démarré, ce qui peut prendre du temps.
 
 ### Troubleshooting :
 1- Si vous utilisez databricks connect sur windows vous pouvez avoir cette erreur : *Cannot find winutils.exe*, Dans ce cas referez-vous a  https://docs.microsoft.com/en-us/azure/databricks/dev-toolsdatabricks-connect#cannot-find-winutilsexe-on-windows
 
 ## Installation de librairies
+
 ### Cluster Databricks
-Veuillez contacter le canal [slack] (https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les librairies pour vous.
+Veuillez contacter le canal [Slack](https://cae-eac.slack.com) pour que l'équipe d'assistance puisse installer les librairies pour vous.
+
 ### Carnet
 Veuillez utiliser les commandes suivantes pour installer une librairie dans une session de carnet.
 
@@ -162,14 +166,8 @@ install.packages("library")
 ## Documentation Microsoft
 
 -   [Accéder à Databricks pour la première fois](https://docs.microsoft.com/fr-ca/azure/databricks/scenarios/quickstart-create-databricks-workspace-portal)
-
 -   [En savoir plus sur Databricks](https://azure.microsoft.com/fr-ca/resources/videos/connect-2017-introduction-to-azure-databricks/)
     (en anglais seulement)
 - [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect.html) (en anglais seulement)
-
 -   [Installer des bibliothèques dans la session active d'un carnet](https://docs.microsoft.com/fr-ca/azure/databricks/notebooks/notebooks-python-libraries)
-
 -   [Gestion des bibliothèques pour les administrateurs](https://docs.microsoft.com/frca/azure/databricks/libraries)
-
-# Changer la langue d'affichage
-Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.
