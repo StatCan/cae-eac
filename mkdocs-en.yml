@@ -50,9 +50,9 @@ nav:
   - Azure SQL Database: AzureSQL.md
   - Azure Machine Learning: AzureML.md
   - Azure Synapse:  AzureSynapse.md
+  - GitHub: GitHubGettingStarted.md
   - R-Shiny: R-Shiny.md
   - FAQ: FAQ.md
   - Best Practices: BestPractices.md
-
   - Language: Language.md
 
