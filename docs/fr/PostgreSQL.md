@@ -1,14 +1,9 @@
 _[English](../../fr/PostgreSQL)_
-# Base de données Azure PostgreSQL
-Une base de données Azure PostgreSQL peut être créée à l'avance si vous en avez besoin pour votre projet.
-
-**Rappel**: Les bases de données Azure PostgreSQL de l'Environnement d'Analyse Collaborative (EAC) sont seulement disponibles à partir de l'environnement infonuagique de l'EAC. Vous ne pouvez y accéder à partir des centres de données du gouvernement du Canada.
-
-
 ## Accès à une base de données Azure PostgreSQL
 
+
 ### Azure Data Factory
-On peut créer un service lié dans Azure Data Factory. Configurez le service lié pour se connecter via le runtime d'intégration auto-hébergé et entrez le nom d'utilisateur et le mot de passe. 
+On peut créer un service lié dans Azure Data Factory.
 Le nom d'utilisateur est votre **compte cloud** ou groupe AD si l'accès a été donné à un groupe auquel vous appartenez, suivi du nom du serveur.
 Le mot de passe est un jeton d'accès d'Azure AD tel que décrit ci-dessous au point 6 de la section pgAdmin
 

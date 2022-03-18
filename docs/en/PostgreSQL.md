@@ -1,14 +1,9 @@
 _[Français](../../fr)_
-# Azure PostgreSQL Database
-An Azure Postgres Database can be setup in advance if your project requires one.
-
-**Reminder:** The CAE Azure PostgreSQL Databases are only accessible from inside the CAE cloud environment. They are not accessible from any of the Government of Canada Data Centres.
-
 ## Accessing Azure PostgreSQL Database
 
 
 ### Azure Data Factory
-A linked service can be setup inside Azure Data Factory. Configure the linked service to connect via the self-hosted integration runtime and provide username and password.
+A linked service can be setup inside Azure Data Factory.
 Username is **Cloud account username** or AD group name if access was granted to a AD group, followed by the server name.
 Password is an Azure AD access Token as described below in step 6 of pgAdmin section
 
