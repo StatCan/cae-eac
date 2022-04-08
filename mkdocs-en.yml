@@ -54,6 +54,7 @@ nav:
       - Getting Started: GitHubGettingStarted.md
       - Configuration: GitHubConfiguration.md
   - R-Shiny: R-Shiny.md
+  - Delta Lake: DeltaLake.md
   - FAQ: FAQ.md
   - Best Practices: BestPractices.md
   - Language: Language.md
