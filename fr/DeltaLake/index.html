@@ -17,7 +17,7 @@
     
     
       
-        <title>DeltaLake - Statistique Canada - Environnement d’Analyse Collaborative (EAC)</title>
+        <title>Delta Lake - Statistique Canada - Environnement d’Analyse Collaborative (EAC)</title>
       
     
     
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DeltaLake
+              Delta Lake
             
           </span>
         </div>
@@ -480,6 +480,201 @@
 
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Delta Lake
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Delta Lake
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-microsoft" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documents-officielle" class="md-nav__link">
+    Documents Officielle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comment-fonctionne-le-delta-lake" class="md-nav__link">
+    Comment fonctionne le Delta Lake
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quand-utiliser-delta-lake" class="md-nav__link">
+    Quand utiliser Delta Lake
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deplacement-dans-le-temps" class="md-nav__link">
+    Déplacement dans le temps
+  </a>
+  
+    <nav class="md-nav" aria-label="Déplacement dans le temps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suppression-des-anciens-fichiers-de-donnees" class="md-nav__link">
+    Suppression des anciens fichiers de données
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revenir-a-une-version-anterieure" class="md-nav__link">
+    Revenir à Une Version Antérieure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documents-officiels" class="md-nav__link">
+    Documents officiels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-de-delta-lake-dans-databricks" class="md-nav__link">
+    Utilisation de Delta Lake dans Databricks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecrire-au-format-delta" class="md-nav__link">
+    écrire au format delta
+  </a>
+  
+    <nav class="md-nav" aria-label="écrire au format delta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-microsoft_1" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-de-delta-dans-azure-synapse" class="md-nav__link">
+    Utilisation de Delta dans Azure Synapse
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation de Delta dans Azure Synapse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-microsoft_2" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-de-delta-lake-dans-data-factory" class="md-nav__link">
+    Utilisation de Delta Lake dans Data Factory
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation de Delta Lake dans Data Factory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-copier-des-donnees-dans-delta-lake" class="md-nav__link">
+    Exemple : copier des données dans Delta Lake
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-microsoft_3" class="md-nav__link">
+    Documentation Microsoft
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-de-delta-avec-power-bi" class="md-nav__link">
+    Utilisation de Delta avec Power BI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta-dans-azure-machine-learning" class="md-nav__link">
+    Delta dans Azure Machine Learning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
   
     <li class="md-nav__item">
       <a href="../FAQ/" class="md-nav__link">
@@ -711,7 +906,7 @@
 
 
 
-  <h1>DeltaLake</h1>
+  <h1>Delta Lake</h1>
 
 <p>Delta Lake est une couche de stockage à code source ouvert qui s’exécute au-dessus d’un lac de données existant, ajoutant les capacités des propriétés et des transactions ACID (atomicité, cohérence, isolation, durabilité). Delta Lake est entièrement compatible avec Apache Spark dans Azure Databricks et Azure Synapse.</p>
 <p>Azure Data Lake <em>n’est pas</em> conforme à la norme ACID. Il convient donc d’utiliser Delta Lake lorsque l’intégrité et la fiabilité des données sont essentielles, ou lorsqu’il existe un risque de mauvaises données.</p>
@@ -883,6 +1078,41 @@ VACUUM example_table DRY RUN    -- faire un essai à sec pour obtenir la liste d
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="../R-Shiny/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: R-Shiny" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              R-Shiny
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../FAQ/" class="md-footer__link md-footer__link--next" aria-label="Suivant: FAQ" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              FAQ
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
