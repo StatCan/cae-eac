@@ -5,11 +5,10 @@ _[Français](../../fr)_
 ### Azure Data Factory
 A linked service can be setup inside Azure Data Factory.
 Username is **Cloud account username** or AD group name if access was granted to a AD group, followed by the server name.
-Password is an Azure AD access Token as described below in step 6 of pgAdmin section
+Password is an Azure AD access Token as described below in step 6 of pgAdmin section. 
+In both case, those values should be stored in a keyvault referenced by the linked service
 
 ![ConnectDataFactorySynapse1](images/PgSql_08.png)
-or
-![ConnectDataFactorySynapse2](images/PgSql_09.png)
 
 Please contact the support team through the https://cae-eac.slack.com channel if you need assistance.
 

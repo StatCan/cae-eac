@@ -5,11 +5,10 @@ _[English](../../fr/PostgreSQL)_
 ### Azure Data Factory
 On peut créer un service lié dans Azure Data Factory.
 Le nom d'utilisateur est votre **compte cloud** ou groupe AD si l'accès a été donné à un groupe auquel vous appartenez, suivi du nom du serveur.
-Le mot de passe est un jeton d'accès d'Azure AD tel que décrit ci-dessous au point 6 de la section pgAdmin
+Le mot de passe est un jeton d'accès d'Azure AD tel que décrit ci-dessous au point 6 de la section pgAdmin.
+Dans les deux cas, ces valeurs devraient être enregistrées dans un keyvault auquel le service lié fait référence.
 
 ![ConnectDataFactorySynapse1](images/PgSql_08.png)
-ou
-![ConnectDataFactorySynapse2](images/PgSql_09.png)
 
 Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal https://cae-eac.slack.com si vous avez besoin d'aide.
 
