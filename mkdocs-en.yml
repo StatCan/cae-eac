@@ -47,9 +47,10 @@ nav:
   - Azure Databricks: DataBricks.md
   - Azure Data Factory: DataFactory.md
   - Azure Storage: AzureStorage.md
-  - Azure SQL Database: AzureSQL.md
   - Azure Machine Learning: AzureML.md
   - Azure Synapse:  AzureSynapse.md
+  - Azure SQL Database: AzureSQL.md
+  - Azure Postgres Database: PostgreSQL.md
   - GitHub: 
       - Getting Started: GitHubGettingStarted.md
       - Configuration: GitHubConfiguration.md
