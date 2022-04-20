@@ -62,7 +62,7 @@ Please contact the creators of your databricks enviroment for information about 
 
 Notebooks can easily be moved within or between Repos and Workspaces using the move command, simply right click on the notebook, select the move command and if you transfer into a Repo remember to run a commit and push.
 
-![Move Commond](images/Databricks_move.png)
+![Move Command](images/Databricks_move.png)
 
 ## Ingesting Data into Databricks
 
