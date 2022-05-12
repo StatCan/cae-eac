@@ -6,14 +6,17 @@ The CAE environment uses the Artifiactory for package & Library management.
 
 ## Included packages
 
-Below are the URLs that Artifactory pulls from currently. As long as the package is available on these repositories, it can be downloaded. You can get the name and URL of the package by searching through the repositories.
+Below are the URLs that Artifactory pulls from currently. As long as the package is available on these repositories, it can be downloaded. You can get the name of the package by searching through the repositories.
 
   - [Conda-forge](https://conda.anaconda.org/conda-forge)
-  - [CRAN](https://cran.r-project.org)
-  
-      In the left menu, click **Packages** under **Software**, then click **Table of available packages**
+  - [CRAN](https://cran.r-project.org) (In the left menu, click **Packages** under **Software**, then click **Table of available packages**)
   - [Python](https://pypi.org/)
-
+  
+The respective artifactory URLs to use are:
+  - https://jfrog.aaw.cloud.statcan.ca/artifactory/conda-forge-remote/
+  - https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/
+  - https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/
+  
 **Note**: For any other packages, please contact the **Collaborative Analytics Environment** team.
 
 
@@ -29,7 +32,8 @@ The packages can be installed from the Databricks workspace or a cluster.
 
 2. Under Library Source, choose either **PyPI** or **CRAN**.
 
-3. Paste the name of the library under **Package** and the URL under **Repository**.
+3. Paste the name of the library under **Package** and the Artifactory URL under **Repository**.
+
 
 ![Databricks](images/Artifactory-DBricks02.PNG)
 
@@ -45,11 +49,11 @@ The packages can be installed from the Databricks workspace or a cluster.
 
 2. Under **Library Source**, choose either **PyPI** or **CRAN**.
 
-3. Paste the name of the library under **Package** and the URL under **Repository**.
+3. Paste the name of the library under **Package** and the Artifactory URL under **Repository**.
 
 ![Cluster](images/Artifactory-Cluster02.PNG)
 
-4. Click **Install**. You should see the installed libraries under **Libraries**.
+4. Click **Install**. You should see the installed librarie under **Libraries**.
 
 ![Cluster](images/Artifactory-Cluster03.PNG)
 
@@ -68,36 +72,13 @@ Please contact the **Collaborative Analytics Environment** team to install custo
 ## Azure Cloud VM
 
 ### Visual Studio Code
-1.On the Extensions tab, search for **JFrog**.
+1.On the Extensions tab, click **Terminal**, then click **New Terminal**.
 
 ![Visual Studio Code](images/Artifactory-VS01.png)
 
-2.Install the extension.
+2.To install the package, use the **pip install** command in the  terminal as following:
 
-3.Click the **JFrog** tab, then click **Configure**.
+```pip install <PackageName> -i https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/```
 
 ![Visual Studio Code](images/Artifactory-VS02.png)
-
-4. Paste your JFrog platform URL (e.g. https://jfrog.aaw.cloud.statcan.ca/).
-![Visual Studio Code](images/Artifactory-VS03.png)
-
-5. You will need to provide a username and password.
-
-### R-Shiny
-
-1.	On the Packages tab, click **Install**.
-
-
-![RShiny](images/Artifactory-RShiny01.png)
-
-
-2.	Paste the link to your CRAN file, then click **Install**
-
-
-![RShiny](images/Artifactory-RShiny02.PNG)
-
-
-3.	The packages should now be listed in your System Library.
-
-![RShiny](images/Artifactory-RShiny03.PNG)
 
