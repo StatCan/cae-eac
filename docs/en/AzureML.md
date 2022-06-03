@@ -141,7 +141,7 @@ Once you are signed in, you will see all azure subscriptions you have access to.
 
 ### Choose your default workspace
 
-To choose your default workspace, select the Set Azure ML Workspace button on the Visual Studio Code status bar and follow the prompts to set your workspace.
+To choose your default workspace, select the Set Default Azure ML Workspace button on the Visual Studio Code status bar and follow the prompts to set your workspace.
 
 ![Select Your AML Default Workspace](VSCodeSelectAMLWorkspace.PNG)
 
