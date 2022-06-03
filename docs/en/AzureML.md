@@ -132,8 +132,16 @@ Please contact the support team through the [slack](https://cae-eac.slack.com) c
 ![Install VS Code AML Extension](images/AzureMLVSCodeExt.PNG)
 
 ### Sign in to your Azure Account
+
+To sign into you Azure account, select the Azure: Sign In button in the left side bar of Visual Studio Code status to start the sign in process.
+
+![Sign In To Azure Account](images/VSCodeAzureSignIn.PNG)
+
+Once you are signed in, you will see all azure subscriptions you have access to.
+
 ### Choose your default workspace
 
+To choose your default workspace, select the Set Azure ML Workspace button on the Visual Studio Code status bar and follow the prompts to set your workspace.
 
-https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=studio
-https://docs.microsoft.com/en-us/azure/machine-learning/how-to-setup-vs-code
+![Select Your AML Default Workspace](VSCodeSelectAMLWorkspace.PNG)
+
