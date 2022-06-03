@@ -145,4 +145,3 @@ To choose your default workspace, select the Set Default Azure ML Workspace butt
 
 ![Select Your AML Default Workspace]((images/VSCodeSelectAMLWorkspace.PNG)
 
-
