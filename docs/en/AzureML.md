@@ -124,18 +124,16 @@ Please contact the support team through the [slack](https://cae-eac.slack.com) c
 
 ### Install VS Code's azure machine learning extension
 
-1- Open Visual Studio Code.
+    1- Open Visual Studio Code.
+    2- Select Extensions icon from the Activity Bar to open the Extensions view.
+    3- In the Extensions view search bar, type "Azure Machine Learning" and select the first extension.
+    4- Select Install.
 
-2- Select Extensions icon from the Activity Bar to open the Extensions view.
+![Install VS Code AML Extension](images/AzureMLVSCodeExt.PNG)
 
-3- In the Extensions view search bar, type "Azure Machine Learning" and select the first extension.
+### Sign in to your Azure Account
+### Choose your default workspace
 
-4- Select Install.
 
-![Install VS Code AML Extension](images/AzureMLVSCodeExt.png)
-Sign in to your Azure Account
-Choose your default workspace
-
-set up the Azure Machine Learning Visual Studio Code extension for your machine learning workflows
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=studio
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-setup-vs-code
