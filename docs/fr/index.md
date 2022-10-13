@@ -1,5 +1,4 @@
-_[English](../en)_
-# Environnement d'analyse collaborative (EAC)
+## Environnement d'analyse collaborative (EAC)
 
 L'Environnement d'Analyse Collaborative (EAC) fournit des services infonuagiques pour l'ingestion, la transformation, la préparation, l'exploration et le traitement des données. Il comprend des outils d'analyse collaborative, des environnements d'apprentissage machine et des fonctions de visualisation des données. Les environnements de bloc-notes et les machines virtuelles offrent des capacités d'analyse par l'entremise de divers logiciels statistiques comme R, Python et SAS. L'EAC exploite la plateforme Microsoft Azure comme service (PaaS) et les offres de logiciel-service (SaaS).
 
@@ -27,6 +26,3 @@ Les utilisateurs pourront accéder au compte de stockage externe à partir d'Int
 ### Compte de stockage interne (Data Lake)
 
 Les fichiers qui sont téléversés dans le compte de stockage externe sont automatiquement déplacés vers un compte de stockage interne. Ce compte de stockage interne se trouve dans un réseau virtuel sécurisé et est uniquement accessible à partir des services des machines virtuelles de la plateforme.
-
-# Changer la langue d'affichage
-Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.

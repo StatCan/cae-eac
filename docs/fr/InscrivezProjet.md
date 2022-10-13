@@ -1,10 +1,7 @@
-_[English](../../en/RegisterProject)_
-
 Inscrivez-vous ici pour faire partie de la Communauté des premiers utilisateurs de l'Analyse des données en tant que service (ADS):
 
-[https://www.statcan.gc.ca/data-analytics-service/fr](https://www.statcan.gc.ca/data-analytics-service/fr) 
+[https://forms.office.com/r/ErV7YkMPBF](https://forms.office.com/r/ErV7YkMPBF)
 
-_Si vous avez déjà obtenu l'accès à la plateforme, consultez les directives pour savoir [comment ouvrir une session](SeConnecter.md)._
+_Cliquez sur le bouton «Français (Canada)» du formulaire pour changer la langue en français._
 
-# Changer la langue d'affichage
-Voir la page [Langue](Langue.md) pour savoir comment changer la langue d'affichage.
+Si vous avez déjà obtenu l'accès à la plateforme, consultez les directives pour savoir [comment ouvrir une session](SeConnecter.md).

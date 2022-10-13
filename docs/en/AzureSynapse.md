@@ -1,7 +1,3 @@
-_[English](../../en/AzureSynapse)_
-
-# Azure Synapse
-
 ## Getting Started
 
 ### Access Azure Synapse
@@ -10,21 +6,23 @@ _[English](../../en/AzureSynapse)_
 2. Inside your virtual machine, open a web browser and navigate to the [Azure Portal](https://portal.azure.com). Sign in with your cloud account credentials.
 
 3. 
-    a. Click on the **Azure Synapse Analytics** icon under **Azure services**. If you do not see this icon, follow step 3b instead. 
-    
+    a. Click on the **Azure Synapse Analytics** icon under **Azure services**. If you do not see this icon, follow step 3b instead.
+
     ![Access Synapse](images/AzureSynapseAccess_2.png)
 
-    b. Start typing "synapse" into the search bar to find **Azure Synapse Analytics**.  
-    
+    b. Start typing "synapse" into the search bar to find **Azure Synapse Analytics**.
+
     ![Access Synapse](images/AzureSynapseAccess.png) 
 
-4. Find your Synapse workspace in the list and click it. Then click **Open Synapse Studio**.
+4. Find your Synapse workspace in the list and click on it. Then click **Open Synapse Studio**.
+
 
     ![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
 
 Note: You can also acccess Synapse workspaces from the **Collaborative Analytics Environment** dashboard.
 
 ### Start and Stop Dedicated SQL Pool
+
 
 1. Click the **Integrate** tab.
 
@@ -56,6 +54,7 @@ Under the **Linked** tab, you can explore external objects (e.g. Data Lake accou
     
     ![Add New Resource](images/AzureSynapseData_1.png)
 
+
 2. Select **Azure Data Lake Storage Gen2** (you may need to search for this), then click **Continue**.
     
     ![Azure Data Lake Storage Gen2](images/AzureSynapseData_2.png)
@@ -63,16 +62,19 @@ Under the **Linked** tab, you can explore external objects (e.g. Data Lake accou
 3. Select the format type, then click **Continue**.
 
 4. Enter a name, then click the drop-down menu under **Linked service** and select your data lake.
+
     
     ![Set properties](images/AzureSynapseData_3.png)
 
 5. Under **Connect via integration runtime**, ensure that interactive authoring is enabled. If it is not, click the edit button to enable it, then click **Apply**.
     
+
     ![Enable interactive authoring](images/AzureSynapseData_6.png)
 
 6. Set additional properties as appropriate, then click **OK**.
 
 ### How to Explore Data in the Data Lake
+
 
 Browse to find your dataset file (CSV, Parquet, JSON, Avro, etc) and right click it. A menu will open with options to preview the data, or create resources such as SQL scripts and notebooks.
     
@@ -82,6 +84,7 @@ Browse to find your dataset file (CSV, Parquet, JSON, Avro, etc) and right click
 Under the **Workspace** tab, you can explore databases similarly to SQL Server Management Studio. Right click any table, highlight **New SQL script**, and click **Select TOP 100 rows** to create a new query. You can then view the results as either a table or a chart.
     
    ![Explore Dedicated SQL Pool](images/AzureSynapseData_5.png)
+
 
 ### Importing Data to the Dedicated SQL Pool
 
@@ -93,13 +96,16 @@ To import data to the dedicated SQL pool, you can either:
 
 From here, you can create and save resources such as SQL scripts, notebooks, and Power BI reports.
 
+
 To add a new resource, click the « **+** » button. A dropdown menu will open.
     
    ![Add a Resource](images/AzureSynapseDevelop.png)
 
+
 To make your changes visible to others, you need to click the **Publish** button.
 
 ### SQL Scripts
+
 
 Be sure to connect to your dedicated SQL pool to run SQL scripts.
     
@@ -121,6 +127,7 @@ To add a source to a dataflow, click the « **+** » button under **Source Setti
     
    ![Dataflows](images/AzureSynapseDevelopDataflow.png)
 
+
 ### Power BI Reports
 
 You can view and create Power BI reports directly in Azure Synapse. Please contact the Collabotative Analytics Environment support team to validate that a linked service is set up.
@@ -130,6 +137,7 @@ You can view and create Power BI reports directly in Azure Synapse. Please conta
 This is where you can create pipelines for ingesting, preparing and transforming all of your data, like in [Azure Data Factory](DataFactory.md). 
 
 ### Example: Copy Data from External Blob to Data Lake
+
 
 1. Click the « **+** » button to add a new resource, then click **Pipeline**.
     
@@ -147,17 +155,22 @@ This is where you can create pipelines for ingesting, preparing and transforming
 
 5. Click **Sink**, then click **New** to set the sink dataset (where you want the data to be copied to). Choose **Azure Data Lake Storage Gen2**, then select the format type. Under **Linked service**, choose your data lake and ensure that interactive authoring is enabled (see **How to Bring in Data from Linked Services** under **Data** for more information).
 
+
 ### Debugging and Running Pipelines
 
 To run a pipeline in debug mode, click the **Debug** button at the top of the pipeline window. Results will appear in the **Output** tab.
 
+
    ![Debugging pipelines](images/AzureSynapseIntegrate_4.png)
+
 
 To run a pipeline without debugging, click the **Add trigger** button, then **Trigger now**.
 
 When you are ready to publish your pipelines, click the **Validate all** button, then click the **Publish all** button. Note that this will publish for all users to see everything that you currently have open (pipelines, SQL scripts, notebooks, etc).
+
     
    ![Publish pipelines](images/AzureSynapseIntegrate_5.png)
+
 
 ## ![Monitor](images/AzureSynapseMonitorIcon.png) Monitor
 
@@ -179,6 +192,3 @@ This is where you can:
 - [Integrate with Pipelines](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-pipelines)
 - [Visualize Data with Power BI](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-visualize-power-bi)
 - [Monitor Your Synapse Workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-monitor)
-
-# Change Display Language
-See [Language](Language.md) page to find out how to change the display language.

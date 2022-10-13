@@ -1,6 +1,3 @@
-_[Français](../../fr/FAQ)_
-# Frequently Asked Questions (FAQ)
-
 ## Data Ingestion
 
 ### How do I ingest data (including large files) into the platform?
@@ -21,13 +18,19 @@ Platform tools such as Databricks or Data Factory may be used to ingest data fro
 ## Storage Explorer
 
 ### How do I configure Azure Storage Explorer proxy settings on a network B VDI?
+
 _For Statistics Canada Employees only_
+
 1. Proxy configuration is required if you receive the following error:  
-![Storage Explorer Proxy Error](images/StorageExplorerError.png)  
+
+    ![Storage Explorer Proxy Error](images/StorageExplorerError.png)  
+
 2. In Azure Storage Explorer, go to **Edit** --> **Proxy Settings**. Enter the necessary proxy settings, and click on **OK**.  
-![Storage Explorer Proxy Settings](images/StorageExplorerProxy.png)  
+
+    ![Storage Explorer Proxy Settings](images/StorageExplorerProxy.png)  
 
 ### How do I request a new SAS token (required for Azure Storage Explorer on a Network B VDI)?
+
 _For Statistics Canada Employees only_
 
 Please contact the support team through the https://cae-eac.slack.com channel to request a temporary SAS token.
@@ -38,10 +41,14 @@ The internal Data Lake is only accessible from within a VM in the Collaborative 
 ## Source Code Control
 
 ### How do I link my Visual Studio Subscription to my StatCan cloud account?
+
 1. Login to https://visualstudio.microsoft.com/subscriptions/ with your organization's email address. For StatCan employees, this will be your canada.ca email address.  
-![Sign in to Visual Studio\MDSN subscription](images/AzureSubscription.png).  
+
+    ![Sign in to Visual Studio\MDSN subscription](images/AzureSubscription.png)  
+
 2. Add your cloud account as an alternate account.  This will allow you to use your licenses for Visual Studio & Azure DevOps in the CAE.  
-![Add alternate email](images/AlternateAccount.png)
+
+    ![Add alternate email](images/AlternateAccount.png)
 
 **For Statistics Canada employees:**  If you do not have a Visual Studio Subscription, please consult your supervisor. If they decide that a subscription is needed, they can then contact StatCan Software Asset Management by submitting an SRM to request a license on your behalf.
 
@@ -54,10 +61,14 @@ If you forget the password of your virtual machine, please contact the support t
 Machines are shut down every day at 7pm EST in order to reduce costs. If you have a long-running job, it is recommended that you use Databricks or Data Factory.
 
 **WARNING:** Disabling Auto-shutdown is **not** recommended as it can incur significant costs.  
+
 To disable Auto-shutdown:  
+
 1. Navigate to your virtual machine in the Azure Portal.
+
 2. Disable Auto-shutdown.  
-![Auto Shutoff](images/VirtualMachineAutoShutoff.png)  
+
+    ![Auto Shutoff](images/VirtualMachineAutoShutoff.png)  
 
 ### How do I request changes to my virtual machine?
 If the virtual machine you are currently using does not meet your requirements, please contact the support team through the https://cae-eac.slack.com channel.
@@ -66,13 +77,16 @@ If the virtual machine you are currently using does not meet your requirements, 
 
 ### Why am I unable to run code from my Databricks notebook?
 You must first start a Databricks cluster that was previously created for you:
+
 1. Click on Clusters.  
+
 2. Navigate to your cluster and click on the **Start** (arrow) button.  
-![Start Cluster](images/DataBricksStartCluster2.png)
+
+    ![Start Cluster](images/DataBricksStartCluster2.png)
 
 ### What type of clusters are available in databricks?
 See the following link for the different types of available clusters: 
-https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20
+[Databricks runtime releases](https://docs.microsoft.com/en-us/azure/databricks/release-notes/runtime/releases#:~:text=Supported%20Databricks%20runtime%20releases%20and%20support%20schedule%20,Sep%2002%2C%202021%20%2022%20more%20rows%20)
 
 Generally, LTS (long term support) clusters are supported and recommended by Databricks. If you need a different version of the databricks cluster, please contact the CAE support team.
 
@@ -89,8 +103,11 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 
 ## Dashboard
 ### How do I change my subscription so that I can see my resources?
+
 1. In the Azure Portal click the **Directory + subscription** icon.
-![subscription](images/Subscription.png)
+
+    ![subscription](images/Subscription.png)
+
 2. Select the **vdl** subscription.
 
 ## CAE's SQL Server Deployment Options
@@ -120,20 +137,16 @@ However, CAE users can experiment with SQL ML services on their datascience VM A
 
 ### How do I connect to the internal data lake with Power BI Desktop?
 Prerequisites:
-1. A VM in the Collaborative Analytics Environment (CAE).
-2. Power BI Desktop. (Available by default in the Windows Data Science Virtual Machine images.)
+- A VM in the Collaborative Analytics Environment (CAE).
+- Power BI Desktop (available by default in the Windows Data Science Virtual Machine images.)
 
 Steps:
 1. Login to your CAE VM.  
 2. Launch Power BI Desktop.  
-3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
+3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to [Slack]https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
 
 ### How can Statistics Canada employees transfer files from their data centre?
-For Statistics Canada Employees, they can refer to this internal documentation: https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion
+For Statistics Canada Employees, they can refer to this internal documentation: [Data Ingestion](https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion)
 
 ### How do I add a FAQ?
-Please send your suggestion through the https://cae-eac.slack.com channel.
-
-# Change Display Language
-
-See [Language](Language.md) page to find out how to change the display language.
+Please send your suggestion through the [Slack](https://cae-eac.slack.com) channel.

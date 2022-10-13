@@ -1,87 +1,113 @@
-_[English](../../en/GitHubConfiguration)_
+GitHub.com est une plateforme en ligne utilisée à des fins de collaboration ainsi que pour assurer le suivi des modifications et des versions pour divers types de projets
 
-# GitHub - Configuration
+**Important : Ne stockez pas de données classées Protégé B sur GitHub.com**
 
-GitHub.com is an online platform that is used for collaboration as well as tracking changes and versioning for a variety of project types.
+## Création d’un compte GitHub
 
-**IMPORTANT: Do not store protected B data on GitHub.com**
-
-## Creating a GitHub Account
-
-Information on creating a GitHub account (or using your existing account) can be found at: [https://digital.statcan.gc.ca/drafts/guides-platforms-github](https://digital.statcan.gc.ca/drafts/guides-platforms-github).
+Des renseignements sur la création d’un compte GitHub (ou sur l’utilisation de votre compte existant) se trouvent à l’adresse: [https://digital.statcan.gc.ca/drafts/guides-platforms-github](https://digital.statcan.gc.ca/drafts/guides-platforms-github).
 
 ## Azure Data Factory
 
-1. On the Manage tab, click on **Git configuration**.
-![Git configuration](images/GitHub_ADF_1.png)
-2. Click **Configure**. Under **Repository type**, select **GitHub**, then enter your GitHub account username. Click **Continue**.
-![Git configuration](images/GitHub_ADF_2.png)
-3. A pop-up will appear. Click **AuthorizeAzureDataFactory**, then enter your GitHub account password.
-4. Configure a repository. You can either select a repository that you own, or enter a repository link. Specify additional settings, then click **Apply**.
-![Configure a repository](images/GitHub_ADF_3.png)
-5. Set your working branch. You can either create a new branch or use an existing one. Then click **Save**.
+1. Dans l’onglet **Manage** (gérer), cliquez sur **Git configuration** (configuration de Git).
 
-**To remove GitHub Integration:** On the Git configuration screen, click **Disconnect**. Enter the name of the Data Factory, then click **Disconnect** again to confirm.
-![Remove GitHub integration](images/GitHub_ADF_4.png)
+    ![configuration de Git](images/GitHub_ADF_1.png)
+
+2. Cliquez sur **Configure** (configurer). Sous **Repository type** (type de dépôt), sélectionnez **GitHub**, puis entrez le nom d’utilisateur de votre compte GitHub. Cliquez sur **Continue** (continuer). 
+
+    ![configuration de Git](images/GitHub_ADF_2.png)
+
+3. Une fenêtre contextuelle s’affiche. Cliquez sur **Authorize Azure Data Factory** (autoriser Azure Data Factory), puis saisissez le mot de passe de votre compte GitHub.
+
+4. Configurez un dépôt. Vous pouvez soit sélectionner un dépôt dont vous êtes propriétaire, soit saisir un lien vers un dépôt. Précisez tout paramètre supplémentaire, puis cliquez sur **Apply** (appliquer). 
+
+    ![Configurez un dépôt](images/GitHub_ADF_3.png)
+
+5. Définissez votre division de travail. Vous pouvez soit créer une nouvelle division, soit utiliser une division existante. Cliquez ensuite sur **Save** (enregistrer).
+
+**Pour supprimer l’intégration GitHub**, cliquez sur **Disconnect** (déconnecter) à l’écran **Git configuration** (configuration de Git). Entrez le nom de l’usine de données, puis cliquez de nouveau sur **Disconnect** (déconnecter) pour confirmer.  
+
+![supprimer l’intégration GitHub](images/GitHub_ADF_4.png)
 
 ## Azure Databricks
 
-### Set up Git Integration
+### Configuration de l’intégration de Git
  
-1. Go to **User Setting**, then click on the **Git Integration** tab.
-![Set up Git Integration](images/GitHub_Databricks_2.png)
-2. Under **Git provider**, select GitHub. Enter your GitHub username.
-3. From your GitHub account, [follow the instructions to create a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token), ensuring that the **repo** permission is checked.
-![Create personal access token](images/GitHub_Databricks_3.png)
-4. Copy the token, and paste it into Databricks. Click **Save**.
+1. Ouvrez **User Settings** (paramètres d’utilisateur), puis cliquez sur l’onglet **Git integration** (intégration de Git). 
 
-### Add a Git Repository
+    ![intégration de Git](images/GitHub_Databricks_2.png)
 
-1. On the Repos tab, click **Add Repo**.
-![Add Repo](images/GitHub_Databricks_1.png)
-2. With **Clone remote Git repo** selected, enter your GitHub repository url. The Git provider and Repo name should fill in automatically. Click **Create**.
+2. Sous **Git provider** (fournisseur Git), sélectionnez GitHub. Entrez votre nom d’utilisateur GitHub.
 
-## CAE Virtual Machines
+3. À partir de votre compte GitHub, [suivez les instructions pour créer un jeton d’accès personnel](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token), ensuring that the **repo** permission is checked.
 
-### VS Code
+    ![créer un jeton d’accès personnel](images/GitHub_Databricks_3.png)
 
-To learn how to use GitHub with VS Code, see the [GitHub - Getting Started](/GitHubGettingStarted) documentation.
+4. Copiez le jeton et collez-le dans **Databricks**. Cliquez sur **Save** (enregistrer).
+
+### Ajout d’un dépôt Git
+
+1. Dans l’onglet **Repos** (dépôts), cliquez sur **Add Repo** (ajouter un dépôt). 
+
+    ![Add Repo](images/GitHub_Databricks_1.png)
+
+2. Sélectionnez **Clone remote Git repo** (cloner un dépôt Git à distance), entrez l’adresse (URL) de la page Web de votre dépôt GitHub. Le fournisseur Git et le nom du dépôt devraient s’afficher automatiquement. Cliquez sur **Create** (créer).
+
+## Machines virtuelles de l’environnement d’analyse collaborative
+
+### Visual Studio Code
+
+Pour apprendre à utiliser GitHub avec Visual Studio Code, consultez la documentation  [GitHub - Getting Started](/GitHubGettingStarted).
 
 ### R-Studio
 
-1. In the **File** menu, click **New Project...**, then select **Version Control**.
-![Create a new project](images/GitHub_VM_6.png)
-2. Select **Git**. Enter the URL for the GitHub repository that you want to clone, choose a folder on your VM where the local files will be stored, then click **Create Project**.
-![Clone Git Repository](images/GitHub_VM_7.png)
+1. Dans le menu **File** (fichier), cliquez sur **New Project...** (nouveau projet), puis sélectionnez **Version Control** (contrôle de version). 
+
+    ![nouveau projet](images/GitHub_VM_6.png)
+
+2. Sélectionnez **Git**. Saisissez l’URL du dépôt GitHub que vous souhaitez cloner, choisissez un dossier sur votre machine virtuelle (MV) où seront enregistrés les fichiers locaux, puis cliquez sur **Create Project** (créer un projet). 
+
+    ![cloner un dépôt git](images/GitHub_VM_7.png)
 
 ## Azure Machine Learning
 
-1. Create a compute instance, then open a terminal.
-![Open a terminal](images/GitHub_ML_1.png)
-2. In the terminal window, enter the following (replace the example email with your own): `ssh-keygen -t rsa -b 4096 -C "first.last@canada.ca"`
-3. Press **ENTER** until your key is generated.
-![Generate an RSA key pair](images/GitHub_ML_2.png)
-4. Enter in the terminal: `cat ~/.ssh/id_rsa.pub`. Select the output and copy it to the clipboard.
-![Copy the SSH key](images/GitHub_ML_3.png)
-5. Go to your GitHub account settings (on GitHub.com), click on **SSH and GPG keys**, then **New SSH key**. Paste in the key you just copied, then click **Add SSH key**.
-![Add the SSH key to GitHub](images/GitHub_ML_4.png)
-6. In the terminal window, type: `git clone [url]` (replace **[url]** with the SSH url for your GitHub repository, e.g. `git@github.com:username/reponame.git`).
-7. When prompted, type `yes`.
+1. Créez une instance de calcul, puis ouvrez un terminal. 
+
+    ![ouvrez un terminal](images/GitHub_ML_1.png)
+
+2. Dans la **fenêtre du terminal**, entrez ce qui suit (remplacez l’exemple de courriel par le vôtre) : `ssh-keygen -t rsa -b 4096 -C "prénom.nom@canada.ca"`
+
+3. Appuyez sur **Enter** (entrer) jusqu’à ce que votre clé soit générée. 
+
+    ![générer une pair de clés RSA](images/GitHub_ML_2.png)
+
+4. Entrez dans le terminal : cat ~/.ssh/id_rsa.pub. Sélectionnez l’extrant et copiez-le dans le presse-papiers. 
+
+    ![copier le clé SSH](images/GitHub_ML_3.png)
+
+5. Allez dans les paramètres de votre compte GitHub (sur GitHub.com), cliquez sur **SSH and GPG keys** (clés SSH et GPG), puis sur **New SSH key** (nouvelle clé SSH). Collez la clé que vous venez de copier, puis cliquez sur **Add SSH key** (ajouter une clé SSH). 
+
+    ![ajouter une clé SSH](images/GitHub_ML_4.png)
+
+6. Dans la fenêtre du terminal, tapez : git clone [url] (remplacez **[url]** par l’url SSH de votre dépôt GitHub, par exemple, git@github.com:nom d’utilisateur/nom du dépôt.git).
+
+7. Lorsque vous y êtes invité, tapez yes (oui).
 
 ### Microsoft Documentation
-- [Git Integration for Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-train-model-git-integration)
+- [Intégration de Git pour Azure Machine Learning](https://docs.microsoft.com/fr-ca/azure/machine-learning/concept-train-model-git-integration)
 
 
 ## Azure Synapse
 
-1. On the Manage tab, click on **Git configuration**.
-![Git configuration](images/GitHub_Synapse_1.png)
-2. Click **Configure**. Under **Repository type**, select **GitHub**, then enter your GitHub account username. Click **Continue**.
-3. A pop-up will appear. Enter your GitHub account login info, then click **AuthorizeAzureSynapse**.
-4. Configure a repository. You can either select a repository that you own, or enter a repository link. Specify additional settings, then click **Apply**.
-5. Set your working branch. You can either create a new branch or use an existing one. Then click **Save**.
+1. Dans l’onglet **Manage** (gérer), cliquez sur **Git configuration** (configuration de Git). 
 
-**To remove GitHub Integration:** On the Git configuration screen, click **Disconnect**. Enter the workspace name, then click **Disconnect** again to confirm.
+    ![configuration de Git](images/GitHub_Synapse_1.png)
 
-# Change Display Language
-See [Language](Language.md) page to find out how to change the display language.
+2.	Cliquez sur **Configure** (configurer). Sous **Repository type** (type de dépôt), sélectionnez **GitHub**, puis entrez le nom d’utilisateur de votre compte GitHub. Cliquez sur **Continue** (continuer).
+
+3.	Une fenêtre contextuelle s’affiche. Entrez les renseignements de connexion de votre compte GitHub, puis cliquez sur **Authorize Azure Synapse** (autoriser Azure Synapse).
+
+4.	Configurez un dépôt. Vous pouvez soit sélectionner un dépôt dont vous êtes propriétaire, soit saisir un lien vers un dépôt. Précisez tout paramètre supplémentaire, puis cliquez sur **Apply** (appliquer).
+
+5.	Définissez votre division de travail. Vous pouvez soit créer une nouvelle division, soit utiliser une division existante. Cliquez ensuite sur **Save** (enregistrer).
+
+**Pour supprimer l’intégration de GitHub** : à l’écran de configuration de Git, cliquez sur **Disconnect** (déconnecter). Entrez le nom de l’espace de travail, puis cliquez de nouveau sur **Disconnect** (déconnecter) pour confirmer.
