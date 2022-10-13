@@ -1,12 +1,10 @@
-_[Français](../../fr/AzureSynapse)_
- 
-# Azure Synapse
-
 ## Pour commencer
+
 
 ### Accéder à Azure Synapse
 
 1.	Assurez-vous que vous utilisez votre machine virtuelle en nuage pour accéder à Azure Synapse. Reportez-vous à la rubrique [Machines virtuelles](VirtualMachines.md) pour savoir comment en créer une si nécessaire.
+
 
 2. Dans votre machine virtuelle, ouvrez un navigateur Web et accédez au [portail Azure](https://portal.azure.com). Ouvrez une session à l’aide des données d’identification de votre compte en nuage.
 
@@ -55,9 +53,11 @@ Sous l’onglet **Lié**, vous pouvez explorer des objets externes (p. ex. compt
 
 **Note**: Cet exemple montre comment obtenir des données à partir de Data Lake, bien qu’il y ait de nombreux types de sources disponibles.
 
+
 1. Cliquez sur le bouton « **+** » pour ajouter une nouvelle ressource, puis cliquez sur **Jeu de données d’intégration**.
 
    ![Add New Resource](images/AzureSynapseData_1.png)
+
 
 2.	Sélectionnez **Azure Data Lake Storage Gen2** (pour ce faire, vous devrez peut-être effectuer une recherche), puis cliquez sur **Continuer**. 
 
@@ -77,13 +77,16 @@ Sous l’onglet **Lié**, vous pouvez explorer des objets externes (p. ex. compt
 
 ### Comment explorer les données dans le lac de données
 
+
 Recherchez votre fichier de données (CSV, Parquet, JSON, Avro, etc.) et faites un clic droit dessus. Un menu s’ouvre avec des options permettant d’avoir un aperçu des données ou de créer des ressources telles que des scripts SQL et des notebooks.
 
    ![Read Data from CSV File](images/AzureSynapseData_4.png)
 
+
 ### Comment explorer le pool SQL dédié
 
 Sous l’onglet **Espace de travail**, vous pouvez explorer les bases de données de manière similaire à SQL Server Management Studio. Cliquez avec le bouton droit de la souris sur n’importe quel tableau, mettez en surbrillance **Nouveau script SQL**, puis cliquez sur **Sélectionner les 100 premières lignes** pour créer une nouvelle requête. Vous pouvez ensuite afficher les résultats sous forme de tableau ou de graphique.
+
 
    ![Explore Dedicated SQL Pool](images/AzureSynapseData_5.png)
 
@@ -93,7 +96,9 @@ Pour importer des données vers le pool SQL dédié, vous pouvez soit:
 -	**créer un pipeline avec une activité de copie de données** (la plus efficace pour les grands jeux de données);
 -	utiliser l’assistant [Chargement en masse](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-load-studio-sql-pool).
 
+
 ## ![Développer](images/AzureSynapseDevelopIcon.png) Développer
+
 
 À partir de là, vous pouvez créer et enregistrer des ressources telles que des scripts SQL, des notebooks et des rapports Power BI.
 
@@ -142,6 +147,7 @@ C’est ici que vous pouvez créer des pipelines pour ingérer, préparer et tra
 
    ![Drag and drop Copy data](images/AzureSynapseIntegrate_2.png)
 
+
 3. Cliquez sur l’onglet **Source**, puis cliquez sur **Nouveau** pour ajouter le jeu de données source (d’où vous voulez copier les données).
 
    ![Add source dataset](images/AzureSynapseIntegrate_3.png)
@@ -156,11 +162,13 @@ Pour exécuter un pipeline en mode débogage, cliquez sur le bouton **Déboguer*
   
   ![Debugging pipelines](images/AzureSynapseIntegrate_4.png)
 
+
 Pour exécuter un pipeline sans déboguer, cliquez sur le bouton **Ajouter un déclencheur**, puis sur **Déclencher maintenant**.
 
 Lorsque vous êtes prêt à publier vos pipelines, cliquez sur le bouton **Tout valider**, puis sur **Tout publier**. Il est à noter que cette publication permettra à l’ensemble des utilisateurs de voir tout ce que vous avez actuellement ouvert (pipelines, scripts SQL, notebooks, etc.).
 
   ![Publish pipelines](images/AzureSynapseIntegrate_5.png)
+
 
 ## ![Superviser](images/AzureSynapseMonitorIcon.png) Superviser
 
@@ -177,6 +185,7 @@ C’est ici que vous pouvez :
 
 ## Documentation Microsoft
 
+
 - [Azure Synapse Analytics](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/)
 - [Qu’est-ce qu’Azure Synapse Analytics?](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/overview-what-is) 
 - [Analyser des données avec des pools SQL dédiés](https://docs.microsoft.com/fr-ca/azure/synapse-analytics/get-started-analyze-sql-pool)
@@ -186,3 +195,4 @@ C’est ici que vous pouvez :
 
 # Changer la langue d’affichage
 Consultez la page [Langue](Language.md) pour savoir comment modifier la langue d’affichage.
+
