@@ -1,20 +1,49 @@
-## Collaborative Analytics Environment (CAE)
-The Collaborative Analytics Environment (CAE) provides cloud services for data ingestion, transformation and preparation, as well as data exploration and computation. It includes tools for collaborative analytics, machine learning environments, and data visualization capabilities. Notebook environments and virtual machines provide analytical capabilties using a variety of statistical software such as R, Python, SAS, etc. The CAE leverages Microsoft Azure Platform as a Service (PaaS) and Software as a Service (SaaS) offerings. 
+## DAS offers the convenience and familiarity of statistical software
+DAS, powered by Statistics Canada, provides data stewards, analysts and researchers with access to public data and microdata in its Collaborative Analytics Environment. Using this secure, cloud-based data analytics service, holds many benefits.
+- Upload and store data quickly and securely from an internal or external storage account.
+- Choose from a variety of familiar tools to prepare and transform datasets.
+- Analyze and present data using dynamic visualizations in order to share compelling data stories.
 
-## Environment Overview
-We are currently testing different use cases against the platform. Each use case can be onboarded into the **main** or a new **private** environment can be created.
+Please note that at this time, some statistical software tools may not be available for use in both official languages. Statistics Canada is working to ensure that all available data products and tools in the DAaaS platform will be accessible in both official languages in the near future. For more information, visit the [CAE language GitHub documentation](https://statcan.github.io/cae-eac/en/Language/).
 
-### Main (Shared) Environment 
-Shared with users from several use cases. When granted access to this environment, users can view / share data across use cases.
 
-### Private Environment
-A private environment configured upon request so only named users can access workspace files.
+## Data storage
+Manage, edit, share and backup
 
-## Data Ingestion
-Data enters the platform via an external storage account. Once inside the platform, the data is stored an internal storage account (Data Lake). Publicly available data sources may be ingested directly via one of the platform tools.
+[Azure Blob Storage](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts)
 
-### External Storage Account
-Users will be able to access the external storage account from the Internet, and use it to upload / download data in and out the environment. In some private environments, restrictions or additonal vetting processes may be implemented for data upload / download.
+This solution includes object, file, disk, queue, and table storage. There are also services for hybrid storage solutions, and services to transfer, share, and backup data.
 
-### Internal Storage Account (Data Lake)
-Files that are uploaded into the external storage account are automatically moved to an internal Data Lake. This Data Lake is located in a secure virtual network, and is only accessible from platform services and virtual machines.
+[Azure Data Lakes](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts)
+
+Leveraging the capabilities of our two existing storage services, Azure Blob storage and Azure Data Lake Storage Gen1, this tool is dedicated to big data analytics. Features such as file system semantics, directory, and file-level security and scale are combined with low-cost, tiered storage, and high availability/disaster recovery capabilities.
+
+[Azure SQL Database](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases)
+
+A fully managed platform as a service (PaaS) database engine that handles most of the database management functions such as upgrading, patching, backups, and monitoring without user involvement.
+
+## Data preparation
+Clean, organize, format
+
+[Azure Data Factory](https://adf.azure.com/)
+
+Create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores, build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight Hadoop, Azure Databricks, and Azure SQL Database.
+
+## Data analysis and visualization
+Analyze, share insights and tell data stories
+
+[Azure Databricks](https://canadacentral.azuredatabricks.net/)
+
+An Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform.
+
+[Power BI](https://app.powerbi.com/home)
+
+A collection of software services and applications that easily connect your data sources to create coherent, visually immersive, and interactive insights.
+
+[Azure Machine Learning](https://ml.azure.com/)
+
+Train, deploy, and manage machine learning models, AutoML experiments, and pipelines at scale.
+
+[Azure Virtual Machines](https://portal.azure.com/#@cloud.statcan.ca/resource/subscriptions/d2d3c198-2275-4c7b-bd79-0fc949819c0e/resourceGroups/covid-dtl01/providers/Microsoft.DevTestLab/labs/Covid-DTL01/overview)
+
+This service enables you to quickly set up an environment for your team by creating or using virtual machines using Azure DevTest Labs for day-to-day work.
