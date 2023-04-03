@@ -1,11 +1,13 @@
 # Environnement d'analyse géospatial (EGA) - Accès multiplateforme
 
-??? danger "Données non protégées uniquement; SSI à venir bientôt:"
+**IMPORTANT Données non protégées uniquement; SSI à venir bientôt:**
+
 	à l'heure actuelle, notre serveur géospatial ne peut héberger et fournir un accès qu'à  des informations statistiques non sensibles. 
 	
 ## Mise en route
 
-??? succès "Prérequis"
+**NOTES Prérequis:**
+
 	1. Un projet intégré avec accès à  DAS GAE ArcGIS Portal 	
 	2. Un id client ArcGIS Portal (clé API)
 
