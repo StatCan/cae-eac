@@ -180,8 +180,8 @@ toronto_map
 ```
 <br/>
 
-##Learn En savoir plus sur ArcGIS API for Python
-[La documentation complète de l'API ArGIS peut être trouvée ici] (https://developers.arcgis.com/python/)
+##En savoir plus sur ArcGIS API for Python
+[La documentation complète de l'API ArGIS peut être trouvée ici](https://developers.arcgis.com/python/)
 
-##Learn En savoir plus sur l'environnement analytique géospatial (EGA) et les services du DAS
-[Guide d'aide du GAE] (https://statcan.github.io/daaas-dads-geo/)
+##En savoir plus sur l'environnement analytique géospatial (EGA) et les services du DAS
+[Guide d'aide du GAE](https://statcan.github.io/daaas-dads-geo/)
