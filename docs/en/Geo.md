@@ -180,8 +180,8 @@ toronto_map
 ```
 <br/>
 
-##Learn More about the ArcGIS API for Python
+## Learn More about the ArcGIS API for Python
 [Full documentation for the ArGIS API can be located here](https://developers.arcgis.com/python/)
 
-##Learn More about DAS Geospatial Analytical Environment (GAE) and Services
+## Learn More about DAS Geospatial Analytical Environment (GAE) and Services
 [GAE Help Guide](https://statcan.github.io/daaas-dads-geo/)
