@@ -1,27 +1,27 @@
-# Environnement dâ€™analyse gÃ©ospatial (EGA) - AccÃ¨s multiplateforme
+# Environnement d'analyse géospatial (EGA) - Accès multiplateforme
 
-??? danger Â«Â DonnÃ©es non protÃ©gÃ©es uniquement; SSI Ã  venir bientÃ´t:Â Â»
-	Ã€ lâ€™heure actuelle, notre serveur gÃ©ospatial ne peut hÃ©berger et fournir un accÃ¨s quâ€™Ã  des informations statistiques non sensibles. 
+??? danger "Données non protégées uniquement; SSI à venir bientôt:"
+	à l'heure actuelle, notre serveur géospatial ne peut héberger et fournir un accès qu'à  des informations statistiques non sensibles. 
 	
 ## Mise en route
 
-??? succÃ¨s Â« PrÃ©requis Â»
-	1. Un projet intÃ©grÃ© avec accÃ¨s Ã  DAS GAE ArcGIS Portal 	
-	2. Un id client ArcGIS Portal (clÃ© API)
+??? succès "Prérequis"
+	1. Un projet intégré avec accès à  DAS GAE ArcGIS Portal 	
+	2. Un id client ArcGIS Portal (clé API)
 
-ArcGIS Enterprise Portal est accessible dans AAW ou CAE Ã  lâ€™aide de lâ€™API, Ã  partir de nâ€™importe quel service qui exploite le langage de programmation Python. 
+ArcGIS Enterprise Portal est accessible dans AAW ou CAE à l'aide de l'API, à partir de n'importe quel service qui exploite le langage de programmation Python. 
 
-Par exemple, dans AAW et lâ€™utilisation de [Jupyter Notebooks](https://statcan.github.io/daaas/en/1-Experiments/Jupyter/) dans lâ€™espace, ou dans CAE lâ€™utilisation de [Databricks](https://statcan.github.io/cae-eac/en/DataBricks/), DataFactory, etc.
+Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.github.io/daaas/en/1-Experiments/Jupyter/) dans l'espace, ou dans CAE l'utilisation de [Databricks](https://statcan.github.io/cae-eac/en/DataBricks/), DataFactory, etc.
 
 [Le portail Das GAE ArcGIS Enterprise est accessible directement ici] (https://geoanalytics.cloud.statcan.ca/portal)
 
-[Pour obtenir de lâ€™aide sur lâ€™auto-inscription en tant quâ€™utilisateur du portail gÃ©ospatial DAS] (https://statcan.github.io/daaas-dads-geo/english/portal/)
+[Pour obtenir de l'aide sur l'auto-inscription en tant qu'utilisateur du portail géospatial DAS] (https://statcan.github.io/daaas-dads-geo/english/portal/)
 
 <hr>
 
-## Utilisation dâ€™ArcGIS API for Python
+## Utilisation d'ArcGIS API for Python
 
-### Connexion Ã  ArcGIS Enterprise Portal Ã  lâ€™aide de lâ€™API ArcGIS
+### Connexion à ArcGIS Enterprise Portal à l'aide de l'API ArcGIS
 
 1. Installer les packages :
 
@@ -35,31 +35,31 @@ Par exemple, dans AAW et lâ€™utilisation de [Jupyter Notebooks](https://sta
 	conda install -c https://jfrog.aaw.cloud.statcan.ca/artifactory/api/conda/esri-remote arcgis
 	```
 
-2. Importez les bibliothÃ¨ques nÃ©cessaires dont vous aurez besoin dans le Bloc-notes.
+2. Importez les bibliothèques nécessaires dont vous aurez besoin dans le Bloc-notes.
 	```python
 	from arcgis.gis import GIS
 	from arcgis.gis import Item
 	```
 	
-3. AccÃ©der au portail
-	Votre groupe de projet recevra un ID client lors de lâ€™intÃ©gration. Collez lâ€™ID client entre les guillemets ```client_id='######'```. 
+3. Accéder au portail
+	Votre groupe de projet recevra un ID client lors de l'intégration. Collez l'ID client entre les guillemets ```client_id='######'```. 
 	
 	```python
 	gis = GIS("https://geoanalytics.cloud.statcan.ca/portal", client_id=' ')
 	print("Successfully logged in as: " + gis.properties.user.username)
 	```
 
-4. - Le rÃ©sultats vous redirigera vers un portail de connexion.
-	- Utilisez lâ€™option connexion Azure de StatCan et votre ID cloud 
-	- AprÃ¨s une connexion rÃ©ussie, vous recevrez un code pour vous connecter Ã  lâ€™aide de SAML. 
-	- Collez ce code dans le rÃ©sultat. 
+4. - Le résultats vous redirigera vers un portail de connexion.
+	- Utilisez l'option connexion Azure de StatCan et votre ID cloud 
+	- Après une connexion réussie, vous recevrez un code pour vous connecter à l'aide de SAML. 
+	- Collez ce code dans le résultat. 
 
 	![OAuth2 Approval](images/OAuth2Key.png)
 
 <hr>
 
-### Afficher les informations de lâ€™utilisateur
-En utilisant la fonction Â«Â me Â», nous pouvons afficher diverses informations sur lâ€™utilisateur connectÃ©.
+### Afficher les informations de l'utilisateur
+En utilisant la fonction 'me', nous pouvons afficher diverses informations sur l'utilisateur connecté.
 ```python
 me = gis.users.me
 username = me.username
@@ -70,16 +70,16 @@ display(me)
 <hr>
 
 ### Recherche de contenu
-Recherchez le contenu que vous avez hÃ©bergÃ© sur le portail gÃ©ographique DAaaS. En utilisant la fonction Â«Â meÂ Â», nous pouvons rechercher tout le contenu hÃ©bergÃ© sur le compte. Il existe plusieurs faÃ§ons de rechercher du contenu. Deux mÃ©thodes diffÃ©rentes sont dÃ©crites ci-dessous.
+Recherchez le contenu que vous avez hébergé sur le portail géographique DAaaS. En utilisant la fonction Â«Â meÂ Â», nous pouvons rechercher tout le contenu hébergé sur le compte. Il existe plusieurs façons de rechercher du contenu. Deux méthodes différentes sont décrites ci-dessous.
 
-**Rechercher tous vos itmes hÃ©bergÃ©s dans le portail gÃ©ographique DAaaS.**
+**Rechercher tous vos itmes hébergés dans le portail géographique DAaaS.**
 ```python
 my_content = me.items()
 my_content
 ```
-**Recherchez le contenu spÃ©cifique que vous possÃ©dez dans le portail gÃ©ographique DAaaS.**
+**Recherchez le contenu spécifique que vous possédez dans le portail géographique DAaaS.**
 
-Ceci est similaire Ã  lâ€™exemple ci-dessus, mais si vous connaissez le titre de la couche quâ€™ils souhaitez utiliser, vous pouvez lâ€™enregistrer en tant que fonction.
+Ceci est similaire Ã  l'exemple ci-dessus, mais si vous connaissez le titre de la couche qu'ils souhaitez utiliser, vous pouvez l'enregistrer en tant que fonction.
 ```python
 my_items = me.items()
 for items in my_items:
@@ -92,7 +92,7 @@ for items in my_items:
 print(flood_item)
 ```
 
-**Recherchez tout le contenu auquel vous avez accÃ¨s, pas seulement le vÃ´tre.**
+**Recherchez tout le contenu auquel vous avez accès, pas seulement le vôtre.**
 
 ```python
 flood_item = gis.content.search("tags: flood", item_type ="Feature Service")
@@ -102,7 +102,7 @@ flood_item
 <hr>
 
 ### Obtenir du contenu
-Nous devons obtenir lâ€™Ã©lÃ©ment du portail gÃ©ographique DAaaS afin de lâ€™utiliser dans le bloc-notes Jupyter. Pour ce faire, vous fournissez le numÃ©ro dâ€™identification unique de lâ€™Ã©lÃ©ment que vous souhaitez utiliser. Trois exemples sont dÃ©crits ci-dessous, tous accÃ©dant Ã  la couche identique.
+Nous devons obtenir l'élément du portail géographique DAaaS afin de l'utiliser dans le bloc-notes Jupyter. Pour ce faire, vous fournissez le numéro d'identification unique de l'élément que vous souhaitez utiliser. Trois exemples sont décrits ci-dessous, tous accédant Ã  la couche identique.
 ```python
 item1 = gis.content.get(my_content[5].id) #from searching your content above
 display(item1)
@@ -117,10 +117,10 @@ display(item3)
 <hr>
 
 ### Effectuer une analyse
-Une fois les couches introduites dans le bloc-notes Jupyter, nous sommes en mesure dâ€™effectuer des types dâ€™analyse similaires que vous vous attendez Ã  trouver dans un logiciel SIG tel quâ€™ArcGIS. Il existe de nombreux modules contenant de nombreux sous-modules dont peuvent effectuer plusieurs types dâ€™analyses.
+Une fois les couches introduites dans le bloc-notes Jupyter, nous sommes en mesure d'effectuer des types d'analyse similaires que vous vous attendez Ã  trouver dans un logiciel SIG tel qu'ArcGIS. Il existe de nombreux modules contenant de nombreux sous-modules dont peuvent effectuer plusieurs types d'analyses.
 <br/>
 
-Ã€ lâ€™aide du module arcgis.features, importez le sous-module use_proximity ```from arcgis.features import use_proximity```. Ce sous-module nous permet de '.create_buffers' - zones de distance Ã©gale par rapport aux entitÃ©s. Ici, nous spÃ©cifions la couche que nous voulons utiliser, la distance, les unitÃ©s et le nom en sortie (vous pouvez Ã©galement spÃ©cifier dâ€™autres caractÃ©ristiques telles que le champ, le type dâ€™anneau, le type dâ€™extrÃ©mitÃ© et autres). En spÃ©cifiant un nom en sortie, aprÃ¨s avoir exÃ©cutÃ© la commande de zone tampon, une nouvelle couche sera automatiquement tÃ©lÃ©chargÃ©e dans le portail GEO DAaaS contenant la nouvelle fonctionnalitÃ© que vous venez de crÃ©er.
+À l'aide du module arcgis.features, importez le sous-module use_proximity ```from arcgis.features import use_proximity```. Ce sous-module nous permet de '.create_buffers' - zones de distance égale par rapport aux entités. Ici, nous spécifions la couche que nous voulons utiliser, la distance, les unités et le nom en sortie (vous pouvez également spécifier d'autres caractéristiques telles que le champ, le type d'anneau, le type d'extrémité et autres). En spécifiant un nom en sortie, après avoir exécuté la commande de zone tampon, une nouvelle couche sera automatiquement téléchargée dans le portail GEO DAaaS contenant la nouvelle fonctionnalité que vous venez de créer.
 <br/>
 
 ```python
@@ -131,7 +131,7 @@ buffer_lyr = use_proximity.create_buffers(item1, distances=[1],
 display(item1_buffer)
 ```
 
-Certains utilisateurs prÃ©fÃ¨rent travailler avec des packages Open Source.  La traduction dâ€™ArcGIS vers spatial Dataframes est simple.
+Certains utilisateurs préfèrent travailler avec des packages Open Source.  La traduction d'ArcGIS vers spatial Dataframes est simple.
 ```python
 # create a Spatially Enabled DataFrame object
 sdf = pd.DataFrame.spatial.from_layer(feature_layer)
@@ -139,8 +139,8 @@ sdf = pd.DataFrame.spatial.from_layer(feature_layer)
 
 <hr>
 
-### Mettre Ã  jour les Ã©lÃ©ments
-En obtenant lâ€™Ã©lÃ©ment comme nous lâ€™avons fait similaire Ã  lâ€™exemple ci-dessus, nous pouvons utiliser la fonction Â«Â .updateÂ Â» pour mettre Ã  jour lâ€™Ã©lÃ©ment existant dans le portail DAaaS GEO. Nous pouvons mettre Ã  jour les propriÃ©tÃ©s des Ã©lÃ©ments, les donnÃ©es, les vignettes et les mÃ©tadonnÃ©es.
+### Mettre à jour les éléments
+En obtenant l'élément comme nous l'avons fait similaire à l'exemple ci-dessus, nous pouvons utiliser la fonction '.update' pour mettre à jour l'élément existant dans le portail DAaaS GEO. Nous pouvons mettre à jour les propriétés des éléments, les données, les vignettes et les métadonnées.
 ```python
 item1_buffer = gis.content.get('c60c7e57bdb846dnbd7c8226c80414d2')
 item1_buffer.update(item_properties={'title': 'Enter Title'
@@ -150,10 +150,10 @@ item1_buffer.update(item_properties={'title': 'Enter Title'
 
 <hr>
 
-### Visualisez vos donnÃ©es sur une carte interactive
+### Visualisez vos données sur une carte interactive
 
-**Exemple : BibliothÃ¨que MatplotLib**
-Dans le code ci-dessous, nous crÃ©ons un objet ax, qui est un tracÃ© de style carte. Nous traÃ§ons ensuite notre colonne de changement de donnÃ©es (Â«Â Changement de populationÂ Â») sur les axes
+**Exemple : Bibliothèque MatplotLib**
+Dans le code ci-dessous, nous créons un objet ax, qui est un tracé de style carte. Nous traçons ensuite notre colonne de changement de données ('Changement de population') sur les axes
 ```python
 import matplotlib.pyplot as plt
 ax = sdf.boundary.plot(figsize=(10, 5))
@@ -161,16 +161,16 @@ shape.plot(ax=ax, column='Population Change', legend=True)
 plt.show()
 ```
 
-**Exemple : bibliothÃ¨que ipyleaflet**
-Dans cet exemple, nous utiliserons la bibliothÃ¨que 'ipyleaflet' pour crÃ©er une carte interactive. Cette carte sera centrÃ©e autour de Toronto, en Ontario. Les donnÃ©es utilisÃ©es seront dÃ©crites ci-dessous.
-Commencez par coller ```conda install -c conda-forge ipyleaflet``` vous permettant dâ€™installer des bibliothÃ¨ques ipyleaflet dans lâ€™environnement Python.
+**Exemple : bibliothèque ipyleaflet**
+Dans cet exemple, nous utiliserons la bibliothèque 'ipyleaflet' pour créer une carte interactive. Cette carte sera centrée autour de Toronto, en Ontario. Les données utilisées seront décrites ci-dessous.
+Commencez par coller ```conda install -c conda-forge ipyleaflet``` vous permettant d'installer des bibliothèques ipyleaflet dans l'environnement Python.
 <br/>
-Importez les bibliothÃ¨ques nÃ©cessaires.
+Importez les bibliothèques nécessaires.
 ```python
 import ipyleaflet 
 from ipyleaflet import *
 ```
-Maintenant que nous avons importÃ© le module ipyleaflet, nous pouvons crÃ©er une carte simple en spÃ©cifiant la latitude et la longitude de lâ€™emplacement que nous voulons, le niveau de zoom et le fond de carte [(plus de fonds de carte)](https://ipyleaflet.readthedocs.io/en/latest/map_and_basemaps/basemaps.html). Des contrÃ´les supplÃ©mentaires ont Ã©tÃ© ajoutÃ©s, tels que des couches et des mises Ã  lâ€™Ã©chelle.
+Maintenant que nous avons importé le module ipyleaflet, nous pouvons créer une carte simple en spécifiant la latitude et la longitude de l'emplacement que nous voulons, le niveau de zoom et le fond de carte [(plus de fonds de carte)](https://ipyleaflet.readthedocs.io/en/latest/map_and_basemaps/basemaps.html). Des contrôles supplémentaires ont été ajoutés, tels que des couches et des mises Ã  l'échelle.
 ```python
 toronto_map = Map(center=[43.69, -79.35], zoom=11, basemap=basemaps.Esri.WorldStreetMap)
 
@@ -181,7 +181,7 @@ toronto_map
 <br/>
 
 ##Learn En savoir plus sur ArcGIS API for Python
-[La documentation complÃ¨te de lâ€™API ArGIS peut Ãªtre trouvÃ©e ici] (https://developers.arcgis.com/python/)
+[La documentation complète de l'API ArGIS peut être trouvée ici] (https://developers.arcgis.com/python/)
 
-##Learn En savoir plus sur lâ€™environnement analytique gÃ©ospatial (EGA) et les services du DAS
-[Guide dâ€™aide du GAE] (https://statcan.github.io/daaas-dads-geo/)
+##Learn En savoir plus sur l'environnement analytique géospatial (EGA) et les services du DAS
+[Guide d'aide du GAE] (https://statcan.github.io/daaas-dads-geo/)
