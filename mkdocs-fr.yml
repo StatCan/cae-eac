@@ -51,13 +51,14 @@ nav:
   - Azure Synapse:  AzureSynapse.md
   - Base de données Azure SQL: AzureSQL.md
   - Base de données Azure Postgres: PostgreSQL.md
-  - GitHub: GitHubCommencer.md
   - GitHub: 
       - Commencer: GitHubCommencer.md
       - Configuration: GitHubConfiguration.md
   - R-Shiny: R-Shiny.md
   - Delta Lake: DeltaLake.md
+  - Géospatial: Geo.md
   - FAQ: FAQ.md
   - Bonnes pratiques: BonnesPratiques.md
   - Langue: Langue.md
 
+  
