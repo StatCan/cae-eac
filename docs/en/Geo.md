@@ -56,7 +56,7 @@ For example, in AAW and the use of [Jupyter Notebooks](https://statcan.github.io
 	- After successful login, you will receive a code to sign in using SAML. 
 	- Paste this code into the output. 
 
-	![OAuth2 Approval](images/OAuth2Key.png)
+	![OAuth2 Approval](https://github.com/StatCan/gae-eag/blob/ghpages/english/images/OAuth2Key.png)
 
 <hr>
 
