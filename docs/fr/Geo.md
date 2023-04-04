@@ -1,8 +1,4 @@
 # Environnement d'analyse géospatial (EGA) - Accès multiplateforme
-
-**IMPORTANT: Données non protégées uniquement; SSI à venir bientôt**
-
-	à l'heure actuelle, notre serveur géospatial ne peut héberger et fournir un accès qu'à  des informations statistiques non sensibles. 
 	
 ## Mise en route
 
@@ -22,7 +18,7 @@ Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.gi
 
 <hr>
 
-## Utilisation d'ArcGIS API for Python
+## Utilisation d'ArcGIS API (interface de programmation d'application) for Python
 
 ### Connexion à ArcGIS Enterprise Portal à l'aide de l'API ArcGIS
 
@@ -49,15 +45,15 @@ Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.gi
 	
 	```python
 	gis = GIS("https://geoanalytics.cloud.statcan.ca/portal", client_id=' ')
-	print("Successfully logged in as: " + gis.properties.user.username)
+	print("succès: " + gis.properties.user.username)
 	```
 
 4. - Le résultats vous redirigera vers un portail de connexion.
 	- Utilisez l'option connexion Azure de StatCan et votre ID cloud 
 	- Après une connexion réussie, vous recevrez un code pour vous connecter à l'aide de SAML. 
-	- Collez ce code dans le résultat. 
+	- Collez ce code dans le résultat (en anglais seulement). 
 
-	![OAuth2 Approval](https://github.com/StatCan/gae-eag/blob/ghpages/english/images/OAuth2Key.png)
+	![OAuth2 Approval](https://github.com/StatCan/gae-eag/blob/ghpages/english/images/OAuth2Key.png) (en anglais seulement)
 
 <hr>
 
@@ -105,15 +101,15 @@ flood_item
 <hr>
 
 ### Obtenir du contenu
-Nous devons obtenir l'élément du portail géographique DAaaS afin de l'utiliser dans le bloc-notes Jupyter. Pour ce faire, vous fournissez le numéro d'identification unique de l'élément que vous souhaitez utiliser. Trois exemples sont décrits ci-dessous, tous accédant Ã  la couche identique.
+Nous devons obtenir l'élément du portail géographique SAD afin de l'utiliser dans le bloc-notes Jupyter. Pour ce faire, vous fournissez le numéro d'identification unique de l'élément que vous souhaitez utiliser. Trois exemples sont décrits ci-dessous, tous accédant Ã  la couche identique.
 ```python
-item1 = gis.content.get(my_content[5].id) #from searching your content above
+item1 = gis.content.get(my_content[5].id) #À partir de la recherche de votre contenu ci-dessus
 display(item1)
 
-item2 = gis.content.get(flood_item.id) #from example above -searching for specific content
+item2 = gis.content.get(flood_item.id) #De l'exemple ci-dessus - recherche de contenu spécifique
 display(item2)
 
-item3 = gis.content.get('edebfe03764b497f90cda5f0bfe727e2') #the actual content id number
+item3 = gis.content.get('edebfe03764b497f90cda5f0bfe727e2') #Le numéro d'identification de l'article
 display(item3)
 ```
 
