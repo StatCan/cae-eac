@@ -186,4 +186,4 @@ toronto_map
 [La documentation complète de l'API ArGIS peut être trouvée ici](https://developers.arcgis.com/python/)
 
 ## En savoir plus sur l'environnement analytique géospatial (EGA) et les services du DAS
-[Guide d'aide du GAE](https://statcan.github.io/daaas-dads-geo/)
+[Guide d'aide du GAE](https://statcan.github.io/gae-eag/)
