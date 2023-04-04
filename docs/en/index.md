@@ -1,5 +1,5 @@
-## DAS offers the convenience and familiarity of statistical software
-DAS, powered by Statistics Canada, provides data stewards, analysts and researchers with access to public data and microdata in its Collaborative Analytics Environment. Using this secure, cloud-based data analytics service, holds many benefits.
+## Data Analytics as a Service (DAS) offers the convenience and familiarity of statistical software
+Data Analytics as a Service, powered by Statistics Canada, provides data stewards, analysts and researchers with access to public data and microdata in its Collaborative Analytics Environment. Using this secure, cloud-based data analytics service, holds many benefits.
 - Upload and store data quickly and securely from an internal or external storage account.
 - Choose from a variety of familiar tools to prepare and transform datasets.
 - Analyze and present data using dynamic visualizations in order to share compelling data stories.
