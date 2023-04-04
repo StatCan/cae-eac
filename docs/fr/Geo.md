@@ -13,11 +13,11 @@
 
 ArcGIS Enterprise Portal est accessible dans AAW ou CAE à l'aide de l'API, à partir de n'importe quel service qui exploite le langage de programmation Python. 
 
-Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.github.io/daaas/en/1-Experiments/Jupyter/) dans l'espace, ou dans CAE l'utilisation de [Databricks](https://statcan.github.io/cae-eac/en/DataBricks/), DataFactory, etc.
+Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.github.io/daaas/fr/1-Experiments/Jupyter/) dans l'espace, ou dans CAE l'utilisation de [Databricks](https://statcan.github.io/cae-eac/fr/DataBricks/), DataFactory, etc.
 
 [Le portail Das GAE ArcGIS Enterprise est accessible directement ici] (https://geoanalytics.cloud.statcan.ca/portal)
 
-[Pour obtenir de l'aide sur l'auto-inscription en tant qu'utilisateur du portail géospatial DAS] (https://statcan.github.io/daaas-dads-geo/english/portal/)
+[Pour obtenir de l'aide sur l'auto-inscription en tant qu'utilisateur du portail géospatial DAS] (https://statcan.github.io/gae-eag/french/portalFR/)
 
 <hr>
 
@@ -172,7 +172,7 @@ Importez les bibliothèques nécessaires.
 import ipyleaflet 
 from ipyleaflet import *
 ```
-Maintenant que nous avons importé le module ipyleaflet, nous pouvons créer une carte simple en spécifiant la latitude et la longitude de l'emplacement que nous voulons, le niveau de zoom et le fond de carte [(plus de fonds de carte)](https://ipyleaflet.readthedocs.io/en/latest/map_and_basemaps/basemaps.html). Des contrôles supplémentaires ont été ajoutés, tels que des couches et des mises Ã  l'échelle.
+Maintenant que nous avons importé le module ipyleaflet, nous pouvons créer une carte simple en spécifiant la latitude et la longitude de l'emplacement que nous voulons, le niveau de zoom et le fond de carte [(plus de fonds de carte)](https://ipyleaflet.readthedocs.io/en/latest/map_and_basemaps/basemaps.html) (en anglais seulement).  Des contrôles supplémentaires ont été ajoutés, tels que des couches et des mises Ã  l'échelle.
 ```python
 toronto_map = Map(center=[43.69, -79.35], zoom=11, basemap=basemaps.Esri.WorldStreetMap)
 
