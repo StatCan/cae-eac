@@ -15,9 +15,10 @@ ArcGIS Enterprise Portal est accessible dans AAW ou CAE à l'aide de l'API, à p
 
 Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.github.io/daaas/fr/1-Experiments/Jupyter/) dans l'espace, ou dans CAE l'utilisation de [Databricks](https://statcan.github.io/cae-eac/fr/DataBricks/), DataFactory, etc.
 
-[Le portail Das GAE ArcGIS Enterprise est accessible directement ici] (https://geoanalytics.cloud.statcan.ca/portal)
+[Le portail Das GAE ArcGIS Enterprise est accessible directement ici](https://geoanalytics.cloud.statcan.ca/portal)
 
-[Pour obtenir de l'aide sur l'auto-inscription en tant qu'utilisateur du portail géospatial DAS] (https://statcan.github.io/gae-eag/french/portalFR/)
+[Pour obtenir de l'aide sur l'auto-inscription en tant qu'utilisateur du portail géospatial DAS]
+(https://statcan.github.io/gae-eag/french/portalFR/)
 
 <hr>
 
