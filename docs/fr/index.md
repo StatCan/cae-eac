@@ -1,5 +1,5 @@
-## Les SAD offrent les avantages et la familiarité d'un logiciel statistique
-Les Services d’analyse des données (SAD), propulsés par Statistique Canada, permettent aux intendants des données, aux analystes et aux chercheurs d'accéder à des données et des microdonnées publiques dans un Environnement d'analyse collaborative. Ce service d'analyse de données sécurisé et en nuage, offre de nombreuses fonctionnalités avantageuses.
+## Les Services d’analyse des données (SAD) offrent les avantages et la familiarité d'un logiciel statistique
+Les Services d’analyse des données, propulsés par Statistique Canada, permettent aux intendants des données, aux analystes et aux chercheurs d'accéder à des données et des microdonnées publiques dans un Environnement d'analyse collaborative. Ce service d'analyse de données sécurisé et en nuage, offre de nombreuses fonctionnalités avantageuses.
 -	Téléversez et stockez des données rapidement et en toute sécurité à partir d'un compte de stockage interne ou externe.
 -	Choisissez parmi une variété d'outils qui vous sont familiers pour vous aider à préparer et à transformer des ensembles de données.
 -	Analysez et présentez des données en utilisant des produits de visualisation dynamiques de manière à captiver l'auditoire en faisant parler les données.
