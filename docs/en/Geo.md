@@ -1,8 +1,4 @@
 # Geospatial Analytical Environment (GAE) - Cross Platform Access
-
-**IMPORTANT: Unprotected data only; SSI coming soon**
-
-	At this time, our Geospatial server can only host and provide access to non-sensitive statistical information.  
 	
 ## Getting Started
 
