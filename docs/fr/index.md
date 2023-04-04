@@ -10,29 +10,29 @@ Veuillez noter qu'à l'heure actuelle, certains outils peuvent ne pas être acce
 ## Stockage des données
 Gérez, modifiez, partagez et sauvegardez
 
-[Stockage Blob Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts)
+[Stockage Blob Azure](AzureStorage.md)
 
 Ce service comprend le stockage d'objets, de fichiers, de disques, de files d'attente et de tableaux. Des services de solutions de stockage hybrides et des services de transfert, de partage et de sauvegarde de données sont également disponibles.
 
-[Stockage Azure Datalake](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts)
+[Stockage Azure Datalake](AzureStorage.md)
 
 Cet outil, qui met à profit les capacités de nos deux services de stockage existants, est dédié à l'analyse des mégadonnées. Des fonctions, telles que la sémantique de système de fichiers, la fonction de répertoire et la sécurité de niveau fichier, sont combinées au stockage hiérarchisé à faible coût et à des capacités de haute disponibilité ou de récupération d'urgence.
 
-[Base de données SQL Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases)
+[Base de données SQL Azure](AzureSQL.md))
 
 Ce moteur de base de données, sous forme de plateforme en tant que service (PS), gère automatiquement la plupart des fonctions de gestion de base de données, telles que la mise à niveau, la correction de programmes, les sauvegardes et la surveillance, sans intervention de l'utilisateur.
 
 ## Préparation des données
 Nettoyez, organisez, formatez
 
-[Azure Data Factory](https://adf.azure.com/)
+[Azure Data Factory](DataFactory.md)
 
 Créez et planifiez des flux de travail axés sur les données (appelés pipelines) qui peuvent ingérer des données provenant de magasins de données disparates, élaborez des processus d'ETC complexes qui transforment visuellement les données au moyen de flux de données, ou en utilisant des services de calcul comme Hadoop d'Azure HDInsight, Azure Databricks et Base de données SQL Azure.
 
 ## Analyse et visualisation des données
 Partagez des idées et des histoires fondées sur vos données
 
-[Azure Databricks](https://canadacentral.azuredatabricks.net/)
+[Azure Databricks](DataBricks.md)
 
 Plateforme d'analytique fondée sur Apache Spark et optimisée pour la plateforme de services infonuagiques de Microsoft Azure.
 
@@ -40,10 +40,10 @@ Plateforme d'analytique fondée sur Apache Spark et optimisée pour la plateform
 
 Ensemble d'applications et de services logiciels qui relient facilement vos sources de données en vue de créer des aperçus cohérents, visuellement immersifs et interactifs.
 
-[Azure Machine Learning](https://ml.azure.com/)
+[Azure Machine Learning](AzureML.md)
 
 Entraînez, déployez et gérez des modèles d'apprentissage automatique, des expériences AutoML et des pipelines, et ce, à grande échelle.
 
-[Machines virtuelles Azure ](https://portal.azure.com/#@cloud.statcan.ca/resource/subscriptions/d2d3c198-2275-4c7b-bd79-0fc949819c0e/resourceGroups/covid-dtl01/providers/Microsoft.DevTestLab/labs/Covid-DTL01/overview)
+[Machines virtuelles Azure ](MachinesVirtuelle.md)
 
 Ce service vous permet de mettre en place rapidement un environnement pour les travaux quotidiens de votre équipe, en créant ou en utilisant des machines virtuelles au moyen d'Azure DevTest Labs.

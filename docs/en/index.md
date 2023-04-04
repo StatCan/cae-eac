@@ -10,29 +10,29 @@ Please note that at this time, some statistical software tools may not be availa
 ## Data storage
 Manage, edit, share and backup
 
-[Azure Blob Storage](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts)
+[Azure Blob Storage](AzureStorage.md)
 
 This solution includes object, file, disk, queue, and table storage. There are also services for hybrid storage solutions, and services to transfer, share, and backup data.
 
-[Azure Data Lakes](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts)
+[Azure Data Lakes](AzureStorage.md)
 
 Leveraging the capabilities of our two existing storage services, Azure Blob storage and Azure Data Lake Storage Gen1, this tool is dedicated to big data analytics. Features such as file system semantics, directory, and file-level security and scale are combined with low-cost, tiered storage, and high availability/disaster recovery capabilities.
 
-[Azure SQL Database](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases)
+[Azure SQL Database](AzureSQL.md)
 
 A fully managed platform as a service (PaaS) database engine that handles most of the database management functions such as upgrading, patching, backups, and monitoring without user involvement.
 
 ## Data preparation
 Clean, organize, format
 
-[Azure Data Factory](https://adf.azure.com/)
+[Azure Data Factory](DataFactory.md)
 
 Create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores, build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight Hadoop, Azure Databricks, and Azure SQL Database.
 
 ## Data analysis and visualization
 Analyze, share insights and tell data stories
 
-[Azure Databricks](https://canadacentral.azuredatabricks.net/)
+[Azure Databricks](DataBricks.md)
 
 An Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform.
 
@@ -40,10 +40,10 @@ An Apache Spark-based analytics platform optimized for the Microsoft Azure cloud
 
 A collection of software services and applications that easily connect your data sources to create coherent, visually immersive, and interactive insights.
 
-[Azure Machine Learning](https://ml.azure.com/)
+[Azure Machine Learning](AzureML.md)
 
 Train, deploy, and manage machine learning models, AutoML experiments, and pipelines at scale.
 
-[Azure Virtual Machines](https://portal.azure.com/#@cloud.statcan.ca/resource/subscriptions/d2d3c198-2275-4c7b-bd79-0fc949819c0e/resourceGroups/covid-dtl01/providers/Microsoft.DevTestLab/labs/Covid-DTL01/overview)
+[Azure Virtual Machines](MachinesVirtuelle.md)
 
 This service enables you to quickly set up an environment for your team by creating or using virtual machines using Azure DevTest Labs for day-to-day work.
