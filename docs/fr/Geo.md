@@ -57,7 +57,7 @@ Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.gi
 	- Après une connexion réussie, vous recevrez un code pour vous connecter à l'aide de SAML. 
 	- Collez ce code dans le résultat. 
 
-	![OAuth2 Approval](images/OAuth2Key.png)
+	![OAuth2 Approval](https://github.com/StatCan/gae-eag/blob/ghpages/english/images/OAuth2Key.png)
 
 <hr>
 
