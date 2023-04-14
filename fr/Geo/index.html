@@ -1,0 +1,1060 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guide de l'utilisateur - Environnement d’Analyse Collaborative (EAC)">
+      
+      
+      
+        <link rel="canonical" href="https://statcan.github.io/cae-eac/fr/Geo/">
+      
+      
+        <link rel="prev" href="../DeltaLake/">
+      
+      
+        <link rel="next" href="../FAQ/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+    
+    
+      
+        <title>Géospatial - Statistique Canada - Environnement d’Analyse Collaborative (EAC)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#environnement-danalyse-geospatial-ega-acces-multiplateforme" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-header__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Statistique Canada - Environnement d’Analyse Collaborative (EAC)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Géospatial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/statcan/cae-eac" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    statcan/cae-eac
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" class="md-nav__button md-logo" aria-label="Statistique Canada - Environnement d’Analyse Collaborative (EAC)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Statistique Canada - Environnement d’Analyse Collaborative (EAC)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/statcan/cae-eac" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    statcan/cae-eac
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        En avant!
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InscrivezProjet/" class="md-nav__link">
+        Inscrivez votre projet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ContactezNous/" class="md-nav__link">
+        Contactez-nous
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SeConnecter/" class="md-nav__link">
+        Se connecter
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TableauxDeBord/" class="md-nav__link">
+        Tableaux de bord
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MachinesVirtuelle/" class="md-nav__link">
+        Machines Virtuelle
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DataBricks/" class="md-nav__link">
+        Azure Databricks
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DataFactory/" class="md-nav__link">
+        Azure Data Factory
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AzureStorage/" class="md-nav__link">
+        Stockage Azure
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AzureML/" class="md-nav__link">
+        Azure Machine Learning
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AzureSynapse/" class="md-nav__link">
+        Azure Synapse
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AzureSQL/" class="md-nav__link">
+        Base de données Azure SQL
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PostgreSQL/" class="md-nav__link">
+        Base de données Azure Postgres
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          GitHub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          GitHub
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GitHubCommencer/" class="md-nav__link">
+        Commencer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GitHubConfiguration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../R-Shiny/" class="md-nav__link">
+        R-Shiny
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeltaLake/" class="md-nav__link">
+        Delta Lake
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Géospatial
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Géospatial
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environnement-danalyse-geospatial-ega-acces-multiplateforme" class="md-nav__link">
+    Environnement d'analyse géospatial (EGA) - Accès multiplateforme
+  </a>
+  
+    <nav class="md-nav" aria-label="Environnement d'analyse géospatial (EGA) - Accès multiplateforme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mise-en-route" class="md-nav__link">
+    Mise en route
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-darcgis-api-interface-de-programmation-dapplication-for-python" class="md-nav__link">
+    Utilisation d'ArcGIS API (interface de programmation d'application) for Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation d'ArcGIS API (interface de programmation d'application) for Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connexion-a-arcgis-enterprise-portal-a-laide-de-lapi-arcgis" class="md-nav__link">
+    Connexion à ArcGIS Enterprise Portal à l'aide de l'API ArcGIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-les-informations-de-lutilisateur" class="md-nav__link">
+    Afficher les informations de l'utilisateur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recherche-de-contenu" class="md-nav__link">
+    Recherche de contenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtenir-du-contenu" class="md-nav__link">
+    Obtenir du contenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effectuer-une-analyse" class="md-nav__link">
+    Effectuer une analyse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-les-elements" class="md-nav__link">
+    Mettre à jour les éléments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualisez-vos-donnees-sur-une-carte-interactive" class="md-nav__link">
+    Visualisez vos données sur une carte interactive
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-savoir-plus-sur-arcgis-api-for-python" class="md-nav__link">
+    En savoir plus sur ArcGIS API for Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-savoir-plus-sur-lenvironnement-analytique-geospatial-ega-et-les-services-du-das" class="md-nav__link">
+    En savoir plus sur l'environnement analytique géospatial (EGA) et les services du DAS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BonnesPratiques/" class="md-nav__link">
+        Bonnes pratiques
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Langue/" class="md-nav__link">
+        Langue
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environnement-danalyse-geospatial-ega-acces-multiplateforme" class="md-nav__link">
+    Environnement d'analyse géospatial (EGA) - Accès multiplateforme
+  </a>
+  
+    <nav class="md-nav" aria-label="Environnement d'analyse géospatial (EGA) - Accès multiplateforme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mise-en-route" class="md-nav__link">
+    Mise en route
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-darcgis-api-interface-de-programmation-dapplication-for-python" class="md-nav__link">
+    Utilisation d'ArcGIS API (interface de programmation d'application) for Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation d'ArcGIS API (interface de programmation d'application) for Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connexion-a-arcgis-enterprise-portal-a-laide-de-lapi-arcgis" class="md-nav__link">
+    Connexion à ArcGIS Enterprise Portal à l'aide de l'API ArcGIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-les-informations-de-lutilisateur" class="md-nav__link">
+    Afficher les informations de l'utilisateur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recherche-de-contenu" class="md-nav__link">
+    Recherche de contenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtenir-du-contenu" class="md-nav__link">
+    Obtenir du contenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effectuer-une-analyse" class="md-nav__link">
+    Effectuer une analyse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mettre-a-jour-les-elements" class="md-nav__link">
+    Mettre à jour les éléments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualisez-vos-donnees-sur-une-carte-interactive" class="md-nav__link">
+    Visualisez vos données sur une carte interactive
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-savoir-plus-sur-arcgis-api-for-python" class="md-nav__link">
+    En savoir plus sur ArcGIS API for Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-savoir-plus-sur-lenvironnement-analytique-geospatial-ega-et-les-services-du-das" class="md-nav__link">
+    En savoir plus sur l'environnement analytique géospatial (EGA) et les services du DAS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Géospatial</h1>
+
+<h2 id="environnement-danalyse-geospatial-ega-acces-multiplateforme">Environnement d'analyse géospatial (EGA) - Accès multiplateforme</h2>
+<h3 id="mise-en-route">Mise en route</h3>
+<p><strong>IMPORTANT: Prérequis</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">Un</span><span class="w"> </span><span class="n">projet</span><span class="w"> </span><span class="nb">int</span><span class="n">égré</span><span class="w"> </span><span class="n">avec</span><span class="w"> </span><span class="n">accès</span><span class="w"> </span><span class="n">à</span><span class="w">  </span><span class="n">DAS</span><span class="w"> </span><span class="n">GAE</span><span class="w"> </span><span class="n">ArcGIS</span><span class="w"> </span><span class="n">Portal</span><span class="w">    </span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">Un</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="n">ArcGIS</span><span class="w"> </span><span class="n">Portal</span><span class="w"> </span><span class="p">(</span><span class="n">clé</span><span class="w"> </span><span class="n">API</span><span class="p">)</span>
+</code></pre></div>
+
+<p>ArcGIS Enterprise Portal est accessible dans AAW ou CAE à l'aide de l'API, à partir de n'importe quel service qui exploite le langage de programmation Python. </p>
+<p>Par exemple, dans AAW et l'utilisation de <a href="https://statcan.github.io/daaas/fr/1-Experiments/Jupyter/">Jupyter Notebooks</a> dans l'espace, ou dans CAE l'utilisation de <a href="https://statcan.github.io/cae-eac/fr/DataBricks/">Databricks</a>, DataFactory, etc.</p>
+<p><a href="https://geoanalytics.cloud.statcan.ca/portal">Le portail Das GAE ArcGIS Enterprise est accessible directement ici</a></p>
+<p>[Pour obtenir de l'aide sur l'auto-inscription en tant qu'utilisateur du portail géospatial DAS]
+(https://statcan.github.io/gae-eag/french/portalFR/)</p>
+<hr>
+
+<h3 id="utilisation-darcgis-api-interface-de-programmation-dapplication-for-python">Utilisation d'ArcGIS API (interface de programmation d'application) for Python</h3>
+<h4 id="connexion-a-arcgis-enterprise-portal-a-laide-de-lapi-arcgis">Connexion à ArcGIS Enterprise Portal à l'aide de l'API ArcGIS</h4>
+<ol>
+<li>
+<p>Installer les packages :</p>
+<p><code>python
+conda install -c esri arcgis</code></p>
+<p>ou en utilisant Artifactory</p>
+<p><code>python3333
+conda install -c https://jfrog.aaw.cloud.statcan.ca/artifactory/api/conda/esri-remote arcgis</code></p>
+</li>
+<li>
+<p>Importez les bibliothèques nécessaires dont vous aurez besoin dans le Bloc-notes.
+    <code>python
+    from arcgis.gis import GIS
+    from arcgis.gis import Item</code></p>
+</li>
+<li>
+<p>Accéder au portail
+    Votre groupe de projet recevra un ID client lors de l'intégration. Collez l'ID client entre les guillemets <code>client_id='######'</code>. </p>
+<p><code>python
+gis = GIS("https://geoanalytics.cloud.statcan.ca/portal", client_id=' ')
+print("succès: " + gis.properties.user.username)</code></p>
+</li>
+<li>
+<ul>
+<li>Le résultats vous redirigera vers un portail de connexion.</li>
+<li>Utilisez l'option connexion Azure de StatCan et votre ID cloud </li>
+<li>Après une connexion réussie, vous recevrez un code pour vous connecter à l'aide de SAML. </li>
+<li>Collez ce code dans le résultat (en anglais seulement). </li>
+</ul>
+<p><img alt="OAuth2 Approval" src="https://github.com/StatCan/gae-eag/blob/ghpages/english/images/OAuth2Key.png" /> (en anglais seulement)</p>
+</li>
+</ol>
+<hr>
+
+<h4 id="afficher-les-informations-de-lutilisateur">Afficher les informations de l'utilisateur</h4>
+<p>En utilisant la fonction 'me', nous pouvons afficher diverses informations sur l'utilisateur connecté.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">me</span> <span class="o">=</span> <span class="n">gis</span><span class="o">.</span><span class="n">users</span><span class="o">.</span><span class="n">me</span>
+<span class="n">username</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">username</span>
+<span class="n">description</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">description</span>
+<span class="n">display</span><span class="p">(</span><span class="n">me</span><span class="p">)</span>
+</code></pre></div>
+
+<hr>
+
+<h4 id="recherche-de-contenu">Recherche de contenu</h4>
+<p>Recherchez le contenu que vous avez hébergé sur le portail géographique DAaaS. En utilisant la fonction Â«Â meÂ Â», nous pouvons rechercher tout le contenu hébergé sur le compte. Il existe plusieurs façons de rechercher du contenu. Deux méthodes différentes sont décrites ci-dessous.</p>
+<p><strong>Rechercher tous vos itmes hébergés dans le portail géographique DAaaS.</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">my_content</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="n">my_content</span>
+</code></pre></div>
+
+<p><strong>Recherchez le contenu spécifique que vous possédez dans le portail géographique DAaaS.</strong></p>
+<p>Ceci est similaire Ã  l'exemple ci-dessus, mais si vous connaissez le titre de la couche qu'ils souhaitez utiliser, vous pouvez l'enregistrer en tant que fonction.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">my_items</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">items</span> <span class="ow">in</span> <span class="n">my_items</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">items</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="s2">&quot; | &quot;</span><span class="p">,</span> <span class="n">items</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">items</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="s2">&quot;Flood in Sorel-Tracy&quot;</span><span class="p">:</span>
+        <span class="n">flood_item</span> <span class="o">=</span> <span class="n">items</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">continue</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">flood_item</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Recherchez tout le contenu auquel vous avez accès, pas seulement le vôtre.</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="n">flood_item</span> <span class="o">=</span> <span class="n">gis</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;tags: flood&quot;</span><span class="p">,</span> <span class="n">item_type</span> <span class="o">=</span><span class="s2">&quot;Feature Service&quot;</span><span class="p">)</span>
+<span class="n">flood_item</span>
+</code></pre></div>
+
+<hr>
+
+<h4 id="obtenir-du-contenu">Obtenir du contenu</h4>
+<p>Nous devons obtenir l'élément du portail géographique SAD afin de l'utiliser dans le bloc-notes Jupyter. Pour ce faire, vous fournissez le numéro d'identification unique de l'élément que vous souhaitez utiliser. Trois exemples sont décrits ci-dessous, tous accédant Ã  la couche identique.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">item1</span> <span class="o">=</span> <span class="n">gis</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">my_content</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">)</span> <span class="c1">#À partir de la recherche de votre contenu ci-dessus</span>
+<span class="n">display</span><span class="p">(</span><span class="n">item1</span><span class="p">)</span>
+
+<span class="n">item2</span> <span class="o">=</span> <span class="n">gis</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">flood_item</span><span class="o">.</span><span class="n">id</span><span class="p">)</span> <span class="c1">#De l&#39;exemple ci-dessus - recherche de contenu spécifique</span>
+<span class="n">display</span><span class="p">(</span><span class="n">item2</span><span class="p">)</span>
+
+<span class="n">item3</span> <span class="o">=</span> <span class="n">gis</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;edebfe03764b497f90cda5f0bfe727e2&#39;</span><span class="p">)</span> <span class="c1">#Le numéro d&#39;identification de l&#39;article</span>
+<span class="n">display</span><span class="p">(</span><span class="n">item3</span><span class="p">)</span>
+</code></pre></div>
+
+<hr>
+
+<h4 id="effectuer-une-analyse">Effectuer une analyse</h4>
+<p>Une fois les couches introduites dans le bloc-notes Jupyter, nous sommes en mesure d'effectuer des types d'analyse similaires que vous vous attendez Ã  trouver dans un logiciel SIG tel qu'ArcGIS. Il existe de nombreux modules contenant de nombreux sous-modules dont peuvent effectuer plusieurs types d'analyses.
+<br/></p>
+<p>À l'aide du module arcgis.features, importez le sous-module use_proximity <code>from arcgis.features import use_proximity</code>. Ce sous-module nous permet de '.create_buffers' - zones de distance égale par rapport aux entités. Ici, nous spécifions la couche que nous voulons utiliser, la distance, les unités et le nom en sortie (vous pouvez également spécifier d'autres caractéristiques telles que le champ, le type d'anneau, le type d'extrémité et autres). En spécifiant un nom en sortie, après avoir exécuté la commande de zone tampon, une nouvelle couche sera automatiquement téléchargée dans le portail GEO DAaaS contenant la nouvelle fonctionnalité que vous venez de créer.
+<br/></p>
+<div class="codehilite"><pre><span></span><code><span class="n">buffer_lyr</span> <span class="o">=</span> <span class="n">use_proximity</span><span class="o">.</span><span class="n">create_buffers</span><span class="p">(</span><span class="n">item1</span><span class="p">,</span> <span class="n">distances</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> 
+                                          <span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;Kilometers&quot;</span><span class="p">,</span> 
+                                          <span class="n">output_name</span><span class="o">=</span><span class="s1">&#39;item1_buffer&#39;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">item1_buffer</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Certains utilisateurs préfèrent travailler avec des packages Open Source.  La traduction d'ArcGIS vers spatial Dataframes est simple.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># create a Spatially Enabled DataFrame object</span>
+<span class="n">sdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">spatial</span><span class="o">.</span><span class="n">from_layer</span><span class="p">(</span><span class="n">feature_layer</span><span class="p">)</span>
+</code></pre></div>
+
+<hr>
+
+<h4 id="mettre-a-jour-les-elements">Mettre à jour les éléments</h4>
+<p>En obtenant l'élément comme nous l'avons fait similaire à l'exemple ci-dessus, nous pouvons utiliser la fonction '.update' pour mettre à jour l'élément existant dans le portail DAaaS GEO. Nous pouvons mettre à jour les propriétés des éléments, les données, les vignettes et les métadonnées.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">item1_buffer</span> <span class="o">=</span> <span class="n">gis</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;c60c7e57bdb846dnbd7c8226c80414d2&#39;</span><span class="p">)</span>
+<span class="n">item1_buffer</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">item_properties</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Enter Title&#39;</span>
+                                     <span class="s1">&#39;tags&#39;</span><span class="p">:</span> <span class="s1">&#39;tag1, tag2, tag3, tag4&#39;</span><span class="p">,</span>
+                                     <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Enter description of item&#39;</span><span class="p">}</span>
+</code></pre></div>
+
+<hr>
+
+<h4 id="visualisez-vos-donnees-sur-une-carte-interactive">Visualisez vos données sur une carte interactive</h4>
+<p><strong>Exemple : Bibliothèque MatplotLib</strong>
+Dans le code ci-dessous, nous créons un objet ax, qui est un tracé de style carte. Nous traçons ensuite notre colonne de changement de données ('Changement de population') sur les axes</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sdf</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">shape</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s1">&#39;Population Change&#39;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><strong>Exemple : bibliothèque ipyleaflet</strong>
+Dans cet exemple, nous utiliserons la bibliothèque 'ipyleaflet' pour créer une carte interactive. Cette carte sera centrée autour de Toronto, en Ontario. Les données utilisées seront décrites ci-dessous.
+Commencez par coller <code>conda install -c conda-forge ipyleaflet</code> vous permettant d'installer des bibliothèques ipyleaflet dans l'environnement Python.
+<br/>
+Importez les bibliothèques nécessaires.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">ipyleaflet</span> 
+<span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div>
+
+<p>Maintenant que nous avons importé le module ipyleaflet, nous pouvons créer une carte simple en spécifiant la latitude et la longitude de l'emplacement que nous voulons, le niveau de zoom et le fond de carte <a href="https://ipyleaflet.readthedocs.io/en/latest/map_and_basemaps/basemaps.html">(plus de fonds de carte)</a> (en anglais seulement).  Des contrôles supplémentaires ont été ajoutés, tels que des couches et des mises Ã  l'échelle.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">toronto_map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="mf">43.69</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.35</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">basemap</span><span class="o">=</span><span class="n">basemaps</span><span class="o">.</span><span class="n">Esri</span><span class="o">.</span><span class="n">WorldStreetMap</span><span class="p">)</span>
+
+<span class="n">toronto_map</span><span class="o">.</span><span class="n">add_control</span><span class="p">(</span><span class="n">LayersControl</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="s1">&#39;topright&#39;</span><span class="p">))</span>
+<span class="n">toronto_map</span><span class="o">.</span><span class="n">add_control</span><span class="p">(</span><span class="n">ScaleControl</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="s1">&#39;bottomleft&#39;</span><span class="p">))</span>
+<span class="n">toronto_map</span>
+</code></pre></div>
+
+<p><br/></p>
+<h3 id="en-savoir-plus-sur-arcgis-api-for-python">En savoir plus sur ArcGIS API for Python</h3>
+<p><a href="https://developers.arcgis.com/python/">La documentation complète de l'API ArGIS peut être trouvée ici</a> (en anglais seulement)</p>
+<h3 id="en-savoir-plus-sur-lenvironnement-analytique-geospatial-ega-et-les-services-du-das">En savoir plus sur l'environnement analytique géospatial (EGA) et les services du DAS</h3>
+<p><a href="https://statcan.github.io/gae-eag/">Guide d'aide du GAE</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020 Statistique Canada
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/statcan/cae-eac" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://cae-eac.slack.com" target="_blank" rel="noopener" title="cae-eac.slack.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
+</html>
