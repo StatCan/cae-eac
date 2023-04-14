@@ -44,6 +44,6 @@ A collection of software services and applications that easily connect your data
 
 Train, deploy, and manage machine learning models, AutoML experiments, and pipelines at scale.
 
-[Azure Virtual Machines](MachinesVirtuelle.md)
+[Azure Virtual Machines](VirtualMachines.md)
 
 This service enables you to quickly set up an environment for your team by creating or using virtual machines using Azure DevTest Labs for day-to-day work.
