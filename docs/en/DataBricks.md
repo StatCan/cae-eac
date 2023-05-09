@@ -50,6 +50,20 @@ To share a notebook or invite other collaborators, right-click on a specific not
 
 ![How to share a Databricks notebook](images/DataBricksShareNotebook.png)
 
+## Repo vs Workspace
+
+As an alternative to creating a notebook in the workspace area you can also create them under Repos. The main difference is that in repos the notebook will be tied to external version control (ie github). 
+
+![Repo and Worspace](images/repo_vs_workspace.png)
+
+Please contact the creators of your databricks enviroment for information about which options are avaliable and for help with setup 
+
+## Moving Notebooks
+
+Notebooks can easily be moved within or between Repos and Workspaces using the move command, simply right click on the notebook, select the move command and if you transfer into a Repo remember to run a commit and push.
+
+![Move Command](images/Databricks_move.PNG)
+
 ## Ingesting Data into Databricks
 
 Data can be mounted or uploaded to the Databricks File System (DBFS), which is storage specific to the Databricks workspace. You can read data from a data source or even upload a data file (e.g. CSV) directly to the DBFS.
