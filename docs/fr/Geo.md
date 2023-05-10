@@ -9,7 +9,7 @@
 
 ArcGIS Enterprise Portal est accessible dans AAW ou CAE à l'aide de l'API, à partir de n'importe quel service qui exploite le langage de programmation Python. 
 
-Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.github.io/daaas/fr/1-Experiments/Jupyter/) dans l'espace, ou dans CAE l'utilisation de [Databricks](https://statcan.github.io/cae-eac/fr/DataBricks/), DataFactory, etc.
+Par exemple, dans AAW et l'utilisation de [Jupyter Notebooks](https://statcan.github.io/aaw/fr/1-Experiments/Jupyter/) dans l'espace, ou dans CAE l'utilisation de [Databricks](https://statcan.github.io/cae-eac/fr/DataBricks/), DataFactory, etc.
 
 [Le portail Das GAE ArcGIS Enterprise est accessible directement ici](https://geoanalytics.cloud.statcan.ca/portal)
 
@@ -69,14 +69,14 @@ display(me)
 <hr>
 
 ### Recherche de contenu
-Recherchez le contenu que vous avez hébergé sur le portail géographique DAaaS. En utilisant la fonction Â«Â meÂ Â», nous pouvons rechercher tout le contenu hébergé sur le compte. Il existe plusieurs façons de rechercher du contenu. Deux méthodes différentes sont décrites ci-dessous.
+Recherchez le contenu que vous avez hébergé sur le portail géographique SAD. En utilisant la fonction Â«Â meÂ Â», nous pouvons rechercher tout le contenu hébergé sur le compte. Il existe plusieurs façons de rechercher du contenu. Deux méthodes différentes sont décrites ci-dessous.
 
-**Rechercher tous vos itmes hébergés dans le portail géographique DAaaS.**
+**Rechercher tous vos itmes hébergés dans le portail géographique SAD.**
 ```python
 my_content = me.items()
 my_content
 ```
-**Recherchez le contenu spécifique que vous possédez dans le portail géographique DAaaS.**
+**Recherchez le contenu spécifique que vous possédez dans le portail géographique SAD.**
 
 Ceci est similaire Ã  l'exemple ci-dessus, mais si vous connaissez le titre de la couche qu'ils souhaitez utiliser, vous pouvez l'enregistrer en tant que fonction.
 ```python
@@ -119,7 +119,7 @@ display(item3)
 Une fois les couches introduites dans le bloc-notes Jupyter, nous sommes en mesure d'effectuer des types d'analyse similaires que vous vous attendez Ã  trouver dans un logiciel SIG tel qu'ArcGIS. Il existe de nombreux modules contenant de nombreux sous-modules dont peuvent effectuer plusieurs types d'analyses.
 <br/>
 
-À l'aide du module arcgis.features, importez le sous-module use_proximity ```from arcgis.features import use_proximity```. Ce sous-module nous permet de '.create_buffers' - zones de distance égale par rapport aux entités. Ici, nous spécifions la couche que nous voulons utiliser, la distance, les unités et le nom en sortie (vous pouvez également spécifier d'autres caractéristiques telles que le champ, le type d'anneau, le type d'extrémité et autres). En spécifiant un nom en sortie, après avoir exécuté la commande de zone tampon, une nouvelle couche sera automatiquement téléchargée dans le portail GEO DAaaS contenant la nouvelle fonctionnalité que vous venez de créer.
+À l'aide du module arcgis.features, importez le sous-module use_proximity ```from arcgis.features import use_proximity```. Ce sous-module nous permet de '.create_buffers' - zones de distance égale par rapport aux entités. Ici, nous spécifions la couche que nous voulons utiliser, la distance, les unités et le nom en sortie (vous pouvez également spécifier d'autres caractéristiques telles que le champ, le type d'anneau, le type d'extrémité et autres). En spécifiant un nom en sortie, après avoir exécuté la commande de zone tampon, une nouvelle couche sera automatiquement téléchargée dans le portail GEO SAD contenant la nouvelle fonctionnalité que vous venez de créer.
 <br/>
 
 ```python
@@ -139,7 +139,7 @@ sdf = pd.DataFrame.spatial.from_layer(feature_layer)
 <hr>
 
 ### Mettre à jour les éléments
-En obtenant l'élément comme nous l'avons fait similaire à l'exemple ci-dessus, nous pouvons utiliser la fonction '.update' pour mettre à jour l'élément existant dans le portail DAaaS GEO. Nous pouvons mettre à jour les propriétés des éléments, les données, les vignettes et les métadonnées.
+En obtenant l'élément comme nous l'avons fait similaire à l'exemple ci-dessus, nous pouvons utiliser la fonction '.update' pour mettre à jour l'élément existant dans le portail SAD GEO. Nous pouvons mettre à jour les propriétés des éléments, les données, les vignettes et les métadonnées.
 ```python
 item1_buffer = gis.content.get('c60c7e57bdb846dnbd7c8226c80414d2')
 item1_buffer.update(item_properties={'title': 'Enter Title'

@@ -1,5 +1,5 @@
-# This is a workflow copied from AAW that created ghpages https://statcan.github.io/daaas/en/
-# https://github.com/StatCan/daaas/blob/master/.github/workflows/publish.yml
+# This is a workflow copied from AAW that created ghpages https://statcan.github.io/aaw/en/
+# https://github.com/StatCan/aaw/blob/master/.github/workflows/publish.yml
 
 
 name: BuildGhPagesFromPublish

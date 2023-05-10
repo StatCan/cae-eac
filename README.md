@@ -17,4 +17,4 @@ docs  |  Documents
 
 # Other
 * https://daaas-dev.covid.cloud.statcan.ca/cae
-* https://statcan.github.io/daaas/en/
+* https://statcan.github.io/aaw/en/
