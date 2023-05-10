@@ -1,4 +1,4 @@
-Register here to be part of the Data Analytics as a Service (DAaaS) Early Adopter Community:
+Register here to be part of the Data Analytics Services (DAS) Early Adopter Community:
  
 [https://forms.office.com/r/ErV7YkMPBF](https://forms.office.com/r/ErV7YkMPBF)
 

@@ -9,7 +9,7 @@
 
 The ArcGIS Enterprise Portal can be accessed in either the AAW or CAE using the API, from any service which leverages the Python programming language. 
 
-For example, in AAW and the use of [Jupyter Notebooks](https://statcan.github.io/daaas/en/1-Experiments/Jupyter/) within the space, or in CAE the use of [Databricks](https://statcan.github.io/cae-eac/en/DataBricks/), DataFactory, etc.
+For example, in AAW and the use of [Jupyter Notebooks](https://statcan.github.io/aaw/en/1-Experiments/Jupyter/) within the space, or in CAE the use of [Databricks](https://statcan.github.io/cae-eac/en/DataBricks/), DataFactory, etc.
 
 [The DAS GAE ArcGIS Enterprise Portal can be accessed directly here](https://geoanalytics.cloud.statcan.ca/portal)
 
@@ -68,14 +68,14 @@ display(me)
 <hr>
 
 ### Search for Content
-Search for the content you have hosted on the DAaaS Geo Portal. Using the 'me' function we can search for all of the hosted content on the account. There are multiple ways to search for content. Two different methods are outlined below.
+Search for the content you have hosted on the DAS Geo Portal. Using the 'me' function we can search for all of the hosted content on the account. There are multiple ways to search for content. Two different methods are outlined below.
 
-**Search all of your hosted itmes in the DAaaS Geo Portal.**
+**Search all of your hosted itmes in the DAS Geo Portal.**
 ```python
 my_content = me.items()
 my_content
 ```
-**Search for specific content you own in the DAaaS Geo Portal.**
+**Search for specific content you own in the DAS Geo Portal.**
 
 This is similar to the example above, however if you know the title of they layer you want to use, you can save it as a function.
 ```python
@@ -100,7 +100,7 @@ flood_item
 <hr>
 
 ### Get Content
-We need to get the item from the DAaaS Geo Portal in order to use it in the Jupyter Notebook. This is done by providing the unique identification number of the item you want to use. Three examples are outlined below, all accessing the identical layer.
+We need to get the item from the DAS Geo Portal in order to use it in the Jupyter Notebook. This is done by providing the unique identification number of the item you want to use. Three examples are outlined below, all accessing the identical layer.
 ```python
 item1 = gis.content.get(my_content[5].id) #from searching your content above
 display(item1)
@@ -118,7 +118,7 @@ display(item3)
 Once the layers are brought into the Jupyter notebook, we are able to perform similar types of analysis you would expect to find in a GIS software such as ArcGIS. There are many modules containing many sub-modules of which can perform multiple types of analyses.
 <br/>
 
-Using the arcgis.features module, import the use_proximity submodule ```from arcgis.features import use_proximity```. This submodule allows us to '.create_buffers' - areas of equal distance from features. Here, we specify the layer we want to use, distance, units, and output name (you may also specify other characteristics such as field, ring type, end type, and others). By specifying an output name, after running the buffer command, a new layer will be automatically uploaded into the DAaaS GEO Portal containing the new feature you just created.
+Using the arcgis.features module, import the use_proximity submodule ```from arcgis.features import use_proximity```. This submodule allows us to '.create_buffers' - areas of equal distance from features. Here, we specify the layer we want to use, distance, units, and output name (you may also specify other characteristics such as field, ring type, end type, and others). By specifying an output name, after running the buffer command, a new layer will be automatically uploaded into the DAS GEO Portal containing the new feature you just created.
 <br/>
 
 ```python
@@ -138,7 +138,7 @@ sdf = pd.DataFrame.spatial.from_layer(feature_layer)
 <hr>
 
 ### Update Items
-By getting the item as we did similar to the example above, we can use the '.update' function to update exisiting item within the DAaaS GEO Portal. We can update item properties, data, thumbnails, and metadata.
+By getting the item as we did similar to the example above, we can use the '.update' function to update exisiting item within the DAS GEO Portal. We can update item properties, data, thumbnails, and metadata.
 ```python
 item1_buffer = gis.content.get('c60c7e57bdb846dnbd7c8226c80414d2')
 item1_buffer.update(item_properties={'title': 'Enter Title'

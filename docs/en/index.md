@@ -4,7 +4,7 @@ Data Analytics as a Service, powered by Statistics Canada, provides data steward
 - Choose from a variety of familiar tools to prepare and transform datasets.
 - Analyze and present data using dynamic visualizations in order to share compelling data stories.
 
-Please note that at this time, some statistical software tools may not be available for use in both official languages. Statistics Canada is working to ensure that all available data products and tools in the DAaaS platform will be accessible in both official languages in the near future. For more information, visit the [CAE language GitHub documentation](https://statcan.github.io/cae-eac/en/Language/).
+Please note that at this time, some statistical software tools may not be available for use in both official languages. Statistics Canada is working to ensure that all available data products and tools in the DAS platform will be accessible in both official languages in the near future. For more information, visit the [CAE language GitHub documentation](https://statcan.github.io/cae-eac/en/Language/).
 
 
 ## Data storage
