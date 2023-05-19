@@ -2,6 +2,24 @@ Data can be uploaded to the platform via the Azure Portal or the Azure Storage E
 
 **Reminder:** Internal Storage Accounts can only be accessed from a VM in the Collaborative Analytics Environment (CAE) - See the [FAQ](FAQ.md) 
 
+### Azure Storage - External User
+
+## Storage Explorer - Azure Portal 
+
+1. Download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your workstation or VM.
+
+2. Launch Azure Storage Explorer from the Start menu.
+
+3. Login with your Azure Account.  
+
+   ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
+
+4. Enter your Cloud credentials
+
+   ![Use your Cloud Credentials](images/AzureStorageConnectionCloudVM2.png) 
+
+### Azure Storage - Internal User
+
 ## Storage Explorer - Azure Portal 
 
 1. Navigate to the Storage Account (Preview) from the Azure Portal. 
