@@ -13,7 +13,7 @@
 
 ## Accessing Databricks - Internal Users
 ### DAaaS Portal
-Using the work computer, you can access the Databricks URL from the DAaaS PortAL.  
+Using your Azure Virtaul Desktop (AVD), you can access the Databricks URL from the DAaaS PortAL.  
 1. Click on the Dashboard menu from the Azure Portal.  
 
     ![Dashboard](images/DAaaSPortalDatabricks.png) 
