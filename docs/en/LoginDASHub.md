@@ -1,6 +1,6 @@
 ## StatCan external Account (firstname.lastname@ext.statcan.ca)   
 
-1. Using Chrome or Chromium, open: 
+1. Using a modern web browser: 
     - [https://daaas-portal.prod.cloud.statcan.ca/data-analytics-services/hub](https://daaas-portal.dev.cloud.statcan.ca/data-analytics-services/hub)
 
 2. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
