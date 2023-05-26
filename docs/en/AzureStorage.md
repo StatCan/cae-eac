@@ -1,24 +1,25 @@
-Data can be uploaded to the platform via the Azure Portal or the Azure Storage Explorer application. Once data uploaded to an external **Blob storage** account, it is automatically ingested into an internal **Azure Data Lake Storage (ADLS)** account.  Once data is in the data lake, users have their choice of tools for transformation and integration. They can use Web based tools such as Databricks and Data Factory to do their transformations or they can use desktop tools on a virtual machine (VM) to tansform & analyse the data. Cleansed and transformed data can be placed into different folders (containing higher quality / processed datasets) or loaded into a database. Users can once again connect to this data with the tools they would like to use, either from their VMs or other platform services such as Databricks and Data Factory.
-
-**Reminder:** Internal Storage Accounts can only be accessed from a VM in the Collaborative Analytics Environment (CAE) - See the [FAQ](FAQ.md) 
 
 ### Azure Storage - External User
 
-## Storage Explorer - Azure Portal 
+## Storage Explorer 
 
-1. Download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your workstation or VM.
+1. To access any of the services, you must first login to your virtual machine. See [Login](LoginDAS.md)
 
-2. Launch Azure Storage Explorer from the Start menu.
+2. On your virtual machines, launch Azure Storage Explorer from the Start menu (show image).
 
-3. Login with your Azure Account.  
+3. The first you login to Storage explorer, you need to click the connect button and login with your Azure Account.  
 
    ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
 
 4. Enter your Cloud credentials
 
    ![Use your Cloud Credentials](images/AzureStorageConnectionCloudVM2.png) 
+   
+5. Navigate to the Storage Accounts (show how to navigate)
 
 ### Azure Storage - Internal User
+
+Data can be uploaded to the platform via the Azure Portal or the Azure Storage Explorer application. Once data uploaded to an external **Blob storage** account, it is automatically ingested into an internal **Azure Data Lake Storage (ADLS)** account.  Once data is in the data lake, users have their choice of tools for transformation and integration. They can use Web based tools such as Databricks and Data Factory to do their transformations or they can use desktop tools on a virtual machine (VM) to tansform & analyse the data. Cleansed and transformed data can be placed into different folders (containing higher quality / processed datasets) or loaded into a database. Users can once again connect to this data with the tools they would like to use, either from their VMs or other platform services such as Databricks and Data Factory.
 
 ## Storage Explorer - Azure Portal 
 
