@@ -7,15 +7,22 @@
 
 2. On your virtual machines, launch Azure Storage Explorer from the Start menu (show image).
 
-3. The first you login to Storage explorer, you need to click the connect button and login with your Azure Account.  
+3. The first time you launch to Storage explorer, you need to click the connect button and login with your Azure Account.  
 
    ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
 
-4. Enter your Cloud credentials
+4. Enter your credentials
 
-   ![Use your Cloud Credentials](images/AzureStorageConnectionCloudVM2.png) 
+   ![Use your Credentials](images/AzureStorageConnectionCloudVM2.png) 
    
-5. Navigate to the Storage Accounts (show how to navigate)
+5. Once you login, your storage account and containers will be visible to you.
+6. Files can be download and uploaded to\from your to your virutal machine from your respective container (show images: download and upload)
+7. You must download data files to your local virtual machines so that it can be used by installed software. Storage accounts can not be mapped to virtual machines.
+8. You can create a personal folder in your container, to organize your personal files.
+
+Note:
+9. Best practice is to always upload or store data to your storage account.  Virtual machines and thier data are not backed up.
+  
 
 ### Azure Storage - Internal User
 
