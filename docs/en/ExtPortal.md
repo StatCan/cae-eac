@@ -13,12 +13,13 @@ Note: When you login for the first time, you will be prompted to change your pas
 
     ![DAS Hub](images/HubPage.png)
     
-FAQ
-
+  
+ ## Frequently Asked Questions (FAQ)
 1. How do I request an account or request access?
     Please see the request access page.
 2. How do I reset my password?
-     Please see the Contact Us page
+    Please use the Portal Help button to submit a request for assitance 
+    ![Help](images/Help.png)
   
        
 <!-- 2. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
