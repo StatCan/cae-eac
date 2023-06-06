@@ -11,12 +11,12 @@ You can either:
    Each action will modify the VM status.
     ![External VM](images/ExternalVM.png)     
 
-2. *Start the virtual machine:* When the virtual machine status is stopped, the start button is highlighted. You can then start the virtual machine and its status will switch to starting. The Start button is not highlighted anymore.
+2. **Start the virtual machine:** When the virtual machine status is stopped, the start button is highlighted. You can then start the virtual machine and its status will switch to starting. The Start button is not highlighted anymore.
 After that, it can take a few minute for the virtual machine to be in the Running mode. 
 The browser connect button is then highlighted.
     ![Start VM](images/StartVM.png) 
 
-3. *Connect to the virtual machine:* Once the virtual machine is in its running status, the browser connect button is highlighted. To connect to the virtual machine, you will need to hit the Browser connect button; 
+3. **Connect to the virtual machine:** Once the virtual machine is in its running status, the browser connect button is highlighted. To connect to the virtual machine, you will need to hit the Browser connect button; 
     ![Browser Connect](images/BrowserConnect.png) 
     
 4.  This will open a new page where you will be prompted to sign in using your credential provided to you by StatCan. Once launched, click the **Login** button.
@@ -30,10 +30,12 @@ The browser connect button is then highlighted.
 3. Do not share your password with others.
 
 ## Frequently Asked Questions (FAQ)
-1. I have forgotten my ext.statcan.ca password?
-    Please use the DAS portal Help button to submit a request for assitance
-2. I have forgotten my virtual machines username and password?
-    Please use the DAS portal Help button to submit a request for assitance 
+1. I can not see any virutal machines?
+    Please use the portal Help button to submit a request a virtual machine.
+2. I have forgotten my ext.statcan.ca password?
+    Please use the portal Help button to submit a request for assitance.
+3. I have forgotten my virtual machines username and password?
+    Please use the DAS portal Help button to submit a request for assitance .
     ![Help](images/Help.png)
 
 
