@@ -1,3 +1,6 @@
+## Portal 
+Please use the Portal to request assitance.
+
 ## Technical Support
 Subscribe to the following slack channel:
 
