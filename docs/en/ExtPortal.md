@@ -1,4 +1,4 @@
-## StatCan external Account (firstname.lastname@ext.statcan.ca)   
+## External Users (firstname.lastname@ext.statcan.ca)   
 
 1. Using a modern web browser, access the link below
     - [https://daaas-portal.prod.cloud.statcan.ca/data-analytics-services/hub](https://daaas-portal.dev.cloud.statcan.ca/data-analytics-services/hub)
