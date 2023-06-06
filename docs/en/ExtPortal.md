@@ -5,7 +5,7 @@
 
 2. Click the sign-in button.   
 
-    ![VM Sign In](images/SingIn.png)
+    ![VM Sign In](images/SignIn.png)
 
 Note: When you login for the first time, you will be prompted to change your password.
 
