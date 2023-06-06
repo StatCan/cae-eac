@@ -13,6 +13,7 @@
 
 
 ## Accessing Azure Machine Learning- Internal Users
+It is recommanded for internal user to access the cloud service through their AVD (Azure Virtual Desktop)
 ### Dashboard
 
 See the [Dashboard section](Dashboards.md) of this documentation from more information.  

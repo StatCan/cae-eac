@@ -1,4 +1,83 @@
 ## Prerequisites
+- An authorized StatCan account; the cloud account previously used is not required anymore.
+
+## Notes 
+We recommend you use  a modern web browser such as Chrome or Edge (not Internet Explorer) to access the Azure Portal or any Azure services.
+When connecting to the Azure portal, you will login with your [StatCan Network account](#statcan-network-account-firstnamelastnamestatcangcca) (i.e. firstname.lastname@statcan.gc.ca) for StatCan employees.  
+
+Follow the instructions for your type of account to complete your sign-in. 
+
+## StatCan Network Account (firstname.lastname@statcan.gc.ca)   
+*Applicable to all Azure cloud Services (Power BI, Databricks, Data Factory, Virtual Machine, etc.) for internal users only*
+
+1. Using Chrome, Chromium or Edge, open either:   
+    - The [Collaborative Analytics Environment](https://portal.azure.com/#@cloud.statcan.ca/dashboard/arm/subscriptions/d2d3c198-2275-4c7b-bd79-0fc949819c0e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/82e4ac29-4a7f-4ba0-9244-67835193508a) Azure Portal Dashboard
+    - The Power BI App URL (if provided) or [Power BI Service Login Page](https://powerbi.microsoft.com/en-us/landing/signin/)  
+    
+2. When opening a Power BI App URL or the Power BI Service login page, you will be directed to the Microsoft Power BI Sign In landing page, as shown below, saying “Already have an account?”. Click on **SIGN IN**.  
+
+    ![Power BI Sign In](images/PowerBI/image001.png)  
+
+3. You will then be prompted to either enter or pick an account:  
+
+    - Upon your first time signing in, you will receive the Microsoft Sign in prompt, as shown below.  
+   
+        ![Microsoft Sign In Prompt](images/PowerBI/image007.png)  
+
+    - Enter your statcan account credentials (firstname.lastname@statcan.gc.ca), and click on **Next**.  
+
+    - On subsequent sign-ins, you will receive the Microsoft Pick an account prompt, as shown below. Click on your statcan.gc.ca account.  
+
+        ![Microsoft pick an account prompt](images/PowerBI/image008.png)  
+
+4. You will then be prompted to enter your account password, as shown below. Once entered, click on **Sign in**.  
+
+    ![Enter password](images/PowerBI/image009.png)   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ## Prerequisites
 - An authorized StatCan Cloud account or guest account. Access using StatCan Network accounts is currently only available for the Power BI Service, but may be added in the future for other services in the Collaborative Analytics Environment (CAE).
 
 ## Notes 
@@ -148,4 +227,4 @@ Please note that step 5 (Internet password) below may not appear in the order sp
  
 
  
-
+ -->

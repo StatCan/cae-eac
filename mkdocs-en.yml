@@ -41,10 +41,10 @@ nav:
   - About : index.md
   - Register your Project : RegisterProject.md
   - Contact Us: ContactUs.md
-  - External Users :
-      - How to login with Data Analytics Portal: LoginDASHub.md
-      - Virtual Machines: LoginDASHub.md
-      - Azure Storage: LoginDASHub.md
+  - External Users :  External.md
+      - How to login with Data Analytics Portal: ExtPortal.md
+      - Virtual Machines: ExtVirtualMachines.md
+      - Azure Storage: ExtStorage.md
   - Statistic Canada User :
       - How to Login: Login.md
       - Dashboards: Dashboards.md

@@ -7,7 +7,7 @@
 
 2. On your virtual machines, launch Azure Storage Explorer from the Start menu (show image).
 
-3. The first time you launch to Storage explorer, you need to click the connect button and login with your Azure Account.  
+3. The first time you launch the Storage explorer, you need to click the connect button and login with your Azure Account.  
 
    ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
 
@@ -28,6 +28,20 @@ Note:
 
 Data can be uploaded to the platform via the Azure Portal or the Azure Storage Explorer application. Once data uploaded to an external **Blob storage** account, it is automatically ingested into an internal **Azure Data Lake Storage (ADLS)** account.  Once data is in the data lake, users have their choice of tools for transformation and integration. They can use Web based tools such as Databricks and Data Factory to do their transformations or they can use desktop tools on a virtual machine (VM) to tansform & analyse the data. Cleansed and transformed data can be placed into different folders (containing higher quality / processed datasets) or loaded into a database. Users can once again connect to this data with the tools they would like to use, either from their VMs or other platform services such as Databricks and Data Factory.
 
+## Storage Explorer - AVD
+1. If you don't have it in the AVD, you can download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your AVD.
+
+2. Launch Azure Storage Explorer from the Start menu.
+
+3. Login with your Azure Account.  
+
+   ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
+
+4. Enter your credentials
+
+   ![Use your Credentials](images/AzureStorageConnectionCloudVM2.png)  
+
+
 ## Storage Explorer - Azure Portal 
 
 1. Navigate to the Storage Account (Preview) from the Azure Portal. 
@@ -38,20 +52,8 @@ Data can be uploaded to the platform via the Azure Portal or the Azure Storage E
 
    ![storage accounts](images/StorageExplorerPortalPreview.png)  
 
-## Storage Explorer - Personal Workstation or Cloud Virtual Machine
-1. Download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your workstation or VM.
 
-2. Launch Azure Storage Explorer from the Start menu.
-
-3. Login with your Azure Account.  
-
-   ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
-
-4. Enter your Cloud credentials
-
-   ![Use your Cloud Credentials](images/AzureStorageConnectionCloudVM2.png)  
-
-## Storage Explorer - Network B VDI
+<!-- ## Storage Explorer - Network B VDI
 _This section is for Statistics Canada employees who need to upload data from Network B._  
 1. Download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your Network B VDI. 
 
@@ -63,4 +65,4 @@ _This section is for Statistics Canada employees who need to upload data from Ne
 
 ## Microsoft Documentation
 - [Azure Storage Explorer Download](https://azure.microsoft.com/en-us/features/storage-explorer/)  
-- [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) 
+- [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)  -->

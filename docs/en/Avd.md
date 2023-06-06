@@ -1,18 +1,27 @@
-## Use your Azure Virtual Desktop
-1. As internal User, you will need your NetA credential to be able to access your AVD; your statcan account: firstname.lastname@statcan.gc.ca and your NetA password.
+## As internal User, you will need your NetA credential
+1. To be able to access the resources as internal user, you will need your statcan account: firstname.lastname@statcan.gc.ca
 
-2. You will have to connect to your environment through the Azure Virtual Desktop (AVD).
+2. You will have to connect to your environment through the Azure Vurtual Desktop (AVD).
 From the Windows Search bar, you will have to access the Remote Desktop app then select your AVD and enter your NetA credential as shown below.
 
     ![Access AVD](images/AVDLogin.png)  
 
 
-## Find Your DevTest Lab
-1. In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.    
 
-    ![Access DevTest Lab](images/newAccessDTL.png)  
 
-2. Select the DevTest Lab that was assigned.
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 2. Select the DevTest Lab that was assigned.
  
 ## Create Your Virtual Machine
 **Note:** In some instances a Virtual Machine will be pre-created for you and you will not have permission to create a virtual machine. See the [FAQ](FAQ.md) if you need to make changes to your virtual machine.  
@@ -66,4 +75,4 @@ Virtual machines only incur costs while they are running. You should shut down y
 1. From the **Overview** page for your VM, click on the **Stop** button.  
 
     ![VM Stop Button](images/VMStopButton.png)  
-
+ -->

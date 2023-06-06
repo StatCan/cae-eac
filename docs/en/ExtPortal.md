@@ -1,11 +1,19 @@
 ## StatCan external Account (firstname.lastname@ext.statcan.ca)   
 
-1. Using a modern web browser, click the sign-in button:  (add image of sign-in)
+1. Using a modern web browser, access the link below
     - [https://daaas-portal.prod.cloud.statcan.ca/data-analytics-services/hub](https://daaas-portal.dev.cloud.statcan.ca/data-analytics-services/hub)
 
-Note: First time logging in, you will prompted to change your password.
+2. Click the sign-in button.   
 
-2. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
+    ![VM Sign In](images/SingIn.png)
+
+Note: When you login for the first time, you will be prompted to change your password.
+
+3. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
+
+    ![DAS Hub](images/HubPage.png)
+       
+<!-- 2. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
 
     ![DAS Hub](images/HubPage.png)     
 
@@ -32,4 +40,4 @@ Frequently Asked Quesitons (FAQ)
     Please use the DAS portal Help button to submit a request for assitance (add image)
 2. I have forgotten my virtual machines username and password?
     Please use the DAS portal Help button to submit a request for assitance (add image)
-
+ -->

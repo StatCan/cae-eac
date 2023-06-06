@@ -12,7 +12,7 @@
     
 
 ### Access Azure Synapse- Internal Users
-
+It is recommanded for internal user to access the cloud service through their AVD (Azure Virtual Desktop) 
 1. Make sure that you are in your cloud virtual machine to access Azure Synapse. See [Virtual Machines](VirtualMachines.md) for information on how to create one if needed.
 
 2. Inside your virtual machine, open a web browser and navigate to the [Azure Portal](https://portal.azure.com). Sign in with your cloud account credentials.
