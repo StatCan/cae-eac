@@ -1,8 +1,8 @@
-## Access your External Virtual Machine
+## Access your Virtual Machine
 
 1. You will see at the bottom of the hub page the Virtual Machine that you can access.
 From the portal, you will be able to perform three different actions. 
-You can either
+You can either:
     -Start the VM
     -Stop the VM
     -Connect to the VM
