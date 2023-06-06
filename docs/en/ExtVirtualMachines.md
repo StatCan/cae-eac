@@ -2,6 +2,7 @@
 
 1. You will see at the bottom of the hub page the Virtual Machine that you can access.
 From the portal, you will be able to perform three different actions. 
+
 You can either:
     - Start the VM
     - Stop the VM
@@ -10,12 +11,12 @@ You can either:
    Each action will modify the VM status.
     ![External VM](images/ExternalVM.png)     
 
-2. Start the virtual machine: When the virtual machine status is stopped, the start button is highlighted. You can then start the virtual machine and its status will switch to starting. The Start button is not highlighted anymore.
+2. *Start the virtual machine:* When the virtual machine status is stopped, the start button is highlighted. You can then start the virtual machine and its status will switch to starting. The Start button is not highlighted anymore.
 After that, it can take a few minute for the virtual machine to be in the Running mode. 
 The browser connect button is then highlighted.
     ![Start VM](images/StartVM.png) 
 
-3. Connect to the virtual machine: Once the virtual machine is in its running status, the browser connect button is highlighted. To connect to the virtual machine, you will need to hit the Browser connect button; 
+3. *Connect to the virtual machine:* Once the virtual machine is in its running status, the browser connect button is highlighted. To connect to the virtual machine, you will need to hit the Browser connect button; 
     ![Browser Connect](images/BrowserConnect.png) 
     
 4.  This will open a new page where you will be prompted to sign in using your credential provided to you by StatCan. Once launched, click the **Login** button.
