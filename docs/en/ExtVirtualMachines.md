@@ -1,5 +1,7 @@
 ## Virtual Machine
 
+Before logging into your virutal machine, you must first login to the [DAS portal](ExtPortal.md) 
+
 1. You will see at the bottom of the hub page the Virtual Machine that you can access.
 From the portal, you will be able to perform three different actions. 
 
