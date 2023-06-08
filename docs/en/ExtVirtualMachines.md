@@ -19,7 +19,7 @@ The browser connect button is then highlighted.
 3. **Connect to the virtual machine:** Once the virtual machine is in its *Running* status, the browser connect button is highlighted. To connect to the virtual machine, you will need to hit the Browser connect button; 
     ![Browser Connect](images/BrowserConnect.png) 
     
-4.  This will open a new page where you will be prompted to sign in using your credential provided to you by StatCan. Once launched, click the **Login** button.
+4.  This will open a new page where you will be prompted to sign in using your credential provided to you by Statistics Canada. Once launched, click the **Login** button.
 
     ![Enter VM Credentials](images/EnterCredential.png)
 
