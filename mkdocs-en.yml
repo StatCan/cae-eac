@@ -49,9 +49,9 @@ nav:
       - How to Login: Login.md
       - Dashboards: Dashboards.md
       - Virtual Machines: VirtualMachines.md
-      - Azure Storage: AzureStorage.md
+      - Azure Storage: AVDStorage.md
       - Azure Data Factory: DataFactory.md  
-  - Azure Storage: AzureStorage.md
+  - Azure Storage Explorer: AzureStorageExplorer.md
   - Azure Databricks: DataBricks.md
   - Azure Synapse:  AzureSynapse.md
   - Azure Machine Learning: AzureML.md
