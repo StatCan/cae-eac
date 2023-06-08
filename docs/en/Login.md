@@ -13,7 +13,11 @@ Follow the instructions for your type of account to complete your sign-in.
 1. Using Chrome, Chromium or Edge, open either:   
     - The [Collaborative Analytics Environment](https://portal.azure.com/#@cloud.statcan.ca/dashboard/arm/subscriptions/d2d3c198-2275-4c7b-bd79-0fc949819c0e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/82e4ac29-4a7f-4ba0-9244-67835193508a) Azure Portal Dashboard
     - The Power BI App URL (if provided) or [Power BI Service Login Page](https://powerbi.microsoft.com/en-us/landing/signin/)  
-    
+  
+## Azure Portal Login
+
+## Power BI Login
+
 2. When opening a Power BI App URL or the Power BI Service login page, you will be directed to the Microsoft Power BI Sign In landing page, as shown below, saying “Already have an account?”. Click on **SIGN IN**.  
 
     ![Power BI Sign In](images/PowerBI/image001.png)  
