@@ -7,9 +7,9 @@ From the portal, you will be able to perform three different actions.
 
 You can either:
 
-    - Start the Virtual Machine
-    - Stop the Virtual Machine
-    - Connect to the Virtual Machine
+- Start the Virtual Machine
+- Stop the Virtual Machine
+- Connect to the Virtual Machine
 
    Each action will modify the Virtual Machine status.
     ![External VM](images/ExternalVM.png)     
