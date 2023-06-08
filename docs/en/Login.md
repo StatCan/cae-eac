@@ -41,6 +41,8 @@ Follow the instructions for your type of account to complete your sign-in.
 4. You will then be prompted to enter your account password, as shown below. Once entered, click on **Sign in**.  
 
     ![Enter password](images/PowerBI/image009.png)   
+    
+
 
 
 
