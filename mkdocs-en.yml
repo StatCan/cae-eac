@@ -49,8 +49,9 @@ nav:
       - How to Login: Login.md
       - Dashboards: Dashboards.md
       - Azure Virtual Desktop: AVD.md
+      - Azure Dev Test Labs: DevTestLabs.md
       - Azure Storage: AVDStorage.md
-      - Azure Data Factory: DataFactory.md  
+      - Azure Data Factory: DataFactory.md 
   - Azure Storage Explorer: AzureStorageExplorer.md
   - Azure Databricks: DataBricks.md
   - Azure Synapse:  AzureSynapse.md
