@@ -6,6 +6,7 @@ Before logging into your virutal machine, you must first login to the [DAS porta
 From the portal, you will be able to perform three different actions. 
 
 You can either:
+
     - Start the Virtual Machine
     - Stop the Virtual Machine
     - Connect to the Virtual Machine
