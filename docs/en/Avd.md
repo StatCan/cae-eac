@@ -1,10 +1,19 @@
-## Statistics Canada employees, you will need your NetA credential
-1. To be able to access the resources as internal user, you will need your statcan account: **firstname.lastname@statcan.gc.ca**
+## Azure Virtual Desktop
+Statistics Canada employees have access to Azure Virtual Desktop on thier Statistics Canada device.  Statistics Canada employees can use thier statcan.gc.ca credentials to login to Azure Virtual Desktop.
+
+1. To be able to access Azure Virtual Desktop, you will need your statcan account: **firstname.lastname@statcan.gc.ca**
 
 2. You will have to connect to your environment through the Azure Virtual Desktop (AVD).
 From the Windows Search bar, you will have to access the Remote Desktop app then select your AVD and enter your NetA credential as shown below.
 
-    ![Access AVD](images/AVDLogin.png)  
+    ![Access AVD](images/AVDLogin.png) 
+    
+3. Once you are logged into your Azure Virtual Desktop,  you can access the following services:
+
+- Storage
+- Databricks
+- Syanspe
+- Azure Portal
 
 
 
