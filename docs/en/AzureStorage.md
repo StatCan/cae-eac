@@ -3,9 +3,9 @@
 
 ## Storage Explorer 
 
-1. To access any of the services, you must first login to your virtual machine. See [Login](LoginDAS.md)
+1. To access any of the services, you must first login to your virtual machine. See [Virtual Machine](ExtVirtualMachine.md)
 
-2. On your virtual machines, launch Azure Storage Explorer from the Start menu (show image).
+2. On your virtual machine, launch Azure Storage Explorer from the Start menu (show image).
 
 3. The first time you launch the Storage explorer, you need to click the connect button and login with your Azure Account.  
 
