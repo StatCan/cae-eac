@@ -11,10 +11,14 @@ Follow the instructions for your type of account to complete your sign-in.
 *Applicable to all Azure cloud Services (Power BI, Databricks, Data Factory, Virtual Machine, etc.) for internal users only*
 
 1. Using Chrome, Chromium or Edge, open either:   
-    - The [Collaborative Analytics Environment](https://portal.azure.com/#@cloud.statcan.ca/dashboard/arm/subscriptions/d2d3c198-2275-4c7b-bd79-0fc949819c0e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/82e4ac29-4a7f-4ba0-9244-67835193508a) Azure Portal Dashboard
+    - The [Azure Portal](https://portal.azure.com/#@cloud.statcan.ca/dashboard/arm/subscriptions/d2d3c198-2275-4c7b-bd79-0fc949819c0e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/82e4ac29-4a7f-4ba0-9244-67835193508a) Azure Portal Dashboard
     - The Power BI App URL (if provided) or [Power BI Service Login Page](https://powerbi.microsoft.com/en-us/landing/signin/)  
   
 ## Azure Portal Login
+
+1. Enter your statcan.gc.ca cloud account credentials (show image)
+2. You will then be loged into the Azure Portal (show image)
+3. See instrctions on how to navigiate to the [Collaborative Analyitics Dashboard](Dashboard.md)
 
 ## Power BI Login
 
