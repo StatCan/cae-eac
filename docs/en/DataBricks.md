@@ -1,15 +1,24 @@
 ## Accessing Databricks - External Users
 
-### DAaaS Portal
+### Data Analyitics Services (DAS) Portal
   
-1. To access any of the services, you must first login to your virtual machine. See [Login](LoginDAS.md)
-2. On your virtual machine, using your web browser, login to the DAS portal.
+1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachine.md)
+2. On your virtual machine, using your web browser, login to the Data Analyitics Services (DAS) portal.
 ![Dashboard](images/DAaaSPortalDatabricks.png)  
 
-4. In side the DaaaS portal, you can click this link (show image)
+4. In side the Data Analyitics Services (DAS) portal, you can click this link (show image)
 5. This can can also be used to access Databricks from your virutal machine: https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
 
     ![Databricks URL](images/DatabricksSelect.png)
+    
+### Databricks URL
+
+1. Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
+
+    ![Databricks URL](images/DatabricksSelect.png)
+  
+#### Note
+Staistics Canada employees can also access Databricks from thier AVD using the dashboard.
 
 ## Accessing Databricks - Internal Users
 It is recommanded for internal user to access the cloud service through their AVD (Azure Virtual Desktop)
@@ -26,11 +35,7 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
 
     ![Dashboard](images/DataFactoryDashboard.png)  
 
-### Databricks URL
 
-1. Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
-
-    ![Databricks URL](images/DatabricksSelect.png)
 
 ### Azure Portal
 
