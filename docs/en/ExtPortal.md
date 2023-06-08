@@ -1,5 +1,5 @@
 ## External Users (firstname.lastname@ext.statcan.ca)   
-1. As an external user, you will need to request an external account: **firstname.lastname@ext.statcan.ca** to be able to access your Virtual Machine and the resources needed.\
+1. As an external user, you will need to request an external account: **firstname.lastname@ext.statcan.ca** to be able to access your Virtual Machine and the resources needed.
 Please [Contact Us](ContactUs.md) to request an account.
 
 2. Using a modern web browser, access the link below
@@ -18,10 +18,10 @@ Note: When you login for the first time, you will be prompted to change your pas
   
  ## Frequently Asked Questions (FAQ)
 1. How do I request an account or request access?
-    Please [Contact Us](ContactUs.md) to request access.
+    Please [Contact Us](ContactUs.md) to request access and indicate that you would like to request access.
 
 2. How do I reset my password?
-    Please use the DAS portal Help button to [Contact Us](ContactUs.md) and submit a request for assistance
+    Please use the DAS portal Help button to [Contact Us](ContactUs.md) and submit a request for assistance and indicate that you would like to reset your password.
        
 <!-- 2. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
 
