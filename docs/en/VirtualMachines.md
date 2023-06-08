@@ -1,10 +1,6 @@
-## Use your Azure Virtual Desktop
-1. As internal User, you will need your NetA credential to be able to access your AVD; your statcan account: firstname.lastname@statcan.gc.ca and your NetA password.
-
-2. You will have to connect to your environment through the Azure Virtual Desktop (AVD).
-From the Windows Search bar, you will have to access the Remote Desktop app then select your AVD and enter your NetA credential as shown below.
-
-    ![Access AVD](images/AVDLogin.png)  
+## Azure Dev Test Labs
+ 
+Please [Contact Us](ContactUs.md) to request access to Azure Dev Test Labs. Statistics Canada users should use thier [Azure Virtual Desktop](AVD.md) to access the environment. Alternatively, Dev Test Labs can be requested when the Azure Virtual Desktop does not have the required software.
 
 
 ## Find Your DevTest Lab
