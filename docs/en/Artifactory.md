@@ -161,7 +161,8 @@ You can use the Command Prompt to install packages, then import them into the Py
 
 ![Check library](images/Artifactory-Python01.png)
 
-2. Now let's install it using the Command Prompt (See Command Prompt section of this document if the pip.ini file hasn't been configured before).
+2. Now let's install it using the **Command Prompt**.
+ *See Command Prompt section of this document if the pip.ini file hasn't been configured before*
  
 ![install library](images/Artifactory-Python02.png)
 
