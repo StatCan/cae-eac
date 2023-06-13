@@ -75,7 +75,7 @@ The packages can be installed from the terminal using Python commands.
 
  *If a compute instance has not been created for you, please contact the  **Collaborative Analytics Environment** team.*
  
-3. Run this code **once** to setup pip to download packages from Artifactory repositories by default:
+3. Run this code to setup pip to download packages from Artifactory repositories by default:
 
 ```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
 
@@ -95,7 +95,7 @@ Please contact the **Collaborative Analytics Environment** team to install custo
 1.From the **Extensions** tab, click **Terminal**, then click **New Terminal**.
 ![Visual Studio Code](images/Artifactory-VS01.png)
 
-2. Run this code **once** to setup pip to download packages from Artifactory repositories by default:
+2. Run this code to setup pip to download packages from Artifactory repositories by default:
 
 ```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
 
@@ -108,28 +108,44 @@ Please contact the **Collaborative Analytics Environment** team to install custo
 ![Install VSCpackage](images/Artifactory-VSC02.png)
 
 ## RStudio
-1. Run this code **once** to configure the Rhistory file to use the Artifactory repository by default:
+1. Run this code to configure the Rprofile.site file to use the Artifactory repository by default:
 
-```options(repos = c("dev-cran-remote" = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"))```
+``` 
+options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"),
+     download.file.method = "curl",
+     download.file.extra = "-k -L") 
+```
 
-![Configure Rstudio](images/Artifactory-RShiny01.png)
+![Configure Rstudio](images/Artifactory-RStudio01.png)
 
-2. Click "Install", choose the new repository that you added in step 1, then enter the package name to install.
+2. Under **Packages**, click "Install". Choose the new repository that you added in step 1 and enter the package name to install.
 
-![Install Rstudio](images/Artifactory-RShiny02.png)
+![Install Rstudio](images/Artifactory-RStudio02.png)
 
-Note: You can directly use the **install.packages(PackageName)** command to install packages
+Note: You can directly use the **install.packages("PackageName")** command to install packages
 
 3. You should see the installed package in the **System Library list**.
 
-![Rstudio packages](images/Artifactory-RShiny03.png)
+![Rstudio packages](images/Artifactory-RStudio03.png)
 
+### R Console
+1. Run this code to configure the Rprofile.site file to use the Artifactory repository by default:
+
+```
+options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"),
+     download.file.method = "curl",
+     download.file.extra = "-k -L")
+```
+
+2.  Run the **install.packages("PackageName")** command to install packages.
+
+![R packages](images/Artifactory-RStudio04.png)
 
 
 ## Azure Cloud Virtual Machine
 
 ### Miniforge Prompt
-1. Run this code **once** to setup pip to download packages from Artifactory repositories by default:
+1. Run this code to setup pip to download packages from Artifactory repositories by default:
 
 ```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
 
@@ -142,7 +158,7 @@ Note: You can directly use the **install.packages(PackageName)** command to inst
 ![Install VSCpackage](images/Artifactory-Miniforge02.png)
 
 ### Command Prompt
-1. Run this code **once** to setup pip to download packages from Artifactory repositories by default:
+1. Run this code to setup pip to download packages from Artifactory repositories by default:
 
 ```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
 
