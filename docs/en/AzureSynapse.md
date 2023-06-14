@@ -1,9 +1,9 @@
 ## Getting Started
 
 ### Access Azure Synapse- External Users
-1. To access any of the services, you must first login to your virtual machine. See [Login](LoginDAS.md)
+1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachine.md)
 2.  On your virtual machine, using your web browser, login to the DAS portal.
-3. In side the DaaaS portal, you can click on the synapse URL.  (show image)
+3. In side the DaaaS portal, you can click on the synapse URL.
  ![Portal](images/DAaaSPortalSynapse.png)
 4. This can can also be used to access Synapse from your virtual machine: https://web.azuresynapse.net/, sign in with your cloud account credentials, and select the Synapse workspace that was created for you.  
  ![Synapse URL](images/SynapseSelect.png)

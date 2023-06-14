@@ -48,8 +48,9 @@ nav:
   - Statistic Canada Users :  
       - How to Login: Login.md
       - Dashboards: Dashboards.md
-      - Azure Virtual Desktop: AVD.md
-      - Azure Dev Test Labs: DevTestLabs.md
+      - VMs:
+        - Azure Virtual Desktop: AVD.md
+        - Azure Dev Test Labs: DevTestLabs.md
       - Azure Storage: AVDStorage.md
       - Azure Data Factory: DataFactory.md 
   - Azure Storage Explorer: AzureStorageExplorer.md

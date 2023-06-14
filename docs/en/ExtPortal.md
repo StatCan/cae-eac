@@ -7,7 +7,7 @@ Please [Contact Us](ContactUs.md) to request an account.
 
 3. Click the sign-in button.   
 
-    ![VM Sign In](images/SignIn.png)
+    ![VM Sign In](images/DASSignIn.png)
 
 Note: When you login for the first time, you will be prompted to change your password.
 

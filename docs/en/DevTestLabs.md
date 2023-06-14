@@ -1,36 +1,14 @@
-## Azure Virtual Desktop
-Statistics Canada employees have access to Azure Virtual Desktop on their Statistics Canada device.  Statistics Canada employees can use their statcan.gc.ca credentials to login to Azure Virtual Desktop.
-
-1. To be able to access Azure Virtual Desktop, you will need your statcan account: **firstname.lastname@statcan.gc.ca**
-
-2. You will have to connect to your environment through the Azure Virtual Desktop (AVD).
-From the Windows Search bar, you will have to access the Remote Desktop app then select your AVD and enter your NetA credential as shown below.
-
-    ![Access AVD](images/AVDLogin.png) 
-    
-3. Once you are logged into your Azure Virtual Desktop,  you can access the following services:
-
--  [Storage](AVDStorage.md)
--  [Databricks](Databricks.md)
--  [Synapse](Synapse.md)
--  [Azure Portal](Login.md)
+## Azure Dev Test Labs
+ 
+Please [Contact Us](ContactUs.md) to request access to Azure Dev Test Labs. Statistics Canada users should use their [Azure Virtual Desktop](AVD.md) to access the environment. Alternatively, Dev Test Labs can be requested when the Azure Virtual Desktop does not have the required software.
 
 
+## Find Your DevTest Lab
+1. In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.    
 
+    ![Access DevTest Lab](images/newAccessDTL.png)  
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 2. Select the DevTest Lab that was assigned.
+2. Select the DevTest Lab that was assigned.
  
 ## Create Your Virtual Machine
 **Note:** In some instances a Virtual Machine will be pre-created for you and you will not have permission to create a virtual machine. See the [FAQ](FAQ.md) if you need to make changes to your virtual machine.  
@@ -84,4 +62,4 @@ Virtual machines only incur costs while they are running. You should shut down y
 1. From the **Overview** page for your VM, click on the **Stop** button.  
 
     ![VM Stop Button](images/VMStopButton.png)  
- -->
+

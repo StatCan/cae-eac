@@ -8,6 +8,15 @@ Please [Contact Us](ContactUs.md) to request access to Azure Dev Test Labs. Stat
 
     ![Access DevTest Lab](images/newAccessDTL.png)  
 
+
+
+
+
+
+
+
+    
+
 2. Select the DevTest Lab that was assigned.
  
 ## Create Your Virtual Machine

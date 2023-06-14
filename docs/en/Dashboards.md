@@ -4,7 +4,6 @@ The Azure portal provides a default dashboard as a starting point. You can edit 
 
 ## Access the Collaborative Analytics Environment Dashboard
 1. From the Azure portal menu, select **Dashboard**. Your default view might already be set to dashboard.  
-
     ![Access Dashboards](images/AccessDashboard.png)  
 
 2. Select the arrow next to the dashboard name.  
@@ -24,6 +23,14 @@ The Azure portal provides a default dashboard as a starting point. You can edit 
     d. Select the **Collaborative Analytics Environment** dashboard from the list of shared dashboards.
     
     ![Collaborative Analytics Environments Dashboard](images/DashboardCAE.png)
+
+## Accessing the available services
+
+
+-  [Storage](AVDStorage.md)
+-  [Databricks](Databricks.md)
+-  [Synapse](Synapse.md)
+-  [Machine Learning](AzureML.md)
 
 ## Microsoft Documentation
 - [Create a dashboard in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards)

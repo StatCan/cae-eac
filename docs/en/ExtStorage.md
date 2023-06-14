@@ -5,49 +5,41 @@
 
 1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachines.md)
 
-2. On your virtual machines, launch Azure Storage Explorer from the Start menu (show image).
+2. On your virtual machines, launch Azure Storage Explorer from the Start menu.
 
-3. The first time you launch the Storage explorer, you need to click the connect button and login with your Azure Account.  
+   ![Microsoft Azure Storage Explorer](images/AzureStorageExplorer.png)
 
-   ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
+3. The first time you launch the Storage explorer, you need to click the connect button 
 
-4. Enter your credentials
+   ![Connect](images/AzureStorageExplorerConnect1.png)
 
-   ![Use your Credentials](images/AzureStorageConnectionCloudVM2.png) 
+   or click the ***Sign in with Azure*** Button
+
+   ![Sign In With Azure](images/AzureStorageExplorerConnect2.png)
+
+3. You then have to select your environment.  
+
+   ![Connect using Azure Account](images/AzureStorageExplorerSelectEnviroment.png)  
+
+4. and login with your Azure Account by entering your credentials
+
+   ![Use your Credentials](images/AzureStorageExplorerSignIn.png) 
    
 5. Once you login, your storage account and containers will be visible to you.
-6. Files can be download and uploaded to\from your to your virutal machine from your respective container (show images: download and upload)
+
+6. Files can be download and uploaded to\from your virtual machine from your respective container 
+
+   ![Download and Upload Files](images/AzureStorageExplorerUpDown.png) 
+
 7. You must download data files to your local virtual machines so that it can be used by installed software. Storage accounts can not be mapped to virtual machines.
 8. You can create a personal folder in your container, to organize your personal files.
 
 Note:
 9. Best practice is to always upload or store data to your storage account.  Virtual machines and thier data are not backed up.
-  
 
-### Azure Storage - Internal User
+[Azure Virtual Desktop](AVD.md)
 
-Data can be uploaded to the platform via the Azure Portal or the Azure Storage Explorer application. Once data uploaded to an external **Blob storage** account, it is automatically ingested into an internal **Azure Data Lake Storage (ADLS)** account.  Once data is in the data lake, users have their choice of tools for transformation and integration. They can use Web based tools such as Databricks and Data Factory to do their transformations or they can use desktop tools on a virtual machine (VM) to tansform & analyse the data. Cleansed and transformed data can be placed into different folders (containing higher quality / processed datasets) or loaded into a database. Users can once again connect to this data with the tools they would like to use, either from their VMs or other platform services such as Databricks and Data Factory.
+<!-- ### Azure Storage - Internal User
 
-## Storage Explorer - AVD
-1. If you don't have it in the AVD, you can download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your AVD.
+Data can be uploaded to the platform via the Azure Portal or the Azure Storage Explorer application. Once data uploaded to an external **Blob storage** account, it is automatically ingested into an internal **Azure Data Lake Storage (ADLS)** account.  Once data is in the data lake, users have their choice of tools for transformation and integration. They can use Web based tools such as Databricks and Data Factory to do their transformations or they can use desktop tools on a virtual machine (VM) to tansform & analyse the data. Cleansed and transformed data can be placed into different folders (containing higher quality / processed datasets) or loaded into a database. Users can once again connect to this data with the tools they would like to use, either from their VMs or other platform services such as Databricks and Data Factory. -->
 
-2. Launch Azure Storage Explorer from the Start menu.
-
-3. Login with your Azure Account.  
-
-   ![Connect using Azure Account](images/AzureStorageConnectionCloudVM1.png)  
-
-4. Enter your credentials
-
-   ![Use your Credentials](images/AzureStorageConnectionCloudVM2.png)  
-
-
-## Storage Explorer - Azure Portal 
-
-1. Navigate to the Storage Account (Preview) from the Azure Portal. 
-
-   ![search box](images/StorageExplorerSearchPortal.png)  
-
-2. Select your subscription, then navigate the storage account.   
-
-   ![storage accounts](images/StorageExplorerPortalPreview.png)  

@@ -16,9 +16,13 @@ Follow the instructions for your type of account to complete your sign-in.
   
 ## Azure Portal Login
 
-1. Enter your statcan.gc.ca cloud account credentials (show image)
+1. Enter your statcan.gc.ca cloud account credentials
+
+    ![Azure Portal Login](images/AzurePortalLogIn.png)
 2. You will then be loged into the Azure Portal (show image)
-3. See instrctions on how to navigiate to the [Collaborative Analyitics Dashboard](Dashboard.md)
+
+    ![Azure Portal Home](images/AzurePortalHome.png)
+3. See instrUctions on how to navigate to the [Collaborative Analytics Dashboard](Dashboard.md)
 
 ## Power BI Login
 

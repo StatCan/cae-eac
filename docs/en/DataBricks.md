@@ -3,11 +3,10 @@
 ### Data Analyitics Services (DAS) Portal
   
 1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachine.md)
-2. On your virtual machine, using your web browser, login to the Data Analyitics Services (DAS) portal.
-![Dashboard](images/DAaaSPortalDatabricks.png)  
+2. On your virtual machine, using your web browser, login to the Data Analyitics Services (DAS) portal and click the ***Azure Databricks*** link
+![DAS Databricks](images/DAaaSPortalDatabricks.png)  
 
-4. In side the Data Analyitics Services (DAS) portal, you can click this link (show image)
-5. This can can also be used to access Databricks from your virutal machine: https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
+3. This can also be used to access Databricks from your virtual machine: https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
 
     ![Databricks URL](images/DatabricksSelect.png)
     
@@ -18,7 +17,7 @@
     ![Databricks URL](images/DatabricksSelect.png)
   
 #### Note
-Staistics Canada employees can also access Databricks from thier AVD using the dashboard.
+Statistics Canada employees can also access Databricks from their Azure Virtual Desktop (AVD) using the dashboard.
 
 ## Accessing Databricks - Internal Users
 It is recommanded for internal user to access the cloud service through their AVD (Azure Virtual Desktop)
@@ -27,7 +26,7 @@ Using your Azure Virtaul Desktop (AVD), you can access the Databricks URL from t
 1. Click on the Dashboard menu from the Azure Portal.  
 
     ![Dashboard](images/DAaaSPortalDatabricks.png) 
-
+<!-- 
 ### Dashboard
 
 See the [Dashboard section](Dashboards.md) of this documentation from more information.  
@@ -45,7 +44,7 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
 
 2. You should then see a list of the Databricks workspaces you were given permission to access.  
 
-    ![Databricks workspaces List](images/DatabricksPortalList.png)
+    ![Databricks workspaces List](images/DatabricksPortalList.png) -->
 
 ## Getting Started
 
