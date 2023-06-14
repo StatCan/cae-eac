@@ -1,6 +1,6 @@
 ## Virtual Machine
 
-Before logging into your virutal machine, you must first login to the [DAS portal](ExtPortal.md) 
+Before logging into your virutal machine, you must first login to the [Data Analyitics Services portal](ExtPortal.md) 
 
 1. You will see at the bottom of the hub page the Virtual Machine that you can access. From the portal, you will be able to perform three different actions. You can either:
 
@@ -31,7 +31,7 @@ The browser connect button is then highlighted.
 3. Do not share your password with others.
 
 ## Frequently Asked Questions (FAQ)
-1. I can not see any virutal machines?\
+1. I can not see any virtual machines?\
     Please use the DAS portal Help button to [Contact Us](ContactUs.md) and submit a request for a virtual machine.
 2. I have forgotten my ext.statcan.ca password?\
     Please use the DAS portal Help button to [Contact Us](ContactUs.md) and submit a request for assitance.

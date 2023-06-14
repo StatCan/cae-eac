@@ -22,9 +22,9 @@ Follow the instructions for your type of account to complete your sign-in.
 2. You will then be loged into the Azure Portal (show image)
 
     ![Azure Portal Home](images/AzurePortalHome.png)
-3. See instrUctions on how to navigate to the [Collaborative Analytics Dashboard](Dashboard.md)
+3. See instructions on how to navigate to the [Collaborative Analytics Dashboard](Dashboard.md)
 
-## Power BI Login
+<!-- ## Power BI Login
 
 2. When opening a Power BI App URL or the Power BI Service login page, you will be directed to the Microsoft Power BI Sign In landing page, as shown below, saying “Already have an account?”. Click on **SIGN IN**.  
 
@@ -46,7 +46,7 @@ Follow the instructions for your type of account to complete your sign-in.
 
     ![Enter password](images/PowerBI/image009.png)   
     
-
+ -->
 
 
 

@@ -3,7 +3,7 @@
 Please [Contact Us](ContactUs.md) to request an account.
 
 2. Using a modern web browser, access the link below
-    - [https://daaas-portal.prod.cloud.statcan.ca/data-analytics-services/hub](https://daaas-portal.dev.cloud.statcan.ca/data-analytics-services/hub)
+    - [https://www.statcan.gc.ca/data-analytics-services](https://www.statcan.gc.ca/data-analytics-services)
 
 3. Click the sign-in button.   
 

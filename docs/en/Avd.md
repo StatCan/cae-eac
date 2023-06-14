@@ -20,16 +20,6 @@ From the Windows Search bar, you will have to access the Remote Desktop app then
 
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- 2. Select the DevTest Lab that was assigned.
  
 ## Create Your Virtual Machine

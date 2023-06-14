@@ -5,11 +5,10 @@
 
 1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachines.md)
 
-2. On your virtual machines, launch Azure Storage Explorer from the Start menu.
+2. On your virtual machines, you will be able to access your storage account using[Azure Storage Explorer](AzureStorageExplorer.md)
 
-   ![Microsoft Azure Storage Explorer](images/AzureStorageExplorer.png)
 
-3. The first time you launch the Storage explorer, you need to click the connect button 
+<!-- 3. The first time you launch the Storage explorer, you need to click the connect button 
 
    ![Connect](images/AzureStorageExplorerConnect1.png)
 
@@ -35,9 +34,7 @@
 8. You can create a personal folder in your container, to organize your personal files.
 
 Note:
-9. Best practice is to always upload or store data to your storage account.  Virtual machines and thier data are not backed up.
-
-[Azure Virtual Desktop](AVD.md)
+9. Best practice is to always upload or store data to your storage account.  Virtual machines and thier data are not backed up. -->
 
 <!-- ### Azure Storage - Internal User
 
