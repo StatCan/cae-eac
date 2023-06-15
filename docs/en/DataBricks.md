@@ -3,8 +3,10 @@
 ### Data Analyitics Services (DAS) Portal
   
 1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachine.md)
+
 2. On your virtual machine, using your web browser, login to the Data Analyitics Services (DAS) portal and click the ***Azure Databricks*** link
-![DAS Databricks](images/DAaaSPortalDatabricks.png)  
+
+    ![DAS Databricks](images/DASPortalDatabricks.png)  
 
 3. This can also be used to access Databricks from your virtual machine: https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
 

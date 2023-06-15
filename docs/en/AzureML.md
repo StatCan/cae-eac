@@ -1,10 +1,13 @@
 *New:* Please access Azure ML form your CAE [Virtual Machine](VirtualMarchine.md).
 
 ## Accessing Azure Machine Learning- External Users
-### DAaaS Portal
-1. From the DAaaS portal inside the VM, Click on the Azure Machine Learning URL.  
 
-    ![Dashboard](images/DAaaSPortalAML.png)
+### Data Analyitics Services (DAS) Portal
+1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachine.md)
+
+2. On your virtual machine, using your web browser, login to the Data Analyitics Services (DAS) portal and click the ***Azure Machine Learning*** link
+ 
+    ![DAS AML](images/DASPortalAML.png)
     
 ### Machine Learning URL
 1. Navigate to https://ml.azure.com/, sign in with your cloud account credentials, and select the **Machine Learning workspace** that was created for you.  
