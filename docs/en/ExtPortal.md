@@ -14,7 +14,6 @@ Note: When you login for the first time, you will be prompted to change your pas
 3. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
 
     ![DAS Hub](images/HubPage.png)
-    
   
  ## Frequently Asked Questions (FAQ)
 1. How do I request an account or request access?
