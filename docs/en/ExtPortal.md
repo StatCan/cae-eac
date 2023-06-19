@@ -1,4 +1,5 @@
-## External Users (firstname.lastname@ext.statcan.ca)   
+# Data Analytics Services (DAS) Portal
+## Login - External Users (firstname.lastname@ext.statcan.ca)   
 1. As an external user, you will need to request an external account: **firstname.lastname@ext.statcan.ca** to be able to access your Virtual Machine and the resources needed.
 Please [Contact Us](ContactUs.md) to request an account.
 
@@ -14,6 +15,20 @@ Note: When you login for the first time, you will be prompted to change your pas
 3. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
 
     ![DAS Hub](images/HubPage.png)
+
+## Virtual Machines
+Please use the [Virtual Machines](ExtVirtualMachines.md) for instructions on how to login to your virtual machine.
+
+## Services
+1. Once you are logged into your [Virtual Machines](ExtVirtualMachines.md). You can access differnet services.
+2. Repeat the step above to login to the Data Analytics Services (DAS) Portal.
+
+ ### Azure Databricks
+
+ ### Azure Synpase
+
+ ### Azure Machine Learning
+
   
  ## Frequently Asked Questions (FAQ)
 1. How do I request an account or request access?
