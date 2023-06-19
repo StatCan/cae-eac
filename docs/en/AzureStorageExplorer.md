@@ -35,17 +35,6 @@ Note:
 9. Best practice is to always upload or store data to your storage account.  Virtual machines and their data are not backed up.
 
 
-## Storage Explorer - Azure Portal 
-
-1. Navigate to the Storage Account (Preview) from the Azure Portal. 
-
-   ![search box](images/StorageExplorerSearchPortal.png)  
-
-2. Select your subscription, then navigate the storage account.   
-
-   ![storage accounts](images/StorageExplorerPortalPreview.png)  
-
-
 ## Microsoft Documentation
 - [Azure Storage Explorer Download](https://azure.microsoft.com/en-us/features/storage-explorer/)  
 - [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
