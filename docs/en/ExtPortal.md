@@ -1,5 +1,5 @@
 # Data Analytics Services (DAS) Portal
-## How to Login (firstname.lastname@ext.statcan.ca)   
+## How to Login   
 1. As an external user, you will need to request an external account: **firstname.lastname@ext.statcan.ca** to be able to access your Virtual Machine and the resources needed.
 Please [Contact Us](ContactUs.md) to request an account.
 
