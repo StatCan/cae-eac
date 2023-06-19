@@ -16,10 +16,10 @@ Note: When you login for the first time, you will be prompted to change your pas
 
     ![DAS Hub](images/HubPage.png)
 
-## Virtual Machines
+## How to access Virtual Machines
 Please use the [Virtual Machines](ExtVirtualMachines.md) for instructions on how to login to your virtual machine.
 
-## Services
+## How to access Services
 1. Once you are logged into your [Virtual Machines](ExtVirtualMachines.md). You can access differnet services.
 2. Repeat the step above to [login](ExtLogin.md) to the Data Analytics Services (DAS) Portal.
 
