@@ -24,13 +24,15 @@ The Azure portal provides a default dashboard as a starting point. You can edit 
     
     ![Collaborative Analytics Environments Dashboard](images/DashboardCAE.png)
 
-## Accessing the available services
+## Accessing Databricks
+1. Click the on the Databricks Workspace that you have access to.
+3. Click the "URL".  *Important*: Do not click the Lauch Workspace button,  you might receive an error message.
 
+## Accessing Synapse
 
--  [Storage](AVDStorage.md)
--  [Databricks](Databricks.md)
--  [Synapse](Synapse.md)
--  [Machine Learning](AzureML.md)
+## Accessing Azure Machine Learning (ML)
+
+## Accessing Azure Storage
 
 ## Microsoft Documentation
 - [Create a dashboard in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards)
