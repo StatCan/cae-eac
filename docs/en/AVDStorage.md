@@ -1,5 +1,5 @@
 
-### Azure Storage - Internal User
+# Azure Storage - Statistics Canada Users
 
 Data can be uploaded to the platform via the Azure Portal or the Azure Storage Explorer application. Once data uploaded to an external **Blob storage** account, it is automatically ingested into an internal **Azure Data Lake Storage (ADLS)** account.  Once data is in the data lake, users have their choice of tools for transformation and integration. They can use Web based tools such as Databricks and Data Factory to do their transformations or they can use desktop tools on a virtual machine (VM) to tansform & analyse the data. Cleansed and transformed data can be placed into different folders (containing higher quality / processed datasets) or loaded into a database. Users can once again connect to this data with the tools they would like to use, either from their VMs or other platform services such as Databricks and Data Factory.
 
@@ -7,7 +7,7 @@ Using your [Azure Virtual Desktop](AVD.md), you can have access to your cloud st
 
 ## Azure Storage Explorer
 
-1. If you don't have it in the Azure Virtual Desktop with Azure Storage Explorer installed, you can request it in the [Service Request Management Portal] (SRM)(https://srm.statcan.ca/). Select the following:
+1. If you don't have it in the Azure Virtual Desktop with Azure Storage Explorer installed, you can request it in the [Service Request Management Portal (SRM)](https://srm.statcan.ca/) _Staistics Canada Users Only_. Select the following:
 -  Request Type: "Desktop Support"
 -  Topic: "Virtual Desktop (AVD, VDI)"
 -  Sub-topic: "Azure Virutal Desktop (Create, Modify)"
