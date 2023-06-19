@@ -8,10 +8,13 @@ Data can be uploaded to the platform via the Azure Portal or the Azure Storage E
 
 Using your [Azure Virtual Desktop](AVD.md), you can have access to the azure storage explorer
 
-1. If you don't have it in the Azure Virtual Desktop, you can download the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) application, and install it on your AVD.
+1. If you don't have it in the Azure Virtual Desktop with Azure Storage Explorer installed, you can request it in the [Service Request Management Portal] (SRM)(https://srm.statcan.ca/). Select the following:
+-  Request Type: "Desktop Support"
+-  Topic: "Virtual Desktop (AVD, VDI)"
+-  Sub-topic: "Azure Virutal Desktop (Create, Modify)"
+-  Description: "I would like to request an Azure Virtual Desktop with Azure Storage Explorer installed"
 
-
-2. On your Azure Virtual Desktop, you will be able to access your storage account using[Azure Storage Explorer](AzureStorageExplorer.md)
+2. On your Azure Virtual Desktop, you will be able to access your storage account using [Azure Storage Explorer](AzureStorageExplorer.md)
 
 <!-- 2. Launch Azure Storage Explorer from the Start menu.
 
