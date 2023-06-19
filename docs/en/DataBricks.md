@@ -47,7 +47,7 @@ Once inside Databricks you can create a new notebook or open an existing noteboo
 
 ## Creating a Cluster
 
-Since you do not have permission to create a cluster, please send a [slack](https://cae-eac.slack.com) message if a cluster has not been created for you or if you require changes to your cluster.
+Since you do not have permission to create a cluster, please [Contact Us](ContactUs.md) if a cluster has not been created for you or if you require changes to your cluster.
 
 **Note:** You must have a cluster running before you can run code inside your notebook. See below or the [FAQ](FAQ.md) for information on how to start a cluster.
 
