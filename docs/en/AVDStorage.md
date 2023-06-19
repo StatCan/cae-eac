@@ -3,10 +3,9 @@
 
 Data can be uploaded to the platform via the Azure Portal or the Azure Storage Explorer application. Once data uploaded to an external **Blob storage** account, it is automatically ingested into an internal **Azure Data Lake Storage (ADLS)** account.  Once data is in the data lake, users have their choice of tools for transformation and integration. They can use Web based tools such as Databricks and Data Factory to do their transformations or they can use desktop tools on a virtual machine (VM) to tansform & analyse the data. Cleansed and transformed data can be placed into different folders (containing higher quality / processed datasets) or loaded into a database. Users can once again connect to this data with the tools they would like to use, either from their VMs or other platform services such as Databricks and Data Factory.
 
+Using your [Azure Virtual Desktop](AVD.md), you can have access to your cloud storage accounts.
 
-## Storage Explorer - AVD
-
-Using your [Azure Virtual Desktop](AVD.md), you can have access to the azure storage explorer
+## Azure Storage Explorer
 
 1. If you don't have it in the Azure Virtual Desktop with Azure Storage Explorer installed, you can request it in the [Service Request Management Portal] (SRM)(https://srm.statcan.ca/). Select the following:
 -  Request Type: "Desktop Support"
@@ -15,6 +14,17 @@ Using your [Azure Virtual Desktop](AVD.md), you can have access to the azure sto
 -  Description: "I would like to request an Azure Virtual Desktop with Azure Storage Explorer installed"
 
 2. On your Azure Virtual Desktop, you will be able to access your storage account using [Azure Storage Explorer](AzureStorageExplorer.md)
+
+## Azure Portal 
+
+1. Navigate to the Storage Account from the Azure Portal. 
+
+   ![search box](images/StorageExplorerSearchPortal.png)  
+
+2. Select your subscription, then navigate the storage account.   
+
+   ![storage accounts](images/StorageExplorerPortalPreview.png)  
+
 
 <!-- 2. Launch Azure Storage Explorer from the Start menu.
 
