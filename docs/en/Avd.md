@@ -8,12 +8,7 @@ From the Windows Search bar, you will have to access the Remote Desktop app then
 
     ![Access AVD](images/AVDLogin.png) 
     
-3. Once you are logged into your Azure Virtual Desktop,  you can access the following services:
-
--  [Storage](AVDStorage.md)
--  [Databricks](Databricks.md)
--  [Synapse](Synapse.md)
--  [Azure Portal](Login.md)
+3. Once you are logged into your Azure Virtual Desktop,  you can access servcies with the [CAS Azure Dashboard](Dashboard.md) 
 
 
 
