@@ -21,7 +21,7 @@ Please use the [Virtual Machines](ExtVirtualMachines.md) for instructions on how
 
 ## Services
 1. Once you are logged into your [Virtual Machines](ExtVirtualMachines.md). You can access differnet services.
-2. Repeat the step above to login to the Data Analytics Services (DAS) Portal.
+2. Repeat the step above to [login](ExLogin.md) to the Data Analytics Services (DAS) Portal.
 
  ### Azure Databricks
 
