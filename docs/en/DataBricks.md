@@ -19,15 +19,8 @@
     ![Databricks URL](images/DatabricksSelect.png)
   
 #### Note
-Statistics Canada employees can also access Databricks from their Azure Virtual Desktop (AVD) using the dashboard.
+Statistics Canada employees can also access Databricks from their Azure Virtual Desktop (AVD) using the [Dashboard](Dashboard.md).
 
-## Accessing Databricks - Internal Users
-It is recommanded for internal user to access the cloud service through their AVD (Azure Virtual Desktop)
-### DAaaS Portal
-Using your Azure Virtaul Desktop (AVD), you can access the Databricks URL from the DAaaS PortAL.  
-1. Click on the Dashboard menu from the Azure Portal.  
-
-    ![Dashboard](images/DAaaSPortalDatabricks.png) 
 <!-- 
 ### Dashboard
 
