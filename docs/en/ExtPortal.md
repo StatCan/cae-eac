@@ -23,14 +23,34 @@ Please use the [Virtual Machines](ExtVirtualMachines.md) for instructions on how
 1. Once you are logged into your [Virtual Machines](ExtVirtualMachines.md). You can access differnet services.
 2. Repeat the step above to [login](ExtLogin.md) to the Data Analytics Services (DAS) Portal.
 
- ### Azure Databricks
+ ### Azure Synapse
+ 1. You can click the Azure Synpase URL to access Azure Synapse from your Virtual Machine.
 
- ### Azure Synpase
+### Azure Blob Storage
+Please see the [Storage](ExtStorage.md) for more information on how to access storage.
 
- ### Azure Machine Learning
+### Azure Data Lakes
+Please see the [Storage](ExtStorage.md) for more information on how to access storage.
 
-  
- ## Frequently Asked Questions (FAQ)
+### Azure SQL Database
+Please see the [SQL Server](SQLServer.md) for more information on how to SQL Server
+
+### Azure Data Factory
+Data Factory is available as part of Azure Synapse for External Users
+
+### Azure Databricks
+1. You can click the Azure Databricks URL to access Azure Synapse from your Virtual Machine.
+
+### Microsoft Power BI
+Documentiation Coming Soon!
+ 
+### Azure Machine Learning
+1. You can click the Azure Databricks URL to access Azure Synapse from your Virtual Machine.
+
+### Azure Virtual Machines
+Use the [Portal](ExtLogin.md) to access your [Virtual Machines](ExtVirtualMachines.md)
+
+## Frequently Asked Questions (FAQ)
 1. How do I request an account or request access?
     Please [Contact Us](ContactUs.md) to request access and indicate that you would like to request access.
 
