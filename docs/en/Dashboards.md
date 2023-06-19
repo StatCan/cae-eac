@@ -34,5 +34,7 @@ The Azure portal provides a default dashboard as a starting point. You can edit 
 
 ## Accessing Azure Storage
 
+## Accessing Azure DevTest Labs
+
 ## Microsoft Documentation
 - [Create a dashboard in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards)
