@@ -25,6 +25,10 @@ Using your [Azure Virtual Desktop](AVD.md), you can have access to your cloud st
 
    ![storage accounts](images/StorageExplorerPortalPreview.png)  
 
+Frequently Asked Questions (FAG)
+1. I get an the following error message when accessing my storage accounts.
+ -- add image
+   Pleae make sure you are accessing the storage account from your AVD and not governmet device.
 
 <!-- 2. Launch Azure Storage Explorer from the Start menu.
 
