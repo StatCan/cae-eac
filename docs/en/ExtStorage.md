@@ -21,7 +21,6 @@ For some use cases senstive data can be sent to the Environment using EFT. Pleas
 
 
 
-
 <!-- 3. The first time you launch the Storage explorer, you need to click the connect button 
 
    ![Connect](images/AzureStorageExplorerConnect1.png)
