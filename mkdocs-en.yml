@@ -58,7 +58,6 @@ nav:
   - Azure Databricks: DataBricks.md
   - Azure Synapse:  AzureSynapse.md
   - Azure Machine Learning: AzureML.md
-  - Azure Dev Ops: AzureDevOps.md
   - Azure Database:
       - Azure SQL Database: AzureSQL.md
       - Azure Postgres Database: PostgreSQL.md
