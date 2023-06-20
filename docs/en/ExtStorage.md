@@ -13,8 +13,13 @@
 For some use cases senstive data can be sent to the Environment using EFT. Please contact us for instrucitons if you would like to setup this service.
 
 ## Download data to your Storage Account
+1. From your virutal, some URLs are accessable so that you can download data directly. Examples:
+- statcan.gc.ca
+- open.toronto.ca
+2. Download to the local Virtual Machine
+3. Upload the data using [Azure Storage Explorer](AzureStorageExplorer.md) into your project storage account.
 
-Add example from 
+
 
 
 <!-- 3. The first time you launch the Storage explorer, you need to click the connect button 
