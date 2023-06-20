@@ -41,10 +41,9 @@ nav:
   - About : index.md
   - Register your Project : RegisterProject.md
   - Contact Us: ContactUs.md
-  - External Users :  
-      - Data Analytics Portal: ExtPortal.md
-      - Virtual Machines: ExtVirtualMachines.md
-      - Azure Storage: ExtStorage.md
+  - Data Analytics Portal: ExtPortal.md
+  - Virtual Machines: ExtVirtualMachines.md
+  - Azure Storage: ExtStorage.md
   - Statistic Canada Users :  
       - How to Login: Login.md
       - Dashboards: Dashboards.md
