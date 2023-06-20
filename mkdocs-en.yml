@@ -52,6 +52,7 @@ nav:
         - Azure Dev Test Labs: DevTestLabs.md
       - Azure Storage: AVDStorage.md
       - Azure Data Factory: DataFactory.md 
+  - Package Managment: Artifactory.md
   - Azure Storage Explorer: AzureStorageExplorer.md
   - Azure Databricks: DataBricks.md
   - Azure Synapse:  AzureSynapse.md
