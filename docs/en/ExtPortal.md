@@ -25,8 +25,13 @@ To Access Services, you must first ensure you are:
 1. Login into the Data Analytics Services (DAS) Portal.
 2. Login into your [Virtual Machines](ExtVirtualMachines.md)
 
+Note: For all the servcies listed below, they will only work from your Virtual Machine.
+
 ### Azure Synapse
-1. From your virtual machines you can click the Azure Synpase URL to access Azure Synapse.
+1. From your virtual machine you can login to the DaaaS portal to access the Azure Synpase URL.
+
+2. From your virtual machine you can login to the following url:
+    
 
 ### Azure Blob Storage
 Please see the [Storage](ExtStorage.md) for more information on how to access storage.
