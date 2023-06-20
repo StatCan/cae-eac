@@ -26,7 +26,7 @@ To Access Services, you must first ensure you are:
 2. Login into your [Virtual Machines](ExtVirtualMachines.md)
 
 ### Azure Synapse
-1. You can click the Azure Synpase URL to access Azure Synapse from your Virtual Machine.
+1. From your virtual machines you can click the Azure Synpase URL to access Azure Synapse.
 
 ### Azure Blob Storage
 Please see the [Storage](ExtStorage.md) for more information on how to access storage.
