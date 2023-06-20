@@ -44,15 +44,6 @@ nav:
   - Data Analytics Portal: ExtPortal.md
   - Virtual Machines: ExtVirtualMachines.md
   - Azure Storage: ExtStorage.md
-  - Statistic Canada Users :  
-      - How to Login: Login.md
-      - Dashboards: Dashboards.md
-      - Azure Portal: AzurePortal.md
-      - VMs:
-        - Azure Virtual Desktop: AVD.md
-        - Azure Dev Test Labs: DevTestLabs.md
-      - Azure Storage: AVDStorage.md
-      - Azure Data Factory: DataFactory.md 
   - Package Managment: Artifactory.md
   - Azure Storage Explorer: AzureStorageExplorer.md
   - Azure Databricks: DataBricks.md
@@ -70,6 +61,15 @@ nav:
   - FAQ: FAQ.md
   - Best Practices: BestPractices.md
   - Language: Language.md
+  - Statistic Canada Users :  
+      - How to Login: Login.md
+      - Dashboards: Dashboards.md
+      - Azure Portal: AzurePortal.md
+      - VMs:
+        - Azure Virtual Desktop: AVD.md
+        - Azure Dev Test Labs: DevTestLabs.md
+      - Azure Storage: AVDStorage.md
+      - Azure Data Factory: DataFactory.md 
 
 #   - About: index.md
 #   - Register your Project: RegisterProject.md
