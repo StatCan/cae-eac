@@ -20,11 +20,13 @@ Note: When you login for the first time, you will be prompted to change your pas
 Please use the [Virtual Machines](ExtVirtualMachines.md) for instructions on how to login to your virtual machine.
 
 ## How to access Services
-1. Once you are logged into your [Virtual Machines](ExtVirtualMachines.md). You can access differnet services.
-2. Repeat the step above to [login](ExtLogin.md) to the Data Analytics Services (DAS) Portal.
+To Access Services, you must first ensure you are:
 
- ### Azure Synapse
- 1. You can click the Azure Synpase URL to access Azure Synapse from your Virtual Machine.
+1. Login into the Data Analytics Services (DAS) Portal.
+2. Login into your [Virtual Machines](ExtVirtualMachines.md)
+
+### Azure Synapse
+1. You can click the Azure Synpase URL to access Azure Synapse from your Virtual Machine.
 
 ### Azure Blob Storage
 Please see the [Storage](ExtStorage.md) for more information on how to access storage.
