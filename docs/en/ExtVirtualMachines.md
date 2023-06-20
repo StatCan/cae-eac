@@ -23,12 +23,7 @@ The browser connect button is then highlighted.
 
     ![Enter VM Credentials](images/EnterCredential.png)
 
-## Accessing Services
-1. Launch the [Portal](ExPortal.md) inside your Virtual Machines. Then links be anable for you to access different services.
-   
-### Azure Databricks
-### Azure Synapse
-### Azure Machine Learning (ML)
+
 
 ## Best Practices
 1. Virtual machines only incur costs while they are running.\
