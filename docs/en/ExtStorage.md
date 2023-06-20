@@ -1,11 +1,20 @@
 
-### Azure Storage - External User
+# Azure Storage - External User
 
 ## Storage Explorer 
 
 1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachines.md)
 
 2. On your virtual machines, you will be able to access your storage account using[Azure Storage Explorer](AzureStorageExplorer.md)
+
+# Ingesting Data Files
+
+## Electronic File Tranfser (EFT)
+For some use cases senstive data can be sent to the Environment using EFT. Please contact us for instrucitons if you would like to setup this service.
+
+## Download data to your Storage Account
+
+Add example from 
 
 
 <!-- 3. The first time you launch the Storage explorer, you need to click the connect button 
