@@ -93,6 +93,7 @@ install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/arti
 ```
 ![Install VSCpackage](images/Artifactory-RNotebooks01.png)
 
+
 ## Azure Machine Learning
 
 The packages can be installed from the terminal using Python commands.
@@ -156,7 +157,7 @@ options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/
 
 ![Configure Rstudio](images/Artifactory-RS03.png)
 
-OR
+**OR**
 
 Run the following command to avoid the steps 1 and 2.
 ```
@@ -179,7 +180,8 @@ options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/
 
 ![R packages](images/Artifactory-RGuy04.png)
 
-OR
+**OR**
+
 Run the following code command to install packages.
 ```
 install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
