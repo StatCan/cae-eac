@@ -64,7 +64,7 @@ The packages can be installed from the Databricks workspace, a Databricks cluste
 
 ![Cluster](images/Artifactory-Cluster03.PNG)
 
-**Note** : If you don't have permission to install librairies from the workspace or cluster, please contact the **Collaborative Analytics Environment** team.
+**Note** : If you don't have permission to install libraries from the workspace or cluster, please contact the **Collaborative Analytics Environment** team.
 
 ### From Databricks Notebooks
 ### Python notebook
@@ -91,7 +91,7 @@ pip3 install <PackageName>
 ```
 install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
 ```
-
+![Install VSCpackage](images/Artifactory-RNotebooks01.png)
 
 ## Azure Machine Learning
 
@@ -102,17 +102,21 @@ The packages can be installed from the terminal using Python commands.
  
 2. Select the **compute instance** assigned to you from the drop-down next to Compute.
 
- *If a compute instance has not been created for you, please contact the  **Collaborative Analytics Environment** team.*
+   *If a compute instance has not been created for you, please contact the  **Collaborative Analytics Environment** team.*
  
 3. Run the following code to setup pip to download packages from Artifactory repositories.
 
-```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
+```
+pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+```
 
 ![Configure pip.conf](images/Artifactory-AzureML02.png)
 
 4. You can now use **pip3** or **pip** command to install packages as following:
 
-```pip3 install <PackageName>```
+```
+pip3 install <PackageName>
+```
 ![install package](images/Artifactory-AzureML03.png)
 
 
@@ -187,26 +191,34 @@ The configuration of the *Rprofile.site* file is temporary and only last your se
 ### Miniforge Prompt
 1. Run the following code to setup pip to download packages from Artifactory repositories.
 
-```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
+```
+pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+```
 
 ![Configure VSC](images/Artifactory-Miniforge01.png)
 
 2. You can now use **pip3** or **pip** command to install packages as following:
 
-```pip3 install <PackageName>```
+```
+pip3 install <PackageName>
+```
 
 ![Install VSCpackage](images/Artifactory-Miniforge02.png)
 
 ### Command Prompt
 1. Run the following code to setup pip to download packages from Artifactory repositories.
 
-```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
+```
+pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+```
 
 ![Configure VSC](images/Artifactory-Terminal01.png)
 
 2. You can now use **pip3** or **pip** command to install packages as following:
 
-```pip3 install <PackageName>```
+```
+pip3 install <PackageName>
+```
 
 ![Install VSCpackage](images/Artifactory-Python02.png)
 
@@ -233,6 +245,10 @@ The configuration of the *pip.ini* file is temporary. Once you Virtual Machine, 
 
 To download packages locally, you can use the **Curl** or **pip download** commands as following:
 
-```curl -O "https://jfrog.aaw.cloud.statcan.ca/artifactory/cae-generic-test/<PackageName>"```
+```
+curl -O "https://jfrog.aaw.cloud.statcan.ca/artifactory/cae-generic-test/<PackageName>"
+```
 
-``` pip download <package_url> ```
+```
+pip download <package_url>
+```
