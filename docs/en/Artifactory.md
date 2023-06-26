@@ -148,11 +148,13 @@ Please contact the **Collaborative Analytics Environment** team to install custo
 options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"))
 ```
 
-![Configure Rstudio](images/Artifactory-RStudio01.png)
+![Configure Rstudio](images/Artifactory-RS01.PNG)
 
 2. Under **Packages**, click "Install". Choose the new repository that you added in step 1 and enter the package name to install.
 
-![Install Rstudio](images/Artifactory-RStudio02.png)
+![Configure Rstudio](images/Artifactory-RS02.png)
+
+![Configure Rstudio](images/Artifactory-RS03.png)
 
 OR
 
@@ -165,16 +167,17 @@ install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/arti
 
 ![Rstudio packages](images/Artifactory-RStudio03.png)
 
-### R Console
-1. Run the following code to configure the *Rprofile.site* file to use the Artifactory repositories.
+### RGui
+1. Run the following code from the R Console to configure the *Rprofile.site* file to use the Artifactory repositories.
 
 ```
 options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"))
 ```
+![R packages](images/Artifactory-RGuy01.png)
 
-2. Under **Packages**, click **Install Package**, choose the package you want to install, then click **Install**
+2. Under **Packages**, click **Install Package(s)**, choose the package you want to install, then click **Ok**
 
-![R packages](images/Artifactory-RStudio04.png)
+![R packages](images/Artifactory-RGuy04.png)
 
 OR
 Run the following code command to install packages.
