@@ -72,5 +72,5 @@ Consultez la section  [Tableau de bord](TableauxDeBord.md) de cette documentatio
 ### Adresse de Machine Learning
 
 1.	Allez sur [Machine Learning](https://ml.azure.com/), connectez-vous avec les justificatifs d’identité de votre compte d’infonuagique, puis sélectionnez l’abonnement **vdl** et l’**espace de travail Machine Learning** qui a été créé pour vous.
-
-    ![URL AzureML](images/AzureMlURL.png)
+    
+    ![URL AzureML](images/AzureMlURL.PNG)
