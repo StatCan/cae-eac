@@ -1,12 +1,12 @@
 ### Dashboard
 
-See the [Dashboard section](Dashboards.md) of this documentation from more information.  
+See the [Dashboard section](Dashboards.md) of this documentation for more information.  
 1. Click on the Dashboard menu from the Azure Portal.  
 
     ![Dashboard](images/DataFactoryDashboard.png)  
 
 
-### Azure Portal
+## Access Databricks- Internal Users
 
 1. In the Azure Portal Search box, search for **Databricks**.  
 
@@ -19,8 +19,8 @@ See the [Dashboard section](Dashboards.md) of this documentation from more infor
 
 
 
-### Access Azure Synapse- Internal Users
-It is recommanded for internal user to access the cloud service through their AVD (Azure Virtual Desktop) 
+## Access Azure Synapse- Internal Users
+It is recommanded for internal user to access the cloud service through their [Azure Virtual Desktop](AVD.md)
 1. Make sure that you are in your cloud virtual machine to access Azure Synapse. See [Virtual Machines](VirtualMachines.md) for information on how to create one if needed.
 
 2. Inside your virtual machine, open a web browser and navigate to the [Azure Portal](https://portal.azure.com). Sign in with your cloud account credentials.
@@ -46,7 +46,7 @@ Note: You can also acccess Synapse workspaces from the **Collaborative Analytics
 <!-- *New:* Please access Azure ML form your CAE [Virtual Machine](VirtualMarchine.md). -->
 
 ## Accessing Azure Machine Learning- Internal Users
-It is recommanded for internal user to access the cloud service through their AVD (Azure Virtual Desktop)
+It is recommanded for internal user to access the cloud service through their [Azure Virtual Desktop](AVD.md)
 ### Dashboard
 
 See the [Dashboard section](Dashboards.md) of this documentation from more information.  

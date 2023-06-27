@@ -3,7 +3,7 @@
 
 ## Storage Explorer 
 
-1. T o access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachines.md)
+1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachines.md)
 
 2. On your virtual machines, you will be able to access your storage account using [Azure Storage Explorer](AzureStorageExplorer.md)
 

@@ -1,4 +1,4 @@
-## Exlorateur de Stockage 
+## Explorateur de Stockage 
 
 1. Pour accéder aux différents services disponibles, vous devez au préalable vous connecter à votre machine virtuelle. Voir [Connectez vous](ExtMachinesVirtuelles.md)
 
