@@ -3,23 +3,23 @@
 
 ## Storage Explorer 
 
-1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachines.md)
+1. T o access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachines.md)
 
-2. On your virtual machines, you will be able to access your storage account using[Azure Storage Explorer](AzureStorageExplorer.md)
+2. On your virtual machines, you will be able to access your storage account using [Azure Storage Explorer](AzureStorageExplorer.md)
 
 # Ingesting Data Files
 
-## Electronic File Tranfser (EFT)
-For some use cases senstive data can be sent to the Environment using EFT. Please contact us for instrucitons if you would like to setup this service.
+## Electronic File Transfert (EFT)
+For some use cases sensitive data can be sent to the Environment using EFT. Please [Contact Us](ContactUs.md) for instructions if you would like to setup this service.
 
 ## Download data to your Storage Account
-1. From your virutal, some URLs are accessable so that you can download data directly. Examples:
+1. From your virtual machine, some URLs are accessible so that you can download data directly. Examples:
 - statcan.gc.ca
 - open.toronto.ca
-2. Download to the local Virtual Machine
+2. Download data to the local drive on your Virtual Machine
 3. Upload the data using [Azure Storage Explorer](AzureStorageExplorer.md) into your project storage account.
 
-
+   ![Upload Files](images/AzureStorageExplorerUp.png)
 
 <!-- 3. The first time you launch the Storage explorer, you need to click the connect button 
 

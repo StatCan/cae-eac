@@ -24,7 +24,7 @@
    
 5. Once you login, your storage account and containers will be visible to you.
 
-6. Files can be download and uploaded to\from your virtual machine from your respective container 
+6. Files can be download and uploaded to\from your virtual machine using your respective container 
 
    ![Download and Upload Files](images/AzureStorageExplorerUpDown.png) 
 

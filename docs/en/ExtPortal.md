@@ -25,13 +25,17 @@ To Access Services, you must first ensure you are:
 1. Login into the Data Analytics Services (DAS) Portal.
 2. Login into your [Virtual Machines](ExtVirtualMachines.md)
 
-Note: For all the servcies listed below, they will only work from your Virtual Machine.
+Note: All the services listed below will only work from your Virtual Machine.
 
 ### Azure Synapse
-1. From your virtual machine you can login to the DaaaS portal to access the Azure Synpase URL.
+1. From your virtual machine you can login to the Data Analytics Service (DAS) portal to access the Azure Synpase URL.
 
-2. From your virtual machine you can login to the following url:
-    
+   ![DAS Synapse](images/DASPortalSynapse.png)
+
+2. From your virtual machine you can login to the following url: https://web.azuresynapse.net/, sign in with your cloud account credentials, and select the Synapse workspace that was created for you.  
+ 
+   ![Synapse URL](images/SynapseSelect.png)
+
 
 ### Azure Blob Storage
 Please see the [Storage](ExtStorage.md) for more information on how to access storage.
@@ -46,13 +50,27 @@ Please see the [SQL Server](SQLServer.md) for more information on how to SQL Ser
 Data Factory is available as part of Azure Synapse for External Users
 
 ### Azure Databricks
-1. You can click the Azure Databricks URL to access Azure Synapse from your Virtual Machine.
+1. From your virtual machine you can login to the Data Analytics Service (DAS) portal to access the Azure Databricks URL.
+
+   ![DAS Databricks](images/DASPortalDatabricks.png)
+   
+2. From your virtual machine you can login to the following url: https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
+
+    ![Databricks URL](images/DatabricksSelect.png)
+
 
 ### Microsoft Power BI
-Documentiation Coming Soon!
+Documentation Coming Soon!
  
 ### Azure Machine Learning
-1. You can click the Azure Databricks URL to access Azure Synapse from your Virtual Machine.
+1. From your virtual machine you can login to the Data Analytics Service (DAS) portal to access the Azure Machine Learning URL.
+
+   ![DAS Synapse](images/DASPortalAML.png)
+   
+2. From your virtual machine you can login to the following url: https://ml.azure.com/, sign in with your cloud account credentials, and select the **Machine Learning workspace** that was created for you.  
+
+    ![AzureML URL](images/AzureMlURL.PNG)
+
 
 ### Azure Virtual Machines
 Use the [Portal](ExtLogin.md) to access your [Virtual Machines](ExtVirtualMachines.md)

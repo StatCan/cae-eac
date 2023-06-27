@@ -8,7 +8,7 @@ From the Windows Search bar, you will have to access the Remote Desktop app then
 
     ![Access AVD](images/AVDLogin.png) 
     
-3. Once you are logged into your Azure Virtual Desktop,  you can access servcies with the [CAS Azure Dashboard](Dashboard.md) 
+3. Once you are logged into your Azure Virtual Desktop,  you can access services with the [CAS Azure Dashboard](Dashboard.md) 
 
 
 

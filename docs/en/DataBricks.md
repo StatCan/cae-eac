@@ -1,25 +1,11 @@
-## Accessing Databricks - External Users
-
-### Data Analyitics Services (DAS) Portal
-  
-1. To access any of the services, you must first login to your virtual machine. See [Login](ExtVirtualMachine.md)
-
-2. On your virtual machine, using your web browser, login to the Data Analyitics Services (DAS) portal and click the ***Azure Databricks*** link
-
-    ![DAS Databricks](images/DASPortalDatabricks.png)  
-
-3. This can also be used to access Databricks from your virtual machine: https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
-
-    ![Databricks URL](images/DatabricksSelect.png)
-    
-### Databricks URL
+<!-- ### Databricks URL
 
 1. Navigate to https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
 
     ![Databricks URL](images/DatabricksSelect.png)
   
 #### Note
-Statistics Canada employees can also access Databricks from their Azure Virtual Desktop (AVD) using the [Dashboard](Dashboard.md).
+Statistics Canada employees can also access Databricks from their Azure Virtual Desktop (AVD) using the [Dashboard](Dashboard.md). -->
 
 <!-- 
 ### Dashboard
@@ -65,7 +51,7 @@ Since you do not have permission to create a cluster, please [Contact Us](Contac
 
 To share a notebook or invite other collaborators, right-click on a specific notebook file or folder from the Workspace menu, and select **Permissions**. You can also do this by clicking on the **Permissions** button from within a notebook. Once shared, multiple authors can participate in the same notebook session and co-author at the same time.  
 
-**Note:** To add a user to the Databricks workspace, please send a [Slack](https://cae-eac.slack.com) message.  
+**Note:** To add a user to the Databricks workspace, please [Contact Us](ContactUs.md).  
 
 ![How to share a Databricks notebook](images/DataBricksShareNotebook.png)
 
@@ -73,7 +59,7 @@ To share a notebook or invite other collaborators, right-click on a specific not
 
 Data can be mounted or uploaded to the Databricks File System (DBFS), which is storage specific to the Databricks workspace. You can read data from a data source or even upload a data file (e.g. CSV) directly to the DBFS.
 
-**Note:** The internal data lake container for your environment has already been mounted for you and you can work with the container directly. Please send a [Slack](https://cae-eac.slack.com) message if you don't know the name of your mounted data lake container.
+**Note:** The internal data lake container for your environment has already been mounted for you and you can work with the container directly. Please [Contact Us](ContactUs.md) if you don't know the name of your mounted data lake container.
 
 ## Adding Data to Databricks
 
@@ -150,7 +136,7 @@ The following are the steps for installing and testing Databricks Connect on you
 
     - **Port:** keep the existing value
 
-4. Change the `SPARK_HOME` enviroment variable to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, and restart your VM. (Please ask for help via a [Slack](https://cae-eac.slack.com) message if you do not know how to change environment variables.)
+4. Change the `SPARK_HOME` enviroment variable to `c:\miniconda\envs\(conda env name))\lib\site-packages\pyspark`, and restart your VM. (Please [Contact Us](ContactUs.md) if you do not know how to change environment variables.)
 
 5. Test the connectivity to Azure Databricks by running **databricks-connect test** in a command prompt. If your Databricks cluster is not running when you start this test you will receive warning messages until it has started, which can take some time.
 
@@ -160,7 +146,7 @@ The following are the steps for installing and testing Databricks Connect on you
 ## Installing Libraries 
 
 ### Databricks Cluster
-Please contact the [slack](https://cae-eac.slack.com) channel to have the support team install these libraries for you.
+Please [Contact Us](ContactUs.md) to have the support team install these libraries for you.
 
 ### Notebook
 Use the following commands to install a library in a notebook session:

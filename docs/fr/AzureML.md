@@ -1,35 +1,3 @@
-*Nouveau:* Veuillez accéder à Azure ML à partir de votre [machine virtuelle](VirtualMarchine.md) de l'EAC.
-
-## Accès à Azure Machine Learning
-### Tableau de bord
-
-Consultez la section  [Tableau de bord](Dashboards.md) de cette documentation pour obtenir de plus amples renseignements..  
-
-1. 	Cliquez sur le menu **Tableau de bord** du portail Azure. L’affichage par défaut pourrait déjà correspondre au tableau de bord.  
-
-    ![Accès au Tableau de bord](images/AzureML01.png)
-
-2. Sous **Machine Learning** (apprentissage automatique), sélectionnez l’espace de travail Machine Learning qui a été créé pour vous. Si l’espace de travail que vous souhaitez ouvrir n’est pas répertorié, cliquez sur **Plus…** pour accéder à la liste complète.
-
-    ![Tableau de bord AzureMl](images/AzureML02.png)
-
-
-### Portail Azure
-
-1.	Dans la boîte de recherche du portail Azure, cherchez **Machine Learning**.
-
-    ![boîte de recherche du portail Azure](images/AzureML03.png)
-
-2.	Vous devriez voir une liste des espaces de travail Machine Learning auxquels vous avez été autorisé à accéder. Sélectionnez l’**espace de travail Machine Learning** auquel vous souhaitez accéder
-
-    ![espaces de travail Machine Learning](images/AzureML04.png)  
-
-### Adresse de Machine Learning
-
-1.	Allez sur [Machine Learning](https://ml.azure.com/), connectez-vous avec les justificatifs d’identité de votre compte d’infonuagique, puis sélectionnez l’abonnement **vdl** et l’**espace de travail Machine Learning** qui a été créé pour vous.
-
-    ![URL AzureML](images/AzureMlURL.png)
-
 ### Pour commencer
 
 1.	À la page **Vue d’ensemble** de l’apprentissage automatique, cliquez sur **Lancer le studio**.
@@ -115,3 +83,40 @@ Une instance de calcul dans Azure Machine Learning est nécessaire. Vous devriez
  Veuillez communiquer avec l'équipe de soutien par l'intermédiaire du canal [slack](https://cae-eac.slack.com) pour demander un calcul dans Azure Machine Learning. Vous recevrez l'erreur suivante si vous procédez à la création par vous-même:
 
 ![Erreur Creation Calcul](images/AzureMLErreurCreationCalcul.png)
+
+
+
+
+
+<!-- *Nouveau:* Veuillez accéder à Azure ML à partir de votre [machine virtuelle](VirtualMarchine.md) de l'EAC.
+
+
+## Accès à Azure Machine Learning
+### Tableau de bord
+
+Consultez la section  [Tableau de bord](Dashboards.md) de cette documentation pour obtenir de plus amples renseignements..  
+
+1. 	Cliquez sur le menu **Tableau de bord** du portail Azure. L’affichage par défaut pourrait déjà correspondre au tableau de bord.  
+
+    ![Accès au Tableau de bord](images/AzureML01.png)
+
+2. Sous **Machine Learning** (apprentissage automatique), sélectionnez l’espace de travail Machine Learning qui a été créé pour vous. Si l’espace de travail que vous souhaitez ouvrir n’est pas répertorié, cliquez sur **Plus…** pour accéder à la liste complète.
+
+    ![Tableau de bord AzureMl](images/AzureML02.png)
+
+
+### Portail Azure
+
+1.	Dans la boîte de recherche du portail Azure, cherchez **Machine Learning**.
+
+    ![boîte de recherche du portail Azure](images/AzureML03.png)
+
+2.	Vous devriez voir une liste des espaces de travail Machine Learning auxquels vous avez été autorisé à accéder. Sélectionnez l’**espace de travail Machine Learning** auquel vous souhaitez accéder
+
+    ![espaces de travail Machine Learning](images/AzureML04.png)  
+
+### Adresse de Machine Learning
+
+1.	Allez sur [Machine Learning](https://ml.azure.com/), connectez-vous avec les justificatifs d’identité de votre compte d’infonuagique, puis sélectionnez l’abonnement **vdl** et l’**espace de travail Machine Learning** qui a été créé pour vous.
+
+    ![URL AzureML](images/AzureMlURL.png) -->

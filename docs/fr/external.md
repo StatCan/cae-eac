@@ -1,0 +1,2 @@
+## Utilisateurs Externes (firstname.lastname@ext.statcan.ca)   
+En tant qu'utilisateur externe, vous aurez besoin d'un compte pour utilisateur externe: firstname.lastname@ext.statcan.ca pour être en mesure d'accéder à votre machine virtuelle et aux ressources dont vous avez besoin. Contactez-nous pour obtenir un compte utilisateur.

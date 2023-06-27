@@ -26,15 +26,28 @@ The Azure portal provides a default dashboard as a starting point. You can edit 
 
 ## Accessing Databricks
 1. Click the on the Databricks Workspace that you have access to.
-3. Click the "URL".  *Important*: Do not click the Lauch Workspace button,  you might receive an error message.
+    ![DataBricks from Dashboard](images/DashboardDataBricks.png)
+
+2. From the overview page, you can then click on the URL as shown here
+    ![DataBricks URL from Dashboard](images/DashboardDataBricks2.png)
+
+3. *Important*: Do not click the Launch Workspace button,  you might receive an error message.
 
 ## Accessing Synapse
+Click the on the Synapse Workspace that you have access to.
+    ![Synapse from Dashboard](images/DashboardSynapse.png)
 
 ## Accessing Azure Machine Learning (ML)
+Click the on the Azure Machine Learning Workspace that you have access to.
+    ![AML from Dashboard](images/DashboardAML.png)
 
 ## Accessing Azure Storage
+Click the on the Storage account that you have access to.
+    ![Storage from Dashboard](images/DashboardStorage.png)
 
 ## Accessing Azure DevTest Labs
+Click the on the DevTestLab that you have access to.
+    ![DTL from Dashboard](images/DashboardDTL.png)
 
 ## Microsoft Documentation
 - [Create a dashboard in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards)

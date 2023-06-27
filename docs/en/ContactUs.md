@@ -1,5 +1,5 @@
 ## Data Analyitics Services (DAS) Portal 
-Please use the Data Analyitics Services (DAS) portal Help button to submit a request for assitance .    
+Please use the Data Analytics Services (DAS) portal Help button to submit a request for assitance .    
     ![Help](images/Help.png)
 
 

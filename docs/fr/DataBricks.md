@@ -1,4 +1,4 @@
-## Accès à Databricks
+<!-- ## Accès à Databricks
 
 ### Tableau de bord
 
@@ -22,7 +22,7 @@ Consultez la [section Tableau de bord](Dashboards.md) de cette documentation pou
 
 2.  Vous devriez alors voir une liste des espaces de travail Databricks auxquels vous pouvez accéder.
 
-    ![liste des espaces de travail Databricks](images/DatabricksPortalList.png)
+    ![liste des espaces de travail Databricks](images/DatabricksPortalList.png) -->
 
 ## Commencer
 

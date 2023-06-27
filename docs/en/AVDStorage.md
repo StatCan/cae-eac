@@ -7,10 +7,10 @@ Using your [Azure Virtual Desktop](AVD.md), you can have access to your cloud st
 
 ## Azure Storage Explorer
 
-1. If you don't have it in the Azure Virtual Desktop with Azure Storage Explorer installed, you can request it in the [Service Request Management Portal (SRM)](https://srm.statcan.ca/) _Staistics Canada Users Only_. Select the following:
+1. If you don't have the Azure Storage Explorer installed in the Azure Virtual Desktop, you can request it in the [Service Request Management Portal (SRM)](https://srm.statcan.ca/) _Statistics Canada Users Only_. Select the following:
 -  Request Type: "Desktop Support"
 -  Topic: "Virtual Desktop (AVD, VDI)"
--  Sub-topic: "Azure Virutal Desktop (Create, Modify)"
+-  Sub-topic: "Azure Virtual Desktop (Create, Modify)"
 -  Description: "I would like to request an Azure Virtual Desktop with Azure Storage Explorer installed"
 
 2. On your Azure Virtual Desktop, you will be able to access your storage account using [Azure Storage Explorer](AzureStorageExplorer.md)
@@ -25,10 +25,16 @@ Using your [Azure Virtual Desktop](AVD.md), you can have access to your cloud st
 
    ![storage accounts](images/StorageExplorerPortalPreview.png)  
 
-Frequently Asked Questions (FAG)
-1. I get an the following error message when accessing my storage accounts.
- -- add image
-   Pleae make sure you are accessing the storage account from your AVD and not governmet device.
+Frequently Asked Questions (FAQ)
+1. I get the following error message when accessing my storage accounts.
+
+   ![storage accounts](images/StorageOutsideAVDorVM.png)
+   Please make sure you are accessing the storage account from your AVD and not the government device.
+
+
+## Microsoft Documentation
+- [Azure Storage Explorer Download](https://azure.microsoft.com/en-us/features/storage-explorer/)  
+- [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
 
 <!-- 2. Launch Azure Storage Explorer from the Start menu.
 
@@ -42,11 +48,6 @@ Frequently Asked Questions (FAG)
 
    ![Use your Credentials](images/AzureStorageConnectionCloudVM2.png)  
  -->
-
-## Microsoft Documentation
-- [Azure Storage Explorer Download](https://azure.microsoft.com/en-us/features/storage-explorer/)  
-- [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
-
 
 <!-- ## Storage Explorer - Network B VDI
 _This section is for Statistics Canada employees who need to upload data from Network B._  
