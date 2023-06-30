@@ -13,20 +13,24 @@
         <link rel="canonical" href="https://statcan.github.io/cae-eac/en/Artifactory/">
       
       
+        <link rel="prev" href="../ExtStorage/">
+      
+      
+        <link rel="next" href="../AzureStorageExplorer/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>Artifactory - Statistics Canada - Collaborative Analytics Environment (CAE)</title>
+        <title>Package Managment - Statistics Canada - Collaborative Analytics Environment (CAE)</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -102,12 +106,14 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Artifactory
+              Package Managment
             
           </span>
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -257,8 +263,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Login/" class="md-nav__link">
-        How to Login
+      <a href="../ExtPortal/" class="md-nav__link">
+        Data Analytics Portal
       </a>
     </li>
   
@@ -272,23 +278,212 @@
   
   
     <li class="md-nav__item">
-      <a href="../Dashboards/" class="md-nav__link">
-        Dashboards
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../VirtualMachines/" class="md-nav__link">
+      <a href="../ExtVirtualMachines/" class="md-nav__link">
         Virtual Machines
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExtStorage/" class="md-nav__link">
+        Azure Storage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Package Managment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Package Managment
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#artifactory" class="md-nav__link">
+    Artifactory
+  </a>
+  
+    <nav class="md-nav" aria-label="Artifactory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-packages" class="md-nav__link">
+    Included packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-databricks" class="md-nav__link">
+    Azure DataBricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure DataBricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-databricks-workspace" class="md-nav__link">
+    From Databricks workspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-a-cluster" class="md-nav__link">
+    From a cluster
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-machine-learning" class="md-nav__link">
+    Azure Machine Learning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-synapse" class="md-nav__link">
+    Azure Synapse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rstudio" class="md-nav__link">
+    RStudio
+  </a>
+  
+    <nav class="md-nav" aria-label="RStudio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#r-console" class="md-nav__link">
+    R Console
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-cloud-virtual-machine" class="md-nav__link">
+    Azure Cloud Virtual Machine
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Cloud Virtual Machine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#miniforge-prompt" class="md-nav__link">
+    Miniforge Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-prompt" class="md-nav__link">
+    Command Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-application" class="md-nav__link">
+    Python application
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-packages-locally" class="md-nav__link">
+    Download Packages locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AzureStorageExplorer/" class="md-nav__link">
+        Azure Storage Explorer
       </a>
     </li>
   
@@ -317,23 +512,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../DataFactory/" class="md-nav__link">
-        Azure Data Factory
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../AzureStorage/" class="md-nav__link">
-        Azure Storage
+      <a href="../AzureSynapse/" class="md-nav__link">
+        Azure Synapse
       </a>
     </li>
   
@@ -361,18 +541,30 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../AzureSynapse/" class="md-nav__link">
-        Azure Synapse
-      </a>
-    </li>
-  
-
     
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
-
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Azure Database
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Azure Database
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
   
   
   
@@ -383,11 +575,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -395,6 +586,13 @@
       <a href="../PostgreSQL/" class="md-nav__link">
         Azure Postgres Database
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -412,17 +610,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
       
       
       
-        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
           GitHub
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_14">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
           GitHub
         </label>
@@ -552,6 +750,173 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_20" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+          Statistic Canada Users
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_20">
+          <span class="md-nav__icon md-icon"></span>
+          Statistic Canada Users
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Login/" class="md-nav__link">
+        How to Login
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dashboards/" class="md-nav__link">
+        Dashboards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AzurePortal/" class="md-nav__link">
+        Azure Portal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_20_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_20_4" id="__nav_20_4_label" tabindex="0">
+          VMs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_20_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_20_4">
+          <span class="md-nav__icon md-icon"></span>
+          VMs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Avd/" class="md-nav__link">
+        Azure Virtual Desktop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DevTestLabs/" class="md-nav__link">
+        Azure Dev Test Labs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AVDStorage/" class="md-nav__link">
+        Azure Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DataFactory/" class="md-nav__link">
+        Azure Data Factory
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -633,22 +998,70 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#azure-cloud-vm" class="md-nav__link">
-    Azure Cloud VM
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure Cloud VM">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#visual-studio-code" class="md-nav__link">
     Visual Studio Code
   </a>
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#rstudio" class="md-nav__link">
+    RStudio
+  </a>
+  
+    <nav class="md-nav" aria-label="RStudio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#r-console" class="md-nav__link">
+    R Console
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-cloud-virtual-machine" class="md-nav__link">
+    Azure Cloud Virtual Machine
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Cloud Virtual Machine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#miniforge-prompt" class="md-nav__link">
+    Miniforge Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-prompt" class="md-nav__link">
+    Command Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-application" class="md-nav__link">
+    Python application
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-packages-locally" class="md-nav__link">
+    Download Packages locally
+  </a>
   
 </li>
         
@@ -675,10 +1088,10 @@
   
 
 
-  <h1>Artifactory</h1>
+  <h1>Package Managment</h1>
 
 <h2 id="artifactory">Artifactory</h2>
-<p>The CAE environment uses the Artifiactory for package &amp; Library management.</p>
+<p>The CAE environment uses the Artifiactory for package &amp; library management.</p>
 <h3 id="included-packages">Included packages</h3>
 <p>Below are the URLs that Artifactory pulls from currently. As long as the package is available on these repositories, it can be downloaded. You can get the name of the package by searching through the repositories.</p>
 <ul>
@@ -693,15 +1106,20 @@
 <p><strong>Note</strong>: For any other packages, please contact the <strong>Collaborative Analytics Environment</strong> team.</p>
 <h3 id="azure-databricks">Azure DataBricks</h3>
 <p>The packages can be installed from the Databricks workspace or a cluster.</p>
+<p><strong>Note</strong>: 
+ - The library sources available in Databricks are <strong>PyPI</strong> for Python packages and <strong>CRAN</strong> for CRAN packages.
+ - The artifactory URLs to use depending on the selected library source are:
+    - https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/ for <strong>PyPI</strong>
+    - https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/  for <strong>CRAN</strong></p>
 <h4 id="from-databricks-workspace">From Databricks workspace</h4>
 <p>1.From the main page, click <strong>Import Library</strong>.</p>
 <p><img alt="Databricks" src="../images/Artifactory-DBricks01.png" /></p>
 <ol>
 <li>
-<p>Under Library Source, choose either <strong>PyPI</strong> or <strong>CRAN</strong>.</p>
+<p>Under <strong>Library Source</strong>, choose either <strong>PyPI</strong> or <strong>CRAN</strong> depending of the package.</p>
 </li>
 <li>
-<p>Paste the name of the library under <strong>Package</strong> and the Artifactory URL under <strong>Repository</strong>.</p>
+<p>Paste the name of the library under <strong>Package</strong> and the associated Artifactory URL (See Note above) under <strong>Repository</strong>.</p>
 </li>
 </ol>
 <p><img alt="Databricks" src="../images/Artifactory-DBricks02.PNG" /></p>
@@ -714,30 +1132,212 @@
 <p><img alt="Cluster" src="../images/Artifactory-Cluster01.png" /></p>
 <ol>
 <li>
-<p>Under <strong>Library Source</strong>, choose either <strong>PyPI</strong> or <strong>CRAN</strong>.</p>
+<p>Under <strong>Library Source</strong>, choose either <strong>PyPI</strong> or <strong>CRAN</strong> depending of the package.</p>
 </li>
 <li>
-<p>Paste the name of the library under <strong>Package</strong> and the Artifactory URL under <strong>Repository</strong>.</p>
+<p>Paste the name of the library under <strong>Package</strong> and the associated Artifactory URL (See Note above) under <strong>Repository</strong>.</p>
 </li>
 </ol>
 <p><img alt="Cluster" src="../images/Artifactory-Cluster02.PNG" /></p>
 <ol>
-<li>Click <strong>Install</strong>. You should see the installed librarie under <strong>Libraries</strong>.</li>
+<li>Click <strong>Install</strong>. You should see the newly installed library under <strong>Libraries</strong>.</li>
 </ol>
 <p><img alt="Cluster" src="../images/Artifactory-Cluster03.PNG" /></p>
 <h3 id="azure-machine-learning">Azure Machine Learning</h3>
-<p>To install packages on a compute instance, you can use the <strong>Curl</strong> command in the Azure Machine Learning terminal as following:</p>
-<p><code>curl -O "https://jfrog.aaw.cloud.statcan.ca/artifactory/cae-generic-test/&lt;PackageName&gt;"</code></p>
-<p><img alt="AzureML" src="../images/Artifactory-AzureML01.PNG" /></p>
+<p>The packages can be installed from the terminal using Python commands.</p>
+<ol>
+<li>
+<p>From the main page, click <strong>Notebooks</strong>, then click <strong>Open Terminal</strong> under <strong>Files</strong>.
+ <img alt="Open terminal" src="../images/AzureML_11.png" />  </p>
+</li>
+<li>
+<p>Select the <strong>compute instance</strong> assigned to you from the drop-down next to Compute.</p>
+</li>
+</ol>
+<p><em>If a compute instance has not been created for you, please contact the  </em><em>Collaborative Analytics Environment</em><em> team.</em></p>
+<ol>
+<li>Run this code to setup pip to download packages from Artifactory repositories by default:</li>
+</ol>
+<p><code>pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple</code></p>
+<p><img alt="Configure pip.conf" src="images/Artifactory-AzureML02.png" /></p>
+<ol>
+<li>You can now use <strong>pip3</strong> or <strong>pip</strong> command to install packages as following:</li>
+</ol>
+<p><code>pip3 install &lt;PackageName&gt;</code>
+<img alt="install package" src="images/Artifactory-AzureML03.png" /></p>
 <h3 id="azure-synapse">Azure Synapse</h3>
 <p>Please contact the <strong>Collaborative Analytics Environment</strong> team to install custom packages in your Azure Synapse environment.</p>
-<h3 id="azure-cloud-vm">Azure Cloud VM</h3>
-<h4 id="visual-studio-code">Visual Studio Code</h4>
-<p>1.On the Extensions tab, click <strong>Terminal</strong>, then click <strong>New Terminal</strong>.</p>
-<p><img alt="Visual Studio Code" src="../images/Artifactory-VS01.png" /></p>
-<p>2.To install the package, use the <strong>pip install</strong> command in the  terminal as following:</p>
-<p><code>pip install &lt;PackageName&gt; -i https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/</code></p>
-<p><img alt="Visual Studio Code" src="../images/Artifactory-VS02.png" /></p>
+<h3 id="visual-studio-code">Visual Studio Code</h3>
+<p>1.From the <strong>Extensions</strong> tab, click <strong>Terminal</strong>, then click <strong>New Terminal</strong>.
+<img alt="Visual Studio Code" src="../images/Artifactory-VS01.png" /></p>
+<ol>
+<li>Run this code to setup pip to download packages from Artifactory repositories by default:</li>
+</ol>
+<p><code>pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple</code></p>
+<p><img alt="Configure VSC" src="images/Artifactory-VSC01.png" /></p>
+<ol>
+<li>You can now use <strong>pip3* or </strong>pip** command to install packages as following:</li>
+</ol>
+<p><code>pip3 install &lt;PackageName&gt;</code></p>
+<p><img alt="Install VSCpackage" src="images/Artifactory-VSC02.png" /></p>
+<h3 id="rstudio">RStudio</h3>
+<ol>
+<li>Run this code to configure the Rprofile.site file to use the Artifactory repository by default:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="n">options</span><span class="p">(</span><span class="n">repos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c</span><span class="p">(</span><span class="n">artifactory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/&quot;</span><span class="p">),</span>
+<span class="w">     </span><span class="n">download</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;curl&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="n">download</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">extra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-k -L&quot;</span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+
+<p><img alt="Configure Rstudio" src="images/Artifactory-RStudio01.png" /></p>
+<ol>
+<li>Under <strong>Packages</strong>, click "Install". Choose the new repository that you added in step 1 and enter the package name to install.</li>
+</ol>
+<p><img alt="Install Rstudio" src="images/Artifactory-RStudio02.png" /></p>
+<p>Note: You can directly use the <strong>install.packages("PackageName")</strong> command to install packages</p>
+<ol>
+<li>You should see the installed package in the <strong>System Library list</strong>.</li>
+</ol>
+<p><img alt="Rstudio packages" src="images/Artifactory-RStudio03.png" /></p>
+<h4 id="r-console">R Console</h4>
+<ol>
+<li>Run this code to configure the Rprofile.site file to use the Artifactory repository by default:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="n">options</span><span class="p">(</span><span class="n">repos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c</span><span class="p">(</span><span class="n">artifactory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/&quot;</span><span class="p">),</span>
+<span class="w">     </span><span class="n">download</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;curl&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="n">download</span><span class="o">.</span><span class="n">file</span><span class="o">.</span><span class="n">extra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-k -L&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<ol>
+<li>Run the <strong>install.packages("PackageName")</strong> command to install packages.</li>
+</ol>
+<p><img alt="R packages" src="images/Artifactory-RStudio04.png" /></p>
+<h3 id="azure-cloud-virtual-machine">Azure Cloud Virtual Machine</h3>
+<h4 id="miniforge-prompt">Miniforge Prompt</h4>
+<ol>
+<li>Run this code to setup pip to download packages from Artifactory repositories by default:</li>
+</ol>
+<p><code>pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple</code></p>
+<p><img alt="Configure VSC" src="images/Artifactory-Miniforge01.png" /></p>
+<ol>
+<li>You can now use <strong>pip3</strong> or <strong>pip</strong> command to install packages as following:</li>
+</ol>
+<p><code>pip3 install &lt;PackageName&gt;</code></p>
+<p><img alt="Install VSCpackage" src="images/Artifactory-Miniforge02.png" /></p>
+<h4 id="command-prompt">Command Prompt</h4>
+<ol>
+<li>Run this code to setup pip to download packages from Artifactory repositories by default:</li>
+</ol>
+<p><code>pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple</code></p>
+<p><img alt="Configure VSC" src="images/Artifactory-Terminal01.png" /></p>
+<ol>
+<li>You can now use <strong>pip3* or </strong>pip** command to install packages as following:</li>
+</ol>
+<p><code>pip3 install &lt;PackageName&gt;</code></p>
+<p><img alt="Install VSCpackage" src="images/Artifactory-Python02.png" /></p>
+<h4 id="python-application">Python application</h4>
+<p>You can use the Command Prompt to install packages, then import them into the Python notebooks as the following scenario:</p>
+<ol>
+<li>Let's try to access the module’s contents with the <strong>import</strong> statement.</li>
+</ol>
+<p><img alt="Check library" src="images/Artifactory-Python01.png" /></p>
+<ol>
+<li>Now let's install it using the <strong>Command Prompt</strong>.
+ <em>See Command Prompt section of this document if the pip.ini file hasn't been configured before</em></li>
+</ol>
+<p><img alt="install library" src="images/Artifactory-Python02.png" /></p>
+<ol>
+<li>The module can now be imported.</li>
+</ol>
+<p><img alt="import library" src="images/Artifactory-Python03.png" /></p>
+<h3 id="download-packages-locally">Download Packages locally</h3>
+<p>To download packages locally, you can use the <strong>Curl</strong> or <strong>pip download</strong> commands as following:</p>
+<p><code>curl -O "https://jfrog.aaw.cloud.statcan.ca/artifactory/cae-generic-test/&lt;PackageName&gt;"</code></p>
+<p><code>pip download &lt;package_url&gt;</code></p>
+<!-- 
+# Artifactory
+
+The CAE environment uses the Artifiactory for package & Library management.
+
+
+## Included packages
+
+Below are the URLs that Artifactory pulls from currently. As long as the package is available on these repositories, it can be downloaded. You can get the name of the package by searching through the repositories.
+
+  - [Conda-forge](https://conda.anaconda.org/conda-forge)
+  - [CRAN](https://cran.r-project.org) (In the left menu, click **Packages** under **Software**, then click **Table of available packages**)
+  - [Python](https://pypi.org/)
+
+The respective artifactory URLs to use are:
+  - https://jfrog.aaw.cloud.statcan.ca/artifactory/conda-forge-remote/
+  - https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/
+  - https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/
+
+**Note**: For any other packages, please contact the **Collaborative Analytics Environment** team.
+
+
+## Azure DataBricks
+
+The packages can be installed from the Databricks workspace or a cluster.
+
+### From Databricks workspace
+
+1.From the main page, click **Import Library**.
+
+![Databricks](images/Artifactory-DBricks01.png)
+
+2. Under Library Source, choose either **PyPI** or **CRAN**.
+
+3. Paste the name of the library under **Package** and the Artifactory URL under **Repository**.
+
+
+![Databricks](images/Artifactory-DBricks02.PNG)
+
+4. Click **Create**.
+
+**Note**: Select **Install automatically on all cluster** under **Admin settings** if you wish to install the package on all the available clusters of the workspace.
+
+### From a cluster
+
+1.From the cluster main page, click **Install new** under **Libraries**.
+
+![Cluster](images/Artifactory-Cluster01.png)
+
+2. Under **Library Source**, choose either **PyPI** or **CRAN**.
+
+3. Paste the name of the library under **Package** and the Artifactory URL under **Repository**.
+
+![Cluster](images/Artifactory-Cluster02.PNG)
+
+4. Click **Install**. You should see the installed librarie under **Libraries**.
+
+![Cluster](images/Artifactory-Cluster03.PNG)
+
+## Azure Machine Learning
+
+To install packages on a compute instance, you can use the **Curl** command in the Azure Machine Learning terminal as following:
+
+```curl -O "https://jfrog.aaw.cloud.statcan.ca/artifactory/cae-generic-test/<PackageName>"```
+
+![AzureML](images/Artifactory-AzureML01.PNG)
+
+## Azure Synapse
+
+Please contact the **Collaborative Analytics Environment** team to install custom packages in your Azure Synapse environment.
+
+## Azure Cloud VM
+
+### Visual Studio Code
+1.On the Extensions tab, click **Terminal**, then click **New Terminal**.
+
+![Visual Studio Code](images/Artifactory-VS01.png)
+
+2.To install the package, use the **pip install** command in the  terminal as following:
+
+```pip install <PackageName> -i https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/```
+
+![Visual Studio Code](images/Artifactory-VS02.png)
+ -->
 
 
 
@@ -808,7 +1408,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
     
   </body>
