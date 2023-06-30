@@ -50,11 +50,11 @@ nav:
   - Azure Synapse:  AzureSynapse.md
   - Azure Machine Learning: AzureML.md
   - Base de données Azure:
-      - Base de données Azure SQL: AzureSQL.md
-      - Base de données Azure Postgres: PostgreSQL.md
-   - GitHub: 
-      - Commencer: GitHubCommencer.md
-      - Configuration: GitHubConfiguration.md
+    - Base de données Azure SQL: AzureSQL.md
+    - Base de données Azure Postgres: PostgreSQL.md
+  - GitHub: 
+    - Commencer: GitHubCommencer.md
+    - Configuration: GitHubConfiguration.md
   - R-Shiny: R-Shiny.md
   - Delta Lake: DeltaLake.md
   - Géospatial: Geo.md
