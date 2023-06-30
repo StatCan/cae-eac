@@ -41,17 +41,18 @@ nav:
   - En avant!: index.md
   - Inscrivez votre projet: InscrivezProjet.md
   - Contactez-nous: ContactezNous.md
-  - Se connecter: SeConnecter.md
-  - Tableaux de bord: TableauxDeBord.md
-  - Machines Virtuelle: MachinesVirtuelle.md
+  - Portail d'Analyse de données: ExtPortail.md
+  - Machines Virtuelles: ExtMachinesVirtuelles.md
+  - Stockage Azure: ExtStorage.md
+  - Package Managment: Artifactory.md
+  - Azure Storage Explorer: AzureStorageExplorer.md
   - Azure Databricks: DataBricks.md
-  - Azure Data Factory: DataFactory.md
-  - Stockage Azure: AzureStorage.md
-  - Azure Machine Learning: AzureML.md
   - Azure Synapse:  AzureSynapse.md
-  - Base de données Azure SQL: AzureSQL.md
-  - Base de données Azure Postgres: PostgreSQL.md
-  - GitHub: 
+  - Azure Machine Learning: AzureML.md
+  - Base de données Azure:
+      - Base de données Azure SQL: AzureSQL.md
+      - Base de données Azure Postgres: PostgreSQL.md
+   - GitHub: 
       - Commencer: GitHubCommencer.md
       - Configuration: GitHubConfiguration.md
   - R-Shiny: R-Shiny.md
@@ -60,5 +61,12 @@ nav:
   - FAQ: FAQ.md
   - Bonnes pratiques: BonnesPratiques.md
   - Langue: Langue.md
-
-  
+  - Utilisateurs de Statistique Canada :  
+      - Se connecter: SeConnecter.md
+      - Tableaux de bord: TableauxDeBord.md
+      - Portail Azure: AzurePortal.md
+      - VMs:
+        - Bureau Virtuel Azure: AVD.md
+        - Azure Dev Test Labs: DevTestLabs.md
+      - Stockage Azure: BVAStockage.md
+      - Azure Data Factory: DataFactory.md 

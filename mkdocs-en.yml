@@ -38,19 +38,20 @@ extra:
 
 # Page tree
 nav:
-  - About: index.md
-  - Register your Project: RegisterProject.md
+  - About : index.md
+  - Register your Project : RegisterProject.md
   - Contact Us: ContactUs.md
-  - How to Login: Login.md
-  - Dashboards: Dashboards.md
-  - Virtual Machines: VirtualMachines.md
+  - Data Analytics Portal: ExtPortal.md
+  - Virtual Machines: ExtVirtualMachines.md
+  - Azure Storage: ExtStorage.md
+  - Package Managment: Artifactory.md
+  - Azure Storage Explorer: AzureStorageExplorer.md
   - Azure Databricks: DataBricks.md
-  - Azure Data Factory: DataFactory.md
-  - Azure Storage: AzureStorage.md
-  - Azure Machine Learning: AzureML.md
   - Azure Synapse:  AzureSynapse.md
-  - Azure SQL Database: AzureSQL.md
-  - Azure Postgres Database: PostgreSQL.md
+  - Azure Machine Learning: AzureML.md
+  - Azure Database:
+      - Azure SQL Database: AzureSQL.md
+      - Azure Postgres Database: PostgreSQL.md
   - GitHub: 
       - Getting Started: GitHubGettingStarted.md
       - Configuration: GitHubConfiguration.md
@@ -60,4 +61,37 @@ nav:
   - FAQ: FAQ.md
   - Best Practices: BestPractices.md
   - Language: Language.md
+  - Statistic Canada Users :  
+      - How to Login: Login.md
+      - Dashboards: Dashboards.md
+      - Azure Portal: AzurePortal.md
+      - VMs:
+        - Azure Virtual Desktop: AVD.md
+        - Azure Dev Test Labs: DevTestLabs.md
+      - Azure Storage: AVDStorage.md
+      - Azure Data Factory: DataFactory.md 
 
+#   - About: index.md
+#   - Register your Project: RegisterProject.md
+#   - Contact Us: ContactUs.md
+#   - How to Login to the Azure Portal:
+#       - How to login with Data Analytics Portal: LoginDASHub.md
+#       - How to Login to Azure: Login.md
+#   - Dashboards: Dashboards.md
+#   - Virtual Machines: VirtualMachines.md
+#   - Azure Databricks: DataBricks.md
+#   - Azure Data Factory: DataFactory.md
+#   - Azure Storage: AzureStorage.md
+#   - Azure Machine Learning: AzureML.md
+#   - Azure Synapse:  AzureSynapse.md
+#   - Azure SQL Database: AzureSQL.md
+#   - Azure Postgres Database: PostgreSQL.md
+#   - GitHub: 
+#       - Getting Started: GitHubGettingStarted.md
+#       - Configuration: GitHubConfiguration.md
+#   - R-Shiny: R-Shiny.md
+#   - Delta Lake: DeltaLake.md
+#   - Geospatial: Geo.md
+#   - FAQ: FAQ.md
+#   - Best Practices: BestPractices.md
+#   - Language: Language.md

@@ -1,5 +1,5 @@
 ## Data Ingestion
-
+x
 ### How do I ingest data (including large files) into the platform?
 
 #### External Storage Account
@@ -10,7 +10,7 @@ Files may be uploaded to the **inbox** or **to-vers-int** container of an extern
 *Note:* The external storage accounts have the naming convention **stats*project-acronym*external**.
 
 #### Electronic File Transfer Service (EFT)
-Statistics Canada employees can use [EFT](https://www75.statcan.gc.ca/eft-tef) to transfer files to/from on-premises (Net A or B) to/from the Azure cloud environment. Please  contact the support team through the https://cae-eac.slack.com channel for informaton about this process.
+Statistics Canada employees can use [EFT](https://www75.statcan.gc.ca/eft-tef) to transfer files to/from on-premises (Net A or B) to/from the Azure cloud environment. Please  [Contact Us](ContactUs.md) for informaton about this process.
 
 #### Platform Tools
 Platform tools such as Databricks or Data Factory may be used to ingest data from public data sources.
@@ -33,10 +33,10 @@ _For Statistics Canada Employees only_
 
 _For Statistics Canada Employees only_
 
-Please contact the support team through the https://cae-eac.slack.com channel to request a temporary SAS token.
+Please [Contact Us](ContactUs.md) to request a temporary SAS token.
 
 ### Why do I get an error message when accessing the internal Data Lake?
-The internal Data Lake is only accessible from within a VM in the Collaborative Analytics Environment (CAE). It is not accessible from your personal or work laptop, Network B VDI or other cloud VM.
+The internal Data Lake is only accessible from within a VM inside the Data Analytics Service (DAS) portal. It is not accessible from your personal or work laptop.
 
 ## Source Code Control
 
@@ -55,7 +55,7 @@ The internal Data Lake is only accessible from within a VM in the Collaborative 
 ## Virtual Machines
 
 ### What do I do if I have forgotten the password for my virtual machine?
-If you forget the password of your virtual machine, please contact the support team through the https://cae-eac.slack.com channel to have it reset. You can also delete and recreate your virtual machine. Unfortunately, recreating your virtual machine means you will lose any data and software on your old machine.
+If you forget the password of your virtual machine, please [Contact Us](ContactUs.md) to have it reset. You can also delete and recreate your virtual machine. Unfortunately, recreating your virtual machine means you will lose any data and software on your old machine.
 
 ### What do I do if I need to run a long running job on my virtual machine?
 Machines are shut down every day at 7pm EST in order to reduce costs. If you have a long-running job, it is recommended that you use Databricks or Data Factory.
@@ -71,7 +71,7 @@ To disable Auto-shutdown:
     ![Auto Shutoff](images/VirtualMachineAutoShutoff.png)  
 
 ### How do I request changes to my virtual machine?
-If the virtual machine you are currently using does not meet your requirements, please contact the support team through the https://cae-eac.slack.com channel.
+If the virtual machine you are currently using does not meet your requirements, please [Contact Us](ContactUs.md).
 
 ## Databricks
 
@@ -143,10 +143,10 @@ Prerequisites:
 Steps:
 1. Login to your CAE VM.  
 2. Launch Power BI Desktop.  
-3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please send a slack message to [Slack]https://cae-eac.slack.com if you don't know the Azure Data Lake Storage Gen2 URL.
+3. Follow the steps in [Analyze data in Azure Data Lake Storage Gen2 by using Power BI - Create a report in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/connectors/datalakestorage#create-a-report-in-power-bi-desktop). Please [Contact Us](ContactUs.md) if you don't know the Azure Data Lake Storage Gen2 URL.
 
 ### How can Statistics Canada employees transfer files from their data centre?
 For Statistics Canada Employees, they can refer to this internal documentation: [Data Ingestion](https://confluence.statcan.ca/display/DAaaS/CAE+-+Data+Ingestion)
 
 ### How do I add a FAQ?
-Please send your suggestion through the [Slack](https://cae-eac.slack.com) channel.
+Please [Contact Us](ContactUs.md) to send your suggestion.

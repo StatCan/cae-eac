@@ -30,5 +30,31 @@ tableaux de bord supplémentaires, ainsi qu'en publier et en partager avec d'aut
       ![Tableau de bord - Environnement d’analyse collaboratif](images/DashboardEAC.png)
 
 
+## Accéder à Databricks
+1. Choisissez l'espace de travail Databricks auquel vous avez accès.
+    ![DataBricks from Dashboard](images/DashboardDataBricks.png)
+
+2. À partir de la page d'accueil, vous pouvez cliquer sur le lien tel qu'indiqué ci-dessous
+    ![DataBricks URL from Dashboard](images/DashboardDataBricks2.png)
+
+3. *Important*: Ne pas cliquer sur le bouton Lancer l'espace de travail, un message d'erreur pourrait s'afficher.
+
+## Accéder à Synapse
+Choisissez l'espace de travail Synapse auquel vous avez accès.
+    ![Synapse from Dashboard](images/DashboardSynapse.png)
+
+## Accéder à Azure Machine Learning (ML)
+Choisissez l'espace de travail Azure Machine Learning auquel vous avez accès.
+    ![AML from Dashboard](images/DashboardAML.png)
+
+## Accéder à Azure Storage
+Choisissez l'espace de stockage auquel vous avez accès.
+    ![Storage from Dashboard](images/DashboardStorage.png)
+
+## Accéder au DevTest Labs
+Choisissez le DevTest Lab auquel vous avez accès.
+    ![DTL from Dashboard](images/DashboardDTL.png)
+
+
 ## Documentation Microsoft
 - [Créer un tableau de bord dans le portail Azure](https://docs.microsoft.com/fr-ca/azure/azure-portal/azure-portal-dashboards)

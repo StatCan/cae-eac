@@ -1,29 +1,7 @@
 ## Pour commencer
 
-
-### Accéder à Azure Synapse
-
-1.	Assurez-vous que vous utilisez votre machine virtuelle en nuage pour accéder à Azure Synapse. Reportez-vous à la rubrique [Machines virtuelles](VirtualMachines.md) pour savoir comment en créer une si nécessaire.
-
-
-2. Dans votre machine virtuelle, ouvrez un navigateur Web et accédez au [portail Azure](https://portal.azure.com). Ouvrez une session à l’aide des données d’identification de votre compte en nuage.
-
-3. 
-    a. Cliquez sur l’icône **Azure Synapse Analytics** sous **Services Azure**. Si vous ne voyez pas cette icône, suivez plutôt l’étape 3b.
-    
-    ![Access Synapse](images/AzureSynapseAccess_2.png)
-
-    b. Commencez à taper "synapse" dans la barre de recherche pour trouver **Azure Synapse Analytics**.
-    
-    ![Access Synapse](images/AzureSynapseAccess.png) 
-
-4. Repérez votre espace de travail Synapse dans la liste, puis cliquez dessus. Cliquez ensuite sur **Ouvrir Synapse Studio**.
-
-   ![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
-
-Note: Vous pouvez également accéder aux espaces de travail Synapse à partir du tableau de bord **Environnement d’analyse collaborative**.
-
 ### Démarrer et arrêter un pool SQL dédié
+
 
 1. Cliquez sur l’onglet **Intégrer**.
 
@@ -196,3 +174,27 @@ C’est ici que vous pouvez :
 # Changer la langue d’affichage
 Consultez la page [Langue](Language.md) pour savoir comment modifier la langue d’affichage.
 
+
+<!-- 
+
+### Accéder à Azure Synapse
+
+1.	Assurez-vous que vous utilisez votre machine virtuelle en nuage pour accéder à Azure Synapse. Reportez-vous à la rubrique [Machines virtuelles](VirtualMachines.md) pour savoir comment en créer une si nécessaire.
+
+
+2. Dans votre machine virtuelle, ouvrez un navigateur Web et accédez au [portail Azure](https://portal.azure.com). Ouvrez une session à l’aide des données d’identification de votre compte en nuage.
+
+3. 
+    a. Cliquez sur l’icône **Azure Synapse Analytics** sous **Services Azure**. Si vous ne voyez pas cette icône, suivez plutôt l’étape 3b.
+    
+    ![Access Synapse](images/AzureSynapseAccess_2.png)
+
+    b. Commencez à taper "synapse" dans la barre de recherche pour trouver **Azure Synapse Analytics**.
+    
+    ![Access Synapse](images/AzureSynapseAccess.png) 
+
+4. Repérez votre espace de travail Synapse dans la liste, puis cliquez dessus. Cliquez ensuite sur **Ouvrir Synapse Studio**.
+
+   ![Open Synapse Studio](images/AzureSynapseOpenStudio.png)
+
+Note: Vous pouvez également accéder aux espaces de travail Synapse à partir du tableau de bord **Environnement d’analyse collaborative**. -->

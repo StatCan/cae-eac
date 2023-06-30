@@ -1,12 +1,11 @@
-## Soutien technique
-Abonnez-vous au canal de Slack suivant :
-
- - [https://cae-eac.slack.com](https://cae-eac.slack.com)
+## Data Analyitics Services (DAS) Portal 
+Veuillez utiliser le bouton d'aide sur le portail de l'analyse de données en tant que services (ADS)pour introduire une demande d'assistance.    
+    ![Help](images/Help.png)
 
 ## Commentaires
 Utilisez le formulaire _Commentaires_ sur ce site Web :
 
- - [https://www.statcan.gc.ca/data-analytics-service/fr](https://www.statcan.gc.ca/data-analytics-service/fr)
+ - [Feedback Form](https://www.statcan.gc.ca/data-analytics-service/fr)
 
 ## Documentation
  - [https://statcan.github.io/cae-eac/fr/](https://statcan.github.io/cae-eac/fr/)
@@ -15,4 +14,3 @@ Utilisez le formulaire _Commentaires_ sur ce site Web :
 
 ## Documentation Microsoft
  - [Documentation Azure](https://docs.microsoft.com/fr-ca/azure/)
-

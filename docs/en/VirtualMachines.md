@@ -1,7 +1,21 @@
+## Azure Dev Test Labs
+ 
+Please [Contact Us](ContactUs.md) to request access to Azure Dev Test Labs. Statistics Canada users should use thier [Azure Virtual Desktop](AVD.md) to access the environment. Alternatively, Dev Test Labs can be requested when the Azure Virtual Desktop does not have the required software.
+
+
 ## Find Your DevTest Lab
 1. In your project's custom Dashboard in the Azure Portal, click on the DevTest Lab.    
 
     ![Access DevTest Lab](images/newAccessDTL.png)  
+
+
+
+
+
+
+
+
+    
 
 2. Select the DevTest Lab that was assigned.
  

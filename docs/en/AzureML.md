@@ -1,34 +1,3 @@
-*New:* Please access Azure ML form your CAE [Virtual Machine](VirtualMarchine.md).
-
-## Accessing Azure Machine Learning
-### Dashboard
-
-See the [Dashboard section](Dashboards.md) of this documentation from more information.  
-
-1. Click on the **Dashboard** menu from the Azure Portal. Your default view might already be set to dashboard.  
-
-    ![Access Dashboards](images/AccessDashboard.png)
-
-2. Under **Machine Learning** , select the Machine Learning workspace that was created for you. If the workspace you want to open isn't listed, click on **See more** to access the complete list.
-
-    ![AzureMl Dashboard](images/AzureMLDashboard.png)
-
-### Azure Portal
-
-1.	In the Azure Portal Search box, search for **Machine Learning**.
-
-    ![Azure portal search bar](images/AzureML_01.png)  
-
-2.	You should see the list of the Machine Learning workspaces you were given permission to access. Select the **Machine Learning workspace** you want to access.
-
-    ![Machine Learning workspaces](images/AzureML_02.png)
-
-### Machine Learning URL
-1. Navigate to https://ml.azure.com/, sign in with your cloud account credentials, and select **vdl** subscription and the **Machine Learning workspace** that was created for you.  
-
-    ![AzureML URL](images/AzureMlURL.PNG)
-
-
 ## Getting Started
 
 1.	On the machine learning **Overview** page, click **Launch studio**.

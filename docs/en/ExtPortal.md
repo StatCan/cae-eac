@@ -1,0 +1,112 @@
+# Data Analytics Services (DAS) Portal
+## How to Login   
+1. As an external user, you will need to request an external account: **firstname.lastname@ext.statcan.ca** to be able to access your Virtual Machine and the resources needed.
+Please [Contact Us](ContactUs.md) to request an account.
+
+2. Using a modern web browser, access the link below
+    - [https://www.statcan.gc.ca/data-analytics-services](https://www.statcan.gc.ca/data-analytics-services)
+
+3. Click the sign-in button.   
+
+    ![VM Sign In](images/DASSignIn.png)
+
+Note: When you login for the first time, you will be prompted to change your password.
+
+3. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
+
+    ![DAS Hub](images/HubPage.png)
+
+## How to access Virtual Machines
+Please use the [Virtual Machines](ExtVirtualMachines.md) for instructions on how to login to your virtual machine.
+
+## How to access Services
+To Access Services, you must first ensure you are:
+
+1. Login into the Data Analytics Services (DAS) Portal.
+2. Login into your [Virtual Machines](ExtVirtualMachines.md)
+
+Note: All the services listed below will only work from your Virtual Machine.
+
+### Azure Synapse
+1. From your virtual machine you can login to the Data Analytics Service (DAS) portal to access the Azure Synpase URL.
+
+   ![DAS Synapse](images/DASPortalSynapse.png)
+
+2. From your virtual machine you can login to the following url: https://web.azuresynapse.net/, sign in with your cloud account credentials, and select the Synapse workspace that was created for you.  
+ 
+   ![Synapse URL](images/SynapseSelect.png)
+
+
+### Azure Blob Storage
+Please see the [Storage](ExtStorage.md) for more information on how to access storage.
+
+### Azure Data Lakes
+Please see the [Storage](ExtStorage.md) for more information on how to access storage.
+
+### Azure SQL Database
+Please see the [SQL Server](SQLServer.md) for more information on how to SQL Server
+
+### Azure Data Factory
+Data Factory is available as part of Azure Synapse for External Users
+
+### Azure Databricks
+1. From your virtual machine you can login to the Data Analytics Service (DAS) portal to access the Azure Databricks URL.
+
+   ![DAS Databricks](images/DASPortalDatabricks.png)
+   
+2. From your virtual machine you can login to the following url: https://canadacentral.azuredatabricks.net/, sign in with your cloud account credentials, and select the Databricks workspace that was created for you.  
+
+    ![Databricks URL](images/DatabricksSelect.png)
+
+
+### Microsoft Power BI
+Documentation Coming Soon!
+ 
+### Azure Machine Learning
+1. From your virtual machine you can login to the Data Analytics Service (DAS) portal to access the Azure Machine Learning URL.
+
+   ![DAS Synapse](images/DASPortalAML.png)
+   
+2. From your virtual machine you can login to the following url: https://ml.azure.com/, sign in with your cloud account credentials, and select the **Machine Learning workspace** that was created for you.  
+
+    ![AzureML URL](images/AzureMlURL.PNG)
+
+
+### Azure Virtual Machines
+Use the [Portal](ExtLogin.md) to access your [Virtual Machines](ExtVirtualMachines.md)
+
+## Frequently Asked Questions (FAQ)
+1. How do I request an account or request access?
+    Please [Contact Us](ContactUs.md) to request access and indicate that you would like to request access.
+
+2. How do I reset my password?
+    Please use the DAS portal Help button to [Contact Us](ContactUs.md) and submit a request for assistance and indicate that you would like to reset your password.
+       
+<!-- 2. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
+
+    ![DAS Hub](images/HubPage.png)     
+
+3. You will see at the bottom of the hub page the Virtual Machine that you can access.
+From the portal, you will be able to either
+    -Start the VM
+    -Stop the VM
+    -Connect to the VM
+
+    ![DAS Hub](images/StartStopVM.png)     
+
+4. You will need to start your virtual machine and wait for your virtual machines to be in the "running" state. This can take a few minutes. (add image of running start and start button)
+5. To connect to the VM, you will need to hit te Browser connect button. This will open a new page where you will be prompted to sign in using your credential provided to you by StatCan. Once launched, click the **Login** button.
+
+    ![DAS Hub](images/BrowserConnect.png) 
+    
+Best Practices
+1. You can stop  your virtual machine when not in use. All virtual machines are turned off every evening at 7 PM EST.
+2. Do not share your password with others.
+
+
+Frequently Asked Quesitons (FAQ)
+1. I have forgotten my ext.statcan.ca password?
+    Please use the DAS portal Help button to submit a request for assitance (add image)
+2. I have forgotten my virtual machines username and password?
+    Please use the DAS portal Help button to submit a request for assitance (add image)
+ -->
