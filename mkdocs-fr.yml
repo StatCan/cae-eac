@@ -43,7 +43,7 @@ nav:
   - Contactez-nous: ContactezNous.md
   - Portail d'Analyse de données: ExtPortail.md
   - Machines Virtuelles: ExtMachinesVirtuelles.md
-  - Stockage Azure: ExtStorage.md
+  - Stockage Azure: AzureStorage.md
   - Package Managment: Artifactory.md
   - Azure Storage Explorer: AzureStorageExplorer.md
   - Azure Databricks: DataBricks.md
