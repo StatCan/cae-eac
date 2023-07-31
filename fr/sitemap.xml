@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://statcan.github.io/cae-eac/fr/AzureStorage/</loc>
+         <lastmod>2023-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://statcan.github.io/cae-eac/fr/AzureStorageExplorer/</loc>
          <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
@@ -132,11 +137,6 @@
     </url>
     <url>
          <loc>https://statcan.github.io/cae-eac/fr/VideoTest/</loc>
-         <lastmod>2023-07-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://statcan.github.io/cae-eac/fr/extStorage/</loc>
          <lastmod>2023-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
