@@ -1,5 +1,6 @@
 # Collaborative Analytics Environment (CAE) - Environnement d’analyse collaboratif (EAC)
 
+
 ## Directory Structure  
 File/Directory  | Description
 ------------- | -------------
