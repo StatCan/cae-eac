@@ -5,8 +5,8 @@ Register here to be part of the Data Analytics as a Service (DAaaS) Early Adopte
 If you have already been given access to the platform, see [How to login](Login.md) for more information.
 
 Before you sign in you may see the ***Get started*** button.
-If you click that button you will be requested to login.
+If you click that button you will be taken to the Data Analytics Services (DAS) - Get started page
             ![Get Started](images/GetStarted.png)
 
-Once on the hub page, you have the option to register a new project by clicking the ***Start a New project*** button
+Once on the hub page, you have the option to register a new project by clicking the ***Start Now*** button
             ![Start a New Project](images/StartNewProject.png)
