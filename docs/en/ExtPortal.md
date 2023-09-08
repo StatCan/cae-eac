@@ -12,7 +12,7 @@ Please [Contact Us](ContactUs.md) to request an account.
 
 Note: When you login for the first time, you will be prompted to change your password.
 
-3. Once signed in, you will be in the hub page. You can go to that page by selecting the arrow next to the user name and select Das Hub as shown here.   
+3. Once signed in, you will be in the hub page. You can go to that page by clicking the DAS Hub button next to where you signed in.   
 
     ![DAS Hub](images/HubPage.png)
 
