@@ -3,7 +3,6 @@
 
 The CAE environment uses the Artifiactory for package & library management.
 
-
 ## Included packages
 
 Below are the URLs that Artifactory pulls from currently. As long as the package is available on these repositories, it can be downloaded. You can get the name of the package by searching through the repositories.
@@ -11,30 +10,34 @@ Below are the URLs that Artifactory pulls from currently. As long as the package
   - [Conda-forge](https://conda.anaconda.org/conda-forge)
   - [CRAN](https://cran.r-project.org) (In the left menu, click **Packages** under **Software**, then click **Table of available packages**)
   - [Python](https://pypi.org/)
-  
-The respective artifactory URLs to use are:
-  - https://jfrog.aaw.cloud.statcan.ca/artifactory/conda-forge-remote/
-  - https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/
-  - https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/
-  
+    
 **Note**: For any other packages, please contact the **Collaborative Analytics Environment** team.
 
+The artifactory URLs to use are:
+
+  - Internal link : https://artifactory.cloud.statcan.ca/artifactory
+  - External link : https://jfrog.aaw.cloud.statcan.ca/artifactory
 
 ## Azure DataBricks
 
-The packages can be installed from the Databricks workspace, a Databricks cluster or Databricks notebooks.
+The packages can be installed from the workspace, the cluster or the notebooks.
 
  **Note**: 
  - The library sources available in Databricks are **PyPI** for Python packages and **CRAN** for CRAN packages.
  - The artifactory URLs to use depending on the selected library source are:
+   
+   **Internal links**:
+    - https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple for **PyPI**
+    - https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/cran-remote/  for **CRAN**
+      
+   **External links:**
     - https://jfrog.aaw.cloud.statcan.ca/artifactory/pypi-remote/ for **PyPI**
     - https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/  for **CRAN**
-    
     
 
 ### From Databricks workspace
 
-1.From the main page, click **Import Library**.
+1. From the main page, click **Import Library**.
 
 ![Databricks](images/Artifactory-DBricks01.png)
 
@@ -50,7 +53,7 @@ The packages can be installed from the Databricks workspace, a Databricks cluste
 
 ### From a Databricks cluster
 
-1.From the cluster main page, click **Install new** under **Libraries**.
+1. From the cluster main page, click **Install new** under **Libraries**.
 
 ![Cluster](images/Artifactory-Cluster01.png)
 
@@ -69,11 +72,18 @@ The packages can be installed from the Databricks workspace, a Databricks cluste
 ### From Databricks Notebooks
 ### Python notebook
 1. From your Python notebook, run the following code to setup pip to download packages from Artifactory repositories.
+   
+    **Internal link**:
+    ```
+    %sh
+    pip config --user set global.index-url https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
 
-```
-%sh
-pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
-```
+    **External link**:
+    ```
+    %sh
+    pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
 
 ![Configure VSC](images/Artifactory-PyNNotebooks01.png)
 
@@ -88,9 +98,16 @@ pip3 install <PackageName>
 ### R notebook
 1. From your R notebook, run the following code to download packages from Artifactory repositories.
 
-```
-install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
-```
+    **Internal link**:
+    ```
+    install.packages('<PackageName>', repos='https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/cran-remote/', dependencies=TRUE)
+    ```
+
+    **External link**:
+    ```
+    install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
+    ```
+    
 ![Install VSCpackage](images/Artifactory-RNotebooks01.png)
 
 
@@ -107,9 +124,15 @@ The packages can be installed from the terminal using Python commands.
  
 3. Run the following code to setup pip to download packages from Artifactory repositories.
 
-```
-pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
-```
+    **Internal link**:
+    ```
+    pip config --user set global.index-url https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
+
+    **External link**:
+    ```
+    pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
 
 ![Configure pip.conf](images/Artifactory-AzureML02.png)
 
@@ -126,12 +149,20 @@ pip3 install <PackageName>
 Please contact the **Collaborative Analytics Environment** team to install custom packages in your Azure Synapse environment.
 
 ## Visual Studio Code
-1.From the **Extensions** tab, click **Terminal**, then click **New Terminal**.
+1. From the **Extensions** tab, click **Terminal**, then click **New Terminal**.
 ![Visual Studio Code](images/Artifactory-VS01.png)
 
 2. Run the following code to setup pip to download packages from Artifactory repositories.
 
-```pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple```
+    **Internal link**:
+    ```
+    pip config --user set global.index-url https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
+
+    **External link**:
+    ```
+    pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
 
 ![Configure VSC](images/Artifactory-VSC01.png)
 
@@ -145,9 +176,15 @@ Please contact the **Collaborative Analytics Environment** team to install custo
 ## RStudio
 1. From the RStudio console, run the following code to configure the *Rprofile.site* file to use the Artifactory repositories.
 
-``` 
-options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"))
-```
+    **Internal link**:
+    ```
+    options(repos = c(artifactory = "https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/cran-remote/")
+    ```
+
+    **External link**:
+    ```
+    options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"))
+    ```
 
 ![Configure Rstudio](images/Artifactory-RS01.PNG)
 
@@ -160,10 +197,19 @@ options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/
 **OR**
 
 Run the following command to avoid the steps 1 and 2.
-```
-install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
+
+  **Internal link**:
+  
+  ```
+  install.packages('<PackageName>', repos='https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/cran-remote/', dependencies=TRUE)
 ```
 
+  **External link**:
+  
+  ```
+    install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
+  ```
+    
 3. You should see the installed package in the **System Library list**.
 
 ![Rstudio packages](images/Artifactory-RStudio03.png)
@@ -171,9 +217,18 @@ install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/arti
 ### RGui
 1. Run the following code from the R Console to configure the *Rprofile.site* file to use the Artifactory repositories.
 
-```
-options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"))
-```
+  **Internal link**:
+  
+  ```
+    options(repos = c(artifactory = "https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/cran-remote/")
+  ```
+
+  **External link**:
+  
+  ```
+    options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote/"))
+  ```
+
 ![R packages](images/Artifactory-RGuy01.png)
 
 2. Under **Packages**, click **Install Package(s)**, choose the package you want to install, then click **Ok**
@@ -182,10 +237,19 @@ options(repos = c(artifactory = "https://jfrog.aaw.cloud.statcan.ca/artifactory/
 
 **OR**
 
-Run the following code command to install packages.
+Run the following code to avoid the steps 1 and 2.
+
+  **Internal link**:
+  
+  ```
+  install.packages('<PackageName>', repos='https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/cran-remote/', dependencies=TRUE)
 ```
-install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
-```
+
+  **External link**:
+  
+  ```
+    install.packages('<PackageName>', repos='https://jfrog.aaw.cloud.statcan.ca/artifactory/dev-cran-remote', dependencies=TRUE)
+  ```
 ### Warning
 The configuration of the *Rprofile.site* file is temporary and only last your session. Once you close RStudio or the R Console, the settings reset to the default ones, so you have to run the code of the step 1 again.
 
@@ -196,9 +260,15 @@ The configuration of the *Rprofile.site* file is temporary and only last your se
 ### Miniforge Prompt
 1. Run the following code to setup pip to download packages from Artifactory repositories.
 
-```
-pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
-```
+    **Internal link**:
+    ```
+    pip config --user set global.index-url https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
+
+    **External link**:
+    ```
+    pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
 
 ![Configure VSC](images/Artifactory-Miniforge01.png)
 
@@ -213,10 +283,15 @@ pip3 install <PackageName>
 ### Command Prompt
 1. Run the following code to setup pip to download packages from Artifactory repositories.
 
-```
-pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
-```
+    **Internal link**:
+    ```
+    pip config --user set global.index-url https://svc-ins-rpug:cmVmdGtuOjAxOjAwMDAwMDAwMDA6U2NaQTVJRjFKRlV2amNQY3dRVzdqdEZWVUNN@artifactory.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
 
+    **External link**:
+    ```
+    pip config --user set global.index-url https://jfrog.aaw.cloud.statcan.ca/artifactory/api/pypi/pypi-remote/simple
+    ```
 ![Configure VSC](images/Artifactory-Terminal01.png)
 
 2. You can now use **pip3** or **pip** command to install packages as following:
