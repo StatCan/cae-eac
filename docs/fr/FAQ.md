@@ -1,5 +1,5 @@
 ## Ingestion de données
-x
+
 ### Comment puis-je ingérer des données (y compris des fichiers volumineux) dans la plateforme?
 
 #### Service de transfert électronique de fichiers (TEF)
