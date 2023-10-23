@@ -92,7 +92,7 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 ## Dashboard
 ### How do I change my subscription so that I can see my resources?
 
-1. In the Azure Portal click the **Directory + subscription** icon.
+1. In the Azure Portal click the **Settings** icon.
 
     ![subscription](images/Subscription.png)
 
