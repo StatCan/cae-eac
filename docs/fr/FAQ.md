@@ -99,7 +99,7 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 
 ## Tableau de bord
 ### Comment changer mon abonnement pour voir mes ressources?
-1. Dans le portail Azure, cliquez sur l'icône **Répertoire + abonnement**.
+1. Dans le portail Azure, cliquez sur l'icône **Paramètres du portail**.
 
     ![abonnement](images/Subscription.png)
 
