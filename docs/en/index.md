@@ -48,6 +48,6 @@ Train, deploy, and manage machine learning models, AutoML experiments, and pipel
 
 This service enables you to quickly set up an environment for your team by creating or using virtual machines using Azure DevTest Labs for day-to-day work.
 
-## Would you like to know more?
+## Data Analysis As a Service Portal
 
-Then have a look at https://www.statcan.gc.ca/data-analytics-services/aboutdas 
+https://www.statcan.gc.ca/data-analytics-services/aboutdas 
