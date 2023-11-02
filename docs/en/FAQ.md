@@ -2,13 +2,6 @@
 x
 ### How do I ingest data (including large files) into the platform?
 
-#### External Storage Account
-Files may be uploaded to the **inbox** or **to-vers-int** container of an external storage account, as documented in [Azure Storage Explorer](AzureStorage.md). These files will then automatically be moved into an internal storage account (Data Lake), and made accessible from authorized services.
-
-![Upload External](images/UploadExternal.png)
-
-*Note:* The external storage accounts have the naming convention **stats*project-acronym*external**.
-
 #### Electronic File Transfer Service (EFT)
 Statistics Canada employees can use [EFT](https://www75.statcan.gc.ca/eft-tef) to transfer files to/from on-premises (Net A or B) to/from the Azure cloud environment. Please  [Contact Us](ContactUs.md) for informaton about this process.
 
@@ -29,18 +22,13 @@ _For Statistics Canada Employees only_
 
     ![Storage Explorer Proxy Settings](images/StorageExplorerProxy.png)  
 
-### How do I request a new SAS token (required for Azure Storage Explorer on a Network B VDI)?
-
-_For Statistics Canada Employees only_
-
-Please [Contact Us](ContactUs.md) to request a temporary SAS token.
 
 ### Why do I get an error message when accessing the internal Data Lake?
 The internal Data Lake is only accessible from within a VM inside the Data Analytics Service (DAS) portal. It is not accessible from your personal or work laptop.
 
 ## Source Code Control
 
-### How do I link my Visual Studio Subscription to my StatCan cloud account?
+### How do I link my Visual Studio Subscription to my account?
 
 1. Login to https://visualstudio.microsoft.com/subscriptions/ with your organization's email address. For StatCan employees, this will be your canada.ca email address.  
 
@@ -104,11 +92,11 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 ## Dashboard
 ### How do I change my subscription so that I can see my resources?
 
-1. In the Azure Portal click the **Directory + subscription** icon.
+1. In the Azure Portal click the **Settings** icon.
 
     ![subscription](images/Subscription.png)
 
-2. Select the **vdl** subscription.
+2. Select the **daaas** subscription.
 
 ## CAE's SQL Server Deployment Options
 

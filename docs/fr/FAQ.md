@@ -1,13 +1,6 @@
 ## Ingestion de données
-x
+
 ### Comment puis-je ingérer des données (y compris des fichiers volumineux) dans la plateforme?
-
-#### Compte de stockage externe
-Les fichiers peuvent être téléversés dans dans le conteneur **inbox** ou **to-vers-int** d'un compte de stockage externe, comme indiqué dans l'[ Explorateur de stockage Azure ] (AzureStorage.md). Ces fichiers seront alors automatiquement transférés dans un compte de stockage interne (Data Lake) et rendus accessibles à partir des services autorisés.
-    
-![Télécharger externe](images/UploadExternal.png)
-
-*Remarque:* Les comptes de stockage externe ont la convention de dénomination **stats*project-acronym*external**.
 
 #### Service de transfert électronique de fichiers (TEF)
 Les employés de Statistique Canada peuvent utiliser le [TEF](https://www75.statcan.gc.ca/eft-tef) pour transférer des fichiers de / vers les réseaux sur site (Rés. A ou B) vers / depuis l'environnement infonuagique Azure. Veuillez [Nous Contacter](ContactezNous.md) pour plus d'information sur ce processus.
@@ -32,11 +25,6 @@ Des outils de plateforme comme Databricks ou Data Factory peuvent être utilis�
 
     ![Paramètres du proxy](images/StorageExplorerProxy.png)
 
-### Comment puis-je demander un nouveau jeton SAP (requis pour l'Explorateur de stockage Azure sur un VDI du réseau B)?
-
-*Pour les employés de Statistique Canada seulement*
-
-Veuillez [Nous Contacter](ContactezNous.md) pour demander un jeton SAP temporaire.
 
 ### Pourquoi est-ce que j'obtiens un message d'erreur lorsque j'accède au compte de stockage interne Data Lake?
 
@@ -111,11 +99,11 @@ pd.read_excel("/dbfs/mnt/ccei-ccie-ext/Daily charts.xlsx", engine='openyxl')
 
 ## Tableau de bord
 ### Comment changer mon abonnement pour voir mes ressources?
-1. Dans le portail Azure, cliquez sur l'icône **Répertoire + abonnement**.
+1. Dans le portail Azure, cliquez sur l'icône **Paramètres du portail**.
 
     ![abonnement](images/Subscription.png)
 
-2. Sélectionnez l'abonnement **vdl**.
+2. Sélectionnez l'abonnement **DAAAS**.
 
 ## Autre
 ### Comment puis-je me connecter au compte de stockage interne Data Lake avec Power BI Desktop?
